@@ -1,0 +1,118 @@
+#+Title: Moral hazard
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{graphicx}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+* The slope of demand
+** How does health care demand vary in the price the patient has to pay?
+a higher price (i.e. less insurance)... 
+1. ...does not affect the amount of health care a patient consumes
+2. ...reduces the amount of health care a patient consumes
+3. ...increases the amount of health care a patient consumes
+
+\pause
+
+\vspace*{1cm}
+How do you design a study that settles the argument?
+
+# ** Demand in a simple model
+
+# - derive demand in a standard 101 micro model and show it is decreasing in price
+
+
+* Field experimental evidence
+
+** RAND health insurance experiment I
+- 70s in the US
+- 2000 families
+- randomly assigned plans differing in copay and stop-loss
+
+\includegraphics[width=9cm]{RANDplans}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+** RAND health insurance experiment II
+
+\includegraphics[width=9cm]{RANDexpenditure}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+- rough price elasticity estimate: -0.2
+
+** RAND health insurance experiment III
+| plan | likelihood | physician  | hospital    | expenditure |
+|      | of any use | visits     | admission % |            (in 2006$)       |
+|------+------------+------------------+----------------------+---------------------|
+| /    |         <> |               <> |                   <> |                     |
+| free |       86.7 |             4.55 |                10.37 | 3,164               |
+| 25 % |       78.8 |             3.33 |                 8.83 | 2,565               |
+| 50 % |       74.3 |             3.03 |                 8.31 | 2,374               |
+| 95%  |       68.0 |             2.73 |                 7.74 | 2,174               |
+\tiny{source: adapted from Manning et al. 1987 by Morrissey 2008}\normalsize
+
+
+** Oregon I
+
+- Medicaid expansion in Oregon (2008)
+- medium-low income 
+- due to limited budget, lottery for eligibility
+- no copayment, no premium
+- use lottery success as instrument for health insurance
+- compare people who won in lottery to those who did not
+
+\includegraphics[width=6cm]{Oregon1}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+** Oregon II
+\includegraphics[width=8cm]{Oregon2}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+- increase in health care spending due to Medicaid roughly 775$ per year (approx. 25%)
+
+* The donut hole
+
+** The donut hole I
+
+- Medicare Part D provides coverage for elderly for medication
+
+\includegraphics[width=8cm]{donut}
+\tiny{source: Einav and Finkelstein 2017} \normalsize
+
+How will the distribution of medication expenditure for Medicare recipients look like?
+
+** The donut hole II
+\includegraphics[width=8cm]{bunchingDonut}
+\tiny{source: Einav and Finkelstein 2017}
+
+** Forward looking behavior
+\includegraphics[width=8cm]{anticipationFuturePrice}
+\tiny{source: Einav and Finkelstein 2017}
+
+
+* Welfare and moral hazard
+** Welfare 
+- why is "moral hazard" actually a problem?
+
+# deadweight loss in demand diagram
+
+* Structural estimation
+** Out of sample predictions
+
+- A health insurer considers to introduce a copayment of 10% up to 5000€ and asks you how this will affect expenditures. What do you do?
+
+# price elasticity of -0.2, hence share of people with expenditures below 5000 are expected to consume 20% less
+
+# simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of h; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now

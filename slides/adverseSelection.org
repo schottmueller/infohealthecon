@@ -1,0 +1,298 @@
+#+Title: Adverse Selection
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+* Adverse selection with fixed coverage
+** Model
+- fixed insurance contract, e.g. full coverage
+- large heterogenous population: 
+  - differ in willingness to pay for contract
+  - differ in expected costs 
+- heterogeneity is unobserved by insurers
+- insurers set premium
+- for now: insurances have no costs
+
+
+*** Question 							    :B_block:
+    :PROPERTIES:
+    :BEAMER_env: block
+    :END:
+- Who is likely to have a higher willingness to pay for insurance: those with low or high expected costs?
+
+# willingness to pay: expected cost + risk premium
+
+** Demand and marginal cost
+
+# Figure 1 of E&F: downward sloping demand, MC and AC
+# MC(0)=AC(0) 
+# risk premium (abstracting from wealth effects): difference between demand and MC, positive as risk averse, i.e. D>MC
+# 
+
+** Competitive equilibrium
+
+- if many insurers compete on premium, equilibrium premium equals average costs (Bertrand competition)
+- possible inefficiency: too little insurance in equilibrium
+# if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers 
+
+Result:
+- adverse selection leads to too little insurance
+- insurance mandate (?)
+# what is the regulated premium? force people to buy insurance at premium above wtp?
+- premium subsidy
+# shifts demand up, reduces inefficiency (unless high shadow cost of public funds); imagine a head tax of $T$ that is then paid as a subsidy when buying insurance -> if T is high enough to get everyone to insure then everyone is better off unless there are administrative costs of taxation
+
+** Special cases
+
+- no inefficiency
+# AC in between MC and D, never intersects D
+
+- complete unravelling
+# AC completely above demand (intersects demand and MC at Q=0)
+
+** Gender specific premia
+
+- suppose women tend to have lower expected costs than men
+- who will have the lower premium, if insurance companies are allowed to discriminate based on gender?
+- if insurance companies are prohibited to discriminate based on gender, who benefits? who loses?
+
+# female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to uninsured with regulation while men are less likely to be uninsured
+
+** Gender specific premia
+- unisex tarif were introduced in the US in the 80s 
+- Wall Street Journal (1987) reported the following changes in premia
+  
+|                  | women |  men |
+|------------------+-------+------|
+| /                |    <  |      |
+| life insurance   |  +15% |  -3% |
+| health insurance |  -13% | +28% |
+| auto insurance   |  +49% | -16% |
+
+** Loading factors
+- insurance have administrative costs
+- MC curve is expected payout + administrative costs of the contract
+- admin cost shift MC up
+- "loading": difference between premium and expected payout
+
+Results:
+
+- not necessarily optimal to insure everyone $\rightarrow$ insurance mandate not optimal
+- effects of adverse selection as before (underinsurance in equilibrium)
+
+** Evidence for selection
+- recipients of Medicare can in many parts of the US choose between traditional plan and HMO plan (limited network and benefits)
+  - expenditures 6 months before enrolling in HMO: 63\% of average
+  - expenditures 6 months after disenrolling from HMO: 160% of average
+
+- Ellis (1985) reports of an employer that switched from offering one insurance plan to offering 3 insurance plans with different coverage levels
+  - employees choosing high coverage plan had four times as high expenditures than the one in the low coverage plan
+
+* Screening
+
+** Rothschild-Stiglitz Model (screening with perfect competition)
+
+- consumers
+  - two risk types: prob of loss either $\alpha_l$ or $\alpha_h>\alpha_l$
+  - otherwise identical (utility function $u$ with $u'>0$ and $u''<0$, wealth $W$, loss $L$)
+  - risk type is private information of consumer
+
+- insurers
+  - risk neutral
+  - zero administrative costs
+  - offer menus of coverage/premium pairs
+  - many insurance companies
+  - knows share of high risk type in population $\gamma\in(0,1)$
+
+- equilibrium
+  - system of contracts, i.e. coverage/premium pairs, such that no insurance can increase its profits by offering another contract or withdrawing a contract it offers
+
+** Rothschild-Stiglitz: first best (no information asymmetry)
+
+- benchmark: risk types are known by insurances
+- what is equilibrium?
+
+# full insurance, fig 5.3 on p.172 in ZBK
+# or figure with coverage on x-axis and premium on y-axis
+# high risk would like to choose low risk contract
+
+** Rothschild-Stiglitz: second best (no pooling)
+
+- high risk type has higher demand for coverage
+- single crossing: 
+  - in $W_1$, $W_2$ diagram, $h$ has a flatter indifference curve than $l$
+  - in coverage, premium diagram, $h$ has a steeper indifference curve
+- pooling equilibrium: both risk types buy the same contract
+
+Result:
+- pooling equilibrium does not exist
+# fig 5.4 on p. 174 in ZBK
+
+** Rothschild-Stiglitz: second best (separating equilibrium)
+- one contract for each risk type and each prefers his contract
+- as $h$ is more eager to buy insurance, he has more coverage (higher $W_2$, lower $W_1$) in equilibrium
+- insurers make zero profit on $h$ contract
+# otherwise compete by offering this contract at epsilon lower premium
+- $h$ type has full insurance, $W_1=W_2$ in equilibrium
+# otherwise offer full coverage where $h$ is indifferent and give him epsilon lower premium; as h is more eager than l, l will not buy new contract but as more cov is efficient it yields higher profits for epsilon small
+- insurers make zero profits on $l$ contract
+# otherwise reduce coverage a bit and adjust premium such that $l$ type just prefers new contract; reap all profits from $l$ types without attracting $h$ types
+- $l$ type is indifferent between his contract and $h$ contract
+# otherwise, h strictly prefers his contract and I can offer contract with slightly higher coverage thanbefore to l such that l just prefers new contract and h does not while making positive profits; 
+
+Results:
+- equilibrium construction: 
+  - $h$ gets contract where his zero profit line intersects full insurance
+  - $l$ gets contract where his indifference curve through $h$'s contract intersects his zero profit line
+- first best contract for $h$
+- underinsurance for $l$
+
+** Rothschild-Stiglitz: second best (non-existence of equilibrium)
+- if $\gamma$ small, there exists a pooling contract with positive profits from the above constructed equilibrium
+
+- other equilibrium concepts for this case (Wilson 1977, Wilson-Miyazaki-Spence, 1978, Netzer and Scheuer 201?)
+
+** Insurance monopolist (Stiglitz 1977)
+- same model as Rothschild-Stiglitz but instead of many competing insurers only one profit maximizing insurer
+- single crossing holds, $h$ has highe demand for insurance than $l$
+
+Profit maximizing menu:
+- no pooling
+# if pooling than premium equals wtp of l and full coverage; better to offer slightly lower cov for l (note that slope indiff curve equals slope isoprofit curve at full cov in C,premium diagram) while higher premium for $h$
+- full coverage for $h$
+# otherwise moving along his indiff curve to full cov yields higher profit
+- premium of $l$ equals his willingness to pay
+# otherwise increasing both premia increases profits
+- choose coverage of $l$ to maximize profits
+
+# maybe example
+
+Results:
+- full coverage for $h$ but under-insurance for $l$
+- zero benefit from insurance for $l$, positive benefit for $h$
+
+* Application: genetic tests
+
+** Genetic tests: possible frameworks
+
+- genetic tests can be used to determine risk (but usually not perfectly)
+- what is the right regulatory framework:
+  - private information: test results (if existing) are private information of insured
+  - voluntary disclosure: tets results can be presented to insurer but do not have to presented
+  - mandatory disclosure: existing results have to be disclosed
+  - laissez faire: insurers can (ut do not have to) require (additional) tests
+
+** Genetic tests: how to think about risk
+- two kind of risk:
+  - risk of having bad genetics
+  - risk of falling ill given your genetic predisposition
+- without tests: 
+  - combination of both risk is insured
+- with tests:
+  - only risk conditional on genetic disposition is insured
+  - (risk averse!) consumer bares risk of bad genetic disposition 
+
+** Genetic tests: (partial) misunderstandings
+- "genetic tests make health insurance impossible because insurance is about unpredictable risks"
+# genetic tests reduce risk but do not eliminate it; remaining risk can still be insured
+
+- "accurately predicting risks will simplify the calculation of premia; that's great for insurers"
+# if a consumer could verify that he has not undertaken any genetic test, the insurer would not require one but insure the "test taking risk" instead; in fact being unable to insure the "test taking risk" will eliminate the scope of insurance and therefore the business opportunities for insurers 
+
+- "voluntary disclosure is best for consumers as they then can use the test to get a better insurance when the test is favorable and they simply do not use the test otherwise"
+# unraveling: basically equivalent to mandatory disclosure; consumers loose the ability to insure "test taking risk"
+
+** Genetic tests: trade-off
+- make tests available to insurer
+  - consumers bare risk of bad genetic test (double punishment in case of bad genetic disposition)
+- keep tests private
+  - increased adverse selection
+
+** Genetic tests: some (in)efficiencies
+- some risk factors can lead to prevention efforts and -- cheaper -- early treatment
+- test taking is costly
+  - tests for risk of untreatable diseases
+# total waste: only leads to adverse selection and non-insurable test taking risk
+
+* Application: long run contracts
+** Long run contracts: why?
+Health insurance contracts in many countries are long term (explicitly or in practice); why?
+# think of PKV in Germany
+# - Otherwise, premia would be high in old age! (probably wrong, why?)
+   # saving at young age possible as in PKV
+# - Insuring the premium risk: When young you do not know which risk type you will be. By having a long term contract, one insures against type risk that realizes only over time.
+#  --> why not a market for insuring against premium risk: potentially difficult: good risks may not buy insurance later to avoid paying into the premium insurance; life time premium cannot be paid by young due to credit constraint etc.; potentially no incentives for insurance to quote/determine "fitting" premium 
+#  --> problems with this form of insurance: lock-in gives insurers incentives to lower quality 
+# solutions in Germany: GKV has no premium risk as no risk-adjusted premium; PKV has saving model where in young years money is saved ot be used in old years to reduce/eliminate premium risk, fix quality problem by having minimum quality of GKV plus additional services
+
+# maybe do more (example) as in Wambach slides
+
+* Fostering selection: Cream skimming etc.  
+** Risk adjustment
+-  "cream skimming" as problem:
+  - insurers avoid high cost consumers and try to attract low cost consumers (how?)
+# in particular if insurers can choose coverage or add-on services on base package; but maybe even if not (stairs, advertising)
+- risk adjustment tries to eliminate this incentive
+  - internal transfer payments from insurance with low risk insured to insurances with high risk insured
+  - risk estimates based on observable characteristics (gender, age, chronically ill etc.)
+# Risikostrukturausgleich: also income as premium is income based
+  - if well designed, transfer exactly compensates additional cost
+  - risk factors should be outside of the control of the insurer to avoid manipulability (problematic: lagged expenditures)
+
+** Risk adjustment: how good is prediction?
+
+- 1997, 1998 data from large German insurer (800.000 insured)
+- % of variance explained by the following covariates
+
+|                                            | concurrent exp | prospective exp |
+|--------------------------------------------+----------------+-----------------|
+| /                                          |             <  |                 |
+| age and gender                             |           3.2% |            3.2% |
+| age, gender and invalid status             |           5.1% |            4.5% |
+| above + hierarchical \\ coexisting conditions         |            37% | 12%             |
+
+(source: Behrend et al. 2007. European Journal of Health Economics 8 (1): 31–39.) 
+- from 1996 to 2001 German risk adjustment was based on age, gender, invalid and income
+- since 2009, detailed system of hierarchical coexisting conditions
+
+
+** Risk adjustment: how good is prediction?
+[[./figRiskAdjTable.png]]
+
+(source: van de Ven and Ellis, 2005)
+
+** "Solutions" to selection problems I
+- community rating: premium must not depend on individual risk factors 
+  - problem: low risk types choose not to insure
+- community rating + mandatory insurance 
+  - problem: insurers do not enroll high risk consumers
+- community rating + mandatory insurance + open enrollment 
+  - problem: insurers exclude certain treatments to avoid high risk consumers
+- community rating + mandatory insurance + open enrollment + regulated coverage
+  - problem: "cream skimming", offer packages (or additional benefits) attractive for healthy consumers
+- community rating + mandatory insurance + regulated coverage + open enrollment + single payer (NHS, DK)
+  - problem: lack of competition tends to lead to inefficiencies; no differentiation though needs/preferences may be differentiated
+
+** "Solutions" to selection problems II
+- community rating + mandatory insurance + regulated coverage + open enrollment + risk adjustment (Netherlands?)
+  - problem: how well does risk adjustment work?; no differentiation in package despite differentiated preferences; (what about "additional services", "bonus programs" etc.?)
+
+# sources:
+# - Einav and Finkelstein (2011), p. 115-123
+# - ZBK 5.3.3

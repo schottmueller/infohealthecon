@@ -1,0 +1,172 @@
+#+Title: Demand for insurance
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+
+* Gambles and utility functions
+** Risk premium
+*** Example
+Flip a fair coin: If heads you have 10.000\euro  as annual income, if tails 20.000\euro . What is your expected income? If you could get X\euro  for sure as income, how high has X to be to make you indifferent?
+
+*** Certainty equivalent				       :B_definition:
+    :PROPERTIES:
+    :BEAMER_env: definition
+    :END:
+Take a lottery $L$. The /certainty equivalent/ of $L$ is the amount $X$ such that the individual is indifferent between  the lottery and receiving $X$ for sure.
+
+*** Risk premium					       :B_definition:
+    :PROPERTIES:
+    :BEAMER_env: definition
+    :END:
+The /risk premium/ is the difference between the expected payout in a lottery $L$ and the certainty equivalent of this lottery.
+
+# risk premium ~ willingness to pay for insurance
+
+** Plotting your utility function
+# - assign arbitrary numbers as $u(10.000)$ and $u(20.000)$, put them in diagram
+# - put (CE,0.5*u(10.000)+0.5*u(20.000)) in diagram
+# - consider more lotteries and put more points
+
+* Drivers of insurance demand
+** Risk aversion
+
+*** Risk aversion					       :B_definition:
+    :PROPERTIES:
+    :BEAMER_env: definition
+    :END:
+A person is /risk averse/ if the risk premium is non-negative for all lotteries.
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- a person is risk averse if and only if his utility function is concave
+
+# more risk averse -> higher risk premium, higher wtp for insurance; concave transformation of u
+
+** Size of the loss
+- consider a wealth of W and a potential loss of $L\in(0,W)$ that occurs with probability $\alpha$
+*** Size of the loss						  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+If a person is risk averse, the risk premium is increasing in $L$.
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+# Proof: $CE(L)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(L)=\frac{-\alpha u'(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is in absolute value greater than \alpha by concavity of $u$. Now $RP(L)=W-\alpha L-CE(L)$ and therefore $RP'(L)=-\alpha-CE'(L)>0$.
+
+# insurance is most valuable for big losses, e.g. only for big enough losses RP is higher than handling cost of insurance, (coverage for hospital is more important than for GP)
+
+** Probability of loss
+
+*** Probability of the loss					  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+If a person is risk averse, the risk premium is first increasing in $\alpha$ (when $\alpha$ is small) and then decreasing in $\alpha$ (when $\alpha$ is large).
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+# Proof:  $CE(\alpha)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(\alpha)=\frac{-u(W)+u(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is negative. Now $RP(\alpha)=W-\alpha L-CE(\alpha)$ and therefore $RP'(\alpha)=-L-CE'(\alpha)=\frac{1}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}\left( u(W)-u(W-L)-L u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right) \right)$. By concavity, this difference is positive for small \ælpha and negative for large \alpha. (draw concave function)
+
+# do not insure certain events but uncertain events
+
+** Wealth effect
+
+*** Wealth effect						  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+If a person is risk averse, the effect of $W$ on the risk premium is ambiguous. If the person becomes less risk averse as income increases in the sense that $u'''\geq0$, then a higher $W$ leads to a lower risk premium.
+
+# Proof: $CE(W)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(W)=\frac{(1-\alpha) u'(W)+\alpha u'(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$. As $u'$ is convex by $u'''>0$, it holds that $(1-\alpha) u'(W)+\alpha u'(W-L)\geq u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and therefore $CE'(W)\geq 1$. Now $RP(W)=W-\alpha L-CE(W)$ and therefore $RP'(W)=1-CE'(W)\leq0$. 
+
+# question is whether you get less or more risk averse as you get richer; most people think less and then poor people have a higher demand for insurance than rich people
+
+** Access motive
+
+- think of catastrophies: 
+   - probability of an illness $\alpha$ is small 
+   - costs of treatment $L$ are higher than $W$
+   - death without treatment
+
+# if $\alpha L< W$, then an insurance at premium $\alpha L$ is possible and gives access to treatment in case of illness
+* Choosing coverage
+** Choosing coverage
+- loss of $L$ with probability $\alpha$ from wealth $W$
+- insurance covers $C$ at premium $pC$ and insuree chooses $C$
+- $u'>0$, $u''<0$
+ $$E[u]=(1-\alpha)u(W-pC)+\alpha u(W-pC-L+C)$$
+- let $W_1=W-pC$ and $W_2=W-pC-L+C$
+*** 								  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+The optimal decision $C^*$ leads to 
+$$-\frac{(1-\alpha)u'(W_1^*)}{\alpha u'(W_2^*)}=-\frac{1-p  }{p}$$
+# in W_1 W_2 diagram slope of budget line equals slope of indif curve (increasing C by one marginal unit reduces W_1 by p and increases W_2 by 1-p)
+$$\Leftrightarrow \frac{u'(W_1^*)}{ u'(W_2^*)}=\frac{\alpha(1-p)}{(1-\alpha)p}$$
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+Results:
+
+- fair insurance ($p=\alpha$): demand full coverage
+- "unfair" insurance ($p>\alpha$): demand partial coverage
+
+** Effects of minimum income/treatment 
+- suppose government guarantees income $\underline{W}>W-L$ 
+- new option: $W_1=W$ and $W_2=\underline{W}$ (no insurance)
+- no insurance is chosen if $(1-\alpha)u(W_1^*)+\alpha u(W_2^*)<(1-\alpha)u(W)+\alpha u(\underline W)$, i.e. if $\underline W$ is sufficiently high
+
+Results:
+- government guarantees crowd out insurance
+- insurance mandate necessary (?)
+
+** State dependent preferences
+- when you are ill, you do not enjoy consumption a lot:
+  - utility ill $u_i$, utility healthy $u_h$
+  - $u'_i<u'_h$
+- assume fair premium, then
+$$E[u]=(1-\alpha)u_h(W-\alpha C)+\alpha u_i(W-\alpha C-L+C)$$
+
+*** 								  :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+Optimal coverage with state dependent utility, $C^*$, is characterized by 
+$$u'_h(W-\alpha C^*)=u_i'(W-L-\alpha C^*+C^*)$$
+and therefore $C^*<L$.
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+Result:
+- partial coverage if consumption is less attractive in ill state

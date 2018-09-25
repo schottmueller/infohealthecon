@@ -1,0 +1,68 @@
+#+TITLE: Information Problems in Health Care Markets
+#+AUTHOR: Christoph Schottmüller
+#+Options: toc:nil H:2
+#+Latex_Header: \usepackage{natbib}
+
+* Course setup 
+In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
+
+Students learn economic methods to analyze health care markets theoretically and also gain some insight in how to design empirical tests of the predictions of the theoretical models. 
+
+The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
+
+The exam will -- in style -- be similar to the questions of the exercise classes.
+
+** Lecture times: 
+- lecture: Thursday, 16:00-17:30 in 100/U1/HS VI
+- exercise classes: Monday, 16:00-17:30 in 103/EG/0.211
+
+** Textbooks
+The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
+
+* Detailed schedule
+This is a plan and as every good plan it may be adjusted if necessary.
+** Introduction
+- economic approach (trade-offs, choice-preferences-utility maximization, uncertainty, models)
+- tools (optimization, regression analysis and endogeneity)
+** Imperfect information between patient and insurer
+*** demand for insurance
+- full coverage (ch. 3 cite:morrisey2008health)
+- coverage choice (ch. 5.3.1 and 5.3.2 cite:zweifel2009health) 
+*** adverse selection
+- fixed coverage (p. 115-123 cite:einav2011selection)
+- menus and distortions: cite:rothschild1976equilibrium,stiglitz1977monopoly 
+*** risk adjustment
+ch. 7 cite:zweifel2009health
+*** moral hazard
+- RAND and Oregon health insurance experiments
+- bunching estimators at the donut hole
+- literature: cite:einav2017moral
+*** advantageous selection and beyond
+- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources
+- positive correlation test and its pitfalls: cite:boone2017health
+# endogenous information, cite:doh96
+** Imperfect information between doctor and patient
+*** supply induced demand
+ch. 8 cite:zweifel2009health 
+# (also slides Wambach)
+*** models of doctor patient interaction
+# (slides Wambach)
+- strategic communication and the hippocratic oath cite:schottmueller2013cifd
+*** credence good models
+cite:wolinsky1993competition 
+# (slides Wambach)
+** Imperfect information between doctor and insurer (and patient)
+*** credence good models with insurance
+# (slides Wambach)
+*** selective contracting and managed care
+- consumer steering and competition: cite:boone2018pnetworks
+
+# *** doctor renumeration under a global budget 
+# cite:benstetter2006treadmill
+*** health care payment systems
+cite:ma1997optimal 
+
+
+
+bibliographystyle:chicago
+bibliography:/home/christoph/stuff/bibliography/references.bib
