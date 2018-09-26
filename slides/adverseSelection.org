@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -181,11 +181,20 @@ Profit maximizing menu:
 # otherwise increasing both premia increases profits
 - choose coverage of $l$ to maximize profits
 
-# maybe example
-
 Results:
 - full coverage for $h$ but under-insurance for $l$
 - zero benefit from insurance for $l$, positive benefit for $h$
+
+** Insurance monopolist (Stiglitz 1977): Example
+
+- $u(x)=-e^-{x}$, $W=2$, $L=1$, $\alpha_h=0.5$, $\alpha_l=0.25$
+- let $C$ be indemnity for $l$
+- what is $l$'s expected utility without insurance?
+# -.25*e^{-1+0.2}-.75*e^{-2+.2*4}
+- recall: $l$'s premium equals his willingness to pay; what is $l$'s wtp?
+# .25*[(1-p+C)-.2*(1-p+C)^2]+.75*[(2-p)-0.2*(2-p)^2]=1.1
+
+[[https://github.com/schottmueller/juliaForMicroTheory/blob/master/9.%20Application.%20Monopoly%20insurance%20screening.ipynb][julia notebook]]
 
 * Application: genetic tests
 
@@ -230,20 +239,74 @@ Results:
   - tests for risk of untreatable diseases
 # total waste: only leads to adverse selection and non-insurable test taking risk
 
-* Application: long run contracts
-** Long run contracts: why?
-Health insurance contracts in many countries are long term (explicitly or in practice); why?
-# think of PKV in Germany
-# - Otherwise, premia would be high in old age! (probably wrong, why?)
-   # saving at young age possible as in PKV
-# - Insuring the premium risk: When young you do not know which risk type you will be. By having a long term contract, one insures against type risk that realizes only over time.
-#  --> why not a market for insuring against premium risk: potentially difficult: good risks may not buy insurance later to avoid paying into the premium insurance; life time premium cannot be paid by young due to credit constraint etc.; potentially no incentives for insurance to quote/determine "fitting" premium 
-#  --> problems with this form of insurance: lock-in gives insurers incentives to lower quality 
-# solutions in Germany: GKV has no premium risk as no risk-adjusted premium; PKV has saving model where in young years money is saved ot be used in old years to reduce/eliminate premium risk, fix quality problem by having minimum quality of GKV plus additional services
+* Aside: Premium risk
+** Premium risk: basics
+- premium (and coverage) can depend on information health insurer has
+  - age, chronical illness, ZIP code etc.
+- consumer faces risk of higher premium due to future change in characteristic
+  - getting older, becoming chronically ill, moving to bad ZIP code etc. 
 
-# maybe do more (example) as in Wambach slides
+** Premium risk: simple model
+- 2 periods
+- risk of loss $L$ in period 1 is $\alpha_l$
+- risk of loss $L$ in period 2 is 
+  - $\alpha_l$ with probability \lambda
+  - $\alpha_h>\alpha_l$ with probability 1-\lambda
+- perfect competition of profit maximizing insurers
+- period 2 risk type is observable in period 2 by everyone but not in period 1
 
-* Fostering selection: Cream skimming etc.  
+Equilibrium:
+- premium/coverage in period 1: 
+# L\alpha_l, full: L
+- premium/coverage in period for $\alpha_l$:
+# L\alpha_l, full: L
+- premium/coverage in period for $\alpha_h$:
+# L\alpha_h, full: L
+
+- risk averse consumer suffers from premium risk:
+# $E(u) = u(W- \alpha_l L)+\lambda u(W- \alpha_l L)+(1-\lambda) u(W- \alpha_h L)< u(W- \alpha_l L)+ u(W- \lambda\alpha_l L-(1-\lambda)\alpha_h L)$ by $u''<0$
+
+** Premium risk: Long term contracts
+- insurance contract covering both periods at premium
+  - premium in period 1: $\alpha_l L$
+  - premium in period 2: $(\lambda\alpha_l+(1-\lambda)\alpha_h) L$
+- potential problems:
+#  - low risks try to get out of contract in period 2, insurers try to dump high risks in period 2 (maybe low quality?), if tastes for insurers -- e.g. due to vertical integration -- no switch possible 
+
+** Premium risk: Guaranteed renewal
+- against an up front fee of $[(\lambda\alpha_l+(1-\lambda)\alpha_h)-\alpha_l]L$ the insurer offers the option to renew contract at first period premium $\alpha_l L$
+# similar to private health insurance in Germany
+
+- potential problems:
+#  - credit constraints (in particular as young might have low incomes), insurers try to dump high risks in period 2 (maybe low quality?), if tastes for insurers -- e.g. due to vertical integration -- no switch possible 
+
+** Premium risk: premium insurance
+- (other) insurers offer full insurance against health premium increase at price $[(\lambda\alpha_l+(1-\lambda)\alpha_h)-\alpha_l]L$
+- advantage over guaranteed renewal: 
+# solve the switching problem and the bad incentives for insurers in period 2
+- potential problems:
+# credit constraints, collusion possibility between health insurer and consumer against premium risk insurer (e.g. additional inefficient benefits at higher premium)
+
+** Premium risk: community rating
+- regulation: all insured pay the same premium, $\alpha_l$ in period 1 and  $(\lambda\alpha_l+(1-\lambda)\alpha_h) L$ in period 2, that must not depend on risk type
+ - problem: 
+# low risk types choose not to insure
+- community rating + mandatory insurance 
+  - problem: 
+# insurers try not to enroll high risk consumers, (low risks may be forced against their will)
+- community rating + mandatory insurance + open enrollment 
+  - problem: 
+# insurers exclude certain treatments to avoid high risk consumers
+- community rating + mandatory insurance + open enrollment + regulated coverage
+  - problem: 
+# "cream skimming", offer packages (or additional benefits) attractive for healthy consumers
+- community rating + mandatory insurance + regulated coverage + open enrollment + single payer (NHS, Scandinavia)
+  - problem: 
+# lack of competition tends to lead to inefficiencies; no differentiation though needs/preferences may be differentiated
+
+- community rating + mandatory insurance + regulated coverage + open enrollment + risk adjustment (Netherlands?)
+
+
 ** Risk adjustment
 -  "cream skimming" as problem:
   - insurers avoid high cost consumers and try to attract low cost consumers (how?)
@@ -251,9 +314,13 @@ Health insurance contracts in many countries are long term (explicitly or in pra
 - risk adjustment tries to eliminate this incentive
   - internal transfer payments from insurance with low risk insured to insurances with high risk insured
   - risk estimates based on observable characteristics (gender, age, chronically ill etc.)
-# Risikostrukturausgleich: also income as premium is income based
   - if well designed, transfer exactly compensates additional cost
-  - risk factors should be outside of the control of the insurer to avoid manipulability (problematic: lagged expenditures)
+  - level playing field --> more intense competition
+  - risk factors should be outside of the control of the insurer to avoid manipulability
+#  (problematic: lagged expenditures)
+
+- problems of  community rating + mandatory insurance + regulated coverage + open enrollment + risk adjustment:
+# how well does risk adjustment work?; no differentiation in package despite differentiated preferences; (what about "additional services", "bonus programs" etc.?)
 
 ** Risk adjustment: how good is prediction?
 
@@ -265,34 +332,49 @@ Health insurance contracts in many countries are long term (explicitly or in pra
 | /                                          |             <  |                 |
 | age and gender                             |           3.2% |            3.2% |
 | age, gender and invalid status             |           5.1% |            4.5% |
-| above + hierarchical \\ coexisting conditions         |            37% | 12%             |
+| above + HHC         |            37% | 12%             |
+
+\tiny HHC = hierarchical coexisting conditions 
 
 (source: Behrend et al. 2007. European Journal of Health Economics 8 (1): 31–39.) 
-- from 1996 to 2001 German risk adjustment was based on age, gender, invalid and income
+\normalsize
+- from 1996 to 2001 German risk adjustment was based on age, gender, invalid status and income
 - since 2009, detailed system of hierarchical coexisting conditions
 
 
 ** Risk adjustment: how good is prediction?
-[[./figRiskAdjTable.png]]
 
-(source: van de Ven and Ellis, 2005)
+\begin{figure}
+\includegraphics[scale=0.6]{figRiskAdjTable.png}
+\end{figure}
 
-** "Solutions" to selection problems I
-- community rating: premium must not depend on individual risk factors 
-  - problem: low risk types choose not to insure
-- community rating + mandatory insurance 
-  - problem: insurers do not enroll high risk consumers
-- community rating + mandatory insurance + open enrollment 
-  - problem: insurers exclude certain treatments to avoid high risk consumers
-- community rating + mandatory insurance + open enrollment + regulated coverage
-  - problem: "cream skimming", offer packages (or additional benefits) attractive for healthy consumers
-- community rating + mandatory insurance + regulated coverage + open enrollment + single payer (NHS, DK)
-  - problem: lack of competition tends to lead to inefficiencies; no differentiation though needs/preferences may be differentiated
+\tiny
+\vspace*{-.5cm}
+(source: Cuyler and Newhouse, eds. van de Ven and Ellis, Handbook of Health Economics, pp. 755-845, 2000)
+\normalsize
 
-** "Solutions" to selection problems II
-- community rating + mandatory insurance + regulated coverage + open enrollment + risk adjustment (Netherlands?)
-  - problem: how well does risk adjustment work?; no differentiation in package despite differentiated preferences; (what about "additional services", "bonus programs" etc.?)
+** Empirics: Who has information? I
+- adverse selection and the problem of premium risk only occur if consumer, respectively insurer, have information on health status they can use in decision making
+#
+
+- long term care insurance
+- elderly sample (average age 78), US, 1995-2000
+- 16% enter nursing home, 11% have long term care insurance
+- survey in 1995 asks 
+  - "Of course nobody wants to go to a nursing home, but sometimes it becomes necessary. What do you think are the chances that you will move to a nursing home in the next five years?"
+  - average answer 18%
+
+** Empirics: Who has information? II
+- estimate model: prob(care)=f(a*X+c*Belief)
+
+[[./tableProbCare.png]]
+
+\tiny
+\vspace*{-.5cm}
+(source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
+\normalsize
 
 # sources:
 # - Einav and Finkelstein (2011), p. 115-123
 # - ZBK 5.3.3
+# - Finkelstein, McGarry
