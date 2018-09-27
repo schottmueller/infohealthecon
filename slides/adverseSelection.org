@@ -75,7 +75,7 @@ Result:
 # female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to uninsured with regulation while men are less likely to be uninsured
 
 ** Gender specific premia
-- unisex tarif were introduced in the US in the 80s 
+- unisex tarif were introduced in Montana, US in 1983 by law 
 - Wall Street Journal (1987) reported the following changes in premia
   
 |                  | women |  men |
@@ -98,7 +98,7 @@ Results:
 
 ** Evidence for selection
 - recipients of Medicare can in many parts of the US choose between traditional plan and HMO plan (limited network and benefits)
-  - expenditures 6 months before enrolling in HMO: 63\% of average
+  - expenditures 6 months before enrolling in HMO: 63% of average
   - expenditures 6 months after disenrolling from HMO: 160% of average
 
 - Ellis (1985) reports of an employer that switched from offering one insurance plan to offering 3 insurance plans with different coverage levels
@@ -121,7 +121,7 @@ Results:
   - knows share of high risk type in population $\gamma\in(0,1)$
 
 - equilibrium
-  - system of contracts, i.e. coverage/premium pairs, such that no insurance can increase its profits by offering another contract or withdrawing a contract it offers
+  - system of contracts, i.e. coverage/premium pairs, such that (i) every offered contract yields non-negative expected profits, (ii) no insurance can increase its expected profits by offering another contract, (iii) consumers maximize expected utility. 
 
 ** Rothschild-Stiglitz: first best (no information asymmetry)
 
@@ -166,7 +166,7 @@ Results:
 ** Rothschild-Stiglitz: second best (non-existence of equilibrium)
 - if $\gamma$ small, there exists a pooling contract with positive profits from the above constructed equilibrium
 
-- other equilibrium concepts for this case (Wilson 1977, Wilson-Miyazaki-Spence, 1978, Netzer and Scheuer 201?)
+- other equilibrium concepts for this case (Wilson 1977, Wilson-Miyazaki-Spence, 1978, Netzer and Scheuer 2014)
 
 ** Insurance monopolist (Stiglitz 1977)
 - same model as Rothschild-Stiglitz but instead of many competing insurers only one profit maximizing insurer
@@ -187,7 +187,7 @@ Results:
 
 ** Insurance monopolist (Stiglitz 1977): Example
 
-- $u(x)=-e^-{x}$, $W=2$, $L=1$, $\alpha_h=0.5$, $\alpha_l=0.25$
+- $u(x)=-e^{-x}$, $W=2$, $L=1$, $\alpha_h=0.5$, $\alpha_l=0.25$
 - let $C$ be indemnity for $l$
 - what is $l$'s expected utility without insurance?
 # -.25*e^{-1+0.2}-.75*e^{-2+.2*4}
@@ -203,7 +203,7 @@ Results:
 - genetic tests can be used to determine risk (but usually not perfectly)
 - what is the right regulatory framework:
   - private information: test results (if existing) are private information of insured
-  - voluntary disclosure: tets results can be presented to insurer but do not have to presented
+  - voluntary disclosure: test results can be presented to insurer but do not have to presented
   - mandatory disclosure: existing results have to be disclosed
   - laissez faire: insurers can (ut do not have to) require (additional) tests
 
@@ -212,10 +212,10 @@ Results:
   - risk of having bad genetics
   - risk of falling ill given your genetic predisposition
 - without tests: 
-  - combination of both risk is insured
+  - combination of both risks is insured
 - with tests:
   - only risk conditional on genetic disposition is insured
-  - (risk averse!) consumer bares risk of bad genetic disposition 
+  - (risk averse!) consumer bears risk of bad genetic disposition 
 
 ** Genetic tests: (partial) misunderstandings
 - "genetic tests make health insurance impossible because insurance is about unpredictable risks"
@@ -238,6 +238,18 @@ Results:
 - test taking is costly
   - tests for risk of untreatable diseases
 # total waste: only leads to adverse selection and non-insurable test taking risk
+
+** Genetic tests: models of endogenous information acquisition
+- let genetic test results be private information
+- insurer(s) offer menu of contracts
+- consumer observes menu, then decides whether to spend money/effort on genetic test to get a better idea of his own risk, then decides which contract to buy
+
+Results:
+- the more the offered contracts differ, the higher the incentives to acquire information
+- more similar contracts --> less informed consumers --> higher profits
+- distort $h$ contract as well to make contracts more similar! (additional inefficiency)
+
+\tiny (source: Lagerlöf and Schottmüller, International Economic Review, 2018, 59(1), pp. 233-255)\normalsize
 
 * Aside: Premium risk
 ** Premium risk: basics
@@ -376,5 +388,6 @@ Equilibrium:
 
 # sources:
 # - Einav and Finkelstein (2011), p. 115-123
-# - ZBK 5.3.3
-# - Finkelstein, McGarry
+# - ZBK 5.3
+
+# endogenous private info? around genetic tests?

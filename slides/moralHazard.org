@@ -116,3 +116,74 @@ How will the distribution of medication expenditure for Medicare recipients look
 # price elasticity of -0.2, hence share of people with expenditures below 5000 are expected to consume 20% less
 
 # simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of h; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
+
+* Ex ante moral hazard
+** Ex ante moral hazard
+- what is the impact of insurance on preventive behavior, life style etc.?
+#
+
+- uninsured in the US who become eligible for Medicare when turning 65
+
+Results: after turning 65...
+- number of physician visits increases for low-educated by 35 (41)% for men (wome)
+- probability of engaging in vigorous physical activity falls by 21 (13)%
+
+\tiny (source: Dave and Kaestner, International Journal of Health Care Finance and Economics, 2009)\normalsize
+
+* Ex post moral hazard and optimal insurance contracts
+** Ex post moral hazard and optimal insurance contracts: model
+how does moral hazard affect optimal insurance contracts?
+- loss equivalent to monetary loss of $L$ occurs with prob \alpha
+- if loss occurs, consumer chooses medical spending $M\in[0,\bar M]$ to mitigate the loss to $L-f(M)$ 
+  - assumptions: $f'>0$, $f''<0$, $f'(0)>1$, $f'(\bar M)<1$, $f(\bar M)\leq L$
+- insurance costs premium $p$ and bares fraction $c$ of the medical spending
+- simplifying assumption: fair premium, i.e. $p=\alpha cM^*$, were $M^*$ is optimal sepnding by the consumer
+- what is the coverage level maximizing expected consumer utility?
+
+** Ex post moral hazard and optimal insurance contracts: analysis
+- expected utility
+$$ E[u] = (1-\alpha) u(W-p)+\alpha u(W-p-L-(1-c)M+f(M))$$
+- consumer's optimal spending decision in case of loss:
+# f'(M^*)=1-c, 
+- how does $M^*$ react to $c$?
+# higher c means higher M^* by f''<0; in fact dM^*/dc=-1/f''(M^*) 
+- optimal choice of coverage
+
+\small
+$$ \max_{c\in[0,1]} (1-\alpha) u(W-\alpha cM^*(c))+\alpha u(W-\alpha cM^*(c)-L-(1-c)M^*(c)+f(M^*(c)))$$
+
+$$ \max_{c\in[0,1]} (1-\alpha) u(W-\alpha cM^*(c))+\alpha u(W-L+(1-\alpha)cM^*(c)-M^*(c)+f(M^*(c)))$$
+
+** Ex post moral hazard and optimal insurance contracts: analysis
+
+ first order condition: 
+\tiny
+\begin{align*}
+0=&-(1-\alpha)\alpha u'(W-\alpha cM^*(c)) \left(M^*(c)+c\frac{dM^*(c)}{dc}\right)\\
+&+\alpha(1-\alpha) u'(W-\alpha cM^*(c)-L-(1-c)M^*(c)+f(M^*(c))) \left(M^*(c)+c\frac{dM^*(c)}{dc}\right)\\
+&-\alpha u'(W-\alpha cM^*(c)-L-(1-c)M^*(c)+f(M^*(c)))(1-f'(M^*(c)))\frac{dM^*(c)}{dc}
+\end{align*}
+\normalsize
+- if $dM^*/dc=0$ was true, $c=1$ is optimal (check!)
+- as $dM^*/dc>0$, $c^*<1$ can be optimal
+*** partial coverage can be optimal                               :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+\footnotesize
+    - $f(M)=M-M^2/2$, $\alpha=0.1$, $\bar M = 1$, $u(x)=-e^{-x}$ , $W>L>1$
+    - first order condition (after canceling terms):
+\tiny
+$$0=-1.8 u'(W-c^2/10)+1.8 u'(W-c^2/10-L+c^2/2)-u'(W-c^2/10-L+c^2/2)$$
+$$0=-1.8 +0.8 e^{L-c^2/2}$$
+$$c=\sqrt{2L-2log(1.8/0.8)}=\sqrt{2L-1.62}$$
+
+** Ex post moral hazard and optimal insurance contracts: results
+-  effects of higher $c$ 
+  - more insurance, i.e. shifting ressources from good to bad state
+  - more over-consumption of medical care
+
+- cost sharing fights ex post moral hazard
+
+* Ex ante moral hazard and optimal insurance contracts
+# ZBK 6.4.1
