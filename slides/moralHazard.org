@@ -186,4 +186,12 @@ $$c=\sqrt{2L-2log(1.8/0.8)}=\sqrt{2L-1.62}$$
 - cost sharing fights ex post moral hazard
 
 * Ex ante moral hazard and optimal insurance contracts
-# ZBK 6.4.1
+# for models, see ZBK 6.4.1
+
+** Ex ante moral hazard and optimal insurance contracts
+
+- copayment can also be used to prevent ex ante moral hazard
+- problem: multiple insurances
+#
+- other instruments to fight moral hazard
+# subsidies for gym memberships etc.

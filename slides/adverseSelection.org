@@ -365,6 +365,7 @@ Equilibrium:
 (source: Cuyler and Newhouse, eds. van de Ven and Ellis, Handbook of Health Economics, pp. 755-845, 2000)
 \normalsize
 
+* Selection emprically
 ** Empirics: Who has information? I
 - adverse selection and the problem of premium risk only occur if consumer, respectively insurer, have information on health status they can use in decision making
 #
@@ -385,6 +386,61 @@ Equilibrium:
 \vspace*{-.5cm}
 (source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
 \normalsize
+
+** Empirics: Information is used in insurance decision
+- estimate model: prob(insurance)=f(a*X+c*Belief)
+
+[[./tableProbInsurance.png]]
+
+\tiny
+\vspace*{-.5cm}
+(source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
+\normalsize
+
+* Advantageous selection
+** Empirics: correlation between insurance and care
+
+[[./tableProbNurseHome.png]]
+
+\tiny
+\vspace*{-.5cm}
+(source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
+\normalsize
+
+- what is going on here?
+
+** Empirics: Other covariates
+[[./tablePrefBasedSel.png]]
+
+\tiny
+\vspace*{-.5cm}
+(source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
+\normalsize
+
+** Empirics: Explanations
+- wealth
+  - poorer people are covered by Medicaid --> buy less insurance
+  - poorer people have higher risk
+- "risk aversion"
+  - risk averse people are more likely to buy insurance
+  - risk averse people have lower risk
+
+** Advantageous selection
+
+- variable A is 
+  - negatively correlated with risk
+  -  positively correlated with insurance purchase (or vice versa)
+- can turn positive correlation between risk and insurance purchase around
+  - people with lower risk buy insurance
+  - "advantageous selection"
+** Other observations:
+
+- Hemenway reports on risk aversion
+  - in a hospital 7% were uninsured but 46% of motorcyclists with accidents
+  - another hospital: 27% of helmeted motorcyclists uninsured but 41% of unhelmeted
+- prevention channel
+
+- Fang, Keane and Silverman find negative correlation in medigap market and can attribute it to wealth and cognitive ability (not risk aversion)
 
 # sources:
 # - Einav and Finkelstein (2011), p. 115-123

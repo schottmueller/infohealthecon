@@ -28,17 +28,20 @@ This is a plan and as every good plan it may be adjusted if necessary.
 *** demand for insurance
 - full coverage (ch. 3 cite:morrisey2008health)
 - coverage choice (ch. 5.3.1 and 5.3.2 cite:zweifel2009health) 
+- supplementary reading: ch. 6.3 cite:zweifel2009health
 *** adverse selection
-- fixed coverage (p. 115-123 cite:einav2011selection)
-- menus and distortions: cite:rothschild1976equilibrium,stiglitz1977monopoly 
-*** risk adjustment
-ch. 7 cite:zweifel2009health
+- fixed coverage 
+- menus and distortions 
+- premium risk, community rating and risk adjustment 
+- main reading: p. 115-123 cite:einav2011selection, ch. 5.3.3-5.3.4 cite:zweifel2009health
+- supplementary reading:  cite:rothschild1976equilibrium, cite:stiglitz1977monopoly, cite:lagerlof2018monopoly, ch. 7 cite:zweifel2009health, cite:behrend2007risk, cite:PMM2000755
 *** moral hazard
 - RAND and Oregon health insurance experiments
 - bunching estimators at the donut hole
-- literature: cite:einav2017moral
+- reading: cite:einav2017moral
+- supplementary reading: cite:dave2009health, cite:aron2013rand
 *** advantageous selection and beyond
-- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources
+- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources, cite:finkelstein2006multiple
 - positive correlation test and its pitfalls: cite:boone2017health
 # endogenous information, cite:doh96
 ** Imperfect information between doctor and patient
@@ -66,3 +69,4 @@ cite:ma1997optimal
 
 bibliographystyle:chicago
 bibliography:/home/christoph/stuff/bibliography/references.bib
+
