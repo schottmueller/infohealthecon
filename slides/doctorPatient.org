@@ -1,0 +1,73 @@
+#+Title: Imperfect information between patient and doctor
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+* Supplier induced demand
+** Physician roles
+- roles
+  - supplier
+  - adviser
+- renumeration can lead to non-aligned incentives
+
+** Supplier induced demand 
+- some observations:
+  - physician density increased in Germany from 16 to 41 from 1970 to 2014 (#physicians/10000inhabitants)
+  - no under-employment of physicians
+  - areas with higher density of surgeons have more surgeries/capita but not lower surgical fees (Fuchs 1978)
+
+*** Supplier induced demand (SID)
+Physicians control quantity of treatment, that is, demand is not independent from supply but induced by the supplier. They can do so because they control information (about necessity, state of the art etc.) that the patient does not have.
+
+** Supplier induced demand 
+- a couple of new physicians arrive in a town in which all citizens have comprehensive health insurance
+  - what happens in a normal supply and demand framework?
+  - what happens under supplier induced demand?
+# comprehensive insurance: demand is fixed quantity, i.e. DD is vertical, (and price maybe regulated to fixed p to just equate supply and demand originally);  supply curve shifts outward and demand stays fixed, i.e. supply is under utilized or insurers can lower the fee and still satisfy demand; every doctor induces as much demand as needed to fill up his time -> demand shifts to the right and traded quantity goes up while price could stay same (fig 8.2 ZBK)
+
+- factors making SID easier
+  - comprehensive insurance
+  - riskless treatment technology
+# no pushback from patients as no overtreatment concerns
+
+** Supplier induced demand: model
+
+* Cost saving incentives and communication
+** Incentives for physicians
+- moral hazard
+- insurances incentivize physicians to save costs
+
+** Physicians respond to incentives
+# Morrisey
+
+** Conflict of interest
+- insured patient wants best treatment  (no matter what costs)
+- physician takes costs into account in prescription  behavior
+- patient has to communicate symptoms etc. to physician to allow accurate diagnosis
+  - incentives to exaggerate
+
+** Communication model
+
+** Cost saving incentives can backfire
+
+** Communication model: results
+
+* Credence good models
+
+* Further topics in patient physician interaction
