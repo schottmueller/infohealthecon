@@ -429,7 +429,7 @@ Equilibrium:
 
 - variable A is 
   - negatively correlated with risk
-  -  positively correlated with insurance purchase (or vice versa)
+  - positively correlated with insurance purchase (or vice versa)
 - can turn positive correlation between risk and insurance purchase around
   - people with lower risk buy insurance
   - "advantageous selection"
@@ -442,8 +442,99 @@ Equilibrium:
 
 - Fang, Keane and Silverman find negative correlation in medigap market and can attribute it to wealth and cognitive ability (not risk aversion)
 
+** Advantageous selection: models I
+- fixed coverage model
+  - difference between demand and cost function captures risk premium
+  - suppose higher cost consumers have low risk premium
+  - order consumers according to (i) willingness to pay for insurance or (ii) expected costs
+# ordering according to wtp/demand is not necessarily the same as ordering according to expected costs
+
+** Advantageous selection: models II
+- suppose two types
+  - very risk averse and prob of loss $\alpha$
+  - very little risk averse and prob of loss $\alpha+\varepsilon$
+- if $\varepsilon$ is very small, how do indifference curve of the two types look like?
+# single crossing but opposite from standard model
+# for example in monopoly model, we can make a similar analysis as before but those with higher risk will then buy less coverage
+
+- would mandating full insurance, as in many social health insurance systems, significantly increase welfare?
+# no: those that are left with little/no insurance are close to risk neutral and therefore mandating insurance for them does not really improve welfare!
+
+- is it reasonable that consumers with high expected costs are less risk averse in health insurance?
+# problematic: poor people tend to have high risk and no insurance in the US, should we conclude that they are risk loving? Normally, 
+
+** Wealth, risk and utilization I
+- in the US, poor people have less insurance but worse health
+- explaining this with advantageous selection, who would be more risk averse rich or poor?
+# poor more risk averse, seems unlikely and counter to economic eperiments/data
+
+** Wealth, risk and utilization II
+[[./utilizationIncome.png]]
+
+\tiny
+\vspace*{-.5cm}
+(source: Piette et al., 2004, American Journal of Public Health, 94(10), pp. 1782--1787)
+\normalsize
+
+# poor cannot afford copay and therefore do not utilize insurance; hence insurance has little value for them because it is not health but health care expenditure that is insured
+
+** Wealth, risk and utilization III
+
+# the richer, the more people spend on treatments etc.
+- when falling ill insured chooses treatment intensity 
+
+- $s\in[0,1]$ is health state
+- $h$ is post treatment health and $h=s+\tau$ where $\tau\in[0,1-s]$ is treatment intensity
+- consumption $c$ equals 
+  - $W-p-(1-q)\tau$ (with prob $\alpha$) where $1-q$ is copayment rate (and $q$ is coverage) and $p$ is insurance premium
+
+- assume utility function
+$$v(c,h)=c-c^2/2+h-h^2/2$$
+
+\tiny (let $W$ be small enough such that marginal utility from consumption is positive!)
+
+** Wealth, risk and utilization IV
+*** Optimal treatment
+The utility maximizing treatment in state $s$ is
+$$\tau^*(s)=\max\left\{0,\frac{1-s-(1-q)(1+p-W)}{(1-q)^2+1}\right\}.$$
+
+
+*** :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- how does treatment intensity vary in wealth?
+- how does the treatment intensity vary in coverage?
+- what is the treatment intensity for full coverage?
+
+** Wealth, risk and utilization V
+
+- plug $\tau^*(s)$ into $v$ and compare slope of indifference curve across 2 types (coverage, premium diagram)
+  - rich (high $W$), low risk (high $s$ more likely)
+  - poor (low $W$), high risk (low $s$ more likely)
+- which type is willing to pay more for increasing coverage from 99% to 100%?
+# high risk type, as full treatment only prob of falling ill matters
+
+- which type is willing to pay more for increasing coverage from 0% to 1%?
+# poor guy might not buy treatment at all at these low coverage levels! hence, the rich is willing to pay more
+
+- single crossing violated! 
+
+[[../julia/HealthInsuranceNoSingleCrossing.ipynb][jupyter notebook]]
+
+** Wealth, risk and utilization VI
+
+it can be shown that:
+- poor, high risk type has weakly more coverage than rich, low risk type if the insurance market is perfectly competitive
+- opposite might be true if insurances have market power (e.g. insurance monopoly)
+
+- mandatory insurance can be welfare improving in second case
+
+\tiny (details: Boone and Schottmüller, Economic Journal, 127 (599), 2017, pp. 85-104) 
+
 # sources:
 # - Einav and Finkelstein (2011), p. 115-123
 # - ZBK 5.3
 
-# endogenous private info? around genetic tests?
+# more endogenous private info? Doherty and Thistle?
