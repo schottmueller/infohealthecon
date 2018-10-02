@@ -1,4 +1,4 @@
-#+TITLE: Information Problems in Health Care Markets
+#+TITLE: Imperfect Information in Health Care Markets
 #+AUTHOR: Christoph Schottmüller
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
