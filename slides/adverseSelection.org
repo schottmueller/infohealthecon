@@ -521,7 +521,7 @@ $$\tau^*(s)=\max\left\{0,\frac{1-s-(1-q)(1+p-W)}{(1-q)^2+1}\right\}.$$
 
 - single crossing violated! 
 
-[[../julia/HealthInsuranceNoSingleCrossing.ipynb][jupyter notebook]]
+[[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][jupyter notebook]]
 
 ** Wealth, risk and utilization VI
 

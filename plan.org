@@ -35,15 +35,16 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - premium risk, community rating and risk adjustment 
 - main reading: p. 115-123 cite:einav2011selection, ch. 5.3.3-5.3.4 cite:zweifel2009health
 - supplementary reading:  cite:rothschild1976equilibrium, cite:stiglitz1977monopoly, cite:lagerlof2018monopoly, ch. 7 cite:zweifel2009health, cite:behrend2007risk, cite:PMM2000755
+*** advantageous selection and beyond
+- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources, cite:finkelstein2006multiple
+- positive correlation test and its pitfalls: cite:boone2017networks
+
 *** moral hazard
 - RAND and Oregon health insurance experiments
 - bunching estimators at the donut hole
-- reading: cite:einav2017moral
+- simple model of moral hazard
+- reading: cite:einav2018moral, ch. 6.4.2 cite:zweifel2009health
 - supplementary reading: cite:dave2009health, cite:aron2013rand
-*** advantageous selection and beyond
-- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources, cite:finkelstein2006multiple
-- positive correlation test and its pitfalls: cite:boone2017health
-# endogenous information, cite:doh96
 ** Imperfect information between doctor and patient
 *** supply induced demand
 ch. 8 cite:zweifel2009health 
@@ -58,7 +59,7 @@ cite:wolinsky1993competition
 *** credence good models with insurance
 # (slides Wambach)
 *** selective contracting and managed care
-- consumer steering and competition: cite:boone2018pnetworks
+- consumer steering and competition: cite:boone2017networks
 
 # *** doctor renumeration under a global budget 
 # cite:benstetter2006treadmill
