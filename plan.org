@@ -3,6 +3,14 @@
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
 
+* News
+- Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
+
+* Course material
+The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
+
+Lecture slides will be posted here later on. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
+
 * Course setup 
 In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
 
