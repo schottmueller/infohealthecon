@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -47,6 +47,49 @@ Physicians control quantity of treatment, that is, demand is not independent fro
 # no pushback from patients as no overtreatment concerns
 
 ** Supplier induced demand: model
+- price per unit of medical care: $p$ (exogenous, regulated)
+- $a$ physicians, $n$ inhabitants, density $\delta=a/n$
+- "primary demand" for care per capita is $M$ (no inducement)
+- primary care per physician: $nM/a=M/\delta$
+- each physician can induce additional demand $s$ leading to demand $M/\delta+s$
+- working time of a physician: $t=\min\{M/\delta+s,1\}$
+# physisican adapts working time to demand up to an upper limit 1
+- disposable income of  physician: $y(pt)$ with $y'>0, \,y''\leq 0$
+# progressive income taxation
+- physician utility $u(y,t,s)$ 
+  - increasing  and concave in $y$  
+  - decreasing and concave in $s$ and $t$
+- physician maximizes over $s$
+- for simplicity: $u(y,t,s)=\alpha \sqrt{y}-t-\gamma s, $y(pt)=\beta pt$
+
+** Supplier induced demand: analysis
+$$u(y,t,s)=\alpha \sqrt{\beta p t}-t-s \\ =\alpha \sqrt{\beta p\min\{M/\delta+s,1\} }-\min\{M/\delta+s,1\}-\gamma s$$
+
+- if $M/\delta+s<1$, then
+$$\frac{d u}{d s}=\frac{\alpha\beta p}{2\sqrt{\beta p (M/\delta+s)}}-1-\gamma $$
+- if $M/\delta+s>1$, then 
+$$\frac{d u}{d s}=-\gamma$$
+
+# s is never higher than $1-M/\delta$
+
+** Supplier induced demand: results
+
+- if $M/\delta\geq 1$, then $s=\dots$ and $t =\dots$
+# 0, 1; primary demand is so high that all physicians are totally busy without inducement
+- if $M/\delta< 1$
+  - if $\gamma$ is very high, then $s=\dots$ and $t=\dots$ 
+  - if $\gamma$ is low, then $s=\dots$ and $t=\dots$
+# 0, M/\delta
+# s^*=\min\{1-M/\delta,\alpha^2\beta p/(4(1+\gamma)^2)- M/\delta\}$ and $t=M/\delta+s^*$
+
+** Supplier induced demand: results
+- positive demand inducement requires a fee for service
+# p>0
+- how does the solution evolve when increasing $\delta$?
+  - $\delta\leq M$:
+  - 
+# 1. no inducement; proportional increase of billed services per patient, $a/n=\delta$, in \delta,
+
 
 * Cost saving incentives and communication
 ** Incentives for physicians
