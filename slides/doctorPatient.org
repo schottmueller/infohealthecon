@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm,natbib}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -60,15 +60,19 @@ Physicians control quantity of treatment, that is, demand is not independent fro
   - increasing  and concave in $y$  
   - decreasing and concave in $s$ and $t$
 - physician maximizes over $s$
-- for simplicity: $u(y,t,s)=\alpha \sqrt{y}-t-\gamma s, $y(pt)=\beta pt$
+- for simplicity: $u(y,t,s)=\sqrt{y}-t-\gamma s$, $y(pt)= pt$
+# $u(y,t,s)=\log{(y)}-t-0.5 s^2$, $y(pt)=\beta pt$
 
 ** Supplier induced demand: analysis
-$$u(y,t,s)=\alpha \sqrt{\beta p t}-t-s \\ =\alpha \sqrt{\beta p\min\{M/\delta+s,1\} }-\min\{M/\delta+s,1\}-\gamma s$$
+$$u(y,t,s)=\sqrt{ p t}-t-\gamma s  =\sqrt{p\min\{M/\delta+s,1\} }-\min\{M/\delta+s,1\}-\gamma s$$
+
+# $$u(y,t,s)=\log{\beta p t}-t-0.5s^2 \\ =\log{\beta p\min\{M/\delta+s,1\} }-\min\{M/\delta+s,1\}-0.5 s^2$$
 
 - if $M/\delta+s<1$, then
-$$\frac{d u}{d s}=\frac{\alpha\beta p}{2\sqrt{\beta p (M/\delta+s)}}-1-\gamma $$
+$$\frac{d u}{d s}=\frac{\sqrt{p}}{\sqrt{M/\delta+s}}-1-\gamma $$
+# $$\frac{d u}{d s}=\frac{1}{M/\delta+s}-1-s $$
 - if $M/\delta+s>1$, then 
-$$\frac{d u}{d s}=-\gamma$$
+$$\frac{d u}{d s}=-\gamma $$
 
 # s is never higher than $1-M/\delta$
 
@@ -77,40 +81,167 @@ $$\frac{d u}{d s}=-\gamma$$
 - if $M/\delta\geq 1$, then $s=\dots$ and $t =\dots$
 # 0, 1; primary demand is so high that all physicians are totally busy without inducement
 - if $M/\delta< 1$
-  - if $\gamma$ is very high, then $s=\dots$ and $t=\dots$ 
-  - if $\gamma$ is low, then $s=\dots$ and $t=\dots$
+  - if $\gamma$ is very high, then 
+    - $s=\dots$ 
+    -  $t=\dots$ 
+  - if $\gamma$ is low, then 
+    - $s=\dots$  
+    - $t=\dots$
 # 0, M/\delta
-# s^*=\min\{1-M/\delta,\alpha^2\beta p/(4(1+\gamma)^2)- M/\delta\}$ and $t=M/\delta+s^*$
+# sqrt: s^*=p/(1+\gamma)^2-M/\delta , unless negative -> then 0 , or >1-M/delta
+# log: s^*=\min\{1-M/\delta,M/\delta\}$ and $t=M/\delta+s^*$
 
-** Supplier induced demand: results
+
+** Supplier induced demand: results 
 - positive demand inducement requires a fee for service
 # p>0
+- assume $p/(1+\gamma)^2<1$
 - how does the solution evolve when increasing $\delta$?
   - $\delta\leq M$:
-  - 
+  - $M<\delta\leq M/(p/(1+\gamma)^2)$:
+  - $\delta>M/(p/(1+\gamma)^2)$:
 # 1. no inducement; proportional increase of billed services per patient, $a/n=\delta$, in \delta,
+# 2. inducement 0; t<1; billed service per patient is constant in delta 
+# 3. inducement p/(1+\gamma)^2-M/\delta; billed service per patient is increasing in delta as s is 
 
+
+- plot billed services per patient as a function of \delta
+# proportional increase, than flat then concave increase (fig 8.3 in ZBK)
+
+\vspace*{1cm}
+
+- what if $p/(1+\gamma)^2>1$?
+# no flat bit in graph above as regime 2does not exist
+
+- driving force:
+  - income effect
+# higher delta reduces income, increases marginal utility of income and leads eventually to demand inducement
+
+- how does demand inducement change when the fee for service $p$ increases (slightly)?
+# either no effect (in 1 and 2) or lower s (in 3)
+# in general ambiguous: income effect makes physician richer -> less inducement; substitution effect: higher p makes inducement more attractive -> more inducement
+
+** Supplier induced demand: alternative explanations
+- SID fits empirical observation that more physicians lead to more services
+- alternative explanations
+  1. permanent excess demand
+  2. higher quality of treatment if more physicians around
+  3. reverse causality
+# ad 1: basically, we are always in regime 1 above
+# ad 2: more doctors means they have more time and provide better services (less waiting time etc.) which increases demand
+# ad 3: new doctors settle at places where demand is (expected) to increase; (less convincing for variation over time)
+
+- empirical design should try to tease these explanations apart
+  - how does our model provide different predictions than the 3 explanations above? how to design a convincing empirical study?
+# ad 1: billed services by patient increase linearly and then not at all (similar to regimes 1 and 2 in our model) while in our model eventually they increase again
+# ad 2: maybe no plateau where billed services per patient do not increase at intermediate levels; 
+# ad 3: one has to explicitly account for physician's location choice
+
+** Some empirical evidence
+- cite:fuchs1978supply uses cross-sectional variation and tries to rule out (3) by statistically accounting for the supply of surgeons (2-stage least square)
+  - method criticized as it also indicates SID in child births
+- cite:gruber1996physician show that decline in birth rates in the 1970s was accompanied by an increase in caesarean sections
+
+
+** (Danish) Physicians respond to incentives I
+- Reform of physician pay in Copenhagen *city* (Denmark) in October 1987
+  - before: capitation
+  - after: mixed system of capitation and fee for service
+- control: Copenhagen *county* had new enumeration already
+- physicians were asked to record all activities in a given week at three points in time (February/March 87, February/March 88, November 88)
+- 75 of 265 GPs participated in all three waves
+- Results by cite:krasnik1990changing
+
+** (Danish) Physicians respond to incentives II
+[[./KrasnikNoContCPHCity.png]]
+[[./KrasnikType.png]]
+
+** (Danish) Physicians respond to incentives III
+[[./KrasnikServices.png]]
 
 * Cost saving incentives and communication
 ** Incentives for physicians
 - moral hazard
 - insurances incentivize physicians to save costs
 
-** Physicians respond to incentives
-# Morrisey
-
-** Conflict of interest
+** Possible conflict of interest between patient and physician
 - insured patient wants best treatment  (no matter what costs)
 - physician takes costs into account in prescription  behavior
 - patient has to communicate symptoms etc. to physician to allow accurate diagnosis
   - incentives to exaggerate
 
 ** Communication model
+- true health state unknown
+- fully insured patient reports symptoms to physician
+- physician hears report privately observes signal about health state
+- physician prescribes treatment
+#
+- prior information (commonly known): 
+  - likelihood of different health states
+  - probability distribution of symptoms given each health state
+  - probability distribution of signals given each health state
 
-** Cost saving incentives can backfire
+- payoffs (commonly known):
+  - $u_P$ depending on health state and treatment
+  - $u_D=u_P- \beta c(treatment)$ 
+  - welfare: $u_P-c(treatment)$
+
+** Cost saving incentives can backfire: example
+- information (see section 3 cite:schottmueller2013cifd)
+| prior        | 2/5 | 2/5 | 1/5 |
+|--------------+-----+-----+-----|
+| /            |  <  |     |     |
+| signal/state | A   | B   |   C |
+|--------------+-----+-----+-----|
+| (0,0)        | 0   | 0   |   1 |
+| (0,1)        | 0   | 4/5 |   0 |
+| (1,0)        | 1/5 | 1/5 |   0 |
+| (1,1)        | 4/5 | 0   |   0 |
+- $u_P$ and costs
+| treatment/state | A |   B |   C | costs |
+|-----------------+---+-----+-----+-------|
+| /               | < |     |  >  |       |
+| a               | 8 | 9.7 | 9.2 |     5 |
+| b               | 4 |   9 | 9.6 |     3 |
+| c               | 0 |   5 |  10 |     1 |
+
+- say $\beta=0$; what is the equilibrium? any problems for welfare?
+- say $\beta=1$; what is the equilibrium? any problems for welfare?
+
+** Variation of the example
+- let $\beta = 1$ and the prior be $2/5+x$, $2/5+x$, $1/5-2x$ for $x\in(0,1/10)$
+  - what is the equilibrium? 
+  - how do equilibrium costs compare with the equilibrium costs when $\beta = 0$?
 
 ** Communication model: results
+following cite:schottmueller2013cifd:
+- exaggeration leads to worse information for physician
+- worse diagnosis can reduce welfare and in some cases increase costs
+- if the physicians signal is sufficiently informative, $\beta=1$ leads to higher welfare than $\beta = 0$
+- if cost differences between treatments are sufficiently large, $\beta=1$ leads to higher welfare than $\beta = 0$
+- welfare maximal $\beta$ is strictly between $0$ and $1$
+- copayments can reduce the conflict of interest and increase welfare
 
+Can you draw a link from the Hippocratic oath to the model?
+
+** Empirical evidence of trust and physician pay I
+ cite:kerr1997primary report on "How satisfied are GPs with their relationship with patients?"
+-  71% were very or somewhat satisfied with relationships with capitated patients (compared with 88% for overall practice)
+-  64% were very or somewhat satisfied with the quality of care they provided to capitated patients (compared with 88% for overall practice),
+- 51% were very or somewhat satisfied with their ability to treat capitated patients according to their own best judgment (compared with 79% for overall practice)
+- 50% were very or somewhat satisfied with their ability to obtain specialty referrals (compared with 59% for overall practice) 
+# be careful: rather suggestive questioning
+
+** Empirical evidence of trust and physician pay II
+cite:kao1998relationship report on trust of patient in physician
+
+
+[[./TrustPatientInPhysician.png]]
 * Credence good models
 
 * Further topics in patient physician interaction
+
+
+** References
+bibliographystyle:chicago
+bibliography:/home/christoph/stuff/bibliography/references.bib

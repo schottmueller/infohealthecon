@@ -55,7 +55,8 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - supplementary reading: cite:dave2009health, cite:aron2013rand
 ** Imperfect information between doctor and patient
 *** supply induced demand
-ch. 8 cite:zweifel2009health 
+- reading: ch. 8 cite:zweifel2009health 
+- supplementary reading: cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
 # (also slides Wambach)
 *** models of doctor patient interaction
 # (slides Wambach)
