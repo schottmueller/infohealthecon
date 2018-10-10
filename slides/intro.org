@@ -20,6 +20,33 @@
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
 * Course
+
+** Course information
+- website: [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org]]
+  - information
+  - plan
+  - reading
+    - Zweifel, Breyer, Kifmann "Health economics"
+  - exercises
+- exam
+  - date: to be announced on course website later
+  - registration via KLIPS
+
+** Mathematical prerequisites:
+Take the function $f(x)=-e^{-3x}$ 
+- is $f$ increasing or decreasing or neither?
+- is $f$ concave or convex or neither?
+- can you draw/sketch $f$?
+
+Take the function $g(x)=log(x)-x$ for $x>0$
+- is $g$ increasing or decreasing or neither?
+- is $g$ concave or convex or neither?
+- at what value of $x$ is $g$ maximal?
+
+Take the function $h(x_1,x_2)=-(x_1+x_2)^2-e ^{-x_1}$
+- at what value of $x_1 $ and $x_2$ is $h$ maximal subject to the constraint $x_1+x_2=1$?
+
+
 * Economic modeling
 ** Choices and trade-offs
 - economics is about the allocation of /scarce/ ressources (time, capital, slots etc.)
@@ -54,7 +81,7 @@
 - even more convenient than preferences
   - can we find a function $u_i(x)$ such that $u_i(x_1)\geq u_i(x_2)$ if and only if $x_1\succeq_i x_2$? (if yes, we say "$u_i$ represents $i$'s preferences")
   - if yes, person $i$'s choice behavior (in all possible choice situations!) will then be *as if* person $i$ maximized the function $u_i$ by his choice
-*** 								  :B_theorem:
+*** 	Representation                                            :B_theorem:
     :PROPERTIES:
     :BEAMER_env: theorem
     :END:
