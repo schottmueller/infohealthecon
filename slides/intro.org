@@ -32,20 +32,29 @@
   - date: to be announced on course website later
   - registration via KLIPS
 
-** Mathematical prerequisites:
+** Mathematical prerequisites: functions
 Take the function $f(x)=-e^{-3x}$ 
 - is $f$ increasing or decreasing or neither?
 - is $f$ concave or convex or neither?
 - can you draw/sketch $f$?
+# 1st derivative: 3e^{-3x}>0  increasing, 2nd derivative -9e^{-3x}<0 concave 
 
 Take the function $g(x)=log(x)-x$ for $x>0$
 - is $g$ increasing or decreasing or neither?
 - is $g$ concave or convex or neither?
 - at what value of $x$ is $g$ maximal?
+# first derivative: 1/x-1 -> increasing on (0,1), decreasing afterwards; second derivative -1/x^2<0 -> concave; maximal at 1
 
-Take the function $h(x_1,x_2)=-(x_1+x_2)^2-e ^{-x_1}$
-- at what value of $x_1 $ and $x_2$ is $h$ maximal subject to the constraint $x_1+x_2=1$?
+Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
+- at what value of $x_1$ and $x_2$ is $h$ maximal subject to the constraint $x_1+2x_2=1$?
+# L= -x_1^2-x_2^2-\lambda (x_1+2x_2-1); -2x_1-\lambda =0=-2x_2-2\lambda; hence 2x_1=x_2; in constraint x_1=1/5, x_2=2/5
 
+** Mathematical prerequisites: expectation
+- You role a fair dice. When the dice shows "3" or "6" you have to pay 4 Euros, otherwise you get as many Euros as the dice shows. How many Euros do you expect to earn?
+# -4*1/3+(1+2+4+5)/6=2/3
+
+- A random variable $X$ is uniformly distributed on $[0,1]$. What is the expected value of $X^2$?
+# \int_0^1 X^2 dX = 1/3
 
 * Economic modeling
 ** Choices and trade-offs
@@ -131,13 +140,13 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
   - take our two lotteries $x_1=(0.4,0.4,0.2)$ and  $x_2=(0.5,0.25,0.25)$
   - suppose $x_1\succeq_i x_2$
   - take some other (hypothetical) treatment $x_3$ and consider the 2 options
-     - toss a coin, if heads take treatment $x_1$ if tails take $x_3$
-     - toss a coin, if heads take treatment $x_2$ if tails take $x_3$
+     1. toss a coin, if heads take treatment $x_1$ if tails take $x_3$
+     2. toss a coin, if heads take treatment $x_2$ if tails take $x_3$
   - independence states that $i$ must prefer the first over the second option 
 
 \pause
 
-- *we will assume throughout the course that people's choices are such that transitivity, completeness and independence are satisfied, i.e. people choose as if they maximized a utility function in expected utility form*
+- *we will assume throughout the course that the choices of the players in our models are such that transitivity, completeness and independence are satisfied, i.e. players choose as if they maximized a utility function in expected utility form*
 
 ** Welfare
 # - choice/utility tells what is good for an individual
@@ -179,5 +188,10 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
 - explicitly stated assumptions
 - logical reasoning leads to conclusion/result
 # - reach a conclusion that can be challenged on grounds of explicit assumptions but not on grounds of reasoning
+
+- goals depend on context, e.g.
+  - clarify a logic/mechanism (minimal ingredients)
+  - produce testable predictions
+  - explore implications of some (additional) feature
 
 
