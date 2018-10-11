@@ -41,7 +41,6 @@ Take the function $f(x)=-e^{-3x}$
 
 Take the function $g(x)=log(x)-x$ for $x>0$
 - is $g$ increasing or decreasing or neither?
-- is $g$ concave or convex or neither?
 - at what value of $x$ is $g$ maximal?
 # first derivative: 1/x-1 -> increasing on (0,1), decreasing afterwards; second derivative -1/x^2<0 -> concave; maximal at 1
 
@@ -80,7 +79,7 @@ Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
 - Would those that can be treated with the new treatment prefer (i) old treatment and a payment of $c$ or (ii) the new treatment?
 
 ** Preference representation
-- convenient notation for "person $i$ would choose $x_1$ if he had to choose one among these two alternatives": $x_1\succeq_i x_2$ (read: "$i$ prefers $x_1$ to $x_2$") 
+- convenient notation for "person $i$ would choose $x_1$ if he had to choose one among the two alternatives $x_1$ and $x_2$": $x_1\succeq_i x_2$ (read: "$i$ prefers $x_1$ to $x_2$") 
 - few choices are observed
   - make /assumptions/ to infer preferences for not observed choices
     - completeness: for each pair of alternatives $x_1$, $x_2$, either $x_1\succeq_i x_2$ or $x_2\succeq_i x_1$
