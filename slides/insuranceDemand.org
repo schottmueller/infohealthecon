@@ -122,7 +122,7 @@ If a person is risk averse, the effect of $W$ on the risk premium is ambiguous. 
 - $u'>0$, $u''<0$
  $$E[u]=(1-\alpha)u(W-pC)+\alpha u(W-pC-L+C)$$
 - let $W_1=W-pC$ and $W_2=W-pC-L+C$
-*** 								  :B_theorem:
+*** 	Insurance demand                                          :B_theorem:
     :PROPERTIES:
     :BEAMER_env: theorem
     :END:
@@ -156,7 +156,7 @@ Results:
 - assume fair premium, then
 $$E[u]=(1-\alpha)u_h(W-\alpha C)+\alpha u_i(W-\alpha C-L+C)$$
 
-*** 								  :B_theorem:
+*** 	State dependent preferences                               :B_theorem:
     :PROPERTIES:
     :BEAMER_env: theorem
     :END:

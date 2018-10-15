@@ -14,7 +14,7 @@ The exercises are available in [[https://github.com/schottmueller/infohealthecon
 Lecture slides will be posted here later on. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
 - intro [[https://github.com/schottmueller/infohealthecon/files/2467992/intro.pdf][slides]]
-
+- demand for insurance [[https://github.com/schottmueller/infohealthecon/files/2478815/insuranceDemand.pdf][slides]]
 
 * Course setup 
 In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
