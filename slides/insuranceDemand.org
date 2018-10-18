@@ -23,7 +23,7 @@
 * Gambles and utility functions
 ** Risk premium
 *** Example
-Flip a fair coin: If heads you have 10.000\euro  as annual income, if tails 20.000\euro . What is your expected income? If you could get X\euro  for sure as income, how high has X to be to make you indifferent?
+Flip a fair coin: If heads you have 10.000\euro  as annual income, if tails 100.000\euro . What is your expected income? If you could get X\euro  for sure as income, how high has X to be to make you indifferent?
 
 *** Certainty equivalent				       :B_definition:
     :PROPERTIES:
@@ -42,7 +42,7 @@ The /risk premium/ is the difference between the expected payout in a lottery $L
 ** Plotting your utility function
 # - assign arbitrary numbers as $u(10.000)$ and $u(20.000)$, put them in diagram
 # - put (CE,0.5*u(10.000)+0.5*u(20.000)) in diagram
-# - consider more lotteries and put more points
+# - consider more lotteries/probabilities and put more points
 
 * Drivers of insurance demand
 ** Risk aversion
@@ -92,6 +92,8 @@ If a person is risk averse, the risk premium is first increasing in $\alpha$ (wh
     :END:
 
 # Proof:  $CE(\alpha)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(\alpha)=\frac{-u(W)+u(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is negative. Now $RP(\alpha)=W-\alpha L-CE(\alpha)$ and therefore $RP'(\alpha)=-L-CE'(\alpha)=\frac{1}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}\left( u(W)-u(W-L)-L u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right) \right)$. By concavity, this difference is positive for small \ælpha and negative for large \alpha. (draw concave function)
+
+# graphical proof: draw concave u(x) and line through u(W) and u(W-L), visualize RP for different levels of \alpha 
 
 # do not insure certain events but uncertain events
 
@@ -169,4 +171,4 @@ and therefore $C^*<L$.
     :BEAMER_env: ignoreheading
     :END:
 Result:
-- partial coverage if consumption is less attractive in ill state
+- partial/less coverage if consumption is less attractive in ill state

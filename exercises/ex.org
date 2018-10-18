@@ -23,7 +23,8 @@
 3. Assume $i$'s preferences over lotteries on the set of outcomes $\{healthy,\,ill,\,dead\}$ satisfy the assumptions of the von Neumann-Morgenstern expected utility theorem and can therefore be represented by three numbers $u^{healthy},\,u^{ill}$ and $u^{dead}$. Assume that  $u^{healthy}=1,\,u^{ill}=0.75$ and $u^{dead}=0$.
   1. Treatment 1 leads to the probability distribution over $(0.3,0.5,0.2)$ (over $\{healthy,\,ill,\,dead\}$) while treatment 2 leads to the probability distribution $(0.4,0.3,0.3)$. Which treatment does $i$ prefer?
   2. Show that $i$'s preferences over lotteries can also be represented by the three numbers $v^{healthy}=a*u^{healthy}+b$, $v^{ill}=a*u^{ill}+b$ and $v^{dead}=a*u^{dead}+b$ where $a>0$ and $b\in\Re$ are some real numbers.
-  3. Show by means of an example that $i$'s preferences are not necessarily represented by $v^{healthy}=f(u^{healthy})$, $v^{ill}=f(u^{ill})$ and $v^{dead}=f(u^{dead})$ for some strictly increasing function $f$.
+  3. Show by means of an example that $i$'s preferences are not necessarily represented by $v^{healthy}=f(u^{healthy})$, $v^{ill}=f(u^{ill})$ and $v^{dead}=f(u^{dead})$ for some strictly increasing function $f$. Why does this not contradict our result from exercise 1 above?
+
 * Insurance demand
 In all exercises let the person be an expected utility maximizer, i.e. the person's choices satisfy the assumptions of the von Neumann-Morgenstern expected utility theorem.
 
@@ -33,9 +34,9 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 2. Consider a person with utility of income $u(x)=\sqrt{x}$. The person has an income of $2500$ Euros but loses $L$ Euros with probability $\alpha$. Determine the certainty equivalent and the risk premium as a function of $\alpha$ and $L$. Is the risk premium increasing or decreasing in $L$? Is  the risk premium increasing or decreasing in $\alpha$?
 
-3. Consider the utility function $u(x)=-e^{-\eta x}$. The person has an income of $1$ and experiences a loss of $1$ with probability $\alpha$. Is the certainty equivalent in- or decreasing in $\eta$?
+3. Consider the utility function $u(x)=-e^{-\eta x}$. The person has an income of $1$ and experiences a loss of $1$ with probability $\alpha$. Is the certainty equivalent in- or decreasing in $\eta$? The coefficient of absolute risk aversion is defined as $-u''(x)/u'(x)$. Compute this coefficient. 
 
-4. The Wall Street Journal reported in 2006 of "mini-medical insurance plans". These pland cover routine services, but little hospital coverage and usually have a cap on payouts (say of $ 10.000 ). The premium, however, costs only $ 50 per month. Why might people buy a mini-medical plan? Why are such insurance plans not more popular (in a country where a substatntial part of the population did/does not have health insurance)?  
+4. The Wall Street Journal reported in 2006 of "mini-medical insurance plans". These plans cover routine services, but little hospital coverage and usually have a cap on payouts (say of $ 10.000 ). The premium, however, is only $ 50 per month. Why might people buy a mini-medical plan? Why are such insurance plans not more popular (in a country where a substantial part of the population did/does not have health insurance)?  
 
 
 # E2: \sqrt{CE} = \alpha \sqrt{2500-L}+(1-\alpha) \sqrt{2500}; CE= \alpha^2 (2500-L)+(1-\alpha)^2 2500+\alpha (1-\alpha) \sqrt{(2500-L)2500} = (5000-L) \alpha^2-5000\alpha+2500+(\alpha -\alpha^2) \sqrt{(2500-L)2500};  RP=2500-\alpha L -CE=-\alpha L-(5000-L) \alpha^2+5000\alpha-(\alpha -\alpha^2) \sqrt{(2500-L)2500}
