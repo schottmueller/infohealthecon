@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The exam will take place on February 7, 15:30-16:30 in HSI. Register for the exam via KLIPS before January 10.
 - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
 
 * Course material
