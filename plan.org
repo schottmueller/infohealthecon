@@ -10,7 +10,7 @@
 * Course material
 The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
 
-The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/2468024/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file.
+The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/2497949/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file.
 
 Lecture slides will be posted here later on. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
