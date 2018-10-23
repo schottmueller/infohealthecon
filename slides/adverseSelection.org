@@ -198,7 +198,7 @@ Results:
 
 * Application: genetic tests
 
-** Genetic tests: possible frameworks
+** Genetic tests: possible regulatory frameworks
 
 - genetic tests can be used to determine risk (but usually not perfectly)
 - what is the right regulatory framework:
@@ -365,7 +365,7 @@ Equilibrium:
 (source: Cuyler and Newhouse, eds. van de Ven and Ellis, Handbook of Health Economics, pp. 755-845, 2000)
 \normalsize
 
-* Selection emprically
+* Selection empirically
 ** Empirics: Who has information? I
 - adverse selection and the problem of premium risk only occur if consumer, respectively insurer, have information on health status they can use in decision making
 #
@@ -453,7 +453,7 @@ Equilibrium:
 - suppose two types
   - very risk averse and prob of loss $\alpha$
   - very little risk averse and prob of loss $\alpha+\varepsilon$
-- if $\varepsilon$ is very small, how do indifference curve of the two types look like?
+- if $\varepsilon$ is very small, how do indifference curves of the two types look like?
 # single crossing but opposite from standard model
 # for example in monopoly model, we can make a similar analysis as before but those with higher risk will then buy less coverage
 
@@ -525,9 +525,9 @@ $$\tau^*(s)=\max\left\{0,\frac{1-s-(1-q)(1+p-W)}{(1-q)^2+1}\right\}.$$
 
 ** Wealth, risk and utilization VI
 
-it can be shown that:
+results:
 - poor, high risk type has weakly more coverage than rich, low risk type if the insurance market is perfectly competitive
-- opposite might be true if insurances have market power (e.g. insurance monopoly)
+- the opposite might be true if insurances have market power (e.g. insurance monopoly)
 
 - mandatory insurance can be welfare improving in second case
 
@@ -537,4 +537,4 @@ it can be shown that:
 # - Einav and Finkelstein (2011), p. 115-123
 # - ZBK 5.3
 
-# more endogenous private info? Doherty and Thistle?
+# more endogenous private info? Doherty and Thistle or SJE paper?

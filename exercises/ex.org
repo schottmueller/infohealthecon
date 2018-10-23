@@ -34,9 +34,14 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 2. Consider a person with utility of income $u(x)=\sqrt{x}$. The person has an income of $2500$ Euros but loses $L$ Euros with probability $\alpha$. Determine the certainty equivalent and the risk premium as a function of $\alpha$ and $L$. Is the risk premium increasing or decreasing in $L$? Is  the risk premium increasing or decreasing in $\alpha$?
 
-3. Consider the utility function $u(x)=-e^{-\eta x}$. The person has an income of $1$ and experiences a loss of $1$ with probability $\alpha$. Is the certainty equivalent in- or decreasing in $\eta$? The coefficient of absolute risk aversion is defined as $-u''(x)/u'(x)$. Compute this coefficient. 
+3. Consider the utility function $u(x)=-e^{-\eta x}$. The person has an income of $1$ and experiences a loss of $1$ with probability $\alpha$.  The coefficient of absolute risk aversion is defined as $-u''(x)/u'(x)$. Compute this coefficient. Let now $\alpha=0.5$ and check whether the certainty equivalent in- or decreases in $\eta$.
 
 4. The Wall Street Journal reported in 2006 of "mini-medical insurance plans". These plans cover routine services, but little hospital coverage and usually have a cap on payouts (say of $ 10.000 ). The premium, however, is only $ 50 per month. Why might people buy a mini-medical plan? Why are such insurance plans not more popular (in a country where a substantial part of the population did/does not have health insurance)?  
 
+# E1: a) E[u]=50, E[x]=2566.6, CE=2500, RP=66.6; b) E[u]=45.185 E[x]=2050 CE=2041.7 RP = 8.3
 
-# E2: \sqrt{CE} = \alpha \sqrt{2500-L}+(1-\alpha) \sqrt{2500}; CE= \alpha^2 (2500-L)+(1-\alpha)^2 2500+\alpha (1-\alpha) \sqrt{(2500-L)2500} = (5000-L) \alpha^2-5000\alpha+2500+(\alpha -\alpha^2) \sqrt{(2500-L)2500};  RP=2500-\alpha L -CE=-\alpha L-(5000-L) \alpha^2+5000\alpha-(\alpha -\alpha^2) \sqrt{(2500-L)2500}
+# E2: \sqrt{CE} = \alpha \sqrt{2500-L}+(1-\alpha) \sqrt{2500}; CE= \alpha^2 (2500-L)+(1-\alpha)^2 2500+\alpha (1-\alpha) 100\sqrt{2500-L} = (5000-L) \alpha^2-5000\alpha+2500+(\alpha -\alpha^2)100 \sqrt{2500-L};  RP=2500-\alpha L -CE=(\alpha -\alpha^2)(5000-L-100 \sqrt{2500-L})
+
+# E3: discuss why $u''$ is a bad measure of risk aversion (problem of multiplying u with a positive number);  $-u''(x)/u'(x)=\eta$ "constant absolute risk aversion" (CARA) -> higher eta means more risk aversion; usually coefficient depends on x but not with CARA preferences; -e^{-\eta CE}=-\alpha-(1-\alpha)e^{-\eta} and therefore CE = -log(\alpha+(1-\alpha)e^{-\eta})/\eta; plug in \alpha=0.5 and draw CE(\eta) numerically
+
+# E4: no covering of large loss is against our theory; more of a smoothing out of expected costs than a real insurance; maybe mandate to treat in emergency rooms allows poor people to default on large claims (or get those waved) while claims up to 10.000 the provider may be able to collect; in any case catastrophe plans that cover only large losses are much more common
