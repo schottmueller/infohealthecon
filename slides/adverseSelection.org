@@ -27,7 +27,8 @@
   - differ in expected costs 
 - heterogeneity is unobserved by insurers
 - insurers set premium
-- for now: insurances have no costs
+- for now: insurances have no administrative 
+costs 
 
 
 *** Question 							    :B_block:
@@ -42,14 +43,15 @@
 
 # Figure 1 of E&F: downward sloping demand, MC and AC
 # MC(0)=AC(0) 
-# risk premium (abstracting from wealth effects): difference between demand and MC, positive as risk averse, i.e. D>MC
-# 
+# risk premium (abstracting from wealth effects): difference between demand and MC, positive as risk averse, i.e. D>MC -> efficient that everyone is insured
+# downward sloping MC implies AC>MC and therefore intersection of D and AC is (if it exists) at Q below efficient level
+# idfference to other goods (cars etc.): costs are linked to wtp
 
 ** Competitive equilibrium
 
 - if many insurers compete on premium, equilibrium premium equals average costs (Bertrand competition)
 - possible inefficiency: too little insurance in equilibrium
-# if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers 
+# if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers, i.e. equilibrium determined by AC while efficiency is determined by MC
 
 Result:
 - adverse selection leads to too little insurance
@@ -72,7 +74,7 @@ Result:
 - who will have the lower premium, if insurance companies are allowed to discriminate based on gender?
 - if insurance companies are prohibited to discriminate based on gender, who benefits? who loses?
 
-# female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to uninsured with regulation while men are less likely to be uninsured
+# female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to be uninsured with regulation while men are less likely to be uninsured
 
 ** Gender specific premia
 - unisex tarif were introduced in Montana, US in 1983 by law 

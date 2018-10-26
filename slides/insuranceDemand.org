@@ -155,6 +155,8 @@ Results:
 - government guarantees crowd out insurance
 - insurance mandate necessary (?)
 
+# when drought in 2018 in Germany only 0.5% of agricult. area was insured against drought but 72% against hail; after the 2018 drought they received 340 Million € in government aid
+
 ** State dependent preferences
 - when you are ill, you do not enjoy consumption a lot:
   - utility ill $u_i$, utility healthy $u_h$

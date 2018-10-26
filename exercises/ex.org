@@ -38,6 +38,12 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 4. The Wall Street Journal reported in 2006 of "mini-medical insurance plans". These plans cover routine services, but little hospital coverage and usually have a cap on payouts (say of $ 10.000 ). The premium, however, is only $ 50 per month. Why might people buy a mini-medical plan? Why are such insurance plans not more popular (in a country where a substantial part of the population did/does not have health insurance)?  
 
+5. Consider a person with utility of income $u(x)=\sqrt{x}$. The person has an income of $2500$ Euros but loses $1500$ Euros with probability $1/4$. Assume there is an insurance company that offers to insure an arbitrary coverage $C\in[0,1500]$ at premium $pC$. Determine the amount of coverage $C(p)$ that the person will buy. (If you find this too hard, let $p$ be 0.3.)
+
+6. Consider the same person as in the previous exercise. Let $p=0.3$ and suppose the government guarantees a minimum income of 1500. Will the person still buy insurance? Discuss what features of the health care sector are similar to a minimum income guarantee in the model.
+
+
+
 # E1: a) E[u]=50, E[x]=2566.6, CE=2500, RP=66.6; b) E[u]=45.185 E[x]=2050 CE=2041.7 RP = 8.3
 
 # E2: \sqrt{CE} = \alpha \sqrt{2500-L}+(1-\alpha) \sqrt{2500}; CE= \alpha^2 (2500-L)+(1-\alpha)^2 2500+\alpha (1-\alpha) 100\sqrt{2500-L} = (5000-L) \alpha^2-5000\alpha+2500+(\alpha -\alpha^2)100 \sqrt{2500-L};  RP=2500-\alpha L -CE=(\alpha -\alpha^2)(5000-L-100 \sqrt{2500-L})
@@ -45,3 +51,26 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E3: discuss why $u''$ is a bad measure of risk aversion (problem of multiplying u with a positive number);  $-u''(x)/u'(x)=\eta$ "constant absolute risk aversion" (CARA) -> higher eta means more risk aversion; usually coefficient depends on x but not with CARA preferences; -e^{-\eta CE}=-\alpha-(1-\alpha)e^{-\eta} and therefore CE = -log(\alpha+(1-\alpha)e^{-\eta})/\eta; plug in \alpha=0.5 and draw CE(\eta) numerically
 
 # E4: no covering of large loss is against our theory; more of a smoothing out of expected costs than a real insurance; maybe mandate to treat in emergency rooms allows poor people to default on large claims (or get those waved) while claims up to 10.000 the provider may be able to collect; in any case catastrophe plans that cover only large losses are much more common
+
+# E5: E[u]=\sqrt{1000+(1-p)C}/4+\sqrt{2500-pC}*3/4; foc: (1-p)/\sqrt{1000+(1-p)C}-3p/\sqrt{2500-pC}=0; yields C=(-6500p^2-5000p+2500)/(p(1-p)(1+8p)); for p=0.3 this is 1416.4; note: for p=1/4, C=1500; for p>1/4 C<1500; for p>(-5+\sqrt{90})/13=0.345 the calculated C becomes negative, i.e. the person will not buy insurance if the premium rate is too high
+
+# E6: E[u]^{insurance}=45.32, E[u]^{no ins}=\sqrt{1000}/4+\sqrt{2500}*3/4=45.406; hence person will not buy insurance;  obligation to treat, i.e. doctors/emergeny rooms/hospitals cannot turn back people even if they cannot pay (or pay only partially); literal social assistance
+
+* Adverse selection 
+1. We now have a continuum of people of length $1/2$. More precisely, we have a person $i$ for each $i\in[0,1/2]$. All people have the same utility function $u(x)=\sqrt{x}$ and the same income of 2500. However, they differ in terms of risk: Person $i$ loses 1600 with probability $i$. We consider an insurance policy with full coverage, i.e. a policy that pays out 1600 in case of a loss. 
+  1. Determine the willingness to pay for the insurance of person $i$. 
+  2. For every possible insurance premium, how many people will buy insurance? Use your results to draw the demand for insurance. 
+  3. Determine the marginal cost of person $i$.
+  4. Determine the average cost of insuring all people $i\geq j$, i.e. everyone in $[j,1/2]$.
+  5. If many risk neutral insurance companies with no administrative costs are active on this market, what is the market equilibrium?
+  6. Is the market equilibrium efficient? If not, determine the size of the inefficiency. What would be welfare in "first best", i.e. in a situation in which everyone with a willingness to pay above marginal cost gets insurance? Determine the relative inefficiency due to adverse selection.
+  7. Consider an insurance subsidy to insurers, i.e. each insurer receives for each sold insurance a subsidy payment $s$. How high does $s$ have to be to ensure efficiency? 
+  8. Consider an insurance mandate (without subsidies). What is the equilibrium insurance premium? Who will benefit from the mandate? Who will lose out with the mandate?
+  9. Suppose insurers cannot now distinguish two groups: The people $i\geq 0.3$ and the people $i\leq 0.3$. Assume that insurers are allowed to offer different contracts to these two groups. Consequently, there are now two separate markets. What is the equilibrium on the "high risk market"? What is the equilibrium on the "low risk" market? Is the new situation more or less efficient than the one considered in the previous subquestions? Who benefitss from groups discrimination and who does not?
+
+# E1.1: \sqrt{2500-WTP}=i\sqrt{900}+(1-i)\sqrt{2500}, WTP=2000i-400i^2
+# E1.2: 0 for p>=900; critical i: p=2000i-400i^2; i(p)=2.5-\sqrt{6.25-p/400}; D(p)= 1/2-i(p)= \sqrt{6.25-p/400}-2
+# E1.3: MC(i)=i*1600; 
+# E1.4: AC(j)=(1/2-j/2)*1600
+# E1.5: critical i: AC(i)=WTP(i); i = 3.5-\sqrt{10.25}\approx 0.3; hence i in [0.3,0.5] buy insurance
+# E1.6: \int_{0}^{0.3}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0^{0.3}=14.4; welfare:  \int_{0}^{0.5}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0^{0.5}=33.333; proportional loss: 14.4/33.33=0.432
