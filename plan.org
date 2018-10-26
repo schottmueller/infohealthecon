@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- The exam will take place on February 7, 15:30-16:30 in HSI. Register for the exam via KLIPS before January 10.
+- The exam will take place on February 7, 15:30-16:30 in HSI. Register for the exam via KLIPS before January 10. A second exam date will be determined later.
 - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
 
 * Prerequisites and background
@@ -13,7 +13,7 @@ Several students asked for references for the prerequisites in terms of mathemat
 If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations (and often links to more in depth material). 
 
 * Course material
-The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
+Please note that I do not use ILIAS. The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
 
 The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/2518310/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file.
 
