@@ -107,7 +107,7 @@ If a person is risk averse, the risk premium is first increasing in $\alpha$ (wh
     :PROPERTIES:
     :BEAMER_env: theorem
     :END:
-If a person is risk averse, the effect of $W$ on the risk premium is ambiguous. If the person becomes less risk averse as income increases in the sense that $u'''\geq0$, then a higher $W$ leads to a lower risk premium.
+If a person is risk averse, the effect of $W$ on the risk premium is ambiguous. If the person becomes less risk averse as income increases -- in the sense that $u'''\geq0$ -- then a higher $W$ leads to a lower risk premium.
 
 # Proof: $CE(W)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(W)=\frac{(1-\alpha) u'(W)+\alpha u'(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$. As $u'$ is convex by $u'''>0$, it holds that $(1-\alpha) u'(W)+\alpha u'(W-L)\geq u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and therefore $CE'(W)\geq 1$. Now $RP(W)=W-\alpha L-CE(W)$ and therefore $RP'(W)=1-CE'(W)\leq0$. 
 
