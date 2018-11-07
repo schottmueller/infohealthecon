@@ -6,6 +6,7 @@
 * News
 - The exam will take place on February 7, 15:30-16:30 in HSI. Register for the exam via KLIPS before January 10. A second exam date will be determined later.
 - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
+- There is now a julia/jupyter notebook that can compute the resuls to some of the exercises of the first 3 weeks. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. The "course materials" section below explains how you can use the notebook. (It is unlikely that this notebook will be extended to cover exercises of the coming weeks as the material is not that easily amenable to a programming solution).
 
 * Prerequisites and background
 Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökpnomik") by Hal Varian where chapters 1-5 are assumed to be known and chapter 12 is what we covered in the second lecture. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. 
@@ -22,6 +23,20 @@ Lecture slides are posted here over the course of the term. You can find the sou
 - intro [[https://github.com/schottmueller/infohealthecon/files/2467992/intro.pdf][slides]]
 - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/2478815/insuranceDemand.pdf][slides]]
 - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/2505059/adverseSelection.pdf][slides]], numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
+
+** Julia notebooks
+
+To execute the code in the julia/jupyter notebooks you can either install Julia locally (it's free and open source but the installation is somewhat more complicated) or use juliabox to run it in your browser. I described the details for another purpose [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/0.%20Why%2C%20what%20and%20how.ipynb][here]] (in case you are interested in understanding the code check [[https://github.com/schottmueller/juliaForMicroTheory][this]] repository). For the browser option, you follow these steps (you can follow the steps also on this [[https://www.dropbox.com/s/fqh4k9no3fd14s6/Screencast%20from%2011-01-2018%2004%3A11%3A15%20PM.webm?dl=0][screencast]]):
+
+1. Go to [[https://github.com/schottmueller/infohealthecon]] and click on the green box saying "Clone or download". Choose "Download ZIP" and safe the folder on your hard drive. Unzip it in a folder of your choice.
+2. Go to [[https://juliabox.com]] and login/register with a method of your choice.  Their free plan is more than enough for our purposes. After logging in, click "Launch", then click "Upload" and navigate to the unzipped folder on your hard drive. Inside this folder into "exercises" and select there "exercisePlots.ipynb". Click on the blue "Upload" box to confirm that you want to upload this file. Now you see the file "exercisePlots.ipynb" in your list of juliabox files. Click on it to start the file (it should open in a new tab).
+3. To execute a cell, you click into it and then press Shift+Enter (that is you press Enter while keeping shift pressed).
+4. The first time you log in, you need to execute the first cell (click in it and Shift+Enter) to install the necessary packages (they are not installed on your PC but on your juliabox account in the cloud). This can take almost a minute and produce strange looking output.
+
+Note that the first time you run a cell it can take some time. It is fast afterwards.
+
+Now you are ready. You can change the primitives of the problem, e.g. the utility functions or income, and executing the cell again will give you the results for the new problem.
+
 
 * Course setup 
 In this course, we will analyze the consequences of information problems in health care markets and look for possible solutions to those problems on a theoretical basis. The theoretical analysis is at times supplemented with empirical evidence.
