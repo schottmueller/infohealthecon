@@ -71,7 +71,17 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 2. You work for a profit maximizing health insurer which recently understood the problem of adverse selection. Your boss asks you what to do to increase/maintain profits in light of the adverse selection problem. What do you answer?
 
+3. In this exercise we show that in the Rothschild-Stiglitz model only one contract per type can be sold in equilibrium. We do this by contradiction. Suppose this was not true, i.e. suppose there were two contracts $(p_1,q_1)$ and $(p_2,q_2)$ that are bought by consumers with high risk. 
+  1. Draw in a coverage, premium diagram such two contracts and the indifference curve of the high risk consumers.
+  2. Draw the isoprofit lines of the firms through these contracts.
+  3. Find a deviation contract that yields strictly positive profit (and is bought by some players if offered).
+  4. Now suppose there were two contracts $(p_1,q_1)$ and $(p_2,q_2)$ that are bought by consumers with /low/ risk. Do the same as above but be careful when arguing that the deviation contract is strictly profitable.
 
+4. In the Rothschild-Stiglitz model, assume that all consumers have the utility function $u(x)=-0.5x^2+10x$, that $W=9$, $L=5$, $\alpha_h=1/2$ and $\alpha_l=1/4$.
+  1. Derive the isoprofit curve of an insurance company insuring a consumer with risk $\alpha$, i.e.   if coverage is $q$ what does the premium have to be to achieve expected profits of $\bar \pi$?
+  2. Derive the consumer's indifference curve, i.e. if coverage is $q$ what does the premium have to be to achieve an expected utility of $\bar U$?
+  3. If risk types were observable what would be the equilibrium contracts for the two risk types?
+  
 
 # E1.1: \sqrt{2500-WTP}=i\sqrt{900}+(1-i)\sqrt{2500}, WTP=2000i-400i^2
 # E1.2: 0 for p>=900; critical i: p=2000i-400i^2; i(p)=2.5-\sqrt{6.25-p/400}; D(p)= 1/2-i(p)= \sqrt{6.25-p/400}-2
@@ -86,3 +96,6 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E1.10: Problem of adverse selection disappears as for a small enough subgroup the AC will be below WTP for all people in the subgroup, i.e. everyone will buy insurance (almost everyone to be precise: WTP(0)=0 so $i=0$ and people will not buy insurance if bunched together with others but that is a special case). WElfare will therefore increase. However, note that people in the top categories might experience higher premiums: If the highest subgroup is [a,0.5] and a>0.38, then their premium increases and they do not benefit.  i<0.38 will benefit
 
 # E2: problem is that one attracts high cost customers; to avoid this, tailor your insurance plan toward healthy people (bonus programs for fitness courses; pay back part of the insurance premium when care was not used in a given year) and make it unattractive for chronically ill and unfit (signing of contract requires you to go to an office in the 3rd floor without an elevator or only online to get rid of the expensive elderly; have offices in neighborhoods with where people with high socioeconomic status live as they tend to be healthier; do not cover certain brands of medication for chronic diseases to which people may be already attached etc.)
+
+# E3: By the no pooling result, both contracts are bought by h consumers only. As both isoprofit lines have to yield non-negative profits, there are contracts with $q\in(q_1,q_2)$ and a premium just above the indifference curve that are preferred by h to the two offered contracts and are strictly profitable if bought by h. Note that attracting l types to the deviation contract can only increase profits. 
+# E3.4: Same as before but now one has to argue that the deviation contract does not attract h consumers. Note that this is true if the deviation contract is sufficiently close to the indifference curve of the low risk consumer as in this case h prefers the original contract with higher coverage to the deviation contract.  

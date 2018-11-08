@@ -48,8 +48,8 @@ costs
 # idfference to other goods (cars etc.): costs are linked to wtp
 
 ** Competitive equilibrium
-
 - if many insurers compete on premium, equilibrium premium equals average costs (Bertrand competition)
+$$p^* = AC$$
 - possible inefficiency: too little insurance in equilibrium
 # if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers, i.e. equilibrium determined by AC while efficiency is determined by MC
 
@@ -116,7 +116,7 @@ Results:
   - risk type is private information of consumer
 
 - insurers
-  - risk neutral
+  - risk neutral (i.e maximize expected profits)
   - zero administrative costs
   - offer menus of coverage/premium pairs
   - many insurance companies
@@ -172,7 +172,7 @@ Results:
 
 ** Insurance monopolist (Stiglitz 1977)
 - same model as Rothschild-Stiglitz but instead of many competing insurers only one profit maximizing insurer
-- single crossing holds, $h$ has highe demand for insurance than $l$
+- single crossing holds, $h$ has higher demand for insurance than $l$
 
 Profit maximizing menu:
 - no pooling
