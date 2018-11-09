@@ -49,7 +49,7 @@ costs
 
 ** Competitive equilibrium
 - if many insurers compete on premium, equilibrium premium equals average costs (Bertrand competition)
-$$p^* = AC$$
+$$p^* = AC_{\text{buying consumers}}$$
 - possible inefficiency: too little insurance in equilibrium
 # if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers, i.e. equilibrium determined by AC while efficiency is determined by MC
 
@@ -130,9 +130,24 @@ Results:
 - benchmark: risk types are known by insurances
 - what is equilibrium?
 
+# see next slide
 # full insurance, fig 5.3 on p.172 in ZBK
 # or figure with coverage on x-axis and premium on y-axis
 # high risk would like to choose low risk contract
+
+** Rothschild-Stiglitz: curves and slopes
+- /iso-profit curve/ for profit level $\bar\pi$
+  - all $(p,q)$ combination leading to profit $\bar\pi$
+  - profits: $\pi=p-\alpha q L$
+  - iso- profit: $p(q|\pi=\bar \pi)=\bar\pi+\alpha q L$ with slope $\alpha L$ 
+- /indifference curve/ for expected utility $\bar u$
+  - all $(p,q)$ combination leading to expected utility $\bar u$
+  - exp. utility: $\mathbb{E}[u]=\alpha u(W-p-(1-q)L)+(1-\alpha) u(W-p)$
+  - slope indifference curve via implicit function theorem:
+$$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)+(1-\alpha)u'(W-p)}>\alpha L$$
+or 
+$$p'(q|\mathbb{E}[u]=\bar u)= L\frac{u'(W-p-(1-q)L)}{u'(W-p-(1-q)L)+\frac{1-\alpha}{\alpha}u'(W-p)}$$
+and therefore slope indifference curve higher for higher \alpha
 
 ** Rothschild-Stiglitz: second best (no pooling)
 
