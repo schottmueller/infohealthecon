@@ -73,14 +73,15 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 3. In this exercise we show that in the Rothschild-Stiglitz model only one contract per type can be sold in equilibrium. We do this by contradiction. Suppose this was not true, i.e. suppose there were two contracts $(p_1,q_1)$ and $(p_2,q_2)$ that are bought by consumers with high risk. 
   1. Draw in a coverage, premium diagram such two contracts and the indifference curve of the high risk consumers.
-  2. Draw the isoprofit lines of the firms through these contracts.
+  2. Draw the isoprofit lines of the insurers through these contracts.
   3. Find a deviation contract that yields strictly positive profit (and is bought by some players if offered).
   4. Now suppose there were two contracts $(p_1,q_1)$ and $(p_2,q_2)$ that are bought by consumers with /low/ risk. Do the same as above but be careful when arguing that the deviation contract is strictly profitable.
 
 4. In the Rothschild-Stiglitz model, assume that all consumers have the utility function $u(x)=-0.5x^2+10x$, that $W=9$, $L=5$, $\alpha_h=1/2$ and $\alpha_l=1/4$.
   1. Derive the isoprofit curve of an insurance company insuring a consumer with risk $\alpha$, i.e.   if coverage is $q$ what does the premium have to be to achieve expected profits of $\bar \pi$?
   2. Derive the consumer's indifference curve, i.e. if coverage is $q$ what does the premium have to be to achieve an expected utility of $\bar U$?
-  3. If risk types were observable what would be the equilibrium contracts for the two risk types?
+  3. Verify that the slope of the indifference curve of a consumer with higher risk is higher. Verify that the slope of the indifference curve is higher than the slope of the isoprofit curve for $q<1$ and equal for $q=1$.
+  4. If risk types were observable what would be the equilibrium contracts for the two risk types?
   
 
 # E1.1: \sqrt{2500-WTP}=i\sqrt{900}+(1-i)\sqrt{2500}, WTP=2000i-400i^2
