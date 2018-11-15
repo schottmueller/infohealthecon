@@ -170,20 +170,26 @@ Result:
 # otherwise offer full coverage where $h$ is indifferent and give him epsilon lower premium; as h is more eager than l, l will not buy new contract but as more cov is efficient it yields higher profits for epsilon small
 - insurers make zero profits on $l$ contract
 # otherwise reduce coverage a bit and adjust premium such that $l$ type just prefers new contract; reap all profits from $l$ types without attracting $h$ types
-- $l$ type is indifferent between his contract and $h$ contract
-# otherwise, h strictly prefers his contract and I can offer contract with slightly higher coverage thanbefore to l such that l just prefers new contract and h does not while making positive profits; 
+- $h$ type is indifferent between his contract and $h$ contract
+# otherwise, (recall zero profits from previous point) I can increase coverage and premium a bit making pos profit and l-type better off without attracting h type as indiff l is steeper than isoprofit curve l 
 
 Results:
 - equilibrium construction: 
   - $h$ gets contract where his zero profit line intersects full insurance
-  - $l$ gets contract where his indifference curve through $h$'s contract intersects his zero profit line
+  - $l$ gets contract where $h$'s indifference curve through $h$'s contract intersects $l$'s zero profit line
 - first best contract for $h$
 - underinsurance for $l$
 
 ** Rothschild-Stiglitz: second best (non-existence of equilibrium)
-- if $\gamma$ small, there exists a pooling contract with positive profits from the above constructed equilibrium
+- if $\gamma$ small, there exists a pooling contract with positive profits from the above constructed "equilibrium"\linebreak $\rightarrow$ no equilibrium exists in this case
 
 - other equilibrium concepts for this case (Wilson 1977, Wilson-Miyazaki-Spence, 1978, Netzer and Scheuer 2014)
+# ** Rothschild-Stiglitz: minimum coverage level
+# - suppose a law makes it impossible to offer coverage below some threshold $\bar{q}$
+# - how does this affect equilibrium?
+# if \bar q below q_l^*, no effect
+# if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; note that this is Pareto improvement as l is better off (his indiff is hlatter than h's) and positive profits from l type
+# if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling
 
 ** Insurance monopolist (Stiglitz 1977)
 - same model as Rothschild-Stiglitz but instead of many competing insurers only one profit maximizing insurer
