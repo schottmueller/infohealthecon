@@ -88,6 +88,9 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 6. Suppose that a low risk type is indifferent between his contract in the Rothschild-Stiglitz equilibrium candidate and a full coverage contract at premium $(\gamma\alpha_h+(1-\gamma)\alpha_l)*L$. What interpretation does the premium $(\gamma\alpha_h+(1-\gamma)\alpha_l)*L$ have? Demonstrate that in this case the Rothschild-Stiglitz equilibrium does not exist.
 
+7. In the Netherlands, health insurance contracts can only be changed at the end of the calendar year. Discuss why such a regulation may or may not be a good idea. Do you know of other similar provisions or regulations?
+
+8. Consider an insurance market where everyone has the \emph{same risk } of falling ill but people differ in their degree of risk aversion. More concretely, assume that everyone has the utility function $u(x)=-e^{-\eta x}$ and that a share $\gamma$ of the population has a high degree of risk aversion, $\eta= \eta_h$, while a share $1-\gamma$ of the population has alow degree of risk aversion, $\eta=\eta_l<\eta_h$. Everything else is as in the Rothschild-Stiglitz model. In particular, we assume a perfectly competitive market, i.e. many insurance companies competing in menus of coverage, premium pairs. What will be the equilibrium on this market?
 
 # E1.1: \sqrt{2500-WTP}=i\sqrt{900}+(1-i)\sqrt{2500}, WTP=2000i-400i^2
 # E1.2: 0 for p>=900; critical i: p=2000i-400i^2; i(p)=2.5-\sqrt{6.25-p/400}; D(p)= 1/2-i(p)= \sqrt{6.25-p/400}-2
@@ -118,3 +121,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling
 
 # E6: point on zero profit pooling isoprofit for q=1; slope indiff l at q=1 is \alpha_l and therefore smaller than pooling isoprofit at 0 profit; hence deviation pooling contracts with q slightly below 1 exist
+
+# E7: people turn from low to high risk and vice versa over time; if immediate change of plan is allowed people could buy the cheapest/no insurance and go to the plan with highest coverage the moment they fall ill; similar logic to German private plans that cover dental care only after 2 years
+
+# E8: indifference curves of high risk aversion types are steeper and wtp for insurance is higher. There has to be full coverage in equilibrium as otherwisewe have a profitable full coverage deviation. Note that we cannot sustain a separating as increasing the low risk aversion coverage to 1 while keeping him indifferent is a profitable deviation (both types have the same expected costs). Hence, equilibrium is pooling on the average cost.
