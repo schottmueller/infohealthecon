@@ -170,7 +170,7 @@ Result:
 # otherwise offer full coverage where $h$ is indifferent and give him epsilon lower premium; as h is more eager than l, l will not buy new contract but as more cov is efficient it yields higher profits for epsilon small
 - insurers make zero profits on $l$ contract
 # otherwise reduce coverage a bit and adjust premium such that $l$ type just prefers new contract; reap all profits from $l$ types without attracting $h$ types
-- $h$ type is indifferent between his contract and $h$ contract
+- $h$ type is indifferent between his contract and $l$'s contract
 # otherwise, (recall zero profits from previous point) I can increase coverage and premium a bit making pos profit and l-type better off without attracting h type as indiff l is steeper than isoprofit curve l 
 
 Results:
@@ -202,6 +202,8 @@ Profit maximizing menu:
 # otherwise moving along his indiff curve to full cov yields higher profit
 - premium of $l$ equals his willingness to pay
 # otherwise increasing both premia increases profits
+- premium of $h$ is such that $h$ is indifferent between $h$'s and $l$'s contract
+# otherwise, increase p_h
 - choose coverage of $l$ to maximize profits
 
 Results:
@@ -211,7 +213,7 @@ Results:
 ** Insurance monopolist (Stiglitz 1977): Example
 
 - $u(x)=-e^{-x}$, $W=2$, $L=1$, $\alpha_h=0.5$, $\alpha_l=0.25$
-- let $C$ be indemnity for $l$
+- let $C=q_l L$ be indemnity for $l$
 - what is $l$'s expected utility without insurance?
 # -.25*e^{-1+0.2}-.75*e^{-2+.2*4}
 - recall: $l$'s premium equals his willingness to pay; what is $l$'s wtp?
@@ -225,10 +227,10 @@ Results:
 
 - genetic tests can be used to determine risk (but usually not perfectly)
 - what is the right regulatory framework:
-  - private information: test results (if existing) are private information of insured
+  - private information: test results (if existing) are private information of insured (and insurance policies cannot depend on them)
   - voluntary disclosure: test results can be presented to insurer but do not have to presented
   - mandatory disclosure: existing results have to be disclosed
-  - laissez faire: insurers can (ut do not have to) require (additional) tests
+  - laissez faire: insurers can (but do not have to) require (additional) tests
 
 ** Genetic tests: how to think about risk
 - two kind of risk:
