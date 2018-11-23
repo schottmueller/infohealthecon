@@ -90,7 +90,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 7. In the Netherlands, health insurance contracts can only be changed at the end of the calendar year. Discuss why such a regulation may or may not be a good idea. Do you know of other similar provisions or regulations?
 
-8. Consider an insurance market where everyone has the \emph{same risk } of falling ill but people differ in their degree of risk aversion. More concretely, assume that everyone has the utility function $u(x)=-e^{-\eta x}$ and that a share $\gamma$ of the population has a high degree of risk aversion, $\eta= \eta_h$, while a share $1-\gamma$ of the population has alow degree of risk aversion, $\eta=\eta_l<\eta_h$. Everything else is as in the Rothschild-Stiglitz model. In particular, we assume a perfectly competitive market, i.e. many insurance companies competing in menus of coverage, premium pairs. What will be the equilibrium on this market?
+8. Consider an insurance market where everyone has the \emph{same risk } of falling ill but people differ in their degree of risk aversion. More concretely, assume that everyone has the utility function $u(x)=-e^{-\eta x}$ and that a share $\gamma$ of the population has a high degree of risk aversion, $\eta= \eta_h$, while a share $1-\gamma$ of the population has a low degree of risk aversion, $\eta=\eta_l<\eta_h$. Everything else is as in the Rothschild-Stiglitz model. In particular, we assume a perfectly competitive market, i.e. many insurance companies competing in menus of coverage, premium pairs. What will be the equilibrium on this market?
 
 # E1.1: \sqrt{2500-WTP}=i\sqrt{900}+(1-i)\sqrt{2500}, WTP=2000i-400i^2
 # E1.2: 0 for p>=900; critical i: p=2000i-400i^2; i(p)=2.5-\sqrt{6.25-p/400}; D(p)= 1/2-i(p)= \sqrt{6.25-p/400}-2
@@ -122,6 +122,16 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 # E6: point on zero profit pooling isoprofit for q=1; slope indiff l at q=1 is \alpha_l and therefore smaller than pooling isoprofit at 0 profit; hence deviation pooling contracts with q slightly below 1 exist
 
-# E7: people turn from low to high risk and vice versa over time; if immediate change of plan is allowed people could buy the cheapest/no insurance and go to the plan with highest coverage the moment they fall ill; similar logic to German private plans that cover dental care only after 2 years
+# E7: people switch from being low to being high risk and vice versa over time; if immediate change of plan is allowed people could buy the cheapest/no insurance and go to the plan with highest coverage the moment they fall ill; similar logic to German private plans that cover dental care only after 2 years
 
 # E8: indifference curves of high risk aversion types are steeper and wtp for insurance is higher. There has to be full coverage in equilibrium as otherwisewe have a profitable full coverage deviation. Note that we cannot sustain a separating as increasing the low risk aversion coverage to 1 while keeping him indifferent is a profitable deviation (both types have the same expected costs). Hence, equilibrium is pooling on the average cost.
+
+** Genetic tests
+1. Assume that all people in our economy are similar and have the same Bernoulli utility function $u(x)=\sqrt{x}$. A person has wealth $W=9$ and falls ill with probability 1/2. When falling ill the person needs treatment costing $L=5$. 
+  1. Determine the risk premium of a consumer for a full coverage contract. What contract will a profit maximizing insurance monopolist offer in this market?
+  2. Suppose a genetic test becomes available: The test results can be either "high risk" (h) or "low risk" (l). Those that test have a 50% chance of getting either result. High risk people have probability 3/4 and low risk people have the probability 1/4 of falling ill. 
+    - Calculate the risk premium of an /h/ type and the risk premium of an /l/ type.
+    - Assume everyone gets tested and the insurance monopolist can make his contracts dependent of the test result. What contracts will he offer? How do profits and expected utility change compared to (a)?
+    - Assume that the monopolist is prohibited from making his contract contingent upon the test results. How do expected utility and insurance profits change compared to (a)? (Note: you do not have to calculate the profit maximizing contracts to answer this question qualitatively.) 
+  3. How does your answer to the previous subquestions change if we assume that the insurance market is perfectly competitive?
+
