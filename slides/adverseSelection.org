@@ -200,10 +200,10 @@ Profit maximizing menu:
 # if pooling than premium equals wtp of l and full coverage; better to offer slightly lower cov for l (note that slope indiff curve equals slope isoprofit curve at full cov in C,premium diagram) while higher premium for $h$
 - full coverage for $h$
 # otherwise moving along his indiff curve to full cov yields higher profit
-- premium of $l$ equals his willingness to pay
-# otherwise increasing both premia increases profits
 - premium of $h$ is such that $h$ is indifferent between $h$'s and $l$'s contract
 # otherwise, increase p_h
+- premium of $l$ equals his willingness to pay
+# otherwise increasing both premia increases profits
 - choose coverage of $l$ to maximize profits
 
 Results:
@@ -295,9 +295,9 @@ Results:
 Equilibrium:
 - premium/coverage in period 1: 
 # L\alpha_l, full: L
-- premium/coverage in period for $\alpha_l$:
+- premium/coverage in period 2 for $\alpha_l$:
 # L\alpha_l, full: L
-- premium/coverage in period for $\alpha_h$:
+- premium/coverage in period 2 for $\alpha_h$:
 # L\alpha_h, full: L
 
 - risk averse consumer suffers from premium risk:
@@ -349,7 +349,7 @@ Equilibrium:
   - insurers avoid high cost consumers and try to attract low cost consumers (how?)
 # in particular if insurers can choose coverage or add-on services on base package; but maybe even if not (stairs, advertising)
 - risk adjustment tries to eliminate this incentive
-  - internal transfer payments from insurance with low risk insured to insurances with high risk insured
+  - internal transfer payments from insurances with low risk insured to insurances with high risk insured
   - risk estimates based on observable characteristics (gender, age, chronically ill etc.)
   - if well designed, transfer exactly compensates additional cost
   - level playing field --> more intense competition
@@ -369,9 +369,9 @@ Equilibrium:
 | /                                          |             <  |                 |
 | age and gender                             |           3.2% |            3.2% |
 | age, gender and invalid status             |           5.1% |            4.5% |
-| above + HHC         |            37% | 12%             |
+| above + HCC        |            37% | 12%             |
 
-\tiny HHC = hierarchical coexisting conditions 
+\tiny HCC = hierarchical coexisting conditions 
 
 (source: Behrend et al. 2007. European Journal of Health Economics 8 (1): 31–39.) 
 \normalsize
@@ -411,6 +411,9 @@ Equilibrium:
 \vspace*{-.5cm}
 (source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
 \normalsize
+# interpretation: 10% higher belief to get into NH tends to lead to 0.91% higher prob of using NH
+# insurance prediction is better than individual but (!) residual asym info
+# likely underestimate as people report round numbers in their beliefs which possibly introduces noise
 
 ** Empirics: Information is used in insurance decision
 - estimate model: prob(insurance)=f(a*X+c*Belief)
@@ -422,6 +425,8 @@ Equilibrium:
 (source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
 \normalsize
 
+# insurance could better predict risk if using all information but will not manage to reduce residual private info
+
 * Advantageous selection
 ** Empirics: correlation between insurance and care
 
@@ -432,6 +437,9 @@ Equilibrium:
 (source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
 \normalsize
 
+# first: correlation of residuals from (i) probit LTCINS on X (ii) probit CARE on X --> expected positive correlation from BELIEF but 0 correlation!
+# second: probit CARE on X and LTCINS --> expect pos corr through belief channel bit 0!
+
 - what is going on here?
 
 ** Empirics: Other covariates
@@ -441,6 +449,11 @@ Equilibrium:
 \vspace*{-.5cm}
 (source: Finkelstein and McGarry, 2006, American Economic Review, 96(4), pp. 938--958)
 \normalsize
+
+# belief does not fully capture all information about likely use privately known to consumer (not fully complete updating: otherwise risk aversion measures should not be significant for NH Entry after controlling for BELIEF)
+# wealth: Medicaid covers NH costs only if all wealth is exhausted --> poor individuals have implicit insurance through Medicaid that is less relevant for wealthy people --> wealthy people have higher demand for insurance; however, wealthy people have lower risk of NH entry (part of it could also be moral hazard, i.e. uninsured rich people avoiding NH entry where poor go to NH and let Medicaid pay)
+# preventive health activity: mammogram, blood tests, prostate screen and few others
+# these result predict negative correlation between LTC  and NH which cancels out positive expected correlation from adverse selection
 
 ** Empirics: Explanations
 - wealth
@@ -486,11 +499,12 @@ Equilibrium:
 # no: those that are left with little/no insurance are close to risk neutral and therefore mandating insurance for them does not really improve welfare!
 
 - is it reasonable that consumers with high expected costs are less risk averse in health insurance?
-# problematic: poor people tend to have high risk and no insurance in the US, should we conclude that they are risk loving? Normally, 
+# somewhat but not so much since the low coverage people are not that risk averse
 
 ** Wealth, risk and utilization I
 - in the US, poor people have less insurance but worse health
-- explaining this with advantageous selection, who would be more risk averse rich or poor?
+- explaining this with advantageous selection (on risk aversion), who would be more risk averse rich or poor?
+# problematic: poor people tend to have high risk and no insurance in the US, should we conclude that they are risk loving? Normally, we think absolute risk aversion decreases with income!
 # poor more risk averse, seems unlikely and counter to economic eperiments/data
 
 ** Wealth, risk and utilization II
@@ -511,7 +525,7 @@ Equilibrium:
 - $s\in[0,1]$ is health state
 - $h$ is post treatment health and $h=s+\tau$ where $\tau\in[0,1-s]$ is treatment intensity
 - consumption $c$ equals 
-  - $W-p-(1-q)\tau$ (with prob $\alpha$) where $1-q$ is copayment rate (and $q$ is coverage) and $p$ is insurance premium
+  - $W-p-(1-q)\tau$ where $1-q$ is copayment rate (and $q$ is coverage) and $p$ is insurance premium
 
 - assume utility function
 $$v(c,h)=c-c^2/2+h-h^2/2$$
@@ -534,7 +548,8 @@ $$\tau^*(s)=\max\left\{0,\frac{1-s-(1-q)(1+p-W)}{(1-q)^2+1}\right\}.$$
 - what is the treatment intensity for full coverage?
 
 ** Wealth, risk and utilization V
-
+- assume 2 groups: poor (low $W$) and rich (high $W$)
+- assume distribution of $s$ puts more weight on bad health states for poor than for rich
 - plug $\tau^*(s)$ into $v$ and compare slope of indifference curve across 2 types (coverage, premium diagram)
   - rich (high $W$), low risk (high $s$ more likely)
   - poor (low $W$), high risk (low $s$ more likely)
