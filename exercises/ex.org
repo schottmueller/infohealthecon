@@ -130,7 +130,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 1. Assume that all people in our economy are similar and have the same Bernoulli utility function $u(x)=\sqrt{x}$. A person has wealth $W=9$ and falls ill with probability 1/2. When falling ill the person needs treatment costing $L=5$. 
   1. Determine the risk premium of a consumer for a full coverage contract. What contract will a profit maximizing insurance monopolist offer in this market?
   2. Suppose a genetic test becomes available: The test results can be either "high risk" (h) or "low risk" (l). Those that test have a 50% chance of getting either result. High risk people have probability 3/4 and low risk people have the probability 1/4 of falling ill. 
-    - Calculate the risk premium of an /h/ type and the risk premium of an /l/ type.
+    - Calculate the risk premium of an /h/ type and the risk premium of an /l/ type (again using a full coverage contract).
     - Assume everyone gets tested and the insurance monopolist can make his contracts dependent of the test result. What contracts will he offer? How do profits and expected utility change compared to (a)?
     - Assume that the monopolist is prohibited from making his contract contingent upon the test results. How do expected utility and insurance profits change compared to (a)? (Note: you do not have to calculate the profit maximizing contracts to answer this question qualitatively.) 
   3. How does your answer to the previous subquestions change if we assume that the insurance market is perfectly competitive?
@@ -151,7 +151,38 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
     - Calculate the constant premium that yields zero profits to insurers (without switching).
     - Compare it to the premiums with "guaranteed renewal". 
 
+2. Discuss the advantages and disadvantages of using "last year health care expenditures of insured" as an explanatory variable in a risk adjustment scheme.
+
+3. Suppose the population consists of two types /l/ and /h/ with the expenditure distribution for each type as in the table below. In this exercise we measure the incentive of an insurance to engage in risk selection by the difference in expected expenditures.
+  1. Calculate the expected expenditures per risk type and the incentives to engage in risk selection.
+  2. Consider a risk adjustment scheme that covers all expenditures above 20 (i.e. all expenditures above 20 are covered by some common fund). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. What is the idea behing such a risk adjustment scheme?
+  3. Consider a risk adjustment scheme that covers all expenditures up to 8 (i.e. all expenditures up to 8 are covered by some common fund). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. 
+  4. Consider expenditure distributions that satisfy the following conditions: $p_h^{30}>p_l^{30}$ and $p_h^{10}+p_h^{30}\geq p_l^{10}+p_l^{30}$ where $p_h^{30}$ is the probability that a high risk type has expenditures 30 and so on. 
+    - Show that the  incentive to engage in risk selection are decreased by a risk adjustment scheme as in (b) for all such distributions.
+    - Show that the  incentive to engage in risk selection are decreased by a risk adjustment scheme as in (c) for all such distributions.
+
+| risk/expenditure |   0 |  10 |  30 |
+|------------------+-----+-----+-----|
+| /                |   < |     |     |
+| /l/              | 40% | 10% | 50% |
+| /h/              | 10% | 50% | 40% |
+
+
+# 4. In the USA a prediction model similar to the German risk adjustment scheme is used to predict expenditures for  Medicare recipients (Medicare: subsidized care for elderly). That is an HMO (combined health insurer and care provider) is paid an amount $x$ for enrolling Medicare recipient Mister X where $x$ depends on the predicted care cost for Mister X. Over the years the scheme was changed several times:
+#  - First, the prediction model was based on age, gender, location and wheter Mister X is eligible for welfare payments and the amount $x$ was 95% of the predicted expenditures.
+# - In 1997 Medicare was reformed and the prediction model includes a hierarchical condition categories model (used in addition to the former variables). 
+# - In 2004 a bidding mechanism was introduced where the model gives a benchmark amount $x$. If an insurer offers a premium below this amount, the insurer keeps 75% of the saving while if the insurer offers a premium above the benchmark, he has to charge the amount above $x$ directly to the insured. 
+# What were the objectives of the changes? Make the changes sense?
+
 # 1.1: per period: $(\alpha_l+\lambda\alpha_l+(1-\lambda)\alpha_h)*L/2
 # 1.2: low risks would want to switch as other insurers will offer a contract at premium $\alpha_l L<$(\alpha_l+\lambda\alpha_l+(1-\lambda)\alpha_h)*L/2$
 # 1.3: show that $p_1^{guaranteed}>p^{const}>p_2^{guaranteed}$; hence budget constraint problems alleviated and better consumption smoothing
 # 1.4: per period: $(\alpha_l+\lambda\alpha_m+(1-\lambda)\alpha_h)*L/2; guaranteed renewal premiums: p_1^g=\alpha_l L+(1-\lambda)(\alpha_h-\alpha_m)L and p_2^g=\alpha_m L; note that p^const can be below p_2^g if \alpha_m is large (close to \alpha_h); that is, it is not clear that budget constraints are relaxed more by constant premium 
+
+# 2: ADVANTAGE: much higher prediction power as health care expenditure tend to be serially correlated (even when controlling for various health care conditions); if not doing so health insurers have a highly predictive variable on which they could try to select themselves (e.g. kicking out people with high expenditures int he previous year). DISADVANTAGE: reduced incentives for insurers to cut cost (high expenditure today translates to high payments from risk adjustment scheme next year) --> more waste has to be expected and therfore HCC is generally preferable to expenses; variable not available for new inflow (people from abroad kids etc.). BOTTOM LINE: at the very least, expenditure should not include administrative costs of the insurer, e.g. for claim handling, advertising etc., or costs of bonus benefits (like subsidy for fitness studio etc.)
+
+
+# E3.1: l=16, h=17
+# E3.2: l=11, h= 13 --> higher incentives for selection; take away incentives to not contract high risks
+# E3.3: l=11.2, h=9.8 --> incentives for risk selection reversed and bigger than in (a); 
+# E3.4: Conditions imply higher expected expenditures for h than for l as $p_l^{10}10+p_l^{30}*30=(p_l^{10}+p_l^{30})10+p_l^{30}*20\leq (p_h^{10}+p_h^{30})10+p_l^{30}*20<(p_h^{10}+p_h^{30})10+p_h^{30}*20=p_h^{10}10+p_h^{30}*30$.  By $p_h^{30}>p_l^{30}$, the subsidies from the fund are higher for a h than for l (while by a similar argument as for expected expenditures in baseline the expenditures are still higher for h than for l) --> lower incentives for risk selection. For the scheme in (c) note that this is a subsidy of 8 for everyone with expenditures greater than 8. As h is more likely to have expenditures above 8, he is more subsidized which reduces incentives for risk selection. More general point: first order stochastic dominance
