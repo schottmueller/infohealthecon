@@ -392,7 +392,8 @@ Equilibrium:
 
 * Selection empirically
 ** Empirics: Who has information? I
-- adverse selection and the problem of premium risk only occur if consumer, respectively insurer, have information on health status they can use in decision making
+- adverse selection requires that consumer has and uses information about his health status that the insurer does not have
+- (premium risk required insurer to  have and use information on consumer's health status)
 #
 
 - long term care insurance

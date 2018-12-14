@@ -155,7 +155,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 3. Suppose the population consists of two types /l/ and /h/ with the expenditure distribution for each type as in the table below. In this exercise we measure the incentive of an insurance to engage in risk selection by the difference in expected expenditures.
   1. Calculate the expected expenditures per risk type and the incentives to engage in risk selection.
-  2. Consider a risk adjustment scheme that covers all expenditures above 20 (i.e. all expenditures above 20 are covered by some common fund). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. What is the idea behing such a risk adjustment scheme?
+  2. Consider a risk adjustment scheme that covers all expenditures above 20 (i.e. all expenditures above 20 are covered by some common fund to the extent that they exceed 20). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. What is the idea behind such a risk adjustment scheme?
   3. Consider a risk adjustment scheme that covers all expenditures up to 8 (i.e. all expenditures up to 8 are covered by some common fund). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. 
   4. Consider expenditure distributions that satisfy the following conditions: $p_h^{30}>p_l^{30}$ and $p_h^{10}+p_h^{30}\geq p_l^{10}+p_l^{30}$ where $p_h^{30}$ is the probability that a high risk type has expenditures 30 and so on. 
     - Show that the  incentive to engage in risk selection are decreased by a risk adjustment scheme as in (b) for all such distributions.
@@ -186,3 +186,34 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E3.2: l=11, h= 13 --> higher incentives for selection; take away incentives to not contract high risks
 # E3.3: l=11.2, h=9.8 --> incentives for risk selection reversed and bigger than in (a); 
 # E3.4: Conditions imply higher expected expenditures for h than for l as $p_l^{10}10+p_l^{30}*30=(p_l^{10}+p_l^{30})10+p_l^{30}*20\leq (p_h^{10}+p_h^{30})10+p_l^{30}*20<(p_h^{10}+p_h^{30})10+p_h^{30}*20=p_h^{10}10+p_h^{30}*30$.  By $p_h^{30}>p_l^{30}$, the subsidies from the fund are higher for a h than for l (while by a similar argument as for expected expenditures in baseline the expenditures are still higher for h than for l) --> lower incentives for risk selection. For the scheme in (c) note that this is a subsidy of 8 for everyone with expenditures greater than 8. As h is more likely to have expenditures above 8, he is more subsidized which reduces incentives for risk selection. More general point: first order stochastic dominance
+** Advantageous selection
+
+1. Compare adverse and advantageous selection. 
+
+2. Let consumers have the utility function $u(x)=-e^{-\eta x}$. Each consumer faces a loss $L$ of his initial wealth $W$ with probability $\alpha$. While $W$ and $L$ are the same for all consumers, consumers differ in $\eta$ and $\alpha$. Let $W=10$ and $L=5$.
+   1. Compare the willingness to pay for a full coverage insurance contract of two consumers: Consumer A has risk $\alpha_A=0.3$ and risk aversion $\eta_A=1$. Consumer B has risk $\alpha_B=0.2$ and risk aversion $\eta_B=1.5$. 
+   2. Using otherwise the same parameters as in (a), who would have the higher willingness to pay if $\eta_B$ was 1 as well?
+   3. Using otherwise the same parameters as in (a), who would have the higher willingness to pay if $\alpha_B$ was 0.3 as well?
+   4. (PC exercise in spread sheet application or Julia) Let there be a continuum of consumers whose risk $\alpha$ is uniformly distributed on $[0.5,75]$. Assume that $\eta(\alpha)=3-\alpha$ and consider a full coverage insurance contract. Is this a case of adverse or advantageous selection? Repeat with $\eta(\alpha)=3-3.75\alpha$. 
+
+3. A consumer derives utility from consumption /c/ and good health /h/ according to the utility function $u(c,h)=2c-c^2/2+h$. If the consumer is ill his health state is $0$ and can be increased to 1 by a certain treatment. This treatment costs 1. 
+  1. Suppose the disposable income of the consumer is 2 and the consumer falls ill. Will he use the treatment if he has no insurance? (income not spent on the treatment is used for consumption)
+  2. Suppose the disposable income of the consumer is 1 and the consumer falls ill. Will he use the treatment if he has no insurance?
+  3. Consider a full coverage insurance at premium $1/2$ and let the consumer have an income of $2$ and a probability of $1/2$ of falling ill. Will he buy insurance?
+  4. Consider a full coverage insurance at premium $0.6$ and let the consumer have an income of $1$ and a probability of $0.6$ of falling ill. Will he buy insurance?
+  5. If there are people like in (c) and (d) what will be the correlation between risk and insurance purchases? What drives this result?
+
+# E3.1: U_t = 2-.5+1=2.5 >2=4-2+0  =U_{nt} treatment optimal
+# E3.2: U_t = 1 <1.5=2-.5  =U_{nt} no treatment optimal
+# E3.3: U_i = 3-1.125+1=2.875>2.75=.5*(4-2+1)+.5*(1.5+1)=U_{ni} buy insurance
+# E3.4: U_i = 0.8-0.08+1=1.72 < 1.9 = .4*(2-.5+1)+0.6*(2-.5) = U_{ni} do not buy insurance
+# E3.5: negative correlation as in advantageous selection but this is not caused by risk aversion but by utilization. 
+
+# E1: both about selection (who buys insurance); risk selection vs. risk aversion selection --> different implications for correlation insurance purchase and expected health care expenditures; reality seems to be a mix of both (see empirical evidence in lecture); difference in welfare implications: too few people buy insurance in adverse selection while this is not necessarily true under advantageous selection (e.g. not true under perfect competition)
+
+
+# E2.1: see jupyter notebook, WTP_A=3.812, WTP_B=3.929
+# E2.2:  WTP_B(eta=1)=3.417
+# E2.3: WTP_B(alpha=.3)=4.198
+# E2.4: WTP(alpha) increasing in first and decreasing in second case --> Adverse selection in first case and advantageous selection in second case
+
