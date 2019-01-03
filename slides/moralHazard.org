@@ -113,7 +113,7 @@ How will the distribution of medication expenditure for Medicare recipients look
 
 - A health insurer considers to introduce a copayment of 10% up to 5000€ and asks you how this will affect expenditures. What do you do?
 
-# price elasticity of -0.2, hence share of people with expenditures below 5000 are expected to consume 20% less
+# price elasticity of -0.2, hence share of people with expenditures below 5000 are expected to consume 2% less
 
 # simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of h; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
 

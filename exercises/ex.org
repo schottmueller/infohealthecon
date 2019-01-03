@@ -203,11 +203,6 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
   4. Consider a full coverage insurance at premium $0.6$ and let the consumer have an income of $1$ and a probability of $0.6$ of falling ill. Will he buy insurance?
   5. If there are people like in (c) and (d) what will be the correlation between risk and insurance purchases? What drives this result?
 
-# E3.1: U_t = 2-.5+1=2.5 >2=4-2+0  =U_{nt} treatment optimal
-# E3.2: U_t = 1 <1.5=2-.5  =U_{nt} no treatment optimal
-# E3.3: U_i = 3-1.125+1=2.875>2.75=.5*(4-2+1)+.5*(1.5+1)=U_{ni} buy insurance
-# E3.4: U_i = 0.8-0.08+1=1.72 < 1.9 = .4*(2-.5+1)+0.6*(2-.5) = U_{ni} do not buy insurance
-# E3.5: negative correlation as in advantageous selection but this is not caused by risk aversion but by utilization. 
 
 # E1: both about selection (who buys insurance); risk selection vs. risk aversion selection --> different implications for correlation insurance purchase and expected health care expenditures; reality seems to be a mix of both (see empirical evidence in lecture); difference in welfare implications: too few people buy insurance in adverse selection while this is not necessarily true under advantageous selection (e.g. not true under perfect competition)
 
@@ -217,3 +212,38 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E2.3: WTP_B(alpha=.3)=4.198
 # E2.4: WTP(alpha) increasing in first and decreasing in second case --> Adverse selection in first case and advantageous selection in second case
 
+# E3.1: U_t = 2-.5+1=2.5 >2=4-2+0  =U_{nt} treatment optimal
+# E3.2: U_t = 1 <1.5=2-.5  =U_{nt} no treatment optimal
+# E3.3: U_i = 3-1.125+1=2.875>2.75=.5*(4-2+1)+.5*(1.5+1)=U_{ni} buy insurance
+# E3.4: U_i = 0.8-0.08+1=1.72 < 1.9 = .4*(2-.5+1)+0.6*(2-.5) = U_{ni} do not buy insurance
+# E3.5: negative correlation as in advantageous selection but this is not caused by risk aversion but by utilization. 
+
+* Moral Hazard
+
+1. Ambulatory mental health care was the most price sensitive element of health care in the RAND health insurance experiment. How do you think the market for mental health care has changed since the 1970s? How does this affect the price sensitivity? What evidence would you look for to support your claims?
+
+2. Dental care was quite price sensitive in the RAND health insurance experiment. This effect was particulalry large in the first year. What is the explanation for this? What are the implications?
+
+3. Health insurance plans have often can be described by a deductible $D$, a copayment rate $c$ and a maximal out of pocket amount $M$: Up to $D$ all expenditures are paid by the insured, for every $ spent between $D$ and $M$ the insured pays $c$ and the insurance bears all expenses above $M$. [fn:: Hence, the total copayment if expenditures are $x$ is $x$ if $x\leq D$; is $D+c(x-D)$ if $D<x<M$ and is $D+cM$ for $x\geq M$] Assume that consumers act as to maximize the utility function $cons-0.5(2-s-t)^2$ where $cons$ is consumption, i.e. all money left to the consumer after paying for treatment $t\in[0,2-s]$, and $s\leq2$ is a health state. Assume that the consumer has an initial wealth of 4 (net of the insurance premium) and therefore consumption is $4-t$.
+  1. Suppose the consumer has no insurance (or equivalently $D>4$). How much treatment will he buy in health state $s\in[0,2]$?
+  2. Suppose the consumer has a coinsurance rate of $c\in[0,1)$ while $D=0$ and $M=\infty$. How much treatment will he buy in health state $s\in[0,2]$?
+  3. Now let $D=0.5$, $c=1/2$ and $M=\infty$. How much treatment will the consumer buy in health state $s\in[0,2]$?
+  4. (Extra exercise not covered in class: Verify that the consumer chooses either $t=0$ or $t=2-s$ if in the previous question $M=1$.)
+  5. Think now about expected expenditure at the time of insurance purchase (i.e. we do not know the health state yet). Under which conditions on the distribution of health states will an increase in the deductible reduce expected expenditures? What does this imply for the effectiveness of small deductibles in reducing expected expenditures?
+
+4. Suppose a study like the RAND health insurance experiment could be redone for $ 200 million. On what should the new study focus, i.e. how should it be different from the old one? Do you think it would be worth the money?
+
+
+# E1: "The idea here is that if the price responsiveness has declined over time, then one would expect health insurers to be among the first to see this and to begin reducing the distinctions between mental health coverage and medical coverage even in the absence of mental health parity requirements (see Chapter 18). The danger in this argument, however, is that health insurers seem to have been doing some pretty unproductive things in utilization management (see Chapter 8), so the argument here may be a bit disingenuous." (Morrisey);  psychiatry has turned heavily towards psychopharmaca and away from psychology (unclear whether this makes demand less price sensitive)
+
+# E2: "The differential response for dental care almost certainly reflects the equivalent of adverse selection in the sense that the randomly enrolled people were less likely to have had dental coverage and took advantage of the new coverage to obtain care they had deferred obtaining." (Morrisey); studies need a sufficiently long time horizon to give reliable results
+
+
+# E3.1: MB=2-s-t while MC=1; t_1=1-s if s\in[0,1] and t=0 else
+# E3.2:  MB=2-s-t while MC=c; t_c=2-c-s if s\in[0,2-c] and t=0 else
+# E3.3: MB=2-s-t while MC either 1,c or 0. If s\geq 1.5, then MC=1 and MB<1 an clearly t=0. For s\in[1,1.5) spending t>0.5 is possible but not optimal as t_c<1/2; hence t=0 for all s\in[1,2].  For $s<1$ compare t_1=0 and t_c=1.5-s  which lead to utility u_1= 4-.5(2-s)^2=2+2s-.5s^2 and u_c=4-(.5+ (1-s)/2)-(.5)^2=2.75+s/2 and u_0=4-(.5+.5*.5)=3.25; where $u_1>u_c$ iff s>2.5-\sqrt{4.75}=0.32. 
+# E3.4: For s>0.32, the previous exercise verifies. For s<0.32 compare $t_c$ and t_0=2-s leading to u_0=4-(.5.+0.5/2)=3.25.  As 3.25>u_c for s<0.32, the result follows.  
+# E3.5: Say we increase from D_1 to D_2. Then expenditures are only affected if health states in which we want to spend between D_1 and D_2 (under deductible D_1) have positive probability. Otherwise there is no difference between D_1 and D_2. This implies that small deductibles have hardly an effect as they can prevent only small expenditures and have no effect on big spenders that cause the majority of the health care expenditures.
+
+
+# E4: "While expensive, the RAND study was about as costly as a promising new drug development by a pharmaceutical company. So undertaking a new study is not beyond the realm of possibility. From my perspective, a new RAND study would focus on managed care and consumer-directed healthcare models rather than conventional coverage with, perhaps, greater attention to the potential for consumers to shop for value in healthcare. It would focus more on prescription drugs and any inpatient care that may (or may not) be prevented with generous drug benefits. It would focus more on modern mental health treatment approaches." (Morrisey)
