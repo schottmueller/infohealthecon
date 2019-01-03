@@ -135,19 +135,24 @@ Results:
 # or figure with coverage on x-axis and premium on y-axis
 # high risk would like to choose low risk contract
 
-** Rothschild-Stiglitz: curves and slopes
+** Rothschild-Stiglitz: curves and slopes I
 - /iso-profit curve/ for profit level $\bar\pi$
-  - all $(p,q)$ combination leading to profit $\bar\pi$
+  - all $(q,p)$ combination leading to profit $\bar\pi$
   - profits: $\pi=p-\alpha q L$
   - iso- profit: $p(q|\pi=\bar \pi)=\bar\pi+\alpha q L$ with slope $\alpha L$ 
 - /indifference curve/ for expected utility $\bar u$
-  - all $(p,q)$ combination leading to expected utility $\bar u$
+  - all $(q,p)$ combination leading to expected utility $\bar u$
   - exp. utility: $\mathbb{E}[u]=\alpha u(W-p-(1-q)L)+(1-\alpha) u(W-p)$
   - slope indifference curve via implicit function theorem:
 $$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)+(1-\alpha)u'(W-p)}>\alpha L$$
 or 
 $$p'(q|\mathbb{E}[u]=\bar u)= L\frac{u'(W-p-(1-q)L)}{u'(W-p-(1-q)L)+\frac{1-\alpha}{\alpha}u'(W-p)}$$
 and therefore slope indifference curve higher for higher \alpha
+** Rothschild-Stiglitz: curves and slopes II
+important features to remember
+- through a $(q,p)$ point the slope $p'(q)$ of the indifference curve is higher for higher risk types
+- for $q<1$: through a $(q,p)$ point the slope $p'(q)$ of the indifference curve of type $\alpha$ is higher than the slope of the isoprofit line of type $\alpha$
+- for $q=1$: through a $(q,p)$ point the slope $p'(q)$ of the indifference curve of type $\alpha$ equals the slope of the isoprofit line of type $\alpha$
 
 ** Rothschild-Stiglitz: second best (no pooling)
 
