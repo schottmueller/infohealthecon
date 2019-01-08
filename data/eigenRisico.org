@@ -92,6 +92,7 @@ plot(0:89,[mean(df11[(df11[:,:age].==string(age))  .& isfinite.(df11[:,:costsPer
 : 
 [[./ageCosts11.png]]
 
+[[./ageCosts11.png]]
 
 ** Cost differences between 17 and 19 year  olds
 
