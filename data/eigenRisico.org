@@ -1,0 +1,196 @@
+#+title: Empirical case study: Minimum deductible in the Netherlands
+#+options: toc:nil
+#+author: Christoph Schottmüller
+
+In the lecture we discussed some evidence for moral hazard. The main question here is whether we can find some empirical evidence for moral hazard ourselves.
+
+In the Netherlands health insurance is provided by a handful semi-private health insurers. The base coverage is fixed by law and the law also mandates, since 2008 , a minimum deductible for all insured /above age 18/, i.e. there is no deductible or other copayment for kids. Copayments that do not take the form of a deductible are not used and most insured have a deductible equal to the legal minimum. The minimum deductible has been increased over time from the initial 150€ per year. (2009: € 155; 2010: € 165; 2011: € 170; 2012: € 220; 2013: € 350; 2014: € 360; 2015: € 375; 2016, 2017 en 2018: € 385). Cost data for the Netherlands is available on http://www.vektis.nl/index.php/vektis-open-data where for each (age,gender,postcode) triple you can find the total health care costs split up into different categories. On the course website I provide a simplified version of the data sets from 2011 and 2014 in which I changed the variable names to English and aggregated all the costs that fall under the deductible into one variable.
+
+You can do the exercises below in a spreadsheet app (like Microsoft Excel or /OpenOffice Calc/) but even better suited would be a statistics software (like /R/ or Stata or SPSS) or a data analysis package in a general pupose programming language (like /Pandas for Python/ or /DataFrames for Julia/). (in italics those options that are free, open source and available for all usual operating systems; as you might have guessed, I use Julia)
+
+* How I generated the data sets on the website
+
+#+BEGIN_SRC julia :session :results output :exports code
+using CSV
+using DataFrames
+using Plots
+using Statistics
+
+###Data Set
+# Raw data from http://www.vektis.nl/index.php/vektis-open-data
+
+# minimum deductible 2011 for people aged above 18: 170 Euro
+df11orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2011 - postcode3.csv",delim=";");
+# minimum deductible 2014 for people aged above 18: 360 Euro
+df14orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2014 - postcode3.csv",delim=";");
+function get_data_into_shape(df)
+    cost_categories_under_deductible = [:KOSTEN_MEDISCH_SPECIALISTISCHE_ZORG, :KOSTEN_MONDZORG, :KOSTEN_FARMACIE, :KOSTEN_HULPMIDDELEN, :KOSTEN_PARAMEDISCHE_ZORG_FYSIOTHERAPIE, :KOSTEN_PARAMEDISCHE_ZORG_OVERIG, :KOSTEN_ZIEKENVERVOER_ZITTEND, :KOSTEN_ZIEKENVERVOER_LIGGEND, :KOSTEN_GRENSOVERSCHRIJDENDE_ZORG, :KOSTEN_OVERIG]
+    df.costsUnderDeductible = sum([df[:,cost] for cost in cost_categories_under_deductible])
+    dfOut = df[:,[:GESLACHT,:LEEFTIJDSKLASSE,:POSTCODE_3,:AANTAL_BSN,:AANTAL_VERZEKERDEJAREN,:costsUnderDeductible]]
+    dfOut = dfOut[2:end,:] #drop first line which contains aggregated information
+    rename!(dfOut,Dict(:GESLACHT=>:sex,:LEEFTIJDSKLASSE=>:age,:AANTAL_BSN=>:number_citizens,:AANTAL_VERZEKERDEJAREN=>:citizenYears))
+    dfOut.costsPerHeadUnderDeductible=dfOut[:,:costsUnderDeductible]./dfOut[:,:citizenYears]
+    dfOut.logCostsPerHeadUnderDeductible = log.(dfOut[:,:costsPerHeadUnderDeductible])
+    return dfOut
+end
+df11 = get_data_into_shape(df11orig);
+df14 = get_data_into_shape(df14orig);
+CSV.write("data2011.csv",df11);
+CSV.write("data2014.csv",df14);
+
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+get_data_into_shape (generic function with 1 method)
+
+
+
+
+
+
+#+end_example
+
+
+* Analysis
+
+** Can you find out how many people had health insurance in the Netherlands in 2011?
+#+BEGIN_SRC julia :results output :exports both :session
+println(sum(df11.number_citizens))
+sum(df11.citizenYears)
+#+END_SRC
+
+#+RESULTS:
+: 16747630
+: 1.646615468e7
+
+** Can you make a plot with age on the x-axis and average costs under the deductible on the y-axis? (If you are not familiar with the software this might be tricky and you might want to proceed without it.)
+
+#+BEGIN_SRC julia :results output :exports code :session
+#Age vs cost plot
+plot(0:89,[mean(df11[(df11[:,:age].==string(age))  .& isfinite.(df11[:,:costsPerHeadUnderDeductible]),:costsPerHeadUnderDeductible]) for age in 0:89],label="Costs per contribution year, 2011",xlabel="age")
+#plot!(0:89,[mean(df14[(df14[:,:age].==string(age)).& isfinite.(df14[:,:costsPerHeadUnderDeductible]),:costsPerHeadUnderDeductible]) for age in 0:89],label=" Log(costs per contribution year), 2014",xlabel="age")
+#+END_SRC
+
+#+RESULTS:
+: 
+: 
+[[./ageCosts11.png]]
+
+
+** Cost differences between 17 and 19 year  olds
+
+#+BEGIN_SRC julia :results output :exports both :session
+println("Average costs for 2011, age 17: ",mean(df11[df11[:,:age].=="17",:costsPerHeadUnderDeductible]))
+println("Average costs for 2011, age 19: ",mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+println("Average costs for 2014, age 17: ",mean(df14[df14[:,:age].=="17",:costsPerHeadUnderDeductible]))
+println("Average costs for 2014, age 19: ",mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible]))
+println("Percentage increase in average cost between age 19 and 17, 2011: ",100*(mean(df11[df11[:,:age].=="17",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]),"%" )
+println("Percentage increase in average cost between age 19 and 17, 2014: ",100*(mean(df14[df14[:,:age].=="17",:costsPerHeadUnderDeductible])-mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible]))/mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible]),"%" )
+#+END_SRC
+
+#+RESULTS:
+: Mean costs for 2011, age 17: 779.6933858641266
+: Mean costs for 2011, age 19: 614.919922465684
+: Mean costs for 2014, age 17: 830.3319601493314
+: Mean costs for 2014, age 19: 622.7101183323002
+: Percentage increase in mean cost between age 19 and 17, 2011: 26.795922099537766%
+: Percentage increase in mean cost between age 19 and 17, 2014: 33.34165219172443%
+
+17 year olds cost more. This could be age related expenditure but it also could indicate moral hazard, i.e. people consume less health care if they face a deductible. 
+
+** Plotting cost distributions
+To get a better idea of the difference we plot the distribution of costs (this is called a "histogram") for 17 and 19 year olds. I plot the logarithm of costs which seems to be almost normally distributed. 
+
+#+BEGIN_SRC julia :results output :exports code :session
+#Histograms
+histogram(df11[(df11[:,:age].=="17").& isfinite.(df11[:,:logCostsPerHeadUnderDeductible]),:logCostsPerHeadUnderDeductible],label="2011, age 17",alpha=0.5,normed=true,title="Distribution Log(costs per contribution year)  2011")
+histogram!(df11[(df11[:,:age].=="19").& isfinite.(df11[:,:logCostsPerHeadUnderDeductible]),:logCostsPerHeadUnderDeductible],label="2011, age 19",alpha=0.5,normed=true)
+#histogram(df14[(df14[:,:age].=="17").& isfinite.(df14[:,:logCostsPerHeadUnderDeductible]),:logCostsPerHeadUnderDeductible],label="2014, age 17",alpha=0.5,normed=true,title="Distribution Log(costs per contribution year) 2014")
+#histogram!(df14[(df14[:,:age].=="19") .& isfinite.(df14[:,:logCostsPerHeadUnderDeductible]),:logCostsPerHeadUnderDeductible],label="2014, age 19",alpha=0.5,normed=true)
+#+END_SRC
+
+#+RESULTS:
+: 
+
+[[./histogram11.png]]
+** Why compare with 2014?
+The deductible more than doubled between 2011 and 2014. Hence, if the cost difference between 17 and 19 year old is due to moral hazard we would expect the cost difference to increase significantly. In fact that is what the results above already showed: in 2014 the cost difference is relatively larger.
+
+** Demand elasticity for the deductible 
+We can measure by how much the costs of 19 year olds decreased when their deductible increased from 170€ to 360€, i.e. we compare the average costs of 19 year olds in 2011 and 2014 (in fact we could do this also for all older people). 
+
+#+BEGIN_SRC julia :results output :exports both :session
+#Estimate of elasticity
+relIncreaseDeductible=(360-170)/170
+relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+println("(Bad!) estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCosts/relIncreaseDeductible,digits=2),"%",) 
+#+END_SRC
+Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. I do not do so because the relevant question is here whether consumers value 1 differently in 2011 and 2014 which has little to do with increasing health care costs. The correct deflator would be the usual consumer price indeces. As those did not change a lot -- much less than health care costs! -- between 2011 and 2014 I neglect this inflation.]
+
+#+BEGIN_SRC julia :results output :exports both :session
+deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])
+
+println("deflator = ",deflator)
+
+relIncreaseCostsDeflated = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/deflator-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+println("Rough estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCostsDeflated/relIncreaseDeductible,digits=2),"%")
+#+END_SRC
+
+#+RESULTS:
+#+begin_example
+
+1.1176470588235294
+0.012668634698611526
+0.012668634698611526
+(Bad!) estimate for cost reduction if deductible is increased by 100% is -1.13% or
+
+1.1141808765729648
+
+deflator = 1.1141808765729648
+
+-0.09110930191746609
+Rough estimate for cost reduction if deductible is increased by 100% is 8.15%
+#+end_example
+
+** Is there a way to compare the estimate of the previous exercise to the famous -0.2 demand elasticity from the RAND health insurance experiment?
+This is problematic because the RAND estimate is for increases in the copayment rate and not the deductible. So the short -- and correct -- answer is "NO!".
+If we really want to give it a try (just to see whether we are in the right ballpark), we might think of an increase in a copayment rate that would be comparable to an increase in the deductible from 170€ in 2011 to 360€ in 2014. A very rough comparison would be to ask what fraction of average health care expenditure is 360-170=190€ and then claim that we should compare our deductible increase to a relative increase of the copayment by this fraction. 
+#+BEGIN_SRC julia :results output :exports both :session
+println("average cost for 19 year old, 2011 is ", round(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]),digits=2))
+println("190 is ",round(100*190/mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]),digits=2) ,"% of this average cost")
+#+END_SRC
+
+#+RESULTS:
+: average cost for 19 year old, 2011 is 614.92
+: 190 is 30.9% of this average cost
+
+With the RAND estimate of -0.2 we would then expect that the average expected cost of 10 year olds would decrease by -0.2*30.9%=6.1%. Our actual (deflated) cost reduction is significantly higher but at least it has roughly the same order of magnitude. But as I mentioned above we are comparing apples and oranges here.
+#+BEGIN_SRC julia :results output :exports both :session
+println("relative deflated decrease in the cost of 19 year olds is ",round(-100*relIncreaseCostsDeflated,digits=2),"%")
+#+END_SRC
+
+#+RESULTS:
+: relative deflated decrease in the cost of 19 year olds is 9.11%
+
+
+
+
+
+
