@@ -232,7 +232,6 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 4. Suppose a study like the RAND health insurance experiment could be redone for $ 200 million. On what should the new study focus, i.e. how should it be different from the old one? Do you think it would be worth the money?
 
-
 # E1: "The idea here is that if the price responsiveness has declined over time, then one would expect health insurers to be among the first to see this and to begin reducing the distinctions between mental health coverage and medical coverage even in the absence of mental health parity requirements (see Chapter 18). The danger in this argument, however, is that health insurers seem to have been doing some pretty unproductive things in utilization management (see Chapter 8), so the argument here may be a bit disingenuous." (Morrisey);  psychiatry has turned heavily towards psychopharmaca and away from psychology (unclear whether this makes demand less price sensitive); maybe less social stigma of mental health care nowadays (again not totally clear how this affects price sensitivity); regulatory environment has changed (maybe it is harder today to get a renewal of a prescription)
 
 # E2: "The differential response for dental care almost certainly reflects the equivalent of adverse selection in the sense that the randomly enrolled people were less likely to have had dental coverage and took advantage of the new coverage to obtain care they had deferred obtaining." (Morrisey); studies need a sufficiently long time horizon to give reliable results
@@ -245,3 +244,21 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 
 # E4: "While expensive, the RAND study was about as costly as a promising new drug development by a pharmaceutical company. So undertaking a new study is not beyond the realm of possibility. From my perspective, a new RAND study would focus on managed care and consumer-directed healthcare models rather than conventional coverage with, perhaps, greater attention to the potential for consumers to shop for value in healthcare. It would focus more on prescription drugs and any inpatient care that may (or may not) be prevented with generous drug benefits. It would focus more on modern mental health treatment approaches." (Morrisey)
+
+** Empirical case study: Minimum deductible in the Netherlands
+In the lecture we discussed some evidence for moral hazard. The main question here is whether we can find some empirical evidence for moral hazard ourselves.
+
+In the Netherlands health insurance is provided by a handful semi-private health insurers. The base coverage is fixed by law and the law also mandates, since 2008 , a minimum deductible for all insured /above age 18/, i.e. there is no deductible or other copayment for kids. Copayments that do not take the form of a deductible are not used and most insured have a deductible equal to the legal minimum. The minimum deductible has been increased over time from the initial 150€ per year. (2009: € 155; 2010: € 165; 2011: € 170; 2012: € 220; 2013: € 350; 2014: € 360; 2015: € 375; 2016, 2017 en 2018: € 385). Cost data for the Netherlands is available on http://www.vektis.nl/index.php/vektis-open-data where for each (age,gender,postcode) triple you can find the total health care costs split up into different categories. On the course website I provide a simplified version of the data sets from [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]] in which I changed the variable names to English and aggregated all the costs that fall under the deductible into one variable.
+
+You can do the exercises below in a spreadsheet app (like Microsoft Excel or /OpenOffice Calc/) but even better suited would be a statistics software (like /R/ or Stata or SPSS) or a data analysis package in a general pupose programming language (like /Pandas for Python/ or /DataFrames for Julia/). (in italics those options that are free, open source and available for all usual operating systems; as you might have guessed, I use Julia)
+
+1. Download the data for 2011 and open it in your software of choice. Do you understand what the number in the different cells mean?
+2. Can you find out how many people had health insurance in the Netherlands in 2011?
+3. Can you make a plot with age on the x-axis and average costs under the deductible on the y-axis? (If you are not familiar with the software this might be tricky and you might want to proceed without it.)
+4. Can you find the average costs under the deductible of 17 year olds?
+5. Can you find the average costs under the deductible of 19 year olds?
+6. How do you interpret the difference in average costs between 17 and 19 year old?
+7. To get a better idea of the difference plot the distribution of costs (this is called a "histogram") for 17 and 19 year olds. (again this can be a bit tricky)
+8. Why would it make sense to repeat some of the analysis with the 2014 data?
+9. Can you give a demand elasticity for the deductible, i.e. if we increase the deductible by 100% by how much do expenditures decrease? 
+10. Can the estimate of the previous exercise be compared to the famous -0.2 demand elasticity from the RAND health insurance experiment?
