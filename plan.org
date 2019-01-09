@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The second exam date is very likely to be March 22, 8:45-9:45 in Aula I.
 - The exam will take place on February 7, 15:30-16:30 in HSI. Register for the exam via KLIPS before January 10. A second exam date will be determined later.
 - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
 - There is now a julia/jupyter notebook that can compute the resuls to some of the exercises of the first 3 weeks. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. The "course materials" section below explains how you can use the notebook. (It is unlikely that this notebook will be extended to cover exercises of the coming weeks as the material is not that easily amenable to a programming solution).
