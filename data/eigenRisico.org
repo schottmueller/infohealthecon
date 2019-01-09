@@ -54,13 +54,7 @@ CSV.write("data2014.csv",df14);
 
 
 
-
-
-
 get_data_into_shape (generic function with 1 method)
-
-
-
 
 
 
@@ -140,9 +134,15 @@ We can measure by how much the costs of 19 year olds decreased when their deduct
 #Estimate of elasticity
 relIncreaseDeductible=(360-170)/170
 relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
-relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
 println("(Bad!) estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCosts/relIncreaseDeductible,digits=2),"%",) 
 #+END_SRC
+
+#+RESULTS:
+: 
+: 1.1176470588235294
+: 0.012668634698611526
+: (Bad!) estimate for cost reduction if deductible is increased by 100% is -1.13%
+
 Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. I do not do so because the relevant question is here whether consumers value 1 differently in 2011 and 2014 which has little to do with increasing health care costs. The correct deflator would be the usual consumer price indeces. As those did not change a lot -- much less than health care costs! -- between 2011 and 2014 I neglect this inflation.]
 
 #+BEGIN_SRC julia :results output :exports both :session
@@ -155,20 +155,12 @@ println("Rough estimate for cost reduction if deductible is increased by 100% is
 #+END_SRC
 
 #+RESULTS:
-#+begin_example
-
-1.1176470588235294
-0.012668634698611526
-0.012668634698611526
-(Bad!) estimate for cost reduction if deductible is increased by 100% is -1.13% or
-
-1.1141808765729648
-
-deflator = 1.1141808765729648
-
--0.09110930191746609
-Rough estimate for cost reduction if deductible is increased by 100% is 8.15%
-#+end_example
+: 1.1141808765729648
+: 
+: deflator = 1.1141808765729648
+: 
+: -0.09110930191746609
+: Rough estimate for cost reduction if deductible is increased by 100% is 8.15%
 
 ** Is there a way to compare the estimate of the previous exercise to the famous -0.2 demand elasticity from the RAND health insurance experiment?
 This is problematic because the RAND estimate is for increases in the copayment rate and not the deductible. So the short -- and correct -- answer is "NO!".
