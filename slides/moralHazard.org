@@ -72,10 +72,15 @@ How do you design a study that settles the argument?
 - due to limited budget, lottery for eligibility
 - no copayment, no premium
 - use lottery success as instrument for health insurance
-- compare people who won in lottery to those who did not
+- roughly: compare lottery winners to losers
 
 \includegraphics[width=6cm]{Oregon1}
 \tiny{source: Einav and Finkelstein 2017}\normalsize
+
+# procedure: 75000 applied and 30000 were selected; if selected apply fro Medicaid and if you met the criteria you got it; comprehensive coverage without cost sharing;
+# winning in the lottery increased prob of having health insurance by 25 percentage points 
+# 2 years after lottery Oregon had enough founds to also extend to "control group"
+# estimates are IV estimated of local average treatment effect
 
 ** Oregon II
 \includegraphics[width=8cm]{Oregon2}
@@ -108,12 +113,12 @@ How will the distribution of medication expenditure for Medicare recipients look
 
 # deadweight loss in demand diagram
 
-* Structural estimation
+* Out of sample predictions
 ** Out of sample predictions
 
 - A health insurer considers to introduce a copayment of 10% up to 5000€ and asks you how this will affect expenditures. What do you do?
 
-# price elasticity of -0.2, hence share of people with expenditures below 5000 are expected to consume 2% less
+# price elasticity of -0.2 (note that RAND used the arc elasticity, i.e. the percentage increase in out of pocket price would be (10-0)/((10+0)/2)=2=200%), hence share of people with expenditures below 5000 are expected to consume 2*0.2=40% less
 
 # simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of h; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
 
@@ -125,7 +130,7 @@ How will the distribution of medication expenditure for Medicare recipients look
 - uninsured in the US who become eligible for Medicare when turning 65
 
 Results: after turning 65...
-- number of physician visits increases for low-educated by 35 (41)% for men (wome)
+- number of physician visits increases for low-educated by 35 (41)% for men (women)
 - probability of engaging in vigorous physical activity falls by 21 (13)%
 
 \tiny (source: Dave and Kaestner, International Journal of Health Care Finance and Economics, 2009)\normalsize
