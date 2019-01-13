@@ -42,21 +42,7 @@ CSV.write("data2014.csv",df14);
 
 #+RESULTS:
 #+begin_example
-
-
-
-
-
-
-
-
-
-
-
-
 get_data_into_shape (generic function with 1 method)
-
-
 
 #+end_example
 
@@ -65,6 +51,8 @@ get_data_into_shape (generic function with 1 method)
 
 ** Can you find out how many people had health insurance in the Netherlands in 2011?
 #+BEGIN_SRC julia :results output :exports both :session
+#df11 = CSV.read("data2011.csv");
+#df14 = CSV.read("data2014.csv");
 println(sum(df11.number_citizens))
 sum(df11.citizenYears)
 #+END_SRC
@@ -132,8 +120,8 @@ We can measure by how much the costs of 19 year olds decreased when their deduct
 
 #+BEGIN_SRC julia :results output :exports both :session
 #Estimate of elasticity
-relIncreaseDeductible=(360-170)/170
-relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+relIncreaseDeductible=(360-170)/(170/2+360/2)
+relIncreaseCosts = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible])/2+mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/2)
 println("(Bad!) estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCosts/relIncreaseDeductible,digits=2),"%",) 
 #+END_SRC
 
@@ -146,12 +134,12 @@ println("(Bad!) estimate for cost reduction if deductible is increased by 100% i
 Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. The relevant question is here whether consumers value 1€ differently in 2011 and 2014 which has little to do with increasing health care costs but depends on the general inflation rate. The correct deflator for the deductible is therefore usual consumer price index which I took from [[https://www.inflation.eu/inflation-rates/the-netherlands/historic-inflation/cpi-inflation-the-netherlands.aspx][here]]. Note that consumer prices changed much less than health care costs.]
 
 #+BEGIN_SRC julia :results output :exports both :session
-deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]);
+deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/(mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible])/2+mean(df14[(df14[:,:age].==string(age)),:costsPerHeadUnderDeductible])/2 for age in 1:17]));
 println("deflator = ",deflator)
 CPIDeflator = 1.0246*1.0251*1.0098 #CPI inflation rates 2012,2013 and 2014 in NL following https://www.inflation.eu
-relIncreaseDeductibleDeflated = (360/CPIDeflator-170)/170
+relIncreaseDeductibleDeflated = (360/CPIDeflator-170)/(170/2+360/(2*CPIDeflator)
 
-relIncreaseCostsDeflated = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/deflator-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))
+relIncreaseCostsDeflated = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/deflator-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible])/2+mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/(2*deflator))
 println("Rough estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCostsDeflated/relIncreaseDeductibleDeflated,digits=2),"%")
 #+END_SRC
 
