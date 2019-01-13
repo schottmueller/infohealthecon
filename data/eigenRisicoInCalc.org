@@ -1,0 +1,42 @@
+* Open data
+- choose language "English (USA)" to get comma/decimal right
+* How many people had insurance?
+- =SUM(D2:D136143)
+- =SUM(E2:E136143)
+
+* Average costs
+** By hand:
+mark all but row 1, Data->Sort-> according to column B
+
+mark colum age, then Data->Filter->Standard Filter age=17
+=AVERAGE(G26097:G27635)  
+
+click in age column, Data->More Filters->Reset Filters
+
+Data->Filter->Standard Filter age=19
+=AVERAGE(G29173:G30713)
+
+** Command
+=AVERAGEIF(B2:B135631;"=17";G2:G135631)
+=AVERAGEIF(B2:B135631;"=19";G2:G135631)
+
+** Age expense graph
+- make a column for age from 0 to 89 (here in K13:K102)
+- next to it make a column average costs per head at this age using the formula
+=AVERAGEIF(B2:B135631;"="&K13;G2:G135631) in L13
+=AVERAGEIF(B2:B135631;"="&K13;G2:G135631) in L14 
+and extend to L13:L102 by marking and dragging
+
+- mark the average cost column (L13:102) and click on "insert chart"
+- do the same but only take costs for ages 10 to 30 to see the 18 year drop
+
+* Elasticity
+relative change in deductible: (360-170)/(360/2+170/2)=0.717
+bad (as non-deflated) estimate of relative change in expenditure 10 year old: (622-614)/(614/2+622/2)=0.0129
+bad (as not deflated) elasticity: 0.0129/0.717 >0 (and roughly 0)
+
+deflate with 17 year old cost increase: 
+  - rel cost increase 17 year old: (830-779)/(830/2+779/2)=0.06339
+  - deflate 2014 cost of 19 year old to 2011 prices: 622/1.06339=585
+  - rel increase in cost of 19 year old at 2011 prices (585-614)/(585/2+614/2)=-0.0483
+  - deflated elasticity: -0.0483/0.717=-0.0674
