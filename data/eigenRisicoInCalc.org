@@ -17,14 +17,14 @@ Data->Filter->Standard Filter age=19
 =AVERAGE(G29173:G30713)
 
 ** Command
-=AVERAGEIF(B2:B135631;"=17";G2:G135631)
-=AVERAGEIF(B2:B135631;"=19";G2:G135631)
+=AVERAGEIF(B$2:B$135631;"=17";G$2:G$135631)
+=AVERAGEIF(B$2:B$135631;"=19";G$2:G$135631)
 
 ** Age expense graph
 - make a column for age from 0 to 89 (here in K13:K102)
 - next to it make a column average costs per head at this age using the formula
-=AVERAGEIF(B2:B135631;"="&K13;G2:G135631) in L13
-=AVERAGEIF(B2:B135631;"="&K13;G2:G135631) in L14 
+=AVERAGEIF(B$2:B$135631;"="&K13;G$2:G$135631) in L13
+=AVERAGEIF(B$2:B$135631;"="&K13;G$2:G$135631) in L14 
 and extend to L13:L102 by marking and dragging
 
 - mark the average cost column (L13:102) and click on "insert chart"

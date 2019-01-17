@@ -142,7 +142,7 @@ how does moral hazard affect optimal insurance contracts?
 - if loss occurs, consumer chooses medical spending $M\in[0,\bar M]$ to mitigate the loss to $L-f(M)$ 
   - assumptions: $f'>0$, $f''<0$, $f'(0)>1$, $f'(\bar M)<1$, $f(\bar M)\leq L$
 - insurance costs premium $p$ and bares fraction $c$ of the medical spending
-- simplifying assumption: fair premium, i.e. $p=\alpha cM^*$, were $M^*$ is optimal sepnding by the consumer
+- simplifying assumption: fair premium, i.e. $p=\alpha cM^*$, where $M^*$ is optimal spending by the consumer
 - what is the coverage level maximizing expected consumer utility?
 
 ** Ex post moral hazard and optimal insurance contracts: analysis
@@ -157,7 +157,7 @@ $$ E[u] = (1-\alpha) u(W-p)+\alpha u(W-p-L-(1-c)M+f(M))$$
 \small
 $$ \max_{c\in[0,1]} (1-\alpha) u(W-\alpha cM^*(c))+\alpha u(W-\alpha cM^*(c)-L-(1-c)M^*(c)+f(M^*(c)))$$
 
-$$ \max_{c\in[0,1]} (1-\alpha) u(W-\alpha cM^*(c))+\alpha u(W-L+(1-\alpha)cM^*(c)-M^*(c)+f(M^*(c)))$$
+$$\Leftrightarrow \max_{c\in[0,1]} (1-\alpha) u(W-\alpha cM^*(c))+\alpha u(W-L+(1-\alpha)cM^*(c)-M^*(c)+f(M^*(c)))$$
 
 ** Ex post moral hazard and optimal insurance contracts: analysis
 
@@ -198,5 +198,71 @@ $$c=\sqrt{2L-2log(1.8/0.8)}=\sqrt{2L-1.62}$$
 - copayment can also be used to prevent ex ante moral hazard
 - problem: multiple insurances
 #
-- other instruments to fight moral hazard
-# subsidies for gym memberships etc.
+
+* Utilization management
+** Utilization management (UM)
+- insurance causes over consumption of care 
+  - copayments are an imperfect way to fight this problem
+  - what else can insurer do to fight over consumption of care?
+
+** Empirical evidence on utilization management I
+
+- Wickizer, Wheeler and Feldstein (1989) and Wheeler and Wickizer (1990)
+  - data from one US insurer 
+  - 41% of groups buy plan with preadmission certification and concurrent review
+  - results: 
+    - 3.7% less hospital admissions but no effect on length of stay
+    - UM more effective if in community admission rates are high or hospital capacity is idle 
+  
+- Scheffler, Sullivan and Ko (1991)
+  - Blue Cross/Blue shield plans
+
+\tiny
+|                                | admissions | hospital days | length of stay | inpatient expenditures |
+|--------------------------------+------------+---------------+----------------+------------------------|
+| /                              | <          |               |                |                        |
+| preadmission+concurrent review | -5.3%***   | -4.9%***      |           +0.4 |               -2.6%*** |
+| mandatory 2nd surgical opinion | +0.8%      | +0.9%         |           +0.0 |                  -2.6% |
+| retrospective review           | +0.5       | +0.8          |           +0.4 |                   +2.1 |
+| denial of payment              | -2.3*      | -4.5***       |        -2.1*** |                  -2.0* |
+| discharge planning             | +0.7       | +1,2          |           +0.0 |                   -0.8 |
+
+# preadmission cert.: nonemergency hospital admission has to be cleared by insurer before admittance
+# concurretn review: number of hospital days is specified in advance and increases have to be cleared by insurer
+# retrospective review: review case expost and advise provider to follow insurer protocol if care deemed unnecessary
+# denial of payment: insurer will not pay for care that is not in line with insurer protocol
+# discharge planning: provider must make a plan for care after discharge before admitting
+# problem: selection! groups choosing UM may know they need it
+
+** Empirical evidence on utilization management II
+- Lessler and Wickizer (2000)
+  - one US health insurer with different groups (some with preadmission certification + concurrent review)
+  - only cardiovascular disease patients
+  - results
+    - almost no requests for admission rejected
+    - 17.5% of cases length of stay was reduced (19% for surgical procedures)
+    - readmission rates: 12.4% no reduction, 9.4% if 1 day reduction, 14.6% if 2+ days reduction
+# no admission reduction: cardivascular have no discretion, or providers know guidelines very well, or ineffective
+
+** Gatekeeping
+- gatekeeping: specialty care requires referral by general practicioner
+  - what are the advantages?
+
+\pause 
+
+- Ferris er al. (2001)
+  - Harvards Vanguard eliminated gatekeeping after 25 years in 1998 
+  - compare utilization before and after elimination
+
+| physician visits                   | gatekeeping | no gatekeeping |
+|------------------------------------+-------------+----------------|
+| /                                  |           < |                |
+| number specialty visits / 6 months |         .78 |            .78 |
+| number first visit specialist /6m  |         .19 |            .22 |
+| number primary care visits /6m     |        1.21 |           1.19 |
+
+# no statistical significance
+
+# potential advantage: continuity of care i.e. GP has overview and manages as expert adviser, substitute expensive specialty by cheap GP, use capitation
+
+
