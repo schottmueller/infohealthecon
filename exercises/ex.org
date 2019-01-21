@@ -232,13 +232,16 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 4. Suppose a study like the RAND health insurance experiment could be redone for $ 200 million. On what should the new study focus, i.e. how should it be different from the old one? Do you think it would be worth the money?
 
-5. A consumer has wealth $W=64$ and face a potential loss of $L=15$. The consumer has to decide whether to "be careful" or not. If he is careful, the loss realizes with probability $1/4$. If he is not careful, the loss realizes with probability $1/2$. 
+5. A consumer has wealth $W=64$ and face a potential loss of $L=15$. The consumer has to decide whether to "be careful" or not. If he is careful, the loss realizes with probability $1/4$. If he is not careful, the loss realizes with probability $1/2$. Being careful costs (the money equivalent of) 1 unit of income. (The consumer is a risk averse expected utility maximizer and you can assume $u(x)=\sqrt{x}$.)  
   1. Consider the situation where the consumer is not insured. Will he be careful?
   2. Consider the situation where the consumer is fully insured at premium $p>0$. Will he be careful?
 
-6. A consumer with Bernoulli utility $u(x)=-x^2+10x$ has wealth $W=4$ and faces a potential (money equivalent) loss $L=2$ which realizes with probability $\alpha=1/2$. If the loss realizes the consumer can (partially) make up for the loss by treatment $M$. The insurance will cover $cM$ of these treatment expenditures for some $c\in[0,1]$. Treatment $M$ will mitigate the loss to $L-2M+M^2/2$.
+6. A consumer with Bernoulli utility $u(x)=-x^2+10x$ has wealth $W=4$ and faces a potential (money equivalent) loss $L=2$ which realizes with probability $\alpha=1/2$. If the loss realizes the consumer can (partially) make up for the loss by treatment $M\in[0,2]$. The insurance will cover $cM$ of these treatment expenditures for some $c\in[0,1]$. Treatment $M$ will mitigate the loss to $L-2M+M^2/2$.
   1. If the consumer is ill, what treatment intensity $M^*(c)$ will he choose?
-  2. Assume that the insurance premium is fair, i.e. $p=\alpha c M^*(c)$. Write down the consumers expected utility. Which $c$ maximizes expected consumer utility? How and why does this result differ from models withou moral hazard? 
+  2. (numerical) Assume that the insurance premium is fair, i.e. $p=\alpha c M^*(c)$. Write down the consumers expected utility. Which $c$ maximizes expected consumer utility? How and why does this result differ from models withou moral hazard? 
+
+# E6.1: max_M W-L-p-L+2M-M^2/2-(1-c)M leading to foc 2-M-(1-c)=0 or M*=1+c
+# E6.2: see julia notebook
 
 # E1: "The idea here is that if the price responsiveness has declined over time, then one would expect health insurers to be among the first to see this and to begin reducing the distinctions between mental health coverage and medical coverage even in the absence of mental health parity requirements (see Chapter 18). The danger in this argument, however, is that health insurers seem to have been doing some pretty unproductive things in utilization management (see Chapter 8), so the argument here may be a bit disingenuous." (Morrisey);  psychiatry has turned heavily towards psychopharmaca and away from psychology (unclear whether this makes demand less price sensitive); maybe less social stigma of mental health care nowadays (again not totally clear how this affects price sensitivity); regulatory environment has changed (maybe it is harder today to get a renewal of a prescription)
 
@@ -252,6 +255,11 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 
 # E4: "While expensive, the RAND study was about as costly as a promising new drug development by a pharmaceutical company. So undertaking a new study is not beyond the realm of possibility. From my perspective, a new RAND study would focus on managed care and consumer-directed healthcare models rather than conventional coverage with, perhaps, greater attention to the potential for consumers to shop for value in healthcare. It would focus more on prescription drugs and any inpatient care that may (or may not) be prevented with generous drug benefits. It would focus more on modern mental health treatment approaches." (Morrisey) Health saving accounts; other forms of cost sharing (Quartalspauschale in Deutschland); maybe focus on deductibles instead of coinsurance rates
+
+
+# E5: no insurance: EUcare=3/4 u(W-1)+ 1/4 u(W-L-1)=7.68; EUno=1/2 u(W) +1/2 u(W-L)=7.5 
+# insurance: EUcare=u(W-p-1); EUno=u(W-p); hence not careful, this is ex ante moral hazard
+# note that being careful is socially very beneficial as expected benefit is 15/4 and costs only 1
 
 ** Empirical case study: Minimum deductible in the Netherlands
 In the lecture we discussed some evidence for moral hazard. The main question here is whether we can find some empirical evidence for moral hazard ourselves.[fn::This case study is based on material prepared by Jan Boone, see [[https://github.com/janboone/python_economics/blob/master/economics.org#regulation-in-health-care-markets][section "Regulation in health care markets" here]].]
