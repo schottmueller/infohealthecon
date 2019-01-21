@@ -155,17 +155,7 @@ println("Rough estimate for cost reduction if deductible is increased by 100% is
 ** Is there a way to compare the estimate of the previous exercise to the famous -0.2 demand elasticity from the RAND health insurance experiment?
 This is problematic because the RAND estimate is more applicable for increases in the copayment rate and not so much the deductible. So the short -- and correct -- answer is "NO!". The main difficulty is that the RAND estimate refers to an increase in "out of pocket" spending. We cannot figure this out because we do not know how many people actually exceed the deductible (if we had individual data, i.e. if our data was not aggregated at postcode level, we would know this!). 
 
-If we really want to give it a try (just to see whether we are in the right ballpark), we have to make some assumption and I will make the simple assumption that everyone spends more than the deductible, i.e. the increase in the deductible by 360-170=190€ leads to an increse of out-of-pocket spending by 190€ for everyone.  For this very rough guesstimate we ask what fraction of average health care expenditure is 360-170=190€ and then claim that we should compare our deductible increase to a relative increase of out-of-pocket spending by this fraction. 
-#+BEGIN_SRC julia :results output :exports both :session
-println("average cost for 19 year old, 2011 is ", round(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]),digits=2))
-println("190 is ",round(100*190/mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]),digits=2) ,"% of this average cost")
-#+END_SRC
-
-#+RESULTS:
-: average cost for 19 year old, 2011 is 614.92
-: 190 is 30.9% of this average cost
-
-With the RAND estimate of -0.2 we would then expect that the average expected cost of 19 year olds would increase by 0.2*30.9%=6.18%. Our actual (deflated) cost increase is significantly higher but at least it has roughly the same order of magnitude. However, on should keep in mind that we are comparing apples and oranges here because the variation that lead to the RAND estimate was mainly variation in copayment rates while we are talking of an increase in the deductible.
+If we really want to give it a try (just to see whether we are in the right ballpark), we have to make some assumption and I will make the simple assumption that everyone spends more than the deductible, i.e. the increase in the deductible by 360-170=190€ leads to an increase of out-of-pocket spending by 190€ for everyone (this seems to be more of an upper bound than a good estimate, i.e. the true increase in out of pocket expenditure is less than that). The relative increase in the deductible (calculated above to be 99.663% when accounting for CPI inflation) equals under this assumption the relative increase in out of pocket expenditures. With the RAND estimate we should therefore expect a relative decrease in costs by $0.2*99.663%=-19.9%$. This is, of course, much larger than the actual decrease which is 9.11%. However, we aimed more for an upper bound than an accurate estimate. Also keep in mind that we are comparing apples and oranges here because the variation that lead to the RAND estimate was mainly variation in copayment rates while we are talking of an increase in the deductible.
 #+BEGIN_SRC julia :results output :exports both :session
 println("relative deflated decrease in the cost of 19 year olds is ",round(-100*relIncreaseCostsDeflated,digits=2),"%")
 #+END_SRC
