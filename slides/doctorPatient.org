@@ -69,7 +69,7 @@ $$u(y,t,s)=\sqrt{ p t}-t-\gamma s  =\sqrt{p\min\{M/\delta+s,1\} }-\min\{M/\delta
 # $$u(y,t,s)=\log{\beta p t}-t-0.5s^2 \\ =\log{\beta p\min\{M/\delta+s,1\} }-\min\{M/\delta+s,1\}-0.5 s^2$$
 
 - if $M/\delta+s<1$, then
-$$\frac{d u}{d s}=\frac{\sqrt{p}}{\sqrt{M/\delta+s}}-1-\gamma $$
+$$\frac{d u}{d s}=\frac{\sqrt{p}}{2\sqrt{M/\delta+s}}-1-\gamma $$
 # $$\frac{d u}{d s}=\frac{1}{M/\delta+s}-1-s $$
 - if $M/\delta+s>1$, then 
 $$\frac{d u}{d s}=-\gamma $$
@@ -88,18 +88,18 @@ $$\frac{d u}{d s}=-\gamma $$
     - $s=\dots$  
     - $t=\dots$
 # 0, M/\delta
-# sqrt: s^*=p/(1+\gamma)^2-M/\delta , unless negative -> then 0 , or >1-M/delta
+# sqrt: s^*=p/(4(1+\gamma)^2)-M/\delta , unless negative -> then 0 , or >1-M/delta
 # log: s^*=\min\{1-M/\delta,M/\delta\}$ and $t=M/\delta+s^*$
 
 
 ** Supplier induced demand: results 
 - positive demand inducement requires a fee for service
 # p>0
-- assume $p/(1+\gamma)^2<1$
+- assume $p/(4(1+\gamma)^2)<1$
 - how does the solution evolve when increasing $\delta$?
   - $\delta\leq M$:
-  - $M<\delta\leq M/(p/(1+\gamma)^2)$:
-  - $\delta>M/(p/(1+\gamma)^2)$:
+  - $M<\delta\leq M/(\frac{p}{4(1+\gamma)^2})$:
+  - $\delta>M/(\frac{p}{4(1+\gamma)^2})$:
 # 1. no inducement; proportional increase of billed services per patient, $a/n=\delta$, in \delta,
 # 2. inducement 0; t<1; billed service per patient is constant in delta 
 # 3. inducement p/(1+\gamma)^2-M/\delta; billed service per patient is increasing in delta as s is 

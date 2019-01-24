@@ -25,7 +25,7 @@ Lecture slides are posted here over the course of the term. You can find the sou
 - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/2478815/insuranceDemand.pdf][slides]]
 - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/2724228/adverseSelection.pdf][slides]], numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
 - moral hazard [[https://github.com/schottmueller/infohealthecon/files/2769026/moralHazard.pdf][slides]]
-- physician-patient [[https://github.com/schottmueller/infohealthecon/files/2769093/doctorPatient.pdf][slides]]
+- physician-patient [[https://github.com/schottmueller/infohealthecon/files/2791900/doctorPatient.pdf][slides]]
 
 ** Julia notebooks
 
