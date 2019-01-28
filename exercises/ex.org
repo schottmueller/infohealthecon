@@ -279,3 +279,13 @@ You can do the exercises below in a spreadsheet app (like Microsoft Excel or /Op
 9. Can you give a demand elasticity for the deductible, i.e. if we increase the deductible by 100% by how much do expenditures decrease? 
 10. Can the estimate of the previous exercise be compared to the famous -0.2 demand elasticity from the RAND health insurance experiment?
 
+
+** Utilization management
+1. Assume for simplicity that a consumer needs to go to the hospital exactly once per year. When he goes to hospital, a /long stay/ is appropriate with probability $1/2$ and a /short stay/ is appropriate with probability $1/2$. The costs of a long (short) stay are $c_l$ ($c_s$) with $c_l>c_s$. The hospital has idle capacity and prefers if the consumer stays long. The consumer cannot judge whether a short or a long stay is more appropriate but the hospital knows this perfectly. Assume that there is perfect competition on the insurance market, i.e. insurance premia equal expected cost, that only full coverage contracts are allowed and that insurers have no administrative costs. 
+  1. Assume that the hospital determines the length of the stay. What is the equilibrium on this market, i.e. how long will the consumer stay and what is the insurance premium?
+  2. Now assume that the insurer engages in utilization management, in particular assume that the insurer decides whether the stay is short or long. Assume that the insurer does not know which length of stay is appropriate but he has some information on this: More precisely, assume that the insurer's perception of which lenght of stay is appropriate is correct with probability $\alpha>1/2$. What is the equilibrium insurance premium if the insurer uses his perception?
+  3. Assume that the consumer has utility 1 if the length of his stay is at least as long as appropriate but 0 if he has a short stay and a long one would have been appropriate. The consumer maximizes expected utility from health minus the insurance premium. Is the consumer better off with or without utilization management? Reconsider what the equilibrium is when utilization management is possible.
+
+# E1.1: hospital always enforces long stay, premium = c_l
+# E1.2: if insurer follows his perception, then long stay with probability 0.5*\alpha+0.5*(1-\alpha)=0.5 and premium equals 0.5*c_l+0.5*c_s; note that the insurer also could decide to always pay for a long stay (see the next subquestion)
+# E1.3: EU_h=1-c_l; EU_i=0.5*(\alpha*1+(1-\alpha)*0)+0.5*1-(0.5*c_l+0.5*c_s)=0.5*(1+\alpha-c_l-c_s); EU_h>EU_i iff \alpha<1-(c_l-c_s). Hence, if \alpha is sufficiently large UM is better than no UM. Equilibrium with UM, note that if UM is allowed but not optimal, then the equilibrium is that insurers do not use UM!
