@@ -152,7 +152,7 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
 - what is good for a group of people/society?
 - choices of society can be represented by a utility function called /welfare function/ if they satisfy the same assumptions as before 
 - minimum standard for good societal decisions:
-  - if all people prefer $x_1$ to $x_2$ (and someone does so strictly), then society as a whole should prefer $x_1$ to $x_2$ (Pareto citerium)
+  - if all people prefer $x_1$ to $x_2$ (and someone does so strictly), then society as a whole should prefer $x_1$ to $x_2$ (Pareto criterion)
     - we say: "$x_1$ Pareto dominates $x_2$" or "$x_1$ is Pareto superior to $x_2$" or "$x_2$ is Pareto inferior to $x_1$"
  # - if $x_1$ Pareto dominates all other alternatives, $x_1$ should be society's choice (such alternatives rarely exist)
   - all alternatives that are not Pareto inferior to some other alternative are called *Pareto efficient* 

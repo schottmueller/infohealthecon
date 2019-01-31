@@ -22,7 +22,7 @@
 * Adverse selection with fixed coverage
 ** Model
 - fixed insurance contract, e.g. full coverage
-- large heterogenous population: 
+- large heterogeneous population: 
   - differ in willingness to pay for contract
   - differ in expected costs 
 - heterogeneity is unobserved by insurers
@@ -90,7 +90,7 @@ Result:
 ** Loading factors
 - insurance have administrative costs
 - MC curve is expected payout + administrative costs of the contract
-- admin cost shift MC up
+- admin costs shift MC up
 - "loading": difference between premium and expected payout
 
 Results:

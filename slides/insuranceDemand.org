@@ -115,7 +115,7 @@ If a person is risk averse, the effect of $W$ on the risk premium is ambiguous. 
 
 ** Access motive
 
-- think of catastrophies: 
+- think of catastrophes: 
    - probability of an illness $\alpha$ is small 
    - costs of treatment $L$ are higher than $W$
    - death without treatment
