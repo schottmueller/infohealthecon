@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
 - Information on the exam: 
   - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
   - The second exam date is March 22, 8:45-9:45 in Aula I.
