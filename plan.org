@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
 - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
 - Information on the exam: 
   - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
