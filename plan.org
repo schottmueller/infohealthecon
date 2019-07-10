@@ -3,31 +3,33 @@
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
 
-* News
-- The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
-- The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
-- Information on the exam: 
-  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
-  - The second exam date is March 22, 8:45-9:45 in Aula I.
-  - The exam will take place on February 7, 15:30-16:30 in HSI.
-  - Students asked me to indicate some exercise questions that could be exam questions with a rough idea of how many points these exercises would give. I give some examples in the following, however, the point estimates are rough and may differ from the way points are awarded int he exam. 
-    - Insurance demand: exercise 5 and 6 (10 points each)
-    - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
-    - moral hazard: exercise 4 (10 points) 
-- Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
-- There is now a julia/jupyter notebook that can compute the resuls to some of the exercises of the first 3 weeks. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. The "course materials" section below explains how you can use the notebook. (It is unlikely that this notebook will be extended to cover exercises of the coming weeks as the material is not that easily amenable to a programming solution).
+# * News
+# - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
+# - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
+# - Information on the exam: 
+#  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
+#  - The second exam date is March 22, 8:45-9:45 in Aula I.
+#  - The exam will take place on February 7, 15:30-16:30 in HSI.
+#  - Students asked me to indicate some exercise questions that could be exam questions with a rough idea of how many points these exercises would give. I give some examples in the following, however, the point estimates are rough and may differ from the way points are awarded int he exam. 
+ #   - Insurance demand: exercise 5 and 6 (10 points each)
+ #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
+ #   - moral hazard: exercise 4 (10 points) 
+# - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
 
 * Prerequisites and background
-Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökpnomik") by Hal Varian where chapters 1-5 are assumed to be known and chapter 12 is what we covered in the second lecture. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. 
+Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierenede der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works.
 
 If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations (and often links to more in depth material). 
 
 * Course material
-Please note that I do not use ILIAS. The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
+Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publically available as it is essentially funded by public money. 
 
-The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/2803399/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session. Here are the data sets for the case study on deductibles in the Netherlands for  [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
+The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
 
-Lecture slides are posted here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
+Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
+
+The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/2803399/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session. Here are the data sets for the case study on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. 
+# I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
 
 - intro [[https://github.com/schottmueller/infohealthecon/files/2467992/intro.pdf][slides]]
 - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/2478815/insuranceDemand.pdf][slides]]
@@ -36,17 +38,7 @@ Lecture slides are posted here over the course of the term. You can find the sou
 - physician-patient [[https://github.com/schottmueller/infohealthecon/files/2791900/doctorPatient.pdf][slides]]
 
 ** Julia notebooks
-
-To execute the code in the julia/jupyter notebooks you can either install Julia locally (it's free and open source but the installation is somewhat more complicated) or use juliabox to run it in your browser. I described the details for another purpose [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/0.%20Why%2C%20what%20and%20how.ipynb][here]] (in case you are interested in understanding the code check [[https://github.com/schottmueller/juliaForMicroTheory][this]] repository). For the browser option, you follow these steps (you can follow the steps also on this [[https://www.dropbox.com/s/fqh4k9no3fd14s6/Screencast%20from%2011-01-2018%2004%3A11%3A15%20PM.webm?dl=0][screencast]]):
-
-1. Go to [[https://github.com/schottmueller/infohealthecon]] and click on the green box saying "Clone or download". Choose "Download ZIP" and safe the folder on your hard drive. Unzip it in a folder of your choice.
-2. Go to [[https://juliabox.com]] and login/register with a method of your choice.  Their free plan is more than enough for our purposes. After logging in, click "Launch", then click "Upload" and navigate to the unzipped folder on your hard drive. Inside this folder into "exercises" and select there "exercisePlots.ipynb". Click on the blue "Upload" box to confirm that you want to upload this file. Now you see the file "exercisePlots.ipynb" in your list of juliabox files. Click on it to start the file (it should open in a new tab).
-3. To execute a cell, you click into it and then press Shift+Enter (that is you press Enter while keeping shift pressed).
-4. The first time you log in, you need to execute the first cell (click in it and Shift+Enter) to install the necessary packages (they are not installed on your PC but on your juliabox account in the cloud). This can take almost a minute and produce strange looking output.
-
-Note that the first time you run a cell it can take some time. It is fast afterwards.
-
-Now you are ready. You can change the primitives of the problem, e.g. the utility functions or income, and executing the cell again will give you the results for the new problem.
+There are some julia/jupyter notebooks that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. 
 
 
 * Course setup 
@@ -59,8 +51,8 @@ The course consists of a lecture and an exercise session. Models, their solution
 The exam will -- in style -- be similar to the questions of the exercise classes.
 
 ** Lecture times: 
-- lecture: Thursday, 16:00-17:30 in 100/U1/HS VI
-- exercise classes: Monday, 16:00-17:30 in 103/EG/0.211
+- lecture: Wednesday, 12:00-13:30 in 100/U1/HS VI
+- exercise classes: Monday, 14:00-15:30 in 103/EG/0.211
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
