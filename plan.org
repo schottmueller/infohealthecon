@@ -3,7 +3,7 @@
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
 
-# * News
+* News
 # - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
 # - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
 # - Information on the exam: 
@@ -14,7 +14,7 @@
  #   - Insurance demand: exercise 5 and 6 (10 points each)
  #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
  #   - moral hazard: exercise 4 (10 points) 
-# - Note that there is no exercise session on October 8 as it makes no sense to have an exercise session before the first lecture.
+- Note that there will be an exercise session on October 7 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course (distributions, expected value etc.). 
 
 * Prerequisites and background
 Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierenede der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
