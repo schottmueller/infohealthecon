@@ -3,9 +3,9 @@
 #+Date: 
 
 #+LANGUAGE:  en
-#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
 #+EXPORT_EXCLUDE_TAGS: noexport
 
@@ -15,11 +15,11 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
-* Course
+* Course information
 
 ** Course information
 - website: [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org]]
@@ -32,7 +32,23 @@
   - date: to be announced on course website later
   - registration via KLIPS
 
-** Mathematical prerequisites: functions
+
+** Goal and content
+- introduce basic concepts and models of information economics applied to health care markets
+  - asymmetric information 
+    - own characteristics \rightarrow "selection" (e.g. is diabetes prevalent in my family?)
+    - own actions \rightarrow "moral hazard" (e.g. am I driving carefully?)
+    - state of the environment  (e.g. how ill is the patient?)
+  - how does asymmetric information impact behavior and market outcomes?
+  - how does the institutional environment affect behavior and outcomes?
+- tools
+  - decision and game theoretic models
+  - some empirical evidence testing and illustrating the theory
+
+
+
+** Mathematical prerequisites: functions :noexport:
+
 Take the function $f(x)=-e^{-3x}$ 
 - is $f$ increasing or decreasing or neither?
 - is $f$ concave or convex or neither?
@@ -48,14 +64,14 @@ Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
 - at what value of $x_1$ and $x_2$ is $h$ maximal subject to the constraint $x_1+2x_2=1$?
 # L= -x_1^2-x_2^2-\lambda (x_1+2x_2-1); -2x_1-\lambda =0=-2x_2-2\lambda; hence 2x_1=x_2; in constraint x_1=1/5, x_2=2/5
 
-** Mathematical prerequisites: expectation
+** Mathematical prerequisites: expectation :noexport:
 - You role a fair dice. When the dice shows "3" or "6" you have to pay 4 Euros, otherwise you get as many Euros as the dice shows. How many Euros do you expect to earn?
 # -4*1/3+(1+2+4+5)/6=2/3
 
 - A random variable $X$ is uniformly distributed on $[0,1]$. What is the expected value of $X^2$?
 # \int_0^1 X^2 dX = 1/3
 
-* Economic modeling
+* Economic modeling: Choice under certainty
 ** Choices and trade-offs
 - economics is about the allocation of /scarce/ ressources (time, capital, slots etc.)
 - individuals make economic decisions all the time
@@ -75,8 +91,8 @@ Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
     :PROPERTIES:
     :BEAMER_env: example
     :END:
-- Should a health care system offer a new treatment that costs $c$ more than the old treatment? 
-- Would those that can be treated with the new treatment prefer (i) old treatment and a payment of $c$ or (ii) the new treatment?
+- Should a health care system offer a new treatment that costs 100€ more than the old treatment? 
+- Would those that can be treated with the new treatment prefer (i) old treatment and a payment of 100€ or (ii) the new treatment?
 
 ** Preference representation
 - convenient notation for "person $i$ would choose $x_1$ if he had to choose one among the two alternatives $x_1$ and $x_2$": $x_1\succeq_i x_2$ (read: "$i$ prefers $x_1$ to $x_2$") 
@@ -88,7 +104,7 @@ Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
 ** Utility representation
 - even more convenient than preferences
   - can we find a function $u_i(x)$ such that $u_i(x_1)\geq u_i(x_2)$ if and only if $x_1\succeq_i x_2$? (if yes, we say "$u_i$ represents $i$'s preferences")
-  - if yes, person $i$'s choice behavior (in all possible choice situations!) will then be *as if* person $i$ maximized the function $u_i$ by his choice
+  - if yes, person $i$'s choice behavior (in all possible choice situations!) will then be /*as if* person $i$ maximized the function $u_i$ by his choice/
 *** 	Representation                                            :B_theorem:
     :PROPERTIES:
     :BEAMER_env: theorem
@@ -108,6 +124,7 @@ If the number of alternatives is finite and person $i$'s preferences are complet
 - there are also representation theorems for infinite choice sets 
 - completeness and transitivity are necessary assumptions for a meaningful analysis but not totally innocent
 
+* Economic modeling: Choice under uncertainty
 ** Decision making under uncertainty
 
 - "alternatives" will often be uncertain
@@ -147,6 +164,7 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
 
 - *we will assume throughout the course that the choices of the players in our models are such that transitivity, completeness and independence are satisfied, i.e. players choose as if they maximized a utility function in expected utility form*
 
+* Economic modeling: Welfare
 ** Welfare
 # - choice/utility tells what is good for an individual
 - what is good for a group of people/society?
@@ -176,6 +194,7 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
 - willingness to pay is in euros \rightarrow can be aggregated 
   - developing the new treatment costs $c$ (the treatment itself is then costless), when is it worthwhile to invest $c$ and develop the treatment?
 
+* Economic modeling: Why mathematical models?
 ** Maps and Models
 - stylized representation of reality
 - abstract from most of reality ("unrealistic on purpose")
@@ -187,10 +206,21 @@ Table gives probability for three outcomes given each treatment. Alternative $x_
 - explicitly stated assumptions
 - logical reasoning leads to conclusion/result
 # - reach a conclusion that can be challenged on grounds of explicit assumptions but not on grounds of reasoning
-
+\vspace*{-0.15cm}
 - goals depend on context, e.g.
   - clarify a logic/mechanism (minimal ingredients)
   - produce testable predictions
   - explore implications of some (additional) feature
+  - get rough forecasts (when the model is paired with data)
 
+*** The need for models :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+- Why are people at a high health risk overrepresented among the uninsured in the US?
+- How will physician's prescription behavior change if the number of physicians increases?
+- Who will benefit (or be harmed) from the availability of genetic tests?
+- An insurance considers offering a supplementary insurance package (e.g. covering all dental care) and wonders what premium to charge for this package. 
+# need to forecast cost -> who buys the package, how will their demand for the service change as a result of insurance, how does prescription behavior of the doctor change?, is or will there be competition? -> need a model!
+- 
 

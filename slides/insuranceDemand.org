@@ -3,7 +3,7 @@
 #+Date: 
 
 #+LANGUAGE:  en
-#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
 #+EXPORT_SELECT_TAGS: export
@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -23,7 +23,7 @@
 * Gambles and utility functions
 ** Certainty equivalent
 *** Example
-Flip a fair coin: If heads you have 10.000\euro  as annual income, if tails 100.000\euro . What is your expected income? If you could get X\euro  for sure as income, how high has X to be to make you indifferent?
+Flip a fair coin: If heads you have 700\euro  as monthly income, if tails 1.500\euro. What is your expected income? \linebreak If you could get X\euro  for sure as income, how high has X to be to make you indifferent to the lottery?
 
 *** Certainty equivalent				       :B_definition:
     :PROPERTIES:
@@ -33,6 +33,9 @@ Take a lottery $L$. The /certainty equivalent/ of $L$ is the amount $X$ such tha
 
 $$u(CE)=\text{expected utility of lottery}$$
 ** Risk premium
+*** Example (continued)
+Flip a fair coin: If heads you have 700\euro  as monthly income, if tails 1.500\euro. What is your expected income? \linebreak How much expected income are you willing to sacrifice in order to avoid risk?
+
 *** Risk premium					       :B_definition:
     :PROPERTIES:
     :BEAMER_env: definition
@@ -43,12 +46,33 @@ $$\text{risk premium} = \text{expected wealth in lottery} - \text{certainty equi
 
 # risk premium ~ willingness to pay for insurance
 
+*** :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+note: 
+
+expected utility of lottery = u(expected wealth of lottery - risk premium)
+
 ** Plotting your utility function
 # - assign arbitrary numbers as $u(10.000)$ and $u(20.000)$, put them in diagram
 # - put (CE,0.5*u(10.000)+0.5*u(20.000)) in diagram
 # - consider more lotteries/probabilities and put more points
 
 * Drivers of insurance demand
+
+** The simple standard model of insurance demand
+- person has wealth $W$
+- monetary loss $L$ with probability $\alpha\in(0,1)$
+- person maximizes expected utility $$(1-\alpha)u(W)+\alpha u(W-L)$$ where $u$ is a strictly increasing function (with inverse function $u^{-1}$)
+
+\vspace*{1cm}
+- what is the expected wealth of the person?
+- what is the formula for the certainty equivalent and the risk premium?
+- how could we interpret the loss $L$ in the context of health insurance?
+
+# prob of falling ill and then treatment cost L or health loss hurts as much as a wealth loss of L or combination of the two
+
 ** Risk aversion
 
 *** Risk aversion					       :B_definition:
@@ -64,7 +88,7 @@ A person is /risk averse/ if the risk premium is non-negative for all lotteries.
 
 - a person is risk averse if and only if his utility function is concave
 
-# more risk averse -> higher risk premium, higher wtp for insurance; concave transformation of u
+# more risk averse -> higher risk premium, higher wtp for insurance; concave transformation of u that leaves u(W) and u(W-L) the same clearly increases risk premium
 
 ** Size of the loss
 - consider a wealth of W and a potential loss of $L\in(0,W)$ that occurs with probability $\alpha$
@@ -142,7 +166,7 @@ $$\Leftrightarrow \frac{u'(W_1^*)}{ u'(W_2^*)}=\frac{\alpha(1-p)}{(1-\alpha)p}$$
     :END:
 
 Results:
-
+\vspace*{-0.1cm}
 - fair insurance ($p=\alpha$): demand full coverage
 - "unfair" insurance ($p>\alpha$): demand partial coverage
 
