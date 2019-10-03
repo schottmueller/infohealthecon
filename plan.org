@@ -92,11 +92,11 @@ This is a plan and as every good plan it may be adjusted if necessary.
 *** models of doctor patient interaction
 # (slides Wambach)
 - strategic communication and the hippocratic oath cite:schottmueller2013cifd
-*** credence good models
-cite:wolinsky1993competition 
+# *** credence good models
+# cite:wolinsky1993competition 
 # (slides Wambach)
 ** Imperfect information between doctor and insurer (and patient)
-*** credence good models with insurance
+# *** credence good models with insurance
 # (slides Wambach)
 *** selective contracting and managed care
 - consumer steering and competition: cite:boone2017networks
