@@ -9,7 +9,7 @@
 # - Information on the exam: 
 #  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
 #  - The second exam date is March 22, 8:45-9:45 in Aula I.
-#  - The exam will take place on February 7, 15:30-16:30 in HSI.
+  - The exam will take place on February 3, 16:15-17:15 in HS B.
 #  - Students asked me to indicate some exercise questions that could be exam questions with a rough idea of how many points these exercises would give. I give some examples in the following, however, the point estimates are rough and may differ from the way points are awarded int he exam. 
  #   - Insurance demand: exercise 5 and 6 (10 points each)
  #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
@@ -33,7 +33,7 @@ The exercises are available in [[https://github.com/schottmueller/infohealthecon
 # I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
 
 - intro [[https://github.com/schottmueller/infohealthecon/files/3656685/intro.pdf][slides]]
-- demand for insurance [[https://github.com/schottmueller/infohealthecon/files/3656693/insuranceDemand.pdf][slides]]
+- demand for insurance [[https://github.com/schottmueller/infohealthecon/files/3724404/insuranceDemand.pdf][slides]]
 - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/2724228/adverseSelection.pdf][slides]], numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
 - moral hazard [[https://github.com/schottmueller/infohealthecon/files/2769026/moralHazard.pdf][slides]]
 - physician-patient [[https://github.com/schottmueller/infohealthecon/files/2791900/doctorPatient.pdf][slides]]
