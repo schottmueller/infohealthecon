@@ -90,6 +90,22 @@ A person is /risk averse/ if the risk premium is non-negative for all lotteries.
 
 # more risk averse -> higher risk premium, higher wtp for insurance; concave transformation of u that leaves u(W) and u(W-L) the same clearly increases risk premium
 
+** Aside: Implicit function theorem
+*** Implicit function theorem
+Let the function $C(L)$ be implicitly defined by the equation 
+$$F(C,L)=0$$
+where $F$ is a continuously differentiable function. Then,
+$$C'(L)=-\frac{\partial F/\partial L}{\partial F/\partial C}$$
+at all points where $\partial F/\partial C\neq 0$.
+
+*** IFT :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+$3C-4L=0$ implicitly defines the function 
+$$C(L)=$$
+Check $C'(L)$ according to IFT and by directly differentiating $C(L)$.
+
 ** Size of the loss
 - consider a wealth of W and a potential loss of $L\in(0,W)$ that occurs with probability $\alpha$
 *** Size of the loss						  :B_theorem:

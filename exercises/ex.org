@@ -18,7 +18,7 @@
     - Which alternative does society choose with the utility functions you chose? 
     - Show that a transformation as in the previous subquestion can change society's choice. What is the problem and how does it come about? 
 
-2. Assume that there are $m$ people in society and society has to choose an option from  $X=\{x_1,x_2,\dots,x_n\}$. The preferences of each member of society can be represented by a utility function $u_i$. Society choose the alternative $x\in X$ maximizing $\sum_{i=1}^m u_i(x)$. Show that the chosen alternative is Pareto efficient.
+2. Assume that there are $m$ people in society and society has to choose an option from  $X=\{x_1,x_2,\dots,x_n\}$. The preferences of each member of society can be represented by a utility function $u_i$. Society chooses the alternative $x\in X$ maximizing $\sum_{i=1}^m u_i(x)$. Show that the chosen alternative is Pareto efficient.
 
 3. Assume $i$'s preferences over lotteries on the set of outcomes $\{healthy,\,ill,\,dead\}$ satisfy the assumptions of the von Neumann-Morgenstern expected utility theorem and can therefore be represented by three numbers $u^{healthy},\,u^{ill}$ and $u^{dead}$. Assume that  $u^{healthy}=1,\,u^{ill}=0.75$ and $u^{dead}=0$.
   1. Treatment 1 leads to the probability distribution over $(0.3,0.5,0.2)$ (over $\{healthy,\,ill,\,dead\}$) while treatment 2 leads to the probability distribution $(0.4,0.3,0.3)$. Which treatment does $i$ prefer?

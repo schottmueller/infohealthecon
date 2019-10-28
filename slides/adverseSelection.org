@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -27,8 +27,7 @@
   - differ in expected costs 
 - heterogeneity is unobserved by insurers
 - insurers set premium
-- for now: insurances have no administrative 
-costs 
+- for now: insurances have no administrative costs 
 
 
 *** Question 							    :B_block:
@@ -48,7 +47,7 @@ costs
 # idfference to other goods (cars etc.): costs are linked to wtp
 
 ** Competitive equilibrium
-- if many insurers compete on premium, equilibrium premium equals average costs (Bertrand competition)
+- if many insurers compete on premium, equilibrium premium equals average costs ("Bertrand competition" or "perfect competition")
 $$p^* = AC_{\text{buying consumers}}$$
 - possible inefficiency: too little insurance in equilibrium
 # if AC curve intersects demand, then not everyone buys insurance and market equilibrium, i.e. most healthy do not although their willingness to pay is above MC; problem: if I want to attract marginal buyer I have to lower premium for all inframarginal buyers, i.e. equilibrium determined by AC while efficiency is determined by MC
@@ -71,8 +70,8 @@ Result:
 ** Gender specific premia
 
 - suppose women tend to have lower expected costs than men
-- who will have the lower premium, if insurance companies are allowed to discriminate based on gender?
-- if insurance companies are prohibited to discriminate based on gender, who benefits? who loses?
+  - who will have the lower premium, if insurance companies are allowed to discriminate based on gender?
+  - if insurance companies are prohibited to discriminate based on gender, who benefits? who loses?
 
 # female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to be uninsured with regulation while men are less likely to be uninsured
 
@@ -106,7 +105,7 @@ Results:
 - Ellis (1985) reports of an employer that switched from offering one insurance plan to offering 3 insurance plans with different coverage levels
   - employees choosing high coverage plan had four times as high expenditures than the one in the low coverage plan
 
-* Screening
+* Screening: perfect competition
 
 ** Rothschild-Stiglitz Model (screening with perfect competition)
 
@@ -122,8 +121,11 @@ Results:
   - many insurance companies
   - knows share of high risk type in population $\gamma\in(0,1)$
 
-- equilibrium
-  - system of contracts, i.e. coverage/premium pairs, such that (i) every offered contract yields non-negative expected profits, (ii) no insurance can increase its expected profits by offering another contract, (iii) consumers maximize expected utility. 
+** Rothschild-Stiglitz equilibrium
+system of contracts, i.e. coverage/premium pairs, such that 
+  1. every offered contract yields non-negative expected profits, 
+  2. no insurance can increase its expected profits by offering another contract,
+  3. consumers maximize expected utility. 
 
 ** Rothschild-Stiglitz: first best (no information asymmetry)
 
@@ -136,6 +138,24 @@ Results:
 # high risk would like to choose low risk contract
 
 ** Rothschild-Stiglitz: curves and slopes I
+Aside: 
+\vspace*{-0.1cm}
+*** Implicit function theorem
+Let the function $p(q)$ be implicitly defined by the equation 
+$$F(p,q)=0$$
+where $F$ is a continuously differentiable function. Then,
+$$p'(q)=-\frac{\partial F/\partial q}{\partial F/\partial p}$$
+at all points where $\partial F/\partial p\neq 0$.
+}
+*** IFT :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+$3p-4q=0$ implicitly defines the function 
+$$p(q)=$$
+Check $p'(q)$ according to IFT and by directly differentiating $p(q)$.
+
+** Rothschild-Stiglitz: curves and slopes II
 - /iso-profit curve/ for profit level $\bar\pi$
   - all $(q,p)$ combination leading to profit $\bar\pi$
   - profits: $\pi=p-\alpha q L$
@@ -148,8 +168,8 @@ $$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)
 or 
 $$p'(q|\mathbb{E}[u]=\bar u)= L\frac{u'(W-p-(1-q)L)}{u'(W-p-(1-q)L)+\frac{1-\alpha}{\alpha}u'(W-p)}$$
 and therefore slope indifference curve higher for higher \alpha
-** Rothschild-Stiglitz: curves and slopes II
-important features to remember
+** Rothschild-Stiglitz: curves and slopes III
+important features to remember:
 - through a $(q,p)$ point the slope $p'(q)$ of the indifference curve is higher for higher risk types
 - for $q<1$: through a $(q,p)$ point the slope $p'(q)$ of the indifference curve of type $\alpha$ is higher than the slope of the isoprofit line of type $\alpha$
 - for $q=1$: through a $(q,p)$ point the slope $p'(q)$ of the indifference curve of type $\alpha$ equals the slope of the isoprofit line of type $\alpha$
@@ -196,6 +216,7 @@ Results:
 # if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; note that this is Pareto improvement as l is better off (his indiff is hlatter than h's) and positive profits from l type
 # if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling
 
+* Screening: insurance monopolist
 ** Insurance monopolist (Stiglitz 1977)
 - same model as Rothschild-Stiglitz but instead of many competing insurers only one profit maximizing insurer
 - single crossing holds, $h$ has higher demand for insurance than $l$
@@ -225,6 +246,7 @@ Results:
 # .25*[(1-p+C)-.2*(1-p+C)^2]+.75*[(2-p)-0.2*(2-p)^2]=1.1
 
 [[https://github.com/schottmueller/juliaForMicroTheory/blob/master/9.%20Application.%20Monopoly%20insurance%20screening.ipynb][julia notebook]]
+
 
 * Application: genetic tests
 
@@ -276,7 +298,7 @@ Results:
 
 Results:
 - the more the offered contracts differ, the higher the incentives to acquire information
-- more similar contracts --> less informed consumers --> higher profits
+- more similar contracts $\rightarrow$ less informed consumers $\rightarrow$ higher profits
 - distort $h$ contract as well to make contracts more similar! (additional inefficiency)
 
 \tiny (source: Lagerlöf and Schottmüller, International Economic Review, 2018, 59(1), pp. 233-255)\normalsize
@@ -487,13 +509,14 @@ Equilibrium:
 - Fang, Keane and Silverman find negative correlation in medigap market and can attribute it to wealth and cognitive ability (not risk aversion)
 
 ** Advantageous selection: models I
-- fixed coverage model
+Fixed coverage model:
   - difference between demand and cost function captures risk premium
   - suppose higher cost consumers have low risk premium
   - order consumers according to (i) willingness to pay for insurance or (ii) expected costs
 # ordering according to wtp/demand is not necessarily the same as ordering according to expected costs
 
 ** Advantageous selection: models II
+Screening model:
 - suppose two types
   - very risk averse and prob of loss $\alpha$
   - very little risk averse and prob of loss $\alpha+\varepsilon$
@@ -506,7 +529,7 @@ Equilibrium:
 
 - is it reasonable that consumers with high expected costs are less risk averse in health insurance?
 # somewhat but not so much since the low coverage people are not that risk averse
-
+* Treatment choice and wealth
 ** Wealth, risk and utilization I
 - in the US, poor people have less insurance but worse health
 - explaining this with advantageous selection (on risk aversion), who would be more risk averse rich or poor?
