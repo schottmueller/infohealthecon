@@ -117,8 +117,8 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 # E5: 
 # if \bar q below q_l^*, no effect
-# if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; note that this is Pareto improvement as l is better off (his indiff is hlatter than h's) and positive profits from l type
-# if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling
+# if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; this makes l worse off (his indiff is flatter than h's) and positive profits from l type for the insurance
+# if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling (both indifference curves lie above the pooling zero profit line)
 
 # E6: point on zero profit pooling isoprofit for q=1; slope indiff l at q=1 is \alpha_l and therefore smaller than pooling isoprofit at 0 profit; hence deviation pooling contracts with q slightly below 1 exist
 
