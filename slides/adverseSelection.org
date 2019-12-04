@@ -86,6 +86,9 @@ Result:
 | health insurance |  -13% | +28% |
 | auto insurance   |  +49% | -16% |
 
+
+# whether non-discrimination clauses in- or decrease welfare depends: if no asym info left, i.e. groups are homogenous like alll men/women have same risk, then efficient to discriminate as MC curve flat. Example for non-discrimination efficient: man 1: WTP=10, MC=8; man 2: WTP=5, MC=3; woman: WTP=5, MC=3; non-disc eq is that p=14/3<5 and all are insured but the equilibrium for the men group is p=8 and only man 1 is insured.
+
 ** Loading factors
 - insurance have administrative costs
 - MC curve is expected payout + administrative costs of the contract
@@ -132,7 +135,7 @@ system of contracts, i.e. coverage/premium pairs, such that
 - benchmark: risk types are known by insurances
 - what is equilibrium?
 
-# see next slide
+# see next slides
 # full insurance, fig 5.3 on p.172 in ZBK
 # or figure with coverage on x-axis and premium on y-axis
 # high risk would like to choose low risk contract
@@ -146,7 +149,7 @@ $$F(p,q)=0$$
 where $F$ is a continuously differentiable function. Then,
 $$p'(q)=-\frac{\partial F/\partial q}{\partial F/\partial p}$$
 at all points where $\partial F/\partial p\neq 0$.
-}
+
 *** IFT :B_example:
     :PROPERTIES:
     :BEAMER_env: example
@@ -164,8 +167,8 @@ Check $p'(q)$ according to IFT and by directly differentiating $p(q)$.
   - all $(q,p)$ combination leading to expected utility $\bar u$
   - exp. utility: $\mathbb{E}[u]=\alpha u(W-p-(1-q)L)+(1-\alpha) u(W-p)$
   - slope indifference curve via implicit function theorem:
-$$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)+(1-\alpha)u'(W-p)}>\alpha L$$
-or 
+$$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)+(1-\alpha)u'(W-p)}\geq\alpha L$$
+for $q\leq1$ (with strict inequality if $q<1$) and rearranging gives 
 $$p'(q|\mathbb{E}[u]=\bar u)= L\frac{u'(W-p-(1-q)L)}{u'(W-p-(1-q)L)+\frac{1-\alpha}{\alpha}u'(W-p)}$$
 and therefore slope indifference curve higher for higher \alpha
 ** Rothschild-Stiglitz: curves and slopes III
@@ -191,7 +194,7 @@ Result:
 - as $h$ is more eager to buy insurance, he has more coverage (higher $W_2$, lower $W_1$) in equilibrium
 - insurers make zero profit on $h$ contract
 # otherwise compete by offering this contract at epsilon lower premium
-- $h$ type has full insurance, $W_1=W_2$ in equilibrium
+- $h$ type has full insurance, i.e. $q^h=1$ or $W_1=W_2$ in equilibrium
 # otherwise offer full coverage where $h$ is indifferent and give him epsilon lower premium; as h is more eager than l, l will not buy new contract but as more cov is efficient it yields higher profits for epsilon small
 - insurers make zero profits on $l$ contract
 # otherwise reduce coverage a bit and adjust premium such that $l$ type just prefers new contract; reap all profits from $l$ types without attracting $h$ types
@@ -255,7 +258,7 @@ Results:
 - genetic tests can be used to determine risk (but usually not perfectly)
 - what is the right regulatory framework:
   - private information: test results (if existing) are private information of insured (and insurance policies cannot depend on them)
-  - voluntary disclosure: test results can be presented to insurer but do not have to presented
+  - voluntary disclosure: test results can be presented to insurer but do not have to be presented
   - mandatory disclosure: existing results have to be disclosed
   - laissez faire: insurers can (but do not have to) require (additional) tests
 
