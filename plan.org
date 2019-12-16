@@ -35,7 +35,7 @@ The exercises are available in [[https://github.com/schottmueller/infohealthecon
 - intro [[https://github.com/schottmueller/infohealthecon/files/3656685/intro.pdf][slides]]
 - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/3724404/insuranceDemand.pdf][slides]]
 - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/3778827/adverseSelection.pdf][slides]], numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
-- moral hazard [[https://github.com/schottmueller/infohealthecon/files/2769026/moralHazard.pdf][slides]]
+- moral hazard [[https://github.com/schottmueller/infohealthecon/files/3968208/moralHazard.pdf][slides]]
 - physician-patient [[https://github.com/schottmueller/infohealthecon/files/2791900/doctorPatient.pdf][slides]]
 
 ** Julia notebooks
