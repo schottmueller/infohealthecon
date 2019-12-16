@@ -15,9 +15,12 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{graphicx}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{graphicx,tikz}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
+
+
 
 * The slope of demand
 ** How does health care demand vary in the price the patient has to pay?
@@ -64,6 +67,7 @@ How do you design a study that settles the argument?
 | 95%  |       68.0 |             2.73 |                 7.74 | 2,174               |
 \tiny{source: adapted from Manning et al. 1987 by Morrissey 2008}\normalsize
 
+# arc elasticity: percentage change in x over percentage change in y where percentage change in x is (x_1-x_2)/(x_1/2+x_2/2); x would be average total costs and y would be average out of pocket expenditures; one can compare any two plans with this and the -0.2 is some sort of average (the range is from -0.1 to -0.5).
 
 ** Oregon I
 
@@ -77,10 +81,10 @@ How do you design a study that settles the argument?
 \includegraphics[width=6cm]{Oregon1}
 \tiny{source: Einav and Finkelstein 2017}\normalsize
 
-# procedure: 75000 applied and 30000 were selected; if selected apply fro Medicaid and if you met the criteria you got it; comprehensive coverage without cost sharing;
+# procedure: 75000 applied and 30000 were selected; if selected apply for Medicaid and if you met the criteria you got it; comprehensive coverage without cost sharing;
 # winning in the lottery increased prob of having health insurance by 25 percentage points 
-# 2 years after lottery Oregon had enough founds to also extend to "control group"
-# estimates are IV estimated of local average treatment effect
+# 2 years after lottery Oregon had enough funds to also extend to "control group"
+# estimates are IV estimated of local average treatment effect where winning the lottery is instrument for having coverage
 
 ** Oregon II
 \includegraphics[width=8cm]{Oregon2}
@@ -106,6 +110,31 @@ How will the distribution of medication expenditure for Medicare recipients look
 \includegraphics[width=8cm]{anticipationFuturePrice}
 \tiny{source: Einav and Finkelstein 2017}
 
+
+** Out of pocket expenditures: German example 
+- single civil servant in NRW in tarif group W3
+  - health insurance for 50% of health care expenditures: 275 EUR per month, repays  3 months of contributions if no use (effective deductible of 825 EUR)
+  - state subsidy for 50% of health care expenditures ("Beihilfe"): deductible ("Kostendämpfungspauschale") of 450 EUR 
+
+\begin{tikzpicture}[scale=0.5]
+\draw[<->] (0,8) --(0,0)-- (12,0);
+\node[right] at (12,0) {\footnotesize expenditures};
+\draw (4.5,-.1)--(4.5,0.1);
+\draw (8.25,-.1)--(8.25,0.1);
+\draw (-.1,6.375)--(0.1,6.375);
+\draw (-.1,4.5)--(0.1,4.5);
+\node[below] at (4.5,0) {\footnotesize 900};
+\node[below] at (8.25,0) {\footnotesize 1650};
+\node[left] at (0,4.5) {\footnotesize 900};
+\node[left] at (0,6.375) {\footnotesize 1275};
+\draw[thick,blue] (0,0)--(4.5,4.5)--(8.25,6.375)--(12,6.375);
+\node[right] at (12,6.65) {\footnotesize out of pocket}; 
+\node[right] at (12,6.05) {\footnotesize expenditures};
+\end{tikzpicture}
+
+- What are the implications for the expenditure profile?
+
+# do not expect expenditures slightly above the kinks, i.e. slightly above 900 or slightly above 1650
 
 * Welfare and moral hazard
 ** Welfare 
@@ -190,10 +219,10 @@ $$c=\sqrt{2L-2log(1.8/0.8)}=\sqrt{2L-1.62}$$
 
 - cost sharing fights ex post moral hazard
 
-* Ex ante moral hazard and optimal insurance contracts
+# * Ex ante moral hazard and optimal insurance contracts
 # for models, see ZBK 6.4.1
 
-** Ex ante moral hazard and optimal insurance contracts
+** Aside: Ex ante moral hazard and optimal insurance contracts
 
 - copayment can also be used to prevent ex ante moral hazard
 - problem: multiple insurances
