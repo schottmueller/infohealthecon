@@ -47,3 +47,11 @@ deflate with 17 year old cost increase:
   - deflate 2014 cost of 19 year old to 2011 prices: 622/1.06339=585
   - rel increase in cost of 19 year old at 2011 prices (585-614)/(585/2+614/2)=-0.0483
   - deflated elasticity: -0.0483/0.717=-0.0674
+
+One can also deflate the deductible using the CPI:
+CPIDeflator = 1.0246*1.0251*1.0098=1.06061 #CPI inflation rates 2012,2013 and 2014 in NL following https://www.inflation.eu
+In this case, relative change in deductible = (360/CPIDeflator-170)/(360/(2*CPIDeflator)+170/2)=0.665
+and deflated elasticity: -0.0483/0.665=-0.0726
+
+* Compare to RAND
+This is problematic because the RAND estimate is more applicable for increases in the copayment rate and not so much the deductible. The main difficulty, however, is that the RAND estimate refers to an increase in “out of pocket” spending. We cannot figure this out because we do not know how many people actually exceed the deductible (if we had individual data, i.e. if our data was not aggregated at postcode level, we would know this!).
