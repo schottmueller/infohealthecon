@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available now.
 # - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
 # - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 

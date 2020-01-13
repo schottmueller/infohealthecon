@@ -34,6 +34,10 @@ a higher price (i.e. less insurance)...
 \vspace*{1cm}
 How do you design a study that settles the argument?
 
+# health care is special: go to doctor grudgingly when ill
+# normal economics: higher price leads to lower demanded quantity (some care is optional like going to doc with flu)
+# people might save on preventive care when less insured which leads to higher health care expenses in the long run; expensive emergency room visits in the US where insurance must not be asked for substitute cheap primary care
+
 # ** Demand in a simple model
 
 # - derive demand in a standard 101 micro model and show it is decreasing in price
@@ -149,7 +153,7 @@ How will the distribution of medication expenditure for Medicare recipients look
 
 # price elasticity of -0.2 (note that RAND used the arc elasticity, i.e. the percentage increase in out of pocket price would be (10-0)/((10+0)/2)=2=200%), hence share of people with expenditures below 5000 are expected to consume 2*0.2=40% less
 
-# simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of h; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
+# simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of theta; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
 
 * Ex ante moral hazard
 ** Ex ante moral hazard

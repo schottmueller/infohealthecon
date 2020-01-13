@@ -20,6 +20,13 @@ Data->Filter->Standard Filter age=19
 =AVERAGEIF(B$2:B$135631;"=17";G$2:G$135631)
 =AVERAGEIF(B$2:B$135631;"=19";G$2:G$135631)
 
+** Pivot table
+- mark all data (including variable names)
+- Insert-> Pivot table
+- "ok" for current selection
+- Row Fields: age, Column Fields: sex, Data Fields: costsPerHeadUnderDeductible
+ (doubleclick on Sum-costsPerHeadUnderDeductible and change Sum to Average)
+
 ** Age expense graph
 - make a column for age from 0 to 89 (here in K13:K102)
 - next to it make a column average costs per head at this age using the formula
