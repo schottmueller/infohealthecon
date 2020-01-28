@@ -4,6 +4,14 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- some points on the exam:
+  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
+  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
+  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
+- some questions have arisen with respect to the RS model:
+  - The zero-profit line for type α is a line through the origin with slope αL.
+  - The indifference curve of type α has slope αL at q=1 and has slope higher than αL for q<1. 
+  - The low type's equilibrium contract in an RS equilibrium has less than full coverage and is on his zero-profit line. Hence, the indifference curve of the low type through this point is steeper than the zero-profit line and intersects this line from below. A graph with the RS equilibrium in an example can be found [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][here]] in the Rothschild Stiglitz section (Exercise 4).
 # - On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available now.
 # - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
@@ -63,7 +71,7 @@ The course is not based on a single textbook. The majority of topics is covered 
 This is a plan and as every good plan it may be adjusted if necessary.
 ** Introduction
 - economic approach (trade-offs, choice-preferences-utility maximization, uncertainty, models)
-- tools (optimization, regression analysis and endogeneity)
+# - tools (optimization, regression analysis and endogeneity)
 ** Imperfect information between patient and insurer
 *** demand for insurance
 - full coverage (ch. 3 cite:morrisey2008health)
@@ -73,7 +81,7 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - fixed coverage 
 - menus and distortions 
 - premium risk, community rating and risk adjustment 
-- main reading: p. 115-123 cite:einav2011selection, ch. 5.3.3-5.3.4 cite:zweifel2009health
+- reading: p. 115-123 cite:einav2011selection, ch. 5.3.3-5.3.4 cite:zweifel2009health
 - supplementary reading:  cite:rothschild1976equilibrium, cite:stiglitz1977monopoly, cite:lagerlof2018monopoly, ch. 7 cite:zweifel2009health, cite:behrend2007risk, cite:PMM2000755
 *** advantageous selection and beyond
 - advantageous selection: cite:hemenway1990propitious, cite:fang2008sources, cite:finkelstein2006multiple
@@ -85,27 +93,28 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - simple model of moral hazard
 - reading: cite:einav2018moral, ch. 6.4.2 cite:zweifel2009health
 - supplementary reading: cite:dave2009health, cite:aron2013rand
-** Imperfect information between doctor and patient
-*** supply induced demand
+** Imperfect information between physician and patient
+*** supplier induced demand
 - reading: ch. 8 cite:zweifel2009health 
-- supplementary reading: cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
+- supplementary reading: cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing, section 5 in cite:mcguire2000physician
 # (also slides Wambach)
+*** credence good models 
+- reading: cite:dulleck2006doctors
+- supplementary reading: cite:kerschbamer2017economics, cite:bester2017credence
 *** models of doctor patient interaction
-# (slides Wambach)
-- strategic communication and the hippocratic oath cite:schottmueller2013cifd
-# *** credence good models
-# cite:wolinsky1993competition 
-# (slides Wambach)
-** Imperfect information between doctor and insurer (and patient)
+- strategic communication and the hippocratic oath 
+- reading: cite:schottmueller2013cifd
+
+# ** Imperfect information between doctor and insurer (and patient)
 # *** credence good models with insurance
 # (slides Wambach)
-*** selective contracting and managed care
-- consumer steering and competition: cite:boone2017networks
+# *** selective contracting and managed care
+# - consumer steering and competition: cite:boone2017networks
 
 # *** doctor renumeration under a global budget 
 # cite:benstetter2006treadmill
-*** health care payment systems
-cite:ma1997optimal 
+# *** health care payment systems
+# cite:ma1997optimal 
 
 
 

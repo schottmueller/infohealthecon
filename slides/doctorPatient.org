@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm,natbib}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath,amsthm,natbib}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -33,7 +33,7 @@
   - areas with higher density of surgeons have more surgeries/capita but not lower surgical fees (Fuchs 1978)
 
 *** Supplier induced demand (SID)
-Physicians control quantity of treatment, that is, demand is not independent from supply but induced by the supplier. They can do so because they control information (about necessity, state of the art etc.) that the patient does not have.
+Physicians control quantity of treatment, that is, demand is not independent from supply but induced by the supplier beyond a perfectly informed patient's optimal choice. Physicians can induce because they control information (about necessity, state of the art etc.) that the patient does not have.
 
 ** Supplier induced demand 
 - a couple of new physicians arrive in a town in which all citizens have comprehensive health insurance
@@ -110,7 +110,7 @@ $$\frac{d u}{d s}=-\gamma $$
 
 \vspace*{1cm}
 
-- what if $p/(1+\gamma)^2>1$?
+- what if $p/(4(1+\gamma)^2)>1$?
 # no flat bit in graph above as regime 2does not exist
 
 - driving force:
@@ -118,7 +118,7 @@ $$\frac{d u}{d s}=-\gamma $$
 # higher delta reduces income, increases marginal utility of income and leads eventually to demand inducement
 
 - how does demand inducement change when the fee for service $p$ increases (slightly)?
-# either no effect (in 1 and 2) or lower s (in 3)
+# either no effect (in 1 and 2) or higher s (in 3)
 # in general ambiguous: income effect makes physician richer -> less inducement; substitution effect: higher p makes inducement more attractive -> more inducement
 
 ** Supplier induced demand: alternative explanations
@@ -139,9 +139,11 @@ $$\frac{d u}{d s}=-\gamma $$
 
 ** Some empirical evidence
 - cite:fuchs1978supply uses cross-sectional variation and tries to rule out (3) by statistically accounting for the supply of surgeons (2-stage least square)
-  - method criticized as it also indicates SID in child births
-- cite:gruber1996physician show that decline in birth rates in the 1970s was accompanied by an increase in caesarean sections
+  - method criticized as it also indicates SID in child births 
+- cite:gruber1996physician show that decline in birth rates in the 1970s was accompanied by an increase in Caesarean sections
+# - evidence for substitution effects if fees change is ample, evidence for income effects is less well established (apart from cite:yip1998physician)
 
+# often studied how fee changes for procedure A affect quantity procedure B: income and substitution effect may cancel   for A but go in same direction for B -> study B 
 
 ** (Danish) Physicians respond to incentives I
 - Reform of physician pay in Copenhagen *city* (Denmark) in October 1987
@@ -158,6 +160,114 @@ $$\frac{d u}{d s}=-\gamma $$
 
 ** (Danish) Physicians respond to incentives III
 [[./KrasnikServices.png]]
+* Credence good model
+
+** Credence good
+- credence good: expert knows more about the quality a consumer needs than the consumer
+- physician = expert, patient = consumer
+- potential efficiency problems:
+  - overcharging
+  - overtreatment
+  - undertreatment
+  - excessive search
+- how should pysician renumeration be structured to avoid problems above?
+- how does this depend on environment?
+
+**  Basic setup
+- consumers
+  - continuum of consumers
+  - each consumer has either /major/ or /minor/ problem 
+    - major problem can be fixed by expensive treatment $\bar c$
+    - minor problem can be fixed by cheap treatment $\underline c<\bar c$ or expensive treatment 
+  - do not know problem and assign prob $h$ to major
+  - cost of visiting expert: $d$ per expert
+  - utility: $v>\bar c+d$ if fixed, 0 otherwise (minus price in both cases)
+  - homogeneity: all consumers are the same
+- $n\geq 2$ experts
+  - know problem and recommends treatment
+  - bare cost of treatment and receives price from consumer
+  - maximize pofit: price minus cost
+- prices: 
+  - $\bar p$ for $\bar c$ and $\underline p$ for $\underline c$ (for now fixed)
+
+** Possible assumptions/environments
+
+- /commitment/ 
+  - consumer is committed to follow the expert's recommendation
+  - consumer cannot reject treatment and visit another expert
+- /liability/ 
+  - expert is liable in case of undertreatment and will therefore never administer $\underline c$ if the problem is major
+- /verifiability/
+  - consumer can verify which treatment is administered \rightarrow overcharging cannot occur
+
+** Benchmark: no liability, no verifiability
+*** Market breakdown                               :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+If commitment but neither liability not verifiability hold, the market outcome is inefficient.
+
+*** :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- which treatment will experts administer and which price will they charge?
+# administer cheap treatment and charge higher price -> undertreatment and overcharging!
+
+# double diagnosis is inefficient, hence case without commitment will not give efficiency
+
+\vspace*{1cm}
+
+- what is the equilibrium if experts set prices before consumers decide which expert to visit?
+# one price: $p=\underline c$, only cheap treatment are administered, consumers visit experts iff $(1-h)v-\underline c-d\geq 0$.
+
+\vspace*{1cm}
+
+- (possible?) remedy: separation of diagnosis and treatment
+# diagnose physicians diagnose at fixed price, treatment administerer (pharmacists?) provide demanded treatment at price equal (or larger) than cost; problem: economies of scope, i.e separation will in practice lead to additional costs (in model: duplication of $d$)
+
+** Verifiability and commitment
+- what will experts do if $\bar p-\bar c>\underline p-\underline c$?
+# overtreatment: always administer expensive treatment
+- what will experts do if $\bar p-\bar c<\underline p-\underline c$?
+# undertreatment: always administer cheap treatment
+- what is the equilibrium if experts set prices before consumers decide which expert to visit?
+# $\bar p = \bar c$ and $\underline p = \underline c$ and efficient treatment choice
+
+** Liability and commitment
+- what will experts do if $\bar p >\underline p$?
+# overcharge: always claim that expensive treatment done and charge high price, but efficient treatment choice
+- what will experts do if $\bar p <\underline p$?
+# overcharge: always claim that cheap treatment done and charge higher price, but efficient treatment choice
+- what is the equilibrium if experts set prices before consumers decide which expert to visit?
+# \bar p = \underline p = \underline c + h(\bar c-\underline c) and efficient treatment choice
+
+** Liability only
+- assume $n\geq 4$ and $d$ not too high (as high $d$ is like commitment)
+- assume that experts set prices before consumers choose which expert to visit
+
+*** Specialization equilibrium :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+At least two experts post prices $\underline{p}=\underline{c}$ and $\bar{p}>\bar{c}+d$ and at least two experts post prices $\underline{p}\leq \bar{p}=\bar{c}$. The former diagnose honestly while the latter always recommend the expensive treatment. Consumers visit the former experts first and go to the latter if a major problem is diagnosed.
+
+*** :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+- inefficiency: duplication of diagnosis cost $d$
+
+** Summary and comments
+
+- right prices can solve some of the problems
+  - same prices for all treatments avoid overcharging
+  - same markups for all treatments avoid under-/overtreatment
+- competitive equilibria are  efficient if commitment + either liability or verifiability hold
+- specialization can emerge (without commitment)
+- does it matter whethe consumers are insured, i.e. insurance pays price to expert, or not?
+# consumers are indifferent between experts in all equilibria; if they choose cheapest expert as tie breaker (i.e. when expecting right/same treatment) equilibria still exist; small proportional copay would ensure that; if consumers have no copay and do not know prices, then prices have to be regulated
 
 * Cost saving incentives and communication
 ** Incentives for physicians
@@ -237,11 +347,16 @@ cite:kao1998relationship report on trust of patient in physician
 
 
 [[./TrustPatientInPhysician.png]]
-* Credence good models
+
 
 * Further topics in patient physician interaction
 
 
+* References
 ** References
+\nocite{dulleck2006doctors}
+
+\tiny
+
 bibliographystyle:chicago
 bibliography:/home/christoph/stuff/bibliography/references.bib
