@@ -1,4 +1,4 @@
-#+Title: Imperfect information between patient and doctor
+#+Title: Imperfect information between patient and physician
 #+AUTHOR:    Christoph Schottmüller
 #+Date: 
 
@@ -51,7 +51,7 @@ Physicians control quantity of treatment, that is, demand is not independent fro
 - $a$ physicians, $n$ inhabitants, density $\delta=a/n$
 - "primary demand" for care per capita is $M$ (no inducement)
 - primary care per physician: $nM/a=M/\delta$
-- each physician can induce additional demand $s$ leading to demand $M/\delta+s$
+- each physician can induce additional demand $s\in[0,\infty)$ leading to demand $M/\delta+s$
 - working time of a physician: $t=\min\{M/\delta+s,1\}$
 # physisican adapts working time to demand up to an upper limit 1
 - disposable income of  physician: $y(pt)$ with $y'>0, \,y''\leq 0$
@@ -141,9 +141,32 @@ $$\frac{d u}{d s}=-\gamma $$
 - cite:fuchs1978supply uses cross-sectional variation and tries to rule out (3) by statistically accounting for the supply of surgeons (2-stage least square)
   - method criticized as it also indicates SID in child births 
 - cite:gruber1996physician show that decline in birth rates in the 1970s was accompanied by an increase in Caesarean sections
-# - evidence for substitution effects if fees change is ample, evidence for income effects is less well established (apart from cite:yip1998physician)
 
 # often studied how fee changes for procedure A affect quantity procedure B: income and substitution effect may cancel   for A but go in same direction for B -> study B 
+
+** Second wave of SID studies I
+- suppose a physiscian can offer 2 services
+- physician has utility $u(y,s_1+s_2)$ where $Y$ is income, $s_i\in[0,\infty)$ is inducement for service $i$
+- assume $u_y>0$, $u_{yy}<0$, $u_s<0$, $u_{ss}<0$
+- $y=p_1 x_1(s_1)+p_2 x_2(s_2)$ where $x_i$ is the level of service $i$ and we assume $x_i'>0$, $x_i''<0$ and $p_i$ the fee for service $i$
+
+- solving the utility maximization problem:
+$$p_1 x_1'(s_1) = -u_s/u_y $$
+$$ p_2x_2'(s_2) = -u_s/u_y$$
+
+- how does the optimal $s_1$ and $s_2$ change if $p_1$ increases?
+  - income effect:
+  - substitution effect:
+# income effect: higher p_1 leads to higher y and therefore lower u_y -> less inducement (both s_1 and s_2)
+# subs effect: higher $p_1$ increases MB of s_1 -> higher s_1 -> higher -u_s -> lower s_2
+
+** Second wave of SID studies II
+- how to empirically test for SID given the model above?
+# empirical test of SID: check how level of other services respond (as effect on service for which price changes is unclear)
+\vspace*{1cm}
+
+- some empirical evidence supporting SID along these lines, e.g. cite:yip1998physician shows that thoracic surgeons increased volume of both Medicare and non-Medicare patients when Medicare fees were cut significantly
+
 
 ** (Danish) Physicians respond to incentives I
 - Reform of physician pay in Copenhagen *city* (Denmark) in October 1987
@@ -349,10 +372,10 @@ cite:kao1998relationship report on trust of patient in physician
 [[./TrustPatientInPhysician.png]]
 
 
-* Further topics in patient physician interaction
+# * Further topics in patient physician interaction
 
 
-* References
+# * References
 ** References
 \nocite{dulleck2006doctors}
 
