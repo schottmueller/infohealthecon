@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- Exam results for the exam from Fevruary 3rd are published now by the examination office. The exam inspection will be after the start of the new term in April. More detailled information will follow at a later date.
 - some points on the exam:
   - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
   - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
