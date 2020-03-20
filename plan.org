@@ -4,7 +4,8 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- Due to the current pan(dem)ic, the university leadership has decided to cancel all exams in the coming weeks including the exam of this course originally scheduled  for March 31. The plan is to reschedule the exam later this year when everyone has calmed down a bit.
+- We have a new exam date: May 5, 8:30. Registration via KLIPS should open soon (the registration deadline is April 28). Please note that you have to register again if you were registered for the cancelled exam in March.
+- Due to the current pan(dem)ic, the university leadership has decided to cancel all exams in the coming weeks including the exam of this course originally scheduled  for March 31.
 - Exam results (exam February 3rd) have been published by the examination office. The exam inspection will be after the start of the new term in April. Detailled information on the inspection will be announced later on.
 - some points on the exam:
   - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
