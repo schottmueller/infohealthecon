@@ -4,8 +4,9 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- Unfortunately, the exam office does not open the registration for May 5th. It is unclear whether the exam can take place at this date or not. Further information will be published here as soon as possible.
-- We have a new exam date: May 5, 8:30. Registration via KLIPS should open soon (the registration deadline is April 28). Please note that you have to register again if you were registered for the cancelled exam in March.
+- Yesterday the university extended the campus shutdown to May 4th with a clear indication that (in parts) it may be prolonged even further. Therefore (and as the exam office still won't open the exam registration), the preliminary exam date on May 5th is cancelled. We try to find a new date towards the start of June. Apologies for all the confusion.
+# - Unfortunately, the exam office does not open the registration for May 5th. It is unclear whether the exam can take place at this date or not. Further information will be published here as soon as possible.
+# - We have a new exam date: May 5, 8:30. Registration via KLIPS should open soon (the registration deadline is April 28). Please note that you have to register again if you were registered for the cancelled exam in March.
 - Due to the current pan(dem)ic, the university leadership has decided to cancel all exams in the coming weeks including the exam of this course originally scheduled  for March 31.
 - Exam results (exam February 3rd) have been published by the examination office. The exam inspection will be after the start of the new term in April. Detailled information on the inspection will be announced later on.
 - some points on the exam:
