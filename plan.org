@@ -5,20 +5,10 @@
 
 * News
 - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
-- We have a new exam date: June 15. Registration via KLIPS is open since May 30. Please register until June 7. If you take the exam, please familiarize yourself with the examination office's new rules which can be found [[https://wiso.uni-koeln.de/en/faculty/managing-board/examination-office/information-of-the-examination-office-on-coronavirus][here]]. 
-- Yesterday the university extended the campus shutdown to May 4th with a clear indication that (in parts) it may be prolonged even further. Therefore (and as the exam office still won't open the exam registration), the preliminary exam date on May 5th is cancelled. We try to find a new date towards the start of June. Apologies for all the confusion. A future exam date will be announced at least 2 weeks in weeks in advance.
-# - Unfortunately, the exam office does not open the registration for May 5th. It is unclear whether the exam can take place at this date or not. Further information will be published here as soon as possible.
-# - We have a new exam date: May 5, 8:30. Registration via KLIPS should open soon (the registration deadline is April 28). Please note that you have to register again if you were registered for the cancelled exam in March.
-- Due to the current pan(dem)ic, the university leadership has decided to cancel all exams in the coming weeks including the exam of this course originally scheduled  for March 31.
-- Exam results (exam February 3rd) have been published by the examination office. The exam inspection will be after the start of the new term in April. Detailled information on the inspection will be announced later on.
-- some points on the exam:
-  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
-  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
-  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
-- some questions have arisen with respect to the RS model:
-  - The zero-profit line for type α is a line through the origin with slope αL.
-  - The indifference curve of type α has slope αL at q=1 and has slope higher than αL for q<1. 
-  - The low type's equilibrium contract in an RS equilibrium has less than full coverage and is on his zero-profit line. Hence, the indifference curve of the low type through this point is steeper than the zero-profit line and intersects this line from below. A graph with the RS equilibrium in an example can be found [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][here]] in the Rothschild Stiglitz section (Exercise 4).
+# - some points on the exam:
+#  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
+#  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
+#  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
 # - On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available now.
 # - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
@@ -26,17 +16,17 @@
 # - Information on the exam: 
 #  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
 #  - The second exam date is March 22, 8:45-9:45 in Aula I.
-  - The exam will take place on February 3, 16:15-17:15 in HS B.
+#  - The exam will take place on February 3, 16:15-17:15 in HS B.
 #  - Students asked me to indicate some exercise questions that could be exam questions with a rough idea of how many points these exercises would give. I give some examples in the following, however, the point estimates are rough and may differ from the way points are awarded int he exam. 
  #   - Insurance demand: exercise 5 and 6 (10 points each)
  #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
  #   - moral hazard: exercise 4 (10 points) 
-- Note that there will be an exercise session on October 7 even though this is before the first lecture covering [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][these]] questions. This exercise session is dedicated to repeating some mathematical concepts used in this course (distributions, expected value etc.). 
+# - Note that there will be an exercise session on October 7 even though this is before the first lecture covering [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][these]] questions. This exercise session is dedicated to repeating some mathematical concepts used in this course (distributions, expected value etc.). 
 
 * Prerequisites and background
-Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierenede der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
+Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierenede der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
 
-If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above metnioned topics (and often links to more in depth material). 
+If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
 
 * Course material
 
@@ -76,52 +66,81 @@ The course is not based on a single textbook. The majority of topics is covered 
 
 * Detailed schedule
 This is a plan and as every good plan it may be adjusted if necessary.
-** Introduction
-- economic approach (trade-offs, choice-preferences-utility maximization, uncertainty, models)
-# - tools (optimization, regression analysis and endogeneity)
-** Imperfect information between patient and insurer
-*** demand for insurance
-- full coverage (ch. 3 cite:morrisey2008health)
-- coverage choice (ch. 5.3.1 and 5.3.2 cite:zweifel2009health) 
-- supplementary reading: ch. 6.3 cite:zweifel2009health
-*** adverse selection
-- fixed coverage 
-- menus and distortions 
-- premium risk, community rating and risk adjustment 
-- reading: p. 115-123 cite:einav2011selection, ch. 5.3.3-5.3.4 cite:zweifel2009health
-- supplementary reading:  cite:rothschild1976equilibrium, cite:stiglitz1977monopoly, cite:lagerlof2018monopoly, ch. 7 cite:zweifel2009health, cite:behrend2007risk, cite:PMM2000755
-*** advantageous selection and beyond
-- advantageous selection: cite:hemenway1990propitious, cite:fang2008sources, cite:finkelstein2006multiple
-- positive correlation test and its pitfalls: cite:boone2017networks
+** Intro (2 lectures)
+*** Choice, preferences, utilities, welfare, models
+- choice, preferences, utility
+- choice under uncertainty and expected utility
+- welfare
+- models
+- reading: 
+*** Insurance demand
+- certainty equivalent and risk premium
+- drivers of insurance demand
+- (coverage choice and state dependent utility)
+- reading: ch. 3 cite:morrisey2008health
+- supplementary reading: (Springer book Bachelor)
 
-*** moral hazard
-- RAND and Oregon health insurance experiments
-- bunching estimators at the donut hole
-- simple model of moral hazard
-- reading: cite:einav2018moral, ch. 6.4.2 cite:zweifel2009health
-- supplementary reading: cite:dave2009health, cite:aron2013rand
-** Imperfect information between physician and patient
-*** supplier induced demand
-- reading: ch. 8 cite:zweifel2009health 
-- supplementary reading: cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing, section 5 in cite:mcguire2000physician
-# (also slides Wambach)
-*** credence good models 
+** Selection (5)
+*** Selection with fixed coverage
+- model
+- welfare consequences
+- gender specific premia
+- some evidence for selection
+- reading: p. 115-123 cite:einav2011selection, ch. 5.3.1 and 5.3.2 cite:zweifel2009health
+*** Screening with coverage: Rothschild-Stiglitz
+- shape of indifference curves
+- equilibrium 
+- comparative statics
+- derivation of eq in screencast
+# - reading:  ch. 5.3.3-5.3.4 cite:zweifel2009health ?? oder ch. 7?
+- supplementary reading: cite:rothschild1976equilibrium
+*** Genetic Tests
+- two kinds of risks
+- in RS model
+- supplementary reading: cite:doh96
+*** Premium risk, community rating and risk adjustment
+- premium risk model
+- segway into risk adjustment
+- discussion: how could German health insurers attract a profitable clientele?
+- supplementary reading: cite:behrend2007risk, cite:PMM2000755
+*** Advantageous selection
+- empirical observations (provide Finkelstein/McGarry data and compute results live in lecture)
+- fixed coverage model
+- (treatment choice and utilization...maybe as bonus screencast?)
+- reading: cite:finkelstein2006multiple
+- supplementary reading: cite:hemenway1990propitious, cite:fang2008sources
+** Moral hazard (3)
+*** The question of moral hazard and empirical evidence
+- slope of demand
+- RAND and arc elasticity of demand
+- Oregon
+- welfare
+- ex ante moral hazard
+- reading: sections 1,2 and 3.1 in cite:einav2018moral
+*** Treatment choice and the donut hole 
+- simple model of treatment choice
+- donut hole
+- out of sample predictions
+- utilization management and gatekeeping
+- reading: section 3.2-end cite:einav2018moral
+*** Case study: moral hazard in NL
+- diff-in-diff estimate for arc elasticity of demand
+
+** Doctor-patient interaction (4)
+*** Supplier induced demand: theory
+- density model
+- some empirical evidence
+- second wave of SID studies
+- reading: ch. 8 cite:zweifel2009health
+- supplementary reading: section 5 in cite:mcguire2000physician, cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
+*** Supplier induced demand: empirics
+- How Danish physicians react to incentives
+- Caesarean sections in German hospitals
+*** Credence good model
+- problems/assumptions and appropriate incentives
+- discussion: DRG system like liability? implications?
 - reading: cite:dulleck2006doctors
-- supplementary reading: cite:kerschbamer2017economics, cite:bester2017credence
-*** models of doctor patient interaction
-- strategic communication and the hippocratic oath 
-- reading: cite:schottmueller2013cifd
-
-# ** Imperfect information between doctor and insurer (and patient)
-# *** credence good models with insurance
-# (slides Wambach)
-# *** selective contracting and managed care
-# - consumer steering and competition: cite:boone2017networks
-
-# *** doctor renumeration under a global budget 
-# cite:benstetter2006treadmill
-# *** health care payment systems
-# cite:ma1997optimal 
+*** Cost saving incentives and communication
 
 
 

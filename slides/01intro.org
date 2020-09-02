@@ -1,0 +1,226 @@
+#+Title: Introduction
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:t toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+
+* Course information
+
+** Course information
+- website: [[https://github.com/schottmueller/infohealthecon/blob/master/plan.org]]
+  - information
+  - plan
+  - reading
+    - Zweifel, Breyer, Kifmann "Health economics"
+  - exercises
+- exam
+  - date: to be announced on course website later
+  - registration via KLIPS
+
+
+** Goal and content
+- introduce basic concepts and models of information economics applied to health care markets
+  - asymmetric information 
+    - own characteristics \rightarrow "selection" (e.g. is diabetes prevalent in my family?)
+    - own actions \rightarrow "moral hazard" (e.g. am I driving carefully?)
+    - state of the environment  (e.g. how ill is the patient?)
+  - how does asymmetric information impact behavior and market outcomes?
+  - how does the institutional environment affect behavior and outcomes?
+- tools
+  - decision and game theoretic models
+  - some empirical evidence testing and illustrating the theory
+
+
+
+** Mathematical prerequisites: functions :noexport:
+
+Take the function $f(x)=-e^{-3x}$ 
+- is $f$ increasing or decreasing or neither?
+- is $f$ concave or convex or neither?
+- can you draw/sketch $f$?
+# 1st derivative: 3e^{-3x}>0  increasing, 2nd derivative -9e^{-3x}<0 concave 
+
+Take the function $g(x)=log(x)-x$ for $x>0$
+- is $g$ increasing or decreasing or neither?
+- at what value of $x$ is $g$ maximal?
+# first derivative: 1/x-1 -> increasing on (0,1), decreasing afterwards; second derivative -1/x^2<0 -> concave; maximal at 1
+
+Take the function $h(x_1,x_2)=-x_1^2-x_2^2$
+- at what value of $x_1$ and $x_2$ is $h$ maximal subject to the constraint $x_1+2x_2=1$?
+# L= -x_1^2-x_2^2-\lambda (x_1+2x_2-1); -2x_1-\lambda =0=-2x_2-2\lambda; hence 2x_1=x_2; in constraint x_1=1/5, x_2=2/5
+
+** Mathematical prerequisites: expectation :noexport:
+- You role a fair dice. When the dice shows "3" or "6" you have to pay 4 Euros, otherwise you get as many Euros as the dice shows. How many Euros do you expect to earn?
+# -4*1/3+(1+2+4+5)/6=2/3
+
+- A random variable $X$ is uniformly distributed on $[0,1]$. What is the expected value of $X^2$?
+# \int_0^1 X^2 dX = 1/3
+
+* Economic modeling: Choice under certainty
+** Choices and trade-offs
+- economics is about the allocation of /scarce/ ressources (time, capital, slots etc.)
+- individuals make economic decisions all the time
+  - come to the early lecture or sleep longer 
+  - what to buy for dinner?
+- choices in health care
+  - patients: pick up a prescription medicine (and pay your copayment) or not
+  - doctors:  which test? which treatment?
+  - insurers: what to cover? what to charge?
+  - politicians and regulators:\dots
+** (Hypothetical) Choice
+- primitive of economic modeling: (hypothetical) choice
+  - what would person $i$ choose if he had to choose among alternatives $x_1,x_2,\dots,x_n$?
+  - (hypothetically) chosen alternative is /best/ (for $i$)
+
+*** Hypothetical choice 					  :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+- Should a health care system offer a new treatment that costs 100€ more than the old treatment? 
+- Would those that can be treated with the new treatment prefer (i) old treatment and a payment of 100€ or (ii) the new treatment?
+
+** Preference representation
+- convenient notation for "person $i$ would choose $x_1$ if he had to choose one among the two alternatives $x_1$ and $x_2$": $x_1\succeq_i x_2$ (read: "$i$ prefers $x_1$ to $x_2$") 
+- few choices are observed
+  - make /assumptions/ to infer preferences for not observed choices
+    - completeness: for each pair of alternatives $x_1$, $x_2$, either $x_1\succeq_i x_2$ or $x_2\succeq_i x_1$
+    - transitivity: if $x_1\succeq_i x_2$ and $x_2\succeq_i x_3$, then $x_1\succeq_i x_3$
+
+** Utility representation
+- even more convenient than preferences
+  - can we find a function $u_i(x)$ such that $u_i(x_1)\geq u_i(x_2)$ if and only if $x_1\succeq_i x_2$? (if yes, we say "$u_i$ represents $i$'s preferences")
+  - if yes, person $i$'s choice behavior (in all possible choice situations!) will then be /*as if* person $i$ maximized the function $u_i$ by his choice/
+*** 	Representation                                            :B_theorem:
+    :PROPERTIES:
+    :BEAMER_env: theorem
+    :END:
+If the number of alternatives is finite and person $i$'s preferences are complete and transitive, then there exists a function $u_i$ representing $i$'s preferences.
+
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- utility representation allows us to use mathematical maximization techniques for economic analysis!
+
+** Remarks on utility
+- utility has nothing to do with happiness!
+- utility (maximization) is not (necessarily) egoistic!
+- there are also representation theorems for infinite choice sets 
+- completeness and transitivity are necessary assumptions for a meaningful analysis but not totally innocent
+
+* Economic modeling: Choice under uncertainty
+** Decision making under uncertainty
+
+- "alternatives" will often be uncertain
+*** Uncertainty							  :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+| outcome/treatment | treatment $x_1$ | treatment $x_2$ |
+|-------------------+-----------------+-----------------|
+|  /                |   <>            |  <              |
+| healthy           |             0.4 |             0.5 |
+| ill               |             0.4 |            0.25 |
+| dead              |             0.2 |            0.25 |
+Table gives probability for three outcomes given each treatment. Alternative $x_1$ is a lottery $(0.4,0.4,0.2)$ over the three outcomes. Alternative $x_2$ is the lottery $(0.5,0.25,0.25)$.
+*** 							    :B_ignoreheading:
+    :PROPERTIES:
+    :BEAMER_env: ignoreheading
+    :END:
+
+- it would be very convenient if preferences over lotteries could be represented by a utility function $u_i$ that can be written as $$u_i((\alpha,\beta,\gamma))=\alpha u^{healthy}_i + \beta u^{ill}_i + \gamma u^{dead}_i$$ 
+# where $u^{healthy}$ can be interpreted as the "utility of being healthy for sure" etc. 
+- preferences over all kind of treatments/lotteries could then be described by just 3 numbers: $u^{healthy}_i$, $u^{ill}_i$, $u^{dead}_i$
+
+** von Neumann - Morgenstern expected utility theorem
+
+- von Neumann and Morgenstern have proven that such an "expected utility" representation is possible under one additional assumption called "independence"
+
+- independence (roughly): 
+  - take our two lotteries $x_1=(0.4,0.4,0.2)$ and  $x_2=(0.5,0.25,0.25)$
+  - suppose $x_1\succeq_i x_2$
+  - take some other (hypothetical) treatment $x_3$ and consider the 2 options
+     1. toss a coin, if heads take treatment $x_1$ if tails take $x_3$
+     2. toss a coin, if heads take treatment $x_2$ if tails take $x_3$
+  - independence states that $i$ must prefer the first over the second option 
+
+\pause
+
+- *we will assume throughout the course that the choices of the players in our models are such that transitivity, completeness and independence are satisfied, i.e. players choose as if they maximized a utility function in expected utility form*
+
+* Economic modeling: Welfare
+** Welfare
+# - choice/utility tells what is good for an individual
+- what is good for a group of people/society?
+- choices of society can be represented by a utility function called /welfare function/ if they satisfy the same assumptions as before 
+- minimum standard for good societal decisions:
+  - if all people prefer $x_1$ to $x_2$ (and someone does so strictly), then society as a whole should prefer $x_1$ to $x_2$ (Pareto criterion)
+    - we say: "$x_1$ Pareto dominates $x_2$" or "$x_1$ is Pareto superior to $x_2$" or "$x_2$ is Pareto inferior to $x_1$"
+ # - if $x_1$ Pareto dominates all other alternatives, $x_1$ should be society's choice (such alternatives rarely exist)
+  - all alternatives that are not Pareto inferior to some other alternative are called *Pareto efficient* 
+    - usually there are a lot of Pareto efficient alternatives
+  - good societal choices should be Pareto efficient!
+
+*** Splitting a euro 						  :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+2 people, who like more money better, have to split 1€. Each cent has to be given either to one of them or be destroyed. What are the feasible alternatives? Which are Pareto efficient? 
+
+** Interpersonal utility comparison and willingness to pay
+- which of many Pareto efficient allocations should society choose?
+  - (simple) utilitarian approach:  $\max_{x}\sum_i u_i(x)$
+    - why is this potentially problematic? 
+# unit of measurement, pos mon transform
+- willingness to pay
+  - consider two alternatives: good treatment but you have to pay $t$, bad treatment and you have to pay nothing
+  - for which value of $t$ are you indifferent betwen the two options?
+- willingness to pay is in euros \rightarrow can be aggregated 
+  - developing the new treatment costs $c$ (the treatment itself is then costless), when is it worthwhile to invest $c$ and develop the treatment?
+
+* Economic modeling: Why mathematical models?
+** Maps and Models
+- stylized representation of reality
+- abstract from most of reality ("unrealistic on purpose")
+- depending on your needs/problems, different maps/models of the same reality are useful
+- if you know how to use it, immensely helpful
+
+
+** Mathematical models
+- explicitly stated assumptions
+- logical reasoning leads to conclusion/result
+# - reach a conclusion that can be challenged on grounds of explicit assumptions but not on grounds of reasoning
+\vspace*{-0.15cm}
+- goals depend on context, e.g.
+  - clarify a logic/mechanism (minimal ingredients)
+  - produce testable predictions
+  - explore implications of some (additional) feature
+  - get rough forecasts (when the model is paired with data)
+
+*** The need for models :B_example:
+    :PROPERTIES:
+    :BEAMER_env: example
+    :END:
+- Why are people at a high health risk overrepresented among the uninsured in the US?
+- How will physician's prescription behavior change if the number of physicians increases?
+- Who will benefit (or be harmed) from the availability of genetic tests?
+- An insurance considers offering a supplementary insurance package (e.g. covering all dental care) and wonders what premium to charge for this package. 
+# need to forecast cost -> who buys the package, how will their demand for the service change as a result of insurance, how does prescription behavior of the doctor change?, is or will there be competition? -> need a model!
+- 
+

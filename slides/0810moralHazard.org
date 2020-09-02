@@ -1,0 +1,253 @@
+#+Title: Moral hazard
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: 
+#+BEAMER_FRAME_LEVEL: 2
+#+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl}\usepackage{graphicx,tikz}}
+#+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
+#+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,graphicx,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
+
+
+
+* The slope of demand
+** How does health care demand vary in the price the patient has to pay?
+a higher price (i.e. less insurance)... 
+1. ...does not affect the amount of health care a patient consumes
+2. ...reduces the amount of health care a patient consumes
+3. ...increases the amount of health care a patient consumes
+
+\pause
+
+\vspace*{1cm}
+How do you design a study that settles the argument?
+
+# health care is special: go to doctor grudgingly when ill
+# normal economics: higher price leads to lower demanded quantity (some care is optional like going to doc with flu)
+# people might save on preventive care when less insured which leads to higher health care expenses in the long run; expensive emergency room visits in the US where insurance must not be asked for substitute cheap primary care
+
+# ** Demand in a simple model
+
+# - derive demand in a standard 101 micro model and show it is decreasing in price
+
+
+* Field experimental evidence
+
+** RAND health insurance experiment I
+- 70s in the US
+- 2000 families
+- randomly assigned plans differing in copay and stop-loss
+
+\includegraphics[width=9cm]{RANDplans}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+** RAND health insurance experiment II
+
+\includegraphics[width=9cm]{RANDexpenditure}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+- rough price elasticity estimate: -0.2
+
+** RAND health insurance experiment III
+| plan | likelihood | physician  | hospital    | expenditure |
+|      | of any use | visits     | admission % |            (in 2006$)       |
+|------+------------+------------------+----------------------+---------------------|
+| /    |         <> |               <> |                   <> |                     |
+| free |       86.7 |             4.55 |                10.37 | 3,164               |
+| 25 % |       78.8 |             3.33 |                 8.83 | 2,565               |
+| 50 % |       74.3 |             3.03 |                 8.31 | 2,374               |
+| 95%  |       68.0 |             2.73 |                 7.74 | 2,174               |
+\tiny{source: adapted from Manning et al. 1987 by Morrissey 2008}\normalsize
+
+# arc elasticity: percentage change in x over percentage change in y where percentage change in x is (x_1-x_2)/(x_1/2+x_2/2); x would be average total costs and y would be average out of pocket expenditures; one can compare any two plans with this and the -0.2 is some sort of average (the range is from -0.1 to -0.5).
+
+** Oregon I
+
+- Medicaid expansion in Oregon (2008)
+- medium-low income 
+- due to limited budget, lottery for eligibility
+- no copayment, no premium
+- use lottery success as instrument for health insurance
+- roughly: compare lottery winners to losers
+
+\includegraphics[width=6cm]{Oregon1}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+
+# procedure: 75000 applied and 30000 were selected; if selected apply for Medicaid and if you met the criteria you got it; comprehensive coverage without cost sharing;
+# winning in the lottery increased prob of having health insurance by 25 percentage points 
+# 2 years after lottery Oregon had enough funds to also extend to "control group"
+# estimates are IV estimated of local average treatment effect where winning the lottery is instrument for having coverage
+
+** Oregon II
+\includegraphics[width=8cm]{Oregon2}
+\tiny{source: Einav and Finkelstein 2017}\normalsize
+- increase in health care spending due to Medicaid roughly 775$ per year (approx. 25%)
+
+* Welfare and moral hazard
+** Welfare 
+- why is "moral hazard" actually a problem?
+
+# deadweight loss in demand diagram
+
+* Ex ante moral hazard
+** Ex ante moral hazard
+- what is the impact of insurance on preventive behavior, life style etc.?
+#
+
+- uninsured in the US who become eligible for Medicare when turning 65
+
+Results: after turning 65...
+- number of physician visits increases for low-educated by 35 (41)% for men (women)
+- probability of engaging in vigorous physical activity falls by 21 (13)%
+
+\tiny (source: Dave and Kaestner, International Journal of Health Care Finance and Economics, 2009)\normalsize
+
+
+* The donut hole
+** A simplistic model
+
+- patient chooses amount $x$ to spend on medication/treatment
+- utility is separable: $u(x)= h(x)-c(x)$ where
+  - health benefit $h$ is increasing and strictly concave
+  - copayment $c(x)$ depends on insurance contract
+- maximization problem $\max_x h(x)-c(x)$
+  - foc: $h'(x^*)=c'(x^*)$
+- graphical example
+  - suppose the copayment is 10%, i.e. $c(x)=0.1x$ and therefore $c'(x)=0.1$ is constant
+  - $h'$ is decreasing as $h$ is strictly concave
+
+** The donut hole I
+
+- Medicare Part D provides coverage for elderly for medication
+
+\includegraphics[width=8cm]{donut}
+\tiny{source: Einav and Finkelstein 2017} \normalsize
+
+How will the distribution of medication expenditure for Medicare recipients look like?
+
+** The donut hole II
+\includegraphics[width=8cm]{bunchingDonut}
+\tiny{source: Einav and Finkelstein 2017}
+
+** Forward looking behavior
+\includegraphics[width=8cm]{anticipationFuturePrice}
+\tiny{source: Einav and Finkelstein 2017}
+
+
+** Out of pocket expenditures: German example 
+- single civil servant in NRW in tarif group W3
+  - health insurance for 50% of health care expenditures: 275 EUR per month, repays  3 months of contributions if no use (effective deductible of 825 EUR)
+  - state subsidy for 50% of health care expenditures ("Beihilfe"): deductible ("Kostendämpfungspauschale") of 450 EUR 
+
+\begin{tikzpicture}[scale=0.5]
+\draw[<->] (0,8) --(0,0)-- (12,0);
+\node[right] at (12,0) {\footnotesize expenditures};
+\draw (4.5,-.1)--(4.5,0.1);
+\draw (8.25,-.1)--(8.25,0.1);
+\draw (-.1,6.375)--(0.1,6.375);
+\draw (-.1,4.5)--(0.1,4.5);
+\node[below] at (4.5,0) {\footnotesize 900};
+\node[below] at (8.25,0) {\footnotesize 1650};
+\node[left] at (0,4.5) {\footnotesize 900};
+\node[left] at (0,6.375) {\footnotesize 1275};
+\draw[thick,blue] (0,0)--(4.5,4.5)--(8.25,6.375)--(12,6.375);
+\node[right] at (12,6.65) {\footnotesize out of pocket}; 
+\node[right] at (12,6.05) {\footnotesize expenditures};
+\end{tikzpicture}
+
+- What are the implications for the expenditure profile?
+
+# do not expect expenditures slightly above the kinks, i.e. slightly above 900 or slightly above 1650
+
+
+* Out of sample predictions
+** Out of sample predictions
+
+- A health insurer considers to introduce a copayment of 10% up to 5000€ and asks you how this will affect expenditures. What do you do?
+
+# price elasticity of -0.2 (note that RAND used the arc elasticity, i.e. the percentage increase in out of pocket price would be (10-0)/((10+0)/2)=2=200%), hence share of people with expenditures below 5000 are expected to consume 2*0.2=40% less
+
+# simple structural model, e.g. u_i=-(\theta-h)^2 +m, before change, i.e.  without copayment, everyone chooses h=\theta, this gives the distribution of theta; under the new regime u_i is -(\theta-h)^2+m-0.1h if h is less than 5000, determine which h everyone will choose now
+
+
+
+
+* Utilization management
+** Utilization management (UM)
+- insurance causes over consumption of care 
+  - copayments are an imperfect way to fight this problem
+  - what else can insurer do to fight over consumption of care?
+
+** Empirical evidence on utilization management I
+
+- Wickizer, Wheeler and Feldstein (1989) and Wheeler and Wickizer (1990)
+  - data from one US insurer 
+  - 41% of groups buy plan with preadmission certification and concurrent review
+  - results: 
+    - 3.7% less hospital admissions but no effect on length of stay
+    - UM more effective if in community admission rates are high or hospital capacity is idle 
+  
+- Scheffler, Sullivan and Ko (1991)
+  - Blue Cross/Blue shield plans
+
+\tiny
+|                                | admissions | hospital days | length of stay | inpatient expenditures |
+|--------------------------------+------------+---------------+----------------+------------------------|
+| /                              | <          |               |                |                        |
+| preadmission+concurrent review | -5.3%***   | -4.9%***      |           +0.4 |               -2.6%*** |
+| mandatory 2nd surgical opinion | +0.8%      | +0.9%         |           +0.0 |                  -2.6% |
+| retrospective review           | +0.5       | +0.8          |           +0.4 |                   +2.1 |
+| denial of payment              | -2.3*      | -4.5***       |        -2.1*** |                  -2.0* |
+| discharge planning             | +0.7       | +1,2          |           +0.0 |                   -0.8 |
+
+# preadmission cert.: nonemergency hospital admission has to be cleared by insurer before admittance
+# concurretn review: number of hospital days is specified in advance and increases have to be cleared by insurer
+# retrospective review: review case expost and advise provider to follow insurer protocol if care deemed unnecessary
+# denial of payment: insurer will not pay for care that is not in line with insurer protocol
+# discharge planning: provider must make a plan for care after discharge before admitting
+# problem: selection! groups choosing UM may know they need it
+
+** Empirical evidence on utilization management II
+- Lessler and Wickizer (2000)
+  - one US health insurer with different groups (some with preadmission certification + concurrent review)
+  - only cardiovascular disease patients
+  - results
+    - almost no requests for admission rejected
+    - 17.5% of cases length of stay was reduced (19% for surgical procedures)
+    - readmission rates: 12.4% no reduction, 9.4% if 1 day reduction, 14.6% if 2+ days reduction
+# no admission reduction: cardivascular have no discretion, or providers know guidelines very well, or ineffective
+
+** Gatekeeping
+- gatekeeping: specialty care requires referral by general practicioner
+  - what are the advantages?
+
+\pause 
+
+- Ferris er al. (2001)
+  - Harvards Vanguard eliminated gatekeeping after 25 years in 1998 
+  - compare utilization before and after elimination
+
+| physician visits                   | gatekeeping | no gatekeeping |
+|------------------------------------+-------------+----------------|
+| /                                  |           < |                |
+| number specialty visits / 6 months |         .78 |            .78 |
+| number first visit specialist /6m  |         .19 |            .22 |
+| number primary care visits /6m     |        1.21 |           1.19 |
+
+# no statistical significance
+
+# potential advantage: continuity of care i.e. GP has overview and manages as expert adviser, substitute expensive specialty by cheap GP, use capitation
+
+
