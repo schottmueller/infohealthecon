@@ -10,7 +10,6 @@
 #  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
 #  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
 # - On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
-- An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available now.
 # - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
 # - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
 # - Information on the exam: 
@@ -32,17 +31,26 @@ If you want to take a less broad approach in catching up, the internet offers a 
 
 Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publically available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
 
-The course plan as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
-
 Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
-The exercises are available in [[https://github.com/schottmueller/infohealthecon/files/3922011/ex.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/ex.org][.org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]]. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session (use this [[https://nbviewer.jupyter.org/github/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][link]] if github cannot render the file). Here are the data sets for the case study on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
+- The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/2437665/plan.pdf][pdf]] on which you can also find a list of references.
 
-- intro [[https://github.com/schottmueller/infohealthecon/files/3656685/intro.pdf][slides]]
-- demand for insurance [[https://github.com/schottmueller/infohealthecon/files/3724404/insuranceDemand.pdf][slides]]
-- (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/3778827/adverseSelection.pdf][slides]], numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
-- moral hazard [[https://github.com/schottmueller/infohealthecon/files/3968208/moralHazard.pdf][slides]]
-- physician-patient [[https://github.com/schottmueller/infohealthecon/files/2791900/doctorPatient.pdf][slides]]
+- The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/5162934/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]]. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session (use this [[https://nbviewer.jupyter.org/github/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][link]] if github cannot render the file). 
+
+- *Slides*
+  - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
+  - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/5162915/02insuranceDemand.pdf][slides]]
+  - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/5162916/0307adverseSelection.pdf][slides]],   numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
+  - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
+  - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
+
+- *Data sets* for cases studies:
+  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][Data]] on selection in long term care insurance. (password announced in lecture)
+  - Data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. 
+# pw is "infohealth"
+# I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
+
+- An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
 ** Julia notebooks
 There are some julia/jupyter notebooks that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
@@ -59,7 +67,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 
 ** Lecture times: 
 - lecture: Wednesday, 12:00-13:30 in 100/U1/HS VI
-- exercise classes: Monday, 14:00-15:30 in 103/EG/0.211
+- exercise classes: Monday, 12:00-13:30 
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
