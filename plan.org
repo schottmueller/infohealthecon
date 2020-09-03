@@ -33,7 +33,7 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 
 Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
-- The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5163101/plan.pdf][pdf]]  on which you can also find a list of references.
+- The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5168062/plan.pdf][pdf]] on which you can also find a list of *references*.
 
 - The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/5162934/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]]. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session (use this [[https://nbviewer.jupyter.org/github/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][link]] if github cannot render the file). 
 
@@ -67,7 +67,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 
 ** Lecture times: 
 - lecture: Wednesday, 12:00-13:30 in 100/U1/HS VI
-- exercise classes: Monday, 12:00-13:30 
+- exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30 in 100/HSXII
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
