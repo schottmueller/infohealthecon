@@ -1,0 +1,64 @@
+#+Title: Empirical Case Studies
+#+AUTHOR:    Christoph Schottmüller
+#+Date: 
+
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:nil 
+#+OPTIONS:   TeX:t LaTeX:t 
+
+#+LaTeX_CLASS: article
+#+LaTeX_CLASS_OPTIONS: [a4paper]
+#+latex_header: \usepackage{amsmath}\usepackage[margin=2.5cm]{geometry}\usepackage{ae,aecompl}\usepackage{sgame}
+
+* Selection in long term care insurance
+
+The dataset "FMcGdata.csv" contains data about an elderly sample (average age 78) from the US. The dataset contains whether these elderly entered a nursing home in the period 1995-2000 and whether they had long term care insurance in 1995. A survey in 1995 asked
+  - "Of course nobody wants to go to a nursing home, but sometimes it becomes necessary. What do you think are the chances that you will move to a nursing home in the next five years?" (answer in the variable "belief")
+
+The following table gives an overview over the variables in the dataset:
+
+| variable name | description                                                                        |
+|---------------+------------------------------------------------------------------------------------|
+|          /    | <                                                                                  |
+| dEnterNH      | binary variable that is 1 if individual went to nursing home between 1995 and 2000 |
+| belief        | self reported belief of entering nursing home between 95 and 00 (elicited in 95)   |
+| insPrediction | prediction of insurance company that person enters nursing home between 95 to 00   |
+| ltcinsd       | binary variable which is 1 if person has long term care insurance in 95            |
+| asset1        | binary, 1 if person is in top wealth quartile                                      |
+| asset2        | wealth quartile 2                                                                  |
+| asset3        | wealth quartile 3                                                                  |
+| prevent       | percentage of gender specific preventive activities undertaken (between 0 and 1)   |
+| seatbelt      | use of seatbelt (values 1-4 for "all or most", "sometimes", "rarely", "never")     |
+| dSeatbelt     | binary variable that is 1 if seatbelt is used "all or most" times, 0 else          |
+| inc1          | binary, 1 if person is in top income quartile                                      |
+
+
+1. What proportion of the elderly entered a nursing home between 1995 and 2000?
+2. What is the average belief that a person enters nursing home? What is the average prediction of the insurance company?
+3. What proportion of the elderly had long term care insurance in 1995?
+4. Are those with a higher belief of entering a nursing home more likely to have long term care insurance?
+5. Are people with a higher belief in fact more likely to enter a nursing home? 
+6. Do people have private information about their probability of entering a nursing home? (Hint: that is, does the belief contain information about the likelihood to enter a nursing home beyond the prediction of the insurance company?)
+7. Is there adverse selection, i.e. are those that buy long term care insurance more likely to enter a nursing home?
+8. The variables "prevent" and "dSeatbelt" can be viewed as measures of risk aversion (admittedly in other domains). How is risk aversion (measured by these variables) correlated with the purchasing decision of long term care insurance and the probability of entering a nursing home?
+9. How is wealth correlated with the purchasing decision of long term care insurance and the probability of entering a nursing home?
+
+
+* Minimum deductible in the Netherlands
+In the lecture we discussed some evidence for moral hazard. The main question here is whether we can find some empirical evidence for moral hazard ourselves.[fn::This case study is based on material prepared by Jan Boone, see [[https://github.com/janboone/python_economics/blob/master/economics.org#regulation-in-health-care-markets][section "Regulation in health care markets" here]].]
+
+In the Netherlands health insurance is provided by a handful semi-private health insurers. The base coverage is fixed by law and the law also mandates, since 2008 , a minimum deductible for all insured /above age 18/, i.e. there is no deductible or other copayment for kids. Copayments that do not take the form of a deductible are not used and most insured have a deductible equal to the legal minimum. The minimum deductible has been increased over time from the initial 150€ per year. (2009: € 155; 2010: € 165; 2011: € 170; 2012: € 220; 2013: € 350; 2014: € 360; 2015: € 375; 2016, 2017 en 2018: € 385). Cost data for the Netherlands is available on http://www.vektis.nl/index.php/vektis-open-data where for each (age,gender,postcode) triple you can find the total health care costs split up into different categories. On the course website I provide a simplified version of the data sets from [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]] in which I changed the variable names to English and aggregated all the costs that fall under the deductible into one variable.
+
+You can do the exercises below in a spreadsheet app (like Microsoft Excel or /OpenOffice Calc/) but even better suited would be a statistics software (like /R/ or Stata or SPSS) or a data analysis package in a general pupose programming language (like /Pandas for Python/ or /DataFrames for Julia/). (options in italics are free, open source and available for all usual operating systems; as you might have guessed, I use Julia)
+
+1. Download the data for 2011 and open it in your software of choice. Do you understand what the number in the different cells mean?
+2. Can you find out how many people had health insurance in the Netherlands in 2011?
+3. Can you make a plot with age on the x-axis and average costs under the deductible on the y-axis? (If you are not familiar with the software this might be tricky and you might want to proceed without it.)
+4. Can you find the average costs under the deductible of 17 year olds?
+5. Can you find the average costs under the deductible of 19 year olds?
+6. How do you interpret the difference in average costs between 17 and 19 year old?
+7. To get a better idea of the difference plot the distribution of costs (this is called a "histogram") for 17 and 19 year olds. (again this can be a bit tricky)
+8. Why would it make sense to repeat some of the analysis with the 2014 data?
+9. Can you give a demand elasticity for the deductible, i.e. if we increase the deductible by 100% by how much do expenditures decrease? 
+10. Can the estimate of the previous exercise be compared to the famous -0.2 demand elasticity from the RAND health insurance experiment?
+* Hospitals in Germany
