@@ -63,11 +63,13 @@ Students learn economic methods to analyze health care markets theoretically and
 
 The course consists of a lecture and an exercise session. Models, their solutions and implications as well as empirical evidence are presented in the lecture. In the exercise classes, solution to exercises are discussed. Students are expected to work on the exercises beforehand. Exercises consist mainly of calculation exercises using (variations of) models introduced in class but also discussion questions on specific applications. 
 
-The exam will -- in style -- be similar to the questions of the exercise classes.
+The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
 
 ** Lecture times: 
 - lecture: Wednesday, 12:00-13:30 in 100/U1/HS VI
 - exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30 in 100/HSXII
+
+If university policies do not allow on campus teaching, lecture and exercise session will be moved online.
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
