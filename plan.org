@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
+ - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
 # - some points on the exam:
 #  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
 #  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
@@ -23,7 +23,7 @@
 # - Note that there will be an exercise session on October 7 even though this is before the first lecture covering [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][these]] questions. This exercise session is dedicated to repeating some mathematical concepts used in this course (distributions, expected value etc.). 
 
 * Prerequisites and background
-Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierenede der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
+Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
 
 If you want to take a less broad approach in catching up, the internet offers a variety of materials and formats (lecture notes, video tutorials on major online video platforms, interactive websites) that can be found with the usual search engines. For example, Wikipedia provides short definitions and explanations on all above mentioned topics (and often links to more in depth material). 
 
@@ -33,7 +33,7 @@ Please note that I do not use ILIAS because (i) I did not agree with certain usa
 
 Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
-- The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5168062/plan.pdf][pdf]] on which you can also find a list of *references*.
+- The *course plan* as [[[[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]] on which you can also find a list of *references*.
 
 - The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/5162934/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]]. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session (use this [[https://nbviewer.jupyter.org/github/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][link]] if github cannot render the file). 
 
@@ -44,7 +44,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
   - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
 
-- *Data sets* for cases studies:
+- *Data sets* for case studies:
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][Data]] on selection in long term care insurance. (password announced in lecture)
   - Data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. 
 # pw is "infohealth"
@@ -66,10 +66,12 @@ The course consists of a lecture and an exercise session. Models, their solution
 The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
 
 ** Lecture times: 
-- lecture: Wednesday, 12:00-13:30 in 100/U1/HS VI
-- exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30 in 100/HSXII
+- lecture: Wednesday, 12:00-13:30 
+# in 100/U1/HS VI
+- exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30
+# in 100/HSXII
 
-If university policies do not allow on campus teaching, lecture and exercise session will be moved online.
+University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
@@ -88,7 +90,7 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - drivers of insurance demand
 - (coverage choice and state dependent utility)
 - reading: ch. 3 cite:morrisey2008health
-- supplementary reading: (Springer book Bachelor)
+- supplementary reading: ch. 9, cite:eisenfuhr2013rationales
 
 ** Selection (5)
 *** Selection with fixed coverage
@@ -102,23 +104,24 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - equilibrium 
 - comparative statics
 - derivation of eq in screencast
-# - reading:  ch. 5.3.3-5.3.4 cite:zweifel2009health ?? oder ch. 7?
+- reading:  ch. 5.3.3 cite:zweifel2009health
 - supplementary reading: cite:rothschild1976equilibrium
 *** Genetic Tests
 - two kinds of risks
 - in RS model
-- supplementary reading: cite:doh96
+- supplementary reading: cite:doh96, cite:lagerlof2018monopoly
 *** Premium risk, community rating and risk adjustment
 - premium risk model
 - segway into risk adjustment
 - discussion: how could German health insurers attract a profitable clientele?
+- reading: ch. 5.3.4 in cite:zweifel2009health
 - supplementary reading: cite:behrend2007risk, cite:PMM2000755
 *** Advantageous selection
-- empirical observations (provide Finkelstein/McGarry data and compute results live in lecture)
+- case study: selection into long term care insurance in the US
 - fixed coverage model
-- (treatment choice and utilization...maybe as bonus screencast?)
+- (bonus screencast: treatment choice and utilization)
 - reading: cite:finkelstein2006multiple
-- supplementary reading: cite:hemenway1990propitious, cite:fang2008sources
+- supplementary reading: cite:hemenway1990propitious, cite:fang2008sources, cite:boone2017health
 ** Moral hazard (3)
 *** The question of moral hazard and empirical evidence
 - slope of demand
@@ -145,13 +148,14 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - supplementary reading: section 5 in cite:mcguire2000physician, cite:fuchs1978supply,gruber1996physician, cite:krasnik1990changing
 *** Supplier induced demand: empirics
 - How Danish physicians react to incentives
-- Caesarean sections in German hospitals
+- Case study: German hospitals
 *** Credence good model
 - problems/assumptions and appropriate incentives
 - discussion: DRG system like liability? implications?
 - reading: cite:dulleck2006doctors
 *** Cost saving incentives and communication
-
+- physician renumeration, trust and the Hippocratic oath
+- supplementary reading: cite:schottmueller2013cifd
 
 
 bibliographystyle:chicago
