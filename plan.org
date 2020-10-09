@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The provisional exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2022. However, the exact date will not be published any time soon as the room situation remains unclear.
 - University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online. Links for the respective zoom meetings will be communicated before the first week of the semester.
 - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
 # - some points on the exam:
