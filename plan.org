@@ -76,7 +76,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
 
 ** Textbooks
-The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health. cite:morrisey2008health covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
+The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). cite:morrisey2008health (library link to  [[https://www.ub.uni-koeln.de/usbportal?query=tmpebooks:ocn227385247][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
 
 * Detailed schedule
 This is a plan and as every good plan it may be adjusted if necessary.
