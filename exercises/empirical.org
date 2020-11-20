@@ -49,7 +49,7 @@ In the lecture we discussed some evidence for moral hazard. The main question he
 
 In the Netherlands health insurance is provided by a handful semi-private health insurers. The base coverage is fixed by law and the law also mandates, since 2008 , a minimum deductible for all insured /above age 18/, i.e. there is no deductible or other copayment for kids. Copayments that do not take the form of a deductible are not used and most insured have a deductible equal to the legal minimum. The minimum deductible has been increased over time from the initial 150€ per year. (2009: € 155; 2010: € 165; 2011: € 170; 2012: € 220; 2013: € 350; 2014: € 360; 2015: € 375; 2016, 2017 en 2018: € 385). Cost data for the Netherlands is available on http://www.vektis.nl/index.php/vektis-open-data where for each (age,gender,postcode) triple you can find the total health care costs split up into different categories. On the course website I provide a simplified version of the data sets from [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]] in which I changed the variable names to English and aggregated all the costs that fall under the deductible into one variable.
 
-You can do the exercises below in a spreadsheet app (like Microsoft Excel or /OpenOffice Calc/) but even better suited would be a statistics software (like /R/ or Stata or SPSS) or a data analysis package in a general pupose programming language (like /Pandas for Python/ or /DataFrames for Julia/). (options in italics are free, open source and available for all usual operating systems; as you might have guessed, I use Julia)
+You can do the exercises below in a spreadsheet app (like Microsoft Excel or /OpenOffice Calc/) but even better suited would be a statistics software (like /R/ or Stata or SPSS) or a data analysis package in a general pupose programming language (like /Pandas for Python/ or /DataFrames for Julia/). (options in italics are free, open source and available for all common operating systems; as you might have guessed, I like Julia best)
 
 1. Download the data for 2011 and open it in your software of choice. Do you understand what the number in the different cells mean?
 2. Can you find out how many people had health insurance in the Netherlands in 2011?
@@ -62,3 +62,4 @@ You can do the exercises below in a spreadsheet app (like Microsoft Excel or /Op
 9. Can you give a demand elasticity for the deductible, i.e. if we increase the deductible by 100% by how much do expenditures decrease? 
 10. Can the estimate of the previous exercise be compared to the famous -0.2 demand elasticity from the RAND health insurance experiment?
 * Hospitals in Germany
+tbw
