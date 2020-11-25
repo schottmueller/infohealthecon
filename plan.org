@@ -46,6 +46,9 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
   - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
 
+- *Screencasts*
+  - [[https://web.tresorit.com/l/qCGED#XuoolpfqI1193Egb6Pyjbw][derivation]] Rothschild-Stiglitz equilibrium
+
 - *Data sets and instructions* for case studies:
   - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5573801/empirical.pdf][pdf]])for empirical sessions, please download the data below and work on the questions before coming to class 
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance. (password announced in lecture)
