@@ -98,7 +98,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E1.3: MC(i)=i*1600; 
 # E1.4: AC(j)=(1/2+j)*800
 # E1.5: critical i: AC(i)=WTP(i); i = 1.5-\sqrt{5}/2\approx 0.38; hence i in [0.38,0.5] buy insurance
-# E1.6: \int_{0.38}^{1/2}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0.33^{0.5}=11.584; welfare:  \int_{0}^{0.5}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0^{0.5}=33.333; proportional loss: 11.584/33.33=0.347
+# E1.6: \int_{0.38}^{1/2}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0.33^{0.5}=11.584; welfare:  \int_{0}^{0.5}WTP(i)-MC(i)\,di=400[i^2/2-i^3/3]_0^{0.5}=33.333; proportional loss: (33.33-11.584)/33.33=0.653
 # E1.7: AC^s(i)=AC(i)-s; equilibrium AC^s(i)=WTP(i); 800(.5+i)-s=2000i-400i^2; cover everyone means i=0 and therefore s=400.
 # E1.8: p^*=AC(0) hence p=400, benefit if WTP(i)>=400, loose else; benefit if i>0.209
 # E1.9: for i>0.3 same as original question; for i<0.3 AC(i)=(0.3+i)*800 and AC(i^*)=p*=WTP(i^*) gives i^*=0.225 and therefore p^*=420; people in (0.225,03.) benefit everyone else's utility is unchanged
