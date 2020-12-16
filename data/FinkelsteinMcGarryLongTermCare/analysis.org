@@ -1,0 +1,92 @@
+#+title: Case study: Long term care insurance and advantageous selection
+#+options: toc:nil
+#+author: Christoph Schottmüller
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:t toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t 
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc 
+#+INFOJS_OPT: view:nil toc:nil ltoc:nil mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+HTML_HEAD: <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+
+* Loading packages
+
+This loads some statistics packages into julia which we will use below.
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output
+using DataFrames, StatFiles, CSV, GLM, Statistics
+#+END_SRC
+
+* Data set creation
+
+The following code generates the data set I uploaded from the data set the authors provide on their website. 
+
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+df = DataFrame(load("replicationdata.dta"))
+
+df1 = df[(df[:,:nhbtwgxd].!==missing) .& (df[:,:robpnhd].!==missing) .&(df[:,:pnhd].!==missing),[:pnhd, :nhbtwgxd,:robpnhd,:ltcinsd,:asset1,:asset2,:asset3,:prevent,:seatbelt,:sex,:inc1,:inc2,:inc3]]
+
+rename!(df1,Dict(:nhbtwgxd => "dEnterNH",:pnhd => "belief", :robpnhd => "insPrediction"))
+df1.dSeatbelt = (df1.seatbelt.==1) # create dummy that is 1 if seatbelt is used for "all or most" trips
+
+CSV.write("FMcGdata.csv",df1)
+#+END_SRC
+
+* Analysis
+
+** read in data
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+df1 = CSV.read("FMcGdata.csv",DataFrame)
+df2=dropmissing(df1) #data set without missing observations
+#+End_src
+
+#+RESULTS:
+
+** descriptive statistics (question 1-3)
+
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+describe(df1)
+#+End_src
+
+#+RESULTS:
+
+** scope for adverse selection
+To have adverse selection, people need to have private information and use this information in their insurance purchase behavior.
+
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+# 4: Is belief about entering nursing home influencing demand for long term care insurance?
+lm(@formula(ltcinsd~belief),df1)
+
+# 5:  Does the belief contain information, i.e. is it more likely to enter nursing home when one believes so?
+lm(@formula(dEnterNH~belief),df1)
+
+# 6: Does the belief contain information even when controlling for the insurance estimate, i.e. is it more likely to enter nursing home when one believes so controlling for insurance estimate?
+lm(@formula(dEnterNH~belief+insPrediction),df1)
+#+END_SRC
+
+** advantageous selection
+Adverse selection would predict a positive correlation between insurance purchases and the probability of entering nursing home (i.e. high risk people have a higher demand for insurance). As we see below the actual correlation is negative.
+#+BEGIN_SRC julia :session :results output :exports code
+#7: Are we having adverse selection, i.e. are those buying long term care insurance more likely to enter a nursing home?
+lm(@formula(dEnterNH~ltcinsd),df1)
+#+end_src
+
+*** risk aversion as a driver of advantageous selection
+
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+#8: Is risk aversion a driver of advantageous selection?
+#risk aversion measured by seatbelt use
+lm(@formula(dEnterNH~dSeatbelt),df1)
+lm(@formula(ltcinsd~dSeatbelt),df1)
+
+#risk aversion measured by preventive efforts
+lm(@formula(dEnterNH~prevent),df1)
+lm(@formula(ltcinsd~prevent),df1)
+#+end_src
+
+*** wealth as a driver of advantageous selection
+#+BEGIN_SRC julia :exports both :returns output :tangle yes :results output 
+#9: Is wealth a driver of advantageous selection?
+lm(@formula(dEnterNH~asset1+asset2+asset3),df1)
+lm(@formula(ltcinsd~asset1+asset2+asset3),df1)
+#+end_src
