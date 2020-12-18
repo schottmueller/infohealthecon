@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
 - The provisional exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
@@ -51,6 +52,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Screencasts*
   - [[https://web.tresorit.com/l/qCGED#XuoolpfqI1193Egb6Pyjbw][derivation]] Rothschild-Stiglitz equilibrium
   - how to get [[https://web.tresorit.com/l/9qKwi#bpDTu3fchgFNH5XeXQYjVg][descriptive statistics]] and do [[https://web.tresorit.com/l/g7EUM#9F-c-gvfHZzlCltlFJU2xg][regressions]] in LibreOffice Calc (note the menu item clicked and unfortunately not visible on the video is "Data")
+  - bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] on endogenous treatment choice 
 
 - *Data sets and instructions* for case studies:
   - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5573801/empirical.pdf][pdf]])for empirical sessions, please download the data below and work on the questions before coming to class 
