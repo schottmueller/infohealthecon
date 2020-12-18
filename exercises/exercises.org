@@ -126,12 +126,12 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E7: people switch from being low to being high risk and vice versa over time; if immediate change of plan is allowed people could buy the cheapest/no insurance and go to the plan with highest coverage the moment they fall ill; similar logic to German private plans that cover dental care only after 2 years
 
 ** Genetic tests
-1. Assume that all people in our economy are similar and have the same Bernoulli utility function $u(x)=\sqrt{x}$. A person has wealth $W=9$ and falls ill with probability 1/2. When falling ill the person needs treatment costing $L=5$. Assume that many insurance companies without administrative costs compete prefectly in the insurance market.
+1. Assume that all people in our economy are similar and have the same Bernoulli utility function $u(x)=\sqrt{x}$. A person has wealth $W=9$ and falls ill with probability 1/2. When falling ill the person needs treatment costing $L=5$. Assume that many insurance companies without administrative costs compete perfectly in the insurance market.
   1. Determine the risk premium of a consumer for a full coverage contract. What contract be offered in equilibrium?
   2. Suppose a genetic test becomes available: The test results can be either "high risk" (h) or "low risk" (l). Those that test have a 50% chance of getting either result. High risk people have probability 3/4 and low risk people have the probability 1/4 of falling ill. 
     - Calculate the risk premium of an /h/ type and the risk premium of an /l/ type (again using a full coverage contract).
     - Assume everyone gets tested and the insurance companies can make their contracts dependent of the test result. What contracts will they offer? How do profits and expected utility change compared to (a)?
-    - Assume that insurance companies are prohibited from making their contracts contingent upon the test results. How do expected utility and insurance profits change compared to (a)? (Note: you do not have to calculate theequilibrium contracts to answer this question qualitatively.) 
+    - Assume that insurance companies are prohibited from making their contracts contingent upon the test results. How do expected utility and insurance profits change compared to (a)? (Note: you do not have to calculate the equilibrium contracts to answer this question qualitatively.) 
   3. Consider now a profit maximizing insurance monopolist. How does your answer in (a) and (b.1) and (b.2) change? 
 
 # E1a: no insurance: E[u]:.5*\sqrt{9}+.5*\sqrt{9-5}=2.5; 2.5=\sqrt{9-.5*5-RP} or RP=1/4; full coverage and p=.5*5=2.5 EU=\sqrt{9-2.5}=2.55
