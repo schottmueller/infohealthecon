@@ -3,7 +3,8 @@
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
 
-* https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
+* News
+- There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
 - The provisional exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
