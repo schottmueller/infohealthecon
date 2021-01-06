@@ -62,4 +62,31 @@ You can do the exercises below in a spreadsheet app (like Microsoft Excel or /Op
 9. Can you give a demand elasticity for the deductible, i.e. if we increase the deductible by 100% by how much do expenditures decrease? 
 10. Can the estimate of the previous exercise be compared to the famous -0.2 demand elasticity from the RAND health insurance experiment?
 * Hospitals in Germany
-tbw
+Check the dataset /hospitalBirths.csv/. The data is from 2018 and comes from mandatory quality reports hospitals have to submit on an annual basis. Population numbers and city locations are taken from the official city level reports of the "Bundesamt für Kartographie und Geodäsie". Hospital locations were determined using /openstreetmaps.org/. The following table explains the important variables.
+
+
+| variable name            | description                                                                           |
+|--------------------------+---------------------------------------------------------------------------------------|
+| /                        | <                                                                                     |
+| institutionenkennzeichen | hospital id                                                                           |
+| Standortnr               | location id (only relevant for hospitals with several locations)                      |
+| betten                   | number of hospital beds                                                               |
+| privat                   | dummy: 1 if hospital is private and 0 else                                            |
+| freigemein               | dummy: 1 if hospital is a non-profit (usually owned by a religious organization)      |
+| births                   | number of births                                                                      |
+| caesarean                | number of Caesarean sections                                                          |
+| nCompBirths              | number of birth stations within a 50km radius                                         |
+|                          | (excluding the hospital itself and hospitals with the same "insitutionenkennzeichen") |
+| nBirthsInRadius          | number of births within a 50km radius (as the crow flies)                             |
+| demandPotMax             | approximate number of people living within a 50km radius                              |
+
+In the following we want to look at the following question: Could there be demand inducement by hospitals in the sense of pushing for more Caesarean sections among all births.
+
+1) Construct a new variable "shareC" that contains the share of Caesarean sections among all births.
+2) Construct a variable "density" that contains a measure of birth station density. (hint: use the variables /nCompBirths/ and /demandPotMax/)
+3) Do you expect /density/ and /shareC/ to be correlated? Check in the data whether your expectation is met! (Can you use a plot to get a better idea of the correlation? Are there certain hospitals that you would like to exclude from the analysis?)
+4) Would you expect stronger or weaker correlations between /density/ and /shareC/ for hospitals that are (i) public, (ii) private, (iii) non-profits? Check in the data whether your expectation is met! (Extra exercise: check how /shareC/ differs across ownership types!  Any explanations for these differences?)
+5) Is this data set suitable to check for supplier induced demand? Why (not)?
+
+
+Finally, have a brief look at the file "reimbursement_OPS_5_377_fluctuation.csv". It contains the reimbursement of a hospital for a 77 year old man getting a pacemaker/defilibrator (OPS code 5.377.1, diagnosis ICD I44.1, DRG: F12I), staying 5 days in hospital in several years. (The federal base rate is taken from [[https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/budgetverhandlungen/bundesbasisfallwert/bundesbasisfallwert.jsp][here]]. The grouping was done using [[https://www.drg-research-group.de/][this]] online tool.) The case numbers are all men aged between 75 and 80 with OPS 5.377 according to [[https://www-genesis.destatis.de]]. Plot the reimbursement (or caseweights) over time and do the same with the case numbers. How can such data be used to check for supplier induced demand?

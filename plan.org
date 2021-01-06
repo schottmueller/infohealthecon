@@ -3,8 +3,7 @@
 #+Options: toc:nil H:2
 #+Latex_Header: \usepackage{natbib}
 
-* News
-- There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
+* https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
 - The provisional exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
@@ -55,11 +54,11 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] on endogenous treatment choice 
 
 - *Data sets and instructions* for case studies:
-  - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5573801/empirical.pdf][pdf]])for empirical sessions, please download the data below and work on the questions before coming to class 
-  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance. (password announced in lecture) ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
+  - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5776630/empirical.pdf][pdf]])for empirical sessions, please download the data below and work on the questions before coming to class 
+  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture) ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
+  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand.
   - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. 
 # pw is "infohealth"
-# I posted some example analysis for the case study [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
