@@ -169,7 +169,7 @@ How will the distribution of medication expenditure for Medicare recipients look
 
 - What are the implications for the expenditure profile?
 
-# do not expect expenditures slightly above the kinks, i.e. slightly above 900 or slightly above 1650
+# do not expect expenditures around the kinks, i.e. around 900 or around 1650
 
 
 * Out of sample predictions
@@ -213,8 +213,8 @@ How will the distribution of medication expenditure for Medicare recipients look
 | discharge planning             | +0.7       | +1,2          |           +0.0 |                   -0.8 |
 
 # preadmission cert.: nonemergency hospital admission has to be cleared by insurer before admittance
-# concurretn review: number of hospital days is specified in advance and increases have to be cleared by insurer
-# retrospective review: review case expost and advise provider to follow insurer protocol if care deemed unnecessary
+# concurrent review: number of hospital days is specified in advance and increases have to be cleared by insurer
+# retrospective review: review case ex post and advise provider to follow insurer protocol if care deemed unnecessary
 # denial of payment: insurer will not pay for care that is not in line with insurer protocol
 # discharge planning: provider must make a plan for care after discharge before admitting
 # problem: selection! groups choosing UM may know they need it
@@ -227,7 +227,7 @@ How will the distribution of medication expenditure for Medicare recipients look
     - almost no requests for admission rejected
     - 17.5% of cases length of stay was reduced (19% for surgical procedures)
     - readmission rates: 12.4% no reduction, 9.4% if 1 day reduction, 14.6% if 2+ days reduction
-# no admission reduction: cardivascular have no discretion, or providers know guidelines very well, or ineffective
+# no admission reduction: cardiovascular have no discretion, or providers know guidelines very well, or ineffective
 
 ** Gatekeeping
 - gatekeeping: specialty care requires referral by general practicioner

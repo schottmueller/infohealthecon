@@ -1,4 +1,4 @@
-#+Title: Selection
+l#+Title: Selection
 #+AUTHOR:    Christoph Schottmüller
 #+Date: 
 
@@ -30,7 +30,7 @@
 - large heterogeneous population: 
   - differ in willingness to pay for contract
   - differ in expected costs 
-- heterogeneity is unobserved by insurers
+- heterogeneity is unobserved by insurers \linebreak (expected costs and willingness to pay are "private information of consumers")
 - insurers set premium
 - for now: insurances have no administrative costs 
 
@@ -49,7 +49,7 @@
 # MC(0)=AC(0) 
 # risk premium (abstracting from wealth effects): difference between demand and MC, positive as risk averse, i.e. D>MC -> efficient that everyone is insured
 # downward sloping MC implies AC>MC and therefore intersection of D and AC is (if it exists) at Q below efficient level
-# idfference to other goods (cars etc.): costs are linked to wtp
+# difference to other goods (cars etc.): costs are linked to wtp
 
 ** Competitive equilibrium
 - if many insurers compete on premium, equilibrium premium equals average costs ("Bertrand competition" or "perfect competition")
@@ -62,7 +62,7 @@ Result:
 - insurance mandate (?)
 # what is the regulated premium? force people to buy insurance at premium above wtp?
 - premium subsidy
-# shifts demand up, reduces inefficiency (unless high shadow cost of public funds); imagine a head tax of $T$ that is then paid as a subsidy when buying insurance -> if T is high enough to get everyone to insure then everyone is better off unless there are administrative costs of taxation
+# shifts demand up, reduces inefficiency (unless high shadow cost of public funds); imagine a head tax of $T$ that is then paid as a subsidy when buying insurance -> increases insurance and efficiency if no (admin) costs of taxation but note that low risk consumers
 
 ** Special cases
 
@@ -92,7 +92,7 @@ Result:
 | auto insurance   |  +49% | -16% |
 
 
-# whether non-discrimination clauses in- or decrease welfare depends: if no asym info left, i.e. groups are homogenous like alll men/women have same risk, then efficient to discriminate as MC curve flat. Example for non-discrimination efficient: man 1: WTP=10, MC=8; man 2: WTP=5, MC=3; woman: WTP=5, MC=3; non-disc eq is that p=14/3<5 and all are insured but the equilibrium for the men group is p=8 and only man 1 is insured.
+# whether non-discrimination clauses in- or decrease welfare depends: if no asym info left, i.e. groups are homogenous like all men/women have same risk, then efficient to discriminate as MC curve flat. Example for non-discrimination efficient: man 1: WTP=10, MC=8; man 2: WTP=5, MC=3; woman: WTP=5, MC=3; non-disc eq is that p=14/3<5 and all are insured but the equilibrium for the men group is p=8 and only man 1 is insured.
 
 ** Loading factors
 - insurance have administrative costs
@@ -127,7 +127,7 @@ Results:
   - zero administrative costs
   - offer menus of coverage/premium pairs
   - many insurance companies
-  - knows share of high risk type in population $\gamma\in(0,1)$
+  - know share of high risk type in population $\gamma\in(0,1)$
 
 ** Rothschild-Stiglitz equilibrium
 system of contracts, i.e. coverage/premium pairs, such that 
@@ -169,7 +169,7 @@ Check $p'(q)$ according to IFT and by directly differentiating $p(q)$.
   - profits: $\pi=p-\alpha q L$
   - iso- profit: $p(q|\pi=\bar \pi)=\bar\pi+\alpha q L$ with slope $\alpha L$ 
 - /indifference curve/ for expected utility $\bar u$
-  - all $(q,p)$ combination leading to expected utility $\bar u$
+  - all $(q,p)$ combinations leading to expected utility $\bar u$
   - exp. utility: $\mathbb{E}[u]=\alpha u(W-p-(1-q)L)+(1-\alpha) u(W-p)$
   - slope indifference curve via implicit function theorem:
 $$p'(q|\mathbb{E}[u]=\bar u)=\alpha L\frac{u'(W-p-(1-q)L)}{\alpha u'(W-p-(1-q)L)+(1-\alpha)u'(W-p)}\geq\alpha L$$
@@ -219,13 +219,13 @@ Results:
 ** Rothschild-Stiglitz: second best (non-existence of equilibrium)
 - if $\gamma$ small, there exists a pooling contract with positive profits from the above constructed "equilibrium"\linebreak $\rightarrow$ no equilibrium exists in this case
 
-- other equilibrium concepts for this case (Wilson 1977, Wilson-Miyazaki-Spence, 1978, Netzer and Scheuer 2014)
+- other equilibrium concepts for this case (Wilson 1977, Miyazaki 1977, Spence 1978, Netzer and Scheuer 2014)
 
 ** Rothschild-Stiglitz: minimum coverage level
  - suppose a law makes it impossible to offer coverage below some threshold $\bar{q}$
  - how does this affect equilibrium?
 # if \bar q below q_l^* , no effect
-# if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; note that this is Pareto improvement as l is better off (his indiff is hlatter than h's) and positive profits from l type
+# if \bar q > q_l^* and RS eq existed and \bar q not too big, then new eq with same contract for h and (p,\bar q) where p is on h's indiff curve; note that this is not Pareto improvement as l is worse off (his indiff is flatter than h's) but positive profits from l type
 # if \bar q too high, then no RS eq exists as potential eq (see above) is broken by pooling
 
 
@@ -242,7 +242,7 @@ Results:
 
 ** Genetic tests: model
 model:
-- same as Rothschild-Stiglitz but without test consumers do not know their risk type and have an average type $\bar\alpha=\gamma\alpha_h+(1-\gamma)\alpha_L$
+- same as Rothschild-Stiglitz but without test consumers do not know their risk type and have an average type $\bar\alpha=\gamma\alpha_h+(1-\gamma)\alpha_l$
 
 \vspace*{1cm}
 
@@ -302,7 +302,7 @@ With risk averse consumers, expected utility of consumers is in (1) higher than 
 
 ** Genetic tests: models of endogenous information acquisition I
 - suppose consumers decide themselves whether to take test at cost $c\geq 0$ and afterwards choose an insurance contract (or stay uninsured)
-- insurers cannot verify that you did not take a test
+- insurers cannot verify whether consumer did (not) take a test
 
 - equilibria in different scenarios
   1. $c=0$ and private information \vspace*{0.5cm}
@@ -310,12 +310,12 @@ With risk averse consumers, expected utility of consumers is in (1) higher than 
   3. $c>0$ and voluntary disclosure \vspace*{0.5cm}
   4. $c>0$ and private information \vspace*{0.5cm}
 
-# 1: RS-equilibrium
+# 1: acquire info and RS-equilibrium 
 # 2: everyone is tested and discloses, p_i=\alpha_i L and q_i=1
 
-# 3: if c is low everyone is tested, p_i=\alpha_i L and q_i=1; if c is high no testing and p=\bar \alpha L, q=1
+# 3: if c is low everyone is tested, p_i=\alpha_i L and q_i=1; if c is high no testing and p=\bar \alpha L, q=1. In detail: the first eq exists if $c\leq (1-\gamma)(\alpha_h-\alpha_l)L and the second eq exists if c\geq (1-\gamma)(\bar \alpha-\alpha_l)L
 
-# 4: no equilibrium in which consumers get informed as it is better to buy the low coverage RS contract while remaining untested (high type is indifferent in RS, i.e. one simply saves c!); whether equilibrium exists in which no one gets informed depends on parameters: if $c$ is small this is not the case, because an insurer could offer a partial coverage deviation contract that is better than (\bar\ælpha L,1) for l types (and worse for \bar \alpha types) that makes positive profits when bought by l-types. 
+# 4: no equilibrium in which consumers get informed as it is better to buy the low coverage RS contract while remaining untested (high type is indifferent in RS, i.e. one simply saves c!); whether equilibrium exists in which no one gets informed depends on parameters: if $c$ is small this is not the case, because an insurer could offer a partial coverage deviation contract that is better than (\bar\alpha L,1) for l types (and worse for \bar \alpha types) that makes positive profits when bought by l-types. 
 # Doherty and Thistle show that this non-existence is an artifact of the simplifications the model makes, i.e. equilibrium exists if we allow two groups of consumers that differ in their ex ante probability of being high risk (and privately know this). In this equilibrium some consumers get tested and others remain uninformed and three contracts are offered in equilibrium. 
 
 \tiny (for details, see Doherty and Thistle, Journal of Public Economics, 1996, 63, pp. 83-102 )\normalsize
@@ -381,7 +381,7 @@ Equilibrium:
 # credit constraints, collusion possibility between health insurer and consumer against premium risk insurer (e.g. additional inefficient benefits at higher premium)
 
 ** Premium risk: community rating
-- regulation: all insured pay the same premium, $\alpha_l$ in period 1 and  $(\lambda\alpha_l+(1-\lambda)\alpha_h) L$ in period 2, that must not depend on risk type
+- regulation: all insured pay the same premium, $\alpha_l L$ in period 1 and  $(\lambda\alpha_l+(1-\lambda)\alpha_h) L$ in period 2, that must not depend on risk type
  - problem: 
 # low risk types choose not to insure
 - community rating + mandatory insurance 
