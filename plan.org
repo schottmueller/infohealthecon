@@ -4,10 +4,11 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- As we were repeatedly asked about exam dates, let me summarize the current state of affairs: We will have an on campus exam on March 5. There will be no second examination during the winter term. However, there will be a second exam -- also on campus -- some time in the summer term 21 (and we do not know whether this means April or September or any other time: the examination office does not schedule these dates yet). If these plans change, e.g. due to changes in university or state policy, or if we get new information from the examination office, you will find an update on this website within 24h.
 - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
-- The provisional exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
+- The exam date is March 5, 2021 (registration for this exam is not open yet). There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
 - University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online. Links for the respective zoom meetings have been sent to your university email account.
 - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
 # - some points on the exam:
