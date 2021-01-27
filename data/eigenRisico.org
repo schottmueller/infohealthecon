@@ -20,9 +20,9 @@ using Statistics
 # Raw data from http://www.vektis.nl/index.php/vektis-open-data
 
 # minimum deductible 2011 for people aged above 18: 170 Euro
-df11orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2011 - postcode3.csv",delim=";");
+df11orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2011 - postcode3.csv",DataFrame,delim=";");
 # minimum deductible 2014 for people aged above 18: 360 Euro
-df14orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2014 - postcode3.csv",delim=";");
+df14orig = CSV.read("Vektis Open Databestand Zorgverzekeringswet 2014 - postcode3.csv",DataFrame,delim=";");
 function get_data_into_shape(df)
     cost_categories_under_deductible = [:KOSTEN_MEDISCH_SPECIALISTISCHE_ZORG, :KOSTEN_MONDZORG, :KOSTEN_FARMACIE, :KOSTEN_HULPMIDDELEN, :KOSTEN_PARAMEDISCHE_ZORG_FYSIOTHERAPIE, :KOSTEN_PARAMEDISCHE_ZORG_OVERIG, :KOSTEN_ZIEKENVERVOER_ZITTEND, :KOSTEN_ZIEKENVERVOER_LIGGEND, :KOSTEN_GRENSOVERSCHRIJDENDE_ZORG, :KOSTEN_OVERIG]
     df.costsUnderDeductible = sum([df[:,cost] for cost in cost_categories_under_deductible])
@@ -51,8 +51,8 @@ get_data_into_shape (generic function with 1 method)
 
 ** Can you find out how many people had health insurance in the Netherlands in 2011?
 #+BEGIN_SRC julia :results output :exports both :session
-#df11 = CSV.read("data2011.csv");
-#df14 = CSV.read("data2014.csv");
+#df11 = CSV.read("data2011.csv",DataFrame);
+#df14 = CSV.read("data2014.csv",DataFrame);
 println(sum(df11.number_citizens))
 sum(df11.citizenYears)
 #+END_SRC
@@ -131,7 +131,7 @@ println("(Bad!) estimate for cost reduction if deductible is increased by 100% i
 : 0.012668634698611526
 : (Bad!) estimate for cost reduction if deductible is increased by 100% is -1.13%
 
-Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. The relevant question is here whether consumers value 1€ differently in 2011 and 2014 which has little to do with increasing health care costs but depends on the general inflation rate. The correct deflator for the deductible is therefore usual consumer price index which I took from [[https://www.inflation.eu/inflation-rates/the-netherlands/historic-inflation/cpi-inflation-the-netherlands.aspx][here]]. Note that consumer prices changed much less than health care costs.]
+Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. The relevant question is here whether consumers value 1€ differently in 2011 and 2014 which has little to do with increasing health care costs but depends on the general inflation rate. The correct deflator for the deductible is therefore usual consumer price index which I took from [[https://www.inflation.eu/inflation-rates/the-netherlands/historic-inflation/cpi-inflation-the-netherlands.aspx][here]].]
 
 #+BEGIN_SRC julia :results output :exports both :session
 deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/(mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible])/2+mean(df14[(df14[:,:age].==string(age)),:costsPerHeadUnderDeductible])/2 for age in 1:17]));

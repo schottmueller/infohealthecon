@@ -39,7 +39,7 @@ and extend to L13:L102 by marking and dragging
 
 * Elasticity
 relative change in deductible: (360-170)/(360/2+170/2)=0.717
-bad (as non-deflated) estimate of relative change in expenditure 10 year old: (622-614)/(614/2+622/2)=0.0129
+bad (as non-deflated) estimate of relative change in expenditure 19 year old: (622-614)/(614/2+622/2)=0.0129
 bad (as not deflated) elasticity: 0.0129/0.717 >0 (and roughly 0)
 
 deflate with 17 year old cost increase: 
