@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- As we were repeatedly asked about exam dates, let me summarize the current state of affairs: We will have an on campus exam on March 5. There will be no second examination during the winter term. However, there will be a second exam some time in the summer term 21 (and we do not know whether this means April or September or any other time: the examination office does not schedule these dates yet). If these plans change, e.g. due to changes in university or state policy, or if we get new information from the examination office, you will find an update on this website within 24h.
+- The faculty has decided today to switch all on campus exams in March to online exams (on the same date). Also the second exam in the summer term will be online. Details about the procedure will be published at a later date on this website.
 - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
