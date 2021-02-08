@@ -24,7 +24,7 @@
 - roles
   - supplier
   - adviser
-- renumeration can lead to non-aligned incentives
+- remuneration can lead to non-aligned incentives
 
 ** Supplier induced demand 
 - some observations:
@@ -182,7 +182,7 @@ $$ p_2x_2'(s_2) = -u_s/u_y$$
   - overtreatment
   - undertreatment
   - excessive search
-- how should physician renumeration be structured to avoid problems above?
+- how should physician remuneration be structured to avoid problems above?
 - how does this depend on environment?
 
 **  Basic setup
