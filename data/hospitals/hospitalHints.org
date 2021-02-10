@@ -1,0 +1,110 @@
+* Getting data
+
+1) Construct a new variable "shareC" that contains the share of Caesarean sections among all births.
+2) Construct a variable "density" that contains a measure of birth station density. (hint: use the variables /nCompBirths/ and /demandPotMax/)
+
+
+#+begin_quote
+Libre Office Calc:
+
+- go to empty column, cell in second row and type in formula =$R2/$Q2; press Control-Shift-End to mark column; press Control-D 
+
+- ($S2+1)/$P2 C-Shift-End C-D
+#+end_quote
+
+#+begin_src julia
+using DataFrames, CSV, Statistics, GLM,  Plots
+
+df = CSV.File("./hospitalBirths.csv";delim=";") |> DataFrame;
+
+# construct density
+df.d = (df.nCompBirths.+1) ./ df.demandPotMax;
+
+# construct share Caesarean sections
+df.shareC = df.caesarean ./ df.births;
+
+# create data frame containing only hospitals with births and complete data
+dfComplete = df[.!ismissing.(df.shareC) .& .!ismissing.(df.d) .& .!isnan.(df.shareC) .& .!isnan.(df.d) .& isfinite.(df.shareC) .& isfinite.(df.d),:];
+
+# create data frame containing only hospitals with births and complete data AND Caesarean sections
+dfCompleteCaesarean = dfComplete[dfComplete.shareC.>0,:];
+
+#+end_src
+
+* Correlation shareC and density
+3) Do you expect /density/ and /shareC/ to be correlated? Check in the data whether your expectation is met! (Can you use a plot to get a better idea of the correlation? Are there certain hospitals that you would like to exclude from the analysis?)
+
+#+begin_quote
+Libre Office Calc:
+
+- mark columns with shareC and density, then click on the "AutoFilter" Symbol; now select only those observations where shareC and density are proper numbers, copy paste to new sheet
+- filter also those where additionally shareC>0 and copy that data to a third sheet
+- run regression:  Data->Statistics->Regression: X: $Sheet2.$U$2:$U$686  Y: $Sheet2.$V$2:$V$686
+
+#+end_quote
+
+#+begin_src julia
+## regress share Caesarean on density
+lm(@formula(shareC~d),dfComplete)
+#exclude hospitals with 0 Caesarean sections
+ lm(@formula(shareC~d),dfCompleteCaesarean)
+#+end_src
+
+4) Would you expect stronger or weaker correlations between /density/ and /shareC/ for hospitals that are (i) public, (ii) private, (iii) non-profits? Check in the data whether your expectation is met! (Extra exercise: check how /shareC/ differs across ownership types!  Any explanations for these differences?)
+
+We can do the same for private hospitals only:
+
+#+begin_quote
+Libre Offics Calc:
+
+- use the same filtering technique as above to select only hospitals where the variable "privat" equals "true"
+#+end_quote
+
+#+begin_src julia
+
+lm(@formula(shareC~d),dfComplete[dfComplete.privat.==1,:])
+lm(@formula(shareC~d),dfCompleteCaesarean[dfCompleteCaesarean.privat.==1,:])
+scatter(dfComplete[dfComplete.privat.==1,:].d,dfComplete[dfComplete.privat.==1,:].shareC,xlabel="density",ylabel ="share Caesarean")
+
+#+end_src
+
+Aside: Is there share of Caesarean sections correlated with the ownership type?
+#+begin_src julia
+lm(@formula(shareC~freigemein+privat),dfComplete)
+
+#+end_src
+
+* this data set
+
+5) Is this data set suitable to check for supplier induced demand? Why (not)?
+
+On the plus side:
+- covering the whole country 
+- hospitals have to provide by law
+- contains several relevant variables that allow to control for some fetures like owner type, size etc.
+
+On the negative sid:
+- no information on prices and costs
+- unclear whether density is really meaningful (rivers, city centers)
+- a lot of factors impact decision that are not in the data and that we can therefore not control for
+- is the scope for SID in this context really that big or would other services be better suitable?
+
+* Pacemaker data
+
+
+Finally, have a brief look at the file "reimbursement_OPS_5_377_fluctuation.csv". It contains the reimbursement of a hospital for a 77 year old man getting a pacemaker/defilibrator (OPS code 5.377.1, diagnosis ICD I44.1, DRG: F12I), staying 5 days in hospital in several years. (The federal base rate is taken from [[https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/budgetverhandlungen/bundesbasisfallwert/bundesbasisfallwert.jsp][here]]. The grouping was done using [[https://www.drg-research-group.de/][this]] online tool.) The case numbers are all men aged between 75 and 80 with OPS 5.377 according to [[https://www-genesis.destatis.de]]. Plot the reimbursement (or caseweights) over time and do the same with the case numbers. How can such data be used to check for supplier induced demand?
+
+
+#+begin_src julia
+#get data
+dfpace = CSV.File("./reimbursement_OPS_5_377_fluctuation.csv";delim=",") |> DataFrame;
+
+#dfpace.cn = dfpace[:,5]
+
+#plot first reimbursement; then add case numbers
+plot(dfpace.Year,dfpace.Reimbursement,label="reimbursement",yaxis = :left)
+plt=twinx()
+plot!(plt,dfpace.Year,dfpace[:,5],color=:red,label="case number",legend=:bottomright)
+
+
+#+end_src
