@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The second exam date is September 13, 2021; 10:00-11:00. The format will be the same as the first exam.
 - For clarification: The *Zoom-meeting* during the exam is only in case you have technical problems. There is no need to be in the meeting unless you have technical issues.
 - The exam is an individual open book exam. This means (i) you can use books as well as lecture notes etc. to solve the exam and (ii) you have to solve the exam on your own. You are allowed to use calculators or a spreadsheet app like Libre Office Calc. Given this, we have not necessarily ensured that calculation exercises have "round solutions".
 - The faculty has decided today to switch all on campus exams in March to online exams (on the same date). Also the second exam in the summer term will be online. You will receive an email with details concerning the exam procedure some time before the exam (~ a week in advance). 
