@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- You can find information about the exam inspection on the [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][webpages of the faculty]]. The registration period is April 29 until May 7.
 - The second exam date is September 13, 2021; 10:00-11:00. The format will be the same as the first exam.
 - For clarification: The *Zoom-meeting* during the exam is only in case you have technical problems. There is no need to be in the meeting unless you have technical issues.
 - The exam is an individual open book exam. This means (i) you can use books as well as lecture notes etc. to solve the exam and (ii) you have to solve the exam on your own. You are allowed to use calculators or a spreadsheet app like Libre Office Calc. Given this, we have not necessarily ensured that calculation exercises have "round solutions".
