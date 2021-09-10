@@ -7,13 +7,13 @@
 - The second exam date is September 13, 2021; 10:00-11:00. The format will be the same as the first exam.
 - For clarification: The *Zoom-meeting* during the exam is only in case you have technical problems. There is no need to be in the meeting unless you have technical issues.
 - The exam is an individual open book exam. This means (i) you can use books as well as lecture notes etc. to solve the exam and (ii) you have to solve the exam on your own. You are allowed to use calculators or a spreadsheet app like Libre Office Calc. Given this, we have not necessarily ensured that calculation exercises have "round solutions".
-- The faculty has decided today to switch all on campus exams in March to online exams (on the same date). Also the second exam in the summer term will be online. You will receive an email with details concerning the exam procedure some time before the exam (~ a week in advance). 
-- There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
-- I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
+# - The faculty has decided today to switch all on campus exams in March to online exams (on the same date). Also the second exam in the summer term will be online. You will receive an email with details concerning the exam procedure some time before the exam (~ a week in advance). 
+# - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
+# - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
-- The exam date is March 5, 2021; 13:00-14:00. There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
-- University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online. Links for the respective zoom meetings have been sent to your university email account.
-- Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
+# - The exam date is March 5, 2021; 13:00-14:00. There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
+# - University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online. Links for the respective zoom meetings have been sent to your university email account.
+# - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
 # - some points on the exam:
 #  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
 #  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
@@ -60,9 +60,12 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - *Data sets and instructions* for case studies:
   - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5776630/empirical.pdf][pdf]])for empirical sessions, please download the data below and work on the questions before coming to class 
-  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture) ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
-  - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]]. Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
-  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand; some solution [[./data/hospitals/hospitalHints.org][hint]]
+  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture)
+   # ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
+  - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]].
+    # Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
+  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand
+    # some solution [[./data/hospitals/hospitalHints.org][hint]]
 # pw is "infohealth"
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
@@ -86,7 +89,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 - exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30
 # in 100/HSXII
 
-University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
+# University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). cite:morrisey2008health (library link to  [[https://www.ub.uni-koeln.de/usbportal?query=tmpebooks:ocn227385247][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
