@@ -4,12 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-# - You can find information about the exam inspection on the [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][webpages of the faculty]]. The registration period is April 29 until May 7.
-- Preliminary exam dates: Feb. 21, 2022 (Aula 1) and March 30, 2022 (A1)
-- The second exam date is September 13, 2021; 10:00-11:00. The format will be the same as the first exam.
-- For clarification: The *Zoom-meeting* during the exam is only in case you have technical problems. There is no need to be in the meeting unless you have technical issues.
-- The exam is an individual open book exam. This means (i) you can use books as well as lecture notes etc. to solve the exam and (ii) you have to solve the exam on your own. You are allowed to use calculators or a spreadsheet app like Libre Office Calc. Given this, we have not necessarily ensured that calculation exercises have "round solutions".
-# - The faculty has decided today to switch all on campus exams in March to online exams (on the same date). Also the second exam in the summer term will be online. You will receive an email with details concerning the exam procedure some time before the exam (~ a week in advance). 
+  - 
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 # - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
@@ -86,9 +81,8 @@ The course consists of a lecture and an exercise session. Models, their solution
 The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
 
 ** Lecture times: 
-- lecture: Wednesday, 12:00-13:30 
-# in 100/U1/HS VI
-- exercise classes: Monday, 12:00-13:30 online in week 1, otherwise  14:00-15:30
+- lecture: Wednesday, 10:00-11:30 in 101/EG/27 HS XXV
+- exercise classes: Monday, 12:00-13:30 (online via zoom)
 # in 100/HSXII
 
 # University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
