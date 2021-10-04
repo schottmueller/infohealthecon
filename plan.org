@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-  - 
+  - The post exam review takes place on October 18 and 19. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 # - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
@@ -82,7 +82,7 @@ The exam will -- in style -- be similar to the questions of the exercise classes
 
 ** Lecture times: 
 - lecture: Wednesday, 10:00-11:30 in 101/EG/27 HS XXV
-- exercise classes: Monday, 12:00-13:30 (online via zoom)
+- exercise classes: Monday, 14:00-15:30 (online via zoom)
 # in 100/HSXII
 
 # University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
