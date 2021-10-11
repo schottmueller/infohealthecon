@@ -95,12 +95,15 @@ The course is not based on a single textbook. The majority of topics is covered 
 This is a plan and as every good plan it may be adjusted if necessary.
 ** Intro (2 lectures)
 *** Choice, preferences, utilities, welfare, models
+- mathematical prerequisites: functions, expected value of a discrete random variable, summation sign
+- economic prerequisites: preferences, utility maximization, Pareto efficiency, welfare  
 - choice, preferences, utility
 - choice under uncertainty and expected utility
 - welfare
 - models
 - reading: 
 *** Insurance demand
+- mathematical prerequisites: inverse functions, derivatives, monotonicity as well as concavity and convexity
 - certainty equivalent and risk premium
 - drivers of insurance demand
 - (coverage choice and state dependent utility)
@@ -109,12 +112,14 @@ This is a plan and as every good plan it may be adjusted if necessary.
 
 ** Selection (5)
 *** Selection with fixed coverage
+- economic prerequisites: demand function   
 - model
 - welfare consequences
 - gender specific premia
 - some evidence for selection
 - reading: p. 115-123 cite:einav2011selection, ch. 5.3.1 and 5.3.2 cite:zweifel2009health
 *** Screening with coverage: Rothschild-Stiglitz
+- mathematical prerequisites: repeat implicit function theorem, concavity and convexity    
 - shape of indifference curves
 - equilibrium 
 - comparative statics
@@ -126,6 +131,7 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - in RS model
 - supplementary reading: cite:doh96, cite:lagerlof2018monopoly
 *** Premium risk, community rating and risk adjustment
+- mathematical prerequisites: linear regression ("ordinary least squares") and R^2  
 - premium risk model
 - segue into risk adjustment
 - discussion: how could German health insurers attract a profitable clientele?
@@ -139,13 +145,15 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - supplementary reading: cite:hemenway1990propitious, cite:fang2008sources, cite:boone2017health
 ** Moral hazard (3)
 *** The question of moral hazard and empirical evidence
+- mathematical prerequisites: significance in statistical tests (e.g. t-test) 
 - slope of demand
 - RAND and arc elasticity of demand
 - Oregon
 - welfare
 - ex ante moral hazard
 - reading: sections 1,2 and 3.1 in cite:einav2018moral
-*** Treatment choice and the donut hole 
+*** Treatment choice and the donut hole
+- mathematical prerequisites: (continuous) distributions (density, distribution function)     
 - simple model of treatment choice
 - donut hole
 - out of sample predictions
