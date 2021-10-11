@@ -69,7 +69,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
 ** Julia notebooks
-There are some julia/jupyter notebooks that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
+/This is very optional (!!!) but if you are interested/ there are some julia/jupyter notebooks that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
 
 
 * Course setup 
@@ -127,7 +127,7 @@ This is a plan and as every good plan it may be adjusted if necessary.
 - supplementary reading: cite:doh96, cite:lagerlof2018monopoly
 *** Premium risk, community rating and risk adjustment
 - premium risk model
-- segway into risk adjustment
+- segue into risk adjustment
 - discussion: how could German health insurers attract a profitable clientele?
 - reading: ch. 5.3.4 in cite:zweifel2009health
 - supplementary reading: ch. 7 in cite:zweifel2009health, ch. 6 in cite:morrisey2008health, (cite:behrend2007risk, cite:PMM2000755)
