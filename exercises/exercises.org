@@ -303,7 +303,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
   3. Compare your results with the results in exercise 3.
 
 
-# E1.1: if M/\delta\geq 1, then s=0; if M/\delta>1: if p-1-gamma<0 again s=0, if p-1-\gamma>0 then s=1-M/\delta
+# E1.1: if M/\delta\geq 1, then s=0; if M/\delta<1: if p-1-gamma<0 again s=0, if p-1-\gamma>0 then s=1-M/\delta
 # E1.2: for delta\leq M 45° line; for \delta>M two cases: if p-1-gamma<0, then constant at M, if p-1-gamma>0, then continuing as 45° line
 # E1.3: 
 # interior candidate solution s= (p-1)/\gamma; if M/\delta\geq 1, then s=0; if M/\delta<1: if p<1 then s=0, if p>1, then s=min((p-1)/gamma,1-M/\delta)
