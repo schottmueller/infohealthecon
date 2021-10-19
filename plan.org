@@ -69,7 +69,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
-- Notes to the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
+- *Notes* to the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
   - [[https://github.com/schottmueller/infohealthecon/files/7371370/Session.1.Notes.pdf][Session 1]]
   - [[https://github.com/schottmueller/infohealthecon/files/7371378/Session.2.Notes.pdf][Session 2]]
 
