@@ -15,7 +15,7 @@
 #+LaTeX_CLASS_OPTIONS: 
 #+BEAMER_FRAME_LEVEL: 2
 #+latex_header: \mode<beamer>{\useinnertheme{rounded}\usecolortheme{rose}\usecolortheme{dolphin}\setbeamertemplate{navigation symbols}{}\setbeamertemplate{footline}[frame number]{}}
-#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame}} \AtBeginSection{\frame{\sectionpage}}
+#+latex_header: \mode<beamer>{\usepackage{amsmath}\usepackage{ae,aecompl,eurosym}\usepackage{sgame,tikz,graphicx}} \AtBeginSection{\frame{\sectionpage}}
 #+LATEX_HEADER:\let\oldframe\frame\renewcommand\frame[1][allowframebreaks]{\oldframe[#1]}
 #+LATEX_HEADER: \setbeamertemplate{frametitle continuation}[from second]
 
@@ -118,7 +118,20 @@ If a person is risk averse, the risk premium is increasing in $L$.
     :PROPERTIES:
     :BEAMER_env: ignoreheading
     :END:
-# Proof: $CE(L)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(L)=\frac{-\alpha u'(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is in absolute value greater than \alpha by concavity of $u$. Now $RP(L)=W-\alpha L-CE(L)$ and therefore $RP'(L)=-\alpha-CE'(L)>0$.
+\footnotesize    
+*Proof:*
+\linebreak
+definition of CE:
+$$u(CE)=(1-\alpha)u(W)+\alpha u(W-L)$$
+ $$\Leftrightarrow u(CE)-(1-\alpha)u(W)-\alpha u(W-L)=0$$
+ by implicit function theorem:
+ $$CE'(L)=-\frac{\alpha u'(W-L)}{u'(CE)}$$
+definition of RP:
+ $$RP(L)=W-\alpha L-CE(L)$$
+ $$\Rightarrow RP'(L)=-\alpha-CE'(L)=\alpha\left(-1+\frac{ u'(W-L)}{u'(CE)}\right)$$
+ as $W-L<CE$,  $u'(W-L)>u'(CE)$ by concavity of $u$ $\Rightarrow$ $RP'(L)>0$ \qed
+ 
+ # $CE(L)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(L)=\frac{-\alpha u'(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is in absolute value greater than \alpha by concavity of $u$. Now $RP(L)=W-\alpha L-CE(L)$ and therefore $RP'(L)=-\alpha-CE'(L)>0$.
 
 # insurance is most valuable for big losses, e.g. only for big enough losses RP is higher than handling cost of insurance, (coverage for hospital is more important than for GP)
 
@@ -138,6 +151,38 @@ If a person is risk averse, the risk premium is first increasing in $\alpha$ (wh
 # Proof:  $CE(\alpha)=u^{-1}\left( (1-\alpha)u(W)+\alpha u(W-L) \right)$ and $CE'(\alpha)=\frac{-u(W)+u(W-L)}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}$ which is negative. Now $RP(\alpha)=W-\alpha L-CE(\alpha)$ and therefore $RP'(\alpha)=-L-CE'(\alpha)=\frac{1}{u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right)}\left( u(W)-u(W-L)-L u'\left( (1-\alpha)u(W)+\alpha u(W-L) \right) \right)$. By concavity, this difference is positive for small \ælpha and negative for large \alpha. (draw concave function)
 
 # graphical proof: draw concave u(x) and line through u(W) and u(W-L), visualize RP for different levels of \alpha 
+
+\begin{figure}
+\begin{tikzpicture}[scale=4]
+\draw[thick,<->] (0,1)--(0,0)--(1,0);
+\draw[thick,domain=0.01:0.9] plot (\x,{\x^0.35});
+\draw[red] (0.03,0.258)--(0.81,0.926);
+\draw (0.03,0)--(0.03,-0.03);
+\draw (0.81,0)--(0.81,-0.03);
+\node[below] at (0.03,0) {$W-L$};
+\node[below] at (0.81,0) {$W$};
+\node[above,blue] at (0.75,0) {\tiny$\bar W_1$};
+\node[above,blue] at (0.5,0) {\tiny$\bar W_2$};
+\node[above,blue] at (0.15,0) {\tiny$\bar W_3$};
+\draw[gray,dotted] (0.75,0)--(0.75,0.872);
+\draw[gray,dotted] (0.5,0)--(0.5,0.66);
+\draw[gray,dotted] (0.15,0)--(0.15,0.36);
+\draw[gray,dotted] (0.81,0)--(0.81,0.926);
+\draw[gray,dotted] (0.03,0)--(0.03,0.258);
+\node[left] at (0,1) {utility};
+\node[right] at (1,0) {wealth};
+\draw[blue] (0.75,0)--(0.75,-0.03);
+\draw[blue] (0.5,0)--(0.5,-0.03);
+\draw[blue] (0.15,0)--(0.15,-0.03);
+\draw[blue] (0.75,0.872)--(0.68,0.872);
+\draw[blue] (0.5,0.66)--(0.31,0.66);
+\draw[blue] (0.15,0.36)--(0.05,0.36);
+\node[blue,above] at (0.71,0.87) {\tiny $RP_1$};
+\node[blue,above] at (0.43,0.63) {\tiny $RP_2$};
+\node[blue,above] at (0.12,0.33) {\tiny $RP_3$};
+\end{tikzpicture}
+\caption{risk premia for different values of $\alpha$ where $\alpha_1<\alpha_2<\alpha_3$ and $\bar W_i=W-\alpha_i L$}
+\end{figure}
 
 # do not insure certain events but uncertain events
 

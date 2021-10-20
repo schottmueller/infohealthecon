@@ -47,7 +47,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - *Slides*
   - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
-  - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/5162915/02insuranceDemand.pdf][slides]]
+  - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/7381024/02insuranceDemand.pdf][slides]]
   - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/5162916/0307adverseSelection.pdf][slides]],   numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
   - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
   - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
