@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-  - preliminary exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1).
+  - Exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1). Registration is open on KLIPS.
 #  - The post exam review (for the exam in September) takes place on October 18 and 19. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - Note that there will be an exercise session on October 11 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
@@ -48,7 +48,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Slides*
   - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
   - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/7381024/02insuranceDemand.pdf][slides]]
-  - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/5162916/0307adverseSelection.pdf][slides]],   numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
+  - (adverse) selection [[https://github.com/schottmueller/infohealthecon/files/7424095/0307adverseSelection.pdf][slides]],   numerical [[https://github.com/schottmueller/infohealthecon/blob/master/julia/HealthInsuranceNoSingleCrossing.ipynb][example]] no single crossing
   - moral hazard [[https://github.com/schottmueller/infohealthecon/files/5162917/0810moralHazard.pdf][slides]]
   - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
 
