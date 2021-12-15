@@ -83,9 +83,14 @@ Check the dataset /hospitalBirths.csv/. The data is from 2018 and comes from man
 In the following we want to look at the following question: Could there be demand inducement by hospitals in the sense of pushing for more Caesarean sections among all births.
 
 1) Construct a new variable "shareC" that contains the share of Caesarean sections among all births.
+# $R2/$Q2 C-Shift-End C-D
 2) Construct a variable "density" that contains a measure of birth station density. (hint: use the variables /nCompBirths/ and /demandPotMax/)
+# ($S2+1)/$P2 C-Shift-End C-D
 3) Do you expect /density/ and /shareC/ to be correlated? Check in the data whether your expectation is met! (Can you use a plot to get a better idea of the correlation? Are there certain hospitals that you would like to exclude from the analysis?)
+# filter those observations where shareC and density are proper numbers, copy paste to new sheet
+# Regression: X: $Sheet2.$U$2:$U$686  Y: $Sheet2.$V$2:$V$686
 4) Would you expect stronger or weaker correlations between /density/ and /shareC/ for hospitals that are (i) public, (ii) private, (iii) non-profits? Check in the data whether your expectation is met! (Extra exercise: check how /shareC/ differs across ownership types!  Any explanations for these differences?)
+# create 0 1 dummies instead of true false: =IF( $M2="true"; 1; 0)
 5) Is this data set suitable to check for supplier induced demand? Why (not)?
 
 
