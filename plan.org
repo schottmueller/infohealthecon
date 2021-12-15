@@ -60,9 +60,9 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Data sets and instructions* for case studies:
   - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5776630/empirical.pdf][pdf]]) for empirical sessions, please download the data sets below and work on the questions before coming to class 
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture)
-   # ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
+   ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
   - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]].
-    # Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
+    Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand
     # some solution [[./data/hospitals/hospitalHints.org][hint]]
 # pw is "infohealth"
