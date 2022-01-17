@@ -1,4 +1,4 @@
-l#+Title: Selection
+#+Title: Selection
 #+AUTHOR:    Christoph Schottmüller
 #+Date: 
 
@@ -51,7 +51,16 @@ l#+Title: Selection
 # downward sloping MC implies AC>MC and therefore intersection of D and AC is (if it exists) at Q below efficient level
 # difference to other goods (cars etc.): costs are linked to wtp
 
-** Competitive equilibrium
+** Competitive equilibrium I
+   - "equilibrium":
+     - no market participant wants to change his behavior (stability)
+     - outside prediction of market outcome with rational market participants
+   - consumers buy at the lowest offered premium and only if this premium is below WTP
+   - lowest offered premium has to /be equal or above/ average costs of those consumers that buy\linebreak (otherwise selling insurance company makes losses and would rather not sell)
+   - lowest offered premium has to be /equal or below/ average costs of those consumers that buy\linebreak
+     (otherwise an insurance company could increase its profits by slightly undercutting)
+
+** Competitive equilibrium II
 - if many insurers compete on premium, equilibrium premium equals average costs ("Bertrand competition" or "perfect competition")
 $$p^* = AC_{\text{buying consumers}}$$
 - possible inefficiency: too little insurance in equilibrium
@@ -77,8 +86,15 @@ Result:
 - suppose women tend to have lower expected costs than men
   - who will have the lower premium, if insurance companies are allowed to discriminate based on gender?
   - if insurance companies are prohibited to discriminate based on gender, who benefits? who loses?
+  - does discrimination lead to a more or less efficient outcome?
 
 # female premium is lower with discrimination; i.e. women lose from regulation and men gain and women will be more likely to be uninsured with regulation while men are less likely to be uninsured
+# depends: if all group memebers are homogenous, than discrimination leads to efficient outcome; if not, unisex tarifs may be more efficient in the light of adverse selection, e.g.
+# |     | male 1 | male 2 | female |
+# |-----+--------+--------+--------|
+# | wtp |     10 |      5 |      5 |
+# | mc  |      8 |      3 |      3 |
+# unisex leads to insurance for everyone at price equals AC=14/3<5 while discrimination leads to inefficiency in the male market as p=8 and only male 1 is insured in eq
 
 ** Gender specific premia
 - unisex tarif were introduced in Montana, US in 1983 by law 
@@ -86,16 +102,16 @@ Result:
   
 |                  | women |  men |
 |------------------+-------+------|
-| /                |    <  |      |
+| /                |     < |      |
 | life insurance   |  +15% |  -3% |
 | health insurance |  -13% | +28% |
-| auto insurance   |  +49% | -16% |
+| car insurance    |  +49% | -16% |
 
 
 # whether non-discrimination clauses in- or decrease welfare depends: if no asym info left, i.e. groups are homogenous like all men/women have same risk, then efficient to discriminate as MC curve flat. Example for non-discrimination efficient: man 1: WTP=10, MC=8; man 2: WTP=5, MC=3; woman: WTP=5, MC=3; non-disc eq is that p=14/3<5 and all are insured but the equilibrium for the men group is p=8 and only man 1 is insured.
 
 ** Loading factors
-- insurance have administrative costs
+- insurance companies have administrative costs
 - MC curve is expected payout + administrative costs of the contract
 - admin costs shift MC up
 - "loading": difference between premium and expected payout
@@ -288,7 +304,7 @@ With risk averse consumers, expected utility of consumers is in (1) higher than 
 - "voluntary disclosure is best for consumers as they then can use the test to get a better insurance when the test is favorable and they simply do not use the test otherwise"
 # unraveling: basically equivalent to mandatory disclosure; consumers loose the ability to insure "test taking risk"
 
-** Genetic tests: trade-off
+** Genetic tests: trade-off (?)
 - make tests available to insurer
   - consumers bare risk of bad genetic test (double punishment in case of bad genetic disposition)
 - keep tests private
@@ -360,7 +376,7 @@ Equilibrium:
 # $E(u) = u(W- \alpha_l L)+\lambda u(W- \alpha_l L)+(1-\lambda) u(W- \alpha_h L)< u(W- \alpha_l L)+ u(W- \lambda\alpha_l L-(1-\lambda)\alpha_h L)$ by $u''<0$
 
 ** Premium risk: Long term contracts
-- insurance contract covering both periods at premium
+- insurance contract covering both periods at prespecified premium
   - premium in period 1: $\alpha_l L$
   - premium in period 2: $(\lambda\alpha_l+(1-\lambda)\alpha_h) L$
 - potential problems:
@@ -408,7 +424,7 @@ Equilibrium:
   - internal transfer payments from insurances with low risk insured to insurances with high risk insured
   - risk estimates based on observable characteristics (gender, age, chronically ill etc.)
   - if well designed, transfer exactly compensates additional cost
-  - level playing field --> more intense competition
+  - level playing field \rightarrow more intense competition
   - risk factors should be outside of the control of the insurer to avoid manipulability
 #  (problematic: lagged expenditures)
 

@@ -53,9 +53,9 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 
 # E4: no covering of large loss is against our theory; more of a smoothing out of expected costs than a real insurance; maybe mandate to treat in emergency rooms allows poor people to default on large claims (or get those waved) while claims up to 10.000 the provider may be able to collect; in any case catastrophe plans that cover only large losses are much more common
 
-# E5: E[u]=\sqrt{1000+(1-p)C}/4+\sqrt{2500-pC}*3/4; foc: (1-p)/\sqrt{1000+(1-p)C}-3p/\sqrt{2500-pC}=0; yields C=(-6500p^2-5000p+2500)/(p(1-p)(1+8p)); for p=0.3 this is 1416.4; note: for p=1/4, C=1500; for p>1/4 C<1500; for p>(-5+\sqrt{90})/13=0.345 the calculated C becomes negative, i.e. the person will not buy insurance if the premium rate is too high
+# E5: E[u]=\sqrt{1000+(1-p)C}/4+\sqrt{2500-pC}*3/4; foc: (1-p)/\sqrt{1000+(1-p)C}-3p/\sqrt{2500-pC}=0; yields C=(2500-9000p^2/(1-p)^2)*(1-p)/(p+8p^2); for p=0.3 this is 581.23; note: for p=1/4, C=1500; for p>1/4 C<1500; for p>(-5+\sqrt{90})/13=0.345 the calculated C becomes negative, i.e. the person will not buy insurance if the premium rate is too high
 
-# E6: E[u]^{insurance}=45.32, E[u]^{no ins}=\sqrt{1000}/4+\sqrt{2500}*3/4=45.406; hence person will not buy insurance;  obligation to treat, i.e. doctors/emergeny rooms/hospitals cannot turn back people even if they cannot pay (or pay only partially); literal social assistance
+# E6: E[u]^{insurance}=\sqrt{1000+0.7*581.2}/4+\sqrt{2500-0.3*581.2}*3/4=45.54, E[u]^{no ins}=\sqrt{1500}/4+\sqrt{2500}*3/4=47.18; hence person will not buy insurance;  obligation to treat, i.e. doctors/emergeny rooms/hospitals cannot turn back people even if they cannot pay (or pay only partially); literal social assistance
 
 * Selection 
 ** Selection with fixed coverage
