@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-  - Exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1). Registration is open on KLIPS.
+  - Exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
   - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
   - Some notes on how to solve the case studies are added below.  
 #  - The post exam review (for the exam in September) takes place on October 18 and 19. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
