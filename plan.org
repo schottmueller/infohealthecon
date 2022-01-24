@@ -85,6 +85,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
     - [[https://github.com/schottmueller/infohealthecon/files/7839773/Session.10.Notes.pdf][Session 10]]
     - [[https://github.com/schottmueller/infohealthecon/files/7839788/Session.11.Notes.pdf][Session 11]]
     - [[https://github.com/schottmueller/infohealthecon/files/7882690/Session.12.Notes.pdf][Session 12]]
+    - [[https://github.com/schottmueller/infohealthecon/files/7926649/Session.13.Notes.pdf][Session 13]]
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
 
 ** Julia notebooks
