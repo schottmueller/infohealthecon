@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
   - Exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
   - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
   - Some notes on how to solve the case studies are added below.  
