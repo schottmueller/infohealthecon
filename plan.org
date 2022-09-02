@@ -4,18 +4,15 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
-  - Exam dates are Feb 21, 15:00 (100 Aula 1) and March 30 17:00 (105 HS A1). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
-  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
-  - Some notes on how to solve the case studies are added below.  
-  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
-#  - Note that there will be an exercise session on October 11 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
+#  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
+  - Exam dates are Feb 1st, 10:00 (H161, 213/01/1.15) and March 20 (HS XIII). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+#  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
+#  - Some notes on how to solve the case studies are added below.  
+#  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
+  - Note that there will be an exercise session on October 10 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
 # - I added some notes and a screencast on how you could have solved the case study on long term care insurance in either LibreOfficeCalc or julia; see "course materials" below.
 # - Please, prepare the longterm care insurance (advantageous selection) case study for the lecture on Dec. 16. For data and instructions, see "course material" below.
-# - The exam date is March 5, 2021; 13:00-14:00. There will be a second exam date in the summer term 2021. However, the exact date will not be published any time soon as the room situation remains unclear.
-# - University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online. Links for the respective zoom meetings have been sent to your university email account.
-# - Unfortunately, the board of examiners has decided that no exam inspections are allowed to take place for the time being. We hope that this slightly odd situation will change soon and we will then schedule a date for the exam inspection as soon as possible (here and on the exam office's website).
 # - some points on the exam:
 #  - In calculation exercises answering "2+√2" is fine. There is no need to calculate that this equals 3.4142....
 #  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
@@ -63,9 +60,9 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Data sets and instructions* for case studies:
   - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5776630/empirical.pdf][pdf]]) for empirical sessions, please download the data sets below and work on the questions before coming to class 
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture)
-   ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
+#   ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] the julia code I used in the lecture)
   - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]].
-    Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
+#    Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand
     # some solution [[./data/hospitals/hospitalHints.org][hint]]
 # pw is "infohealth"
@@ -74,20 +71,20 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - *Notes*
   - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
-    - [[https://github.com/schottmueller/infohealthecon/files/7371370/Session.1.Notes.pdf][Session 1]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7371378/Session.2.Notes.pdf][Session 2]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7417350/Session.3.Notes.pdf][Session 3]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7497944/Session.4.Notes.pdf][Session 4]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7539405/Session.5.Notes.pdf][Session 5]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7582033/Session.6.Notes.pdf][Session 6]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7619012/Session.7.Notes.pdf][Session 7]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7661445/Session.8.Notes.pdf][Session 8]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7705605/Session.9.Notes.pdf][Session 9]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7839773/Session.10.Notes.pdf][Session 10]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7839788/Session.11.Notes.pdf][Session 11]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7882690/Session.12.Notes.pdf][Session 12]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7926649/Session.13.Notes.pdf][Session 13]]
-    - [[https://github.com/schottmueller/infohealthecon/files/7972045/Session.14.Notes.pdf][Session 14]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7371370/Session.1.Notes.pdf][Session 1]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7371378/Session.2.Notes.pdf][Session 2]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7417350/Session.3.Notes.pdf][Session 3]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7497944/Session.4.Notes.pdf][Session 4]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7539405/Session.5.Notes.pdf][Session 5]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7582033/Session.6.Notes.pdf][Session 6]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7619012/Session.7.Notes.pdf][Session 7]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7661445/Session.8.Notes.pdf][Session 8]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7705605/Session.9.Notes.pdf][Session 9]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7839773/Session.10.Notes.pdf][Session 10]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7839788/Session.11.Notes.pdf][Session 11]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7882690/Session.12.Notes.pdf][Session 12]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7926649/Session.13.Notes.pdf][Session 13]]
+#    - [[https://github.com/schottmueller/infohealthecon/files/7972045/Session.14.Notes.pdf][Session 14]]
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
 
 ** Julia notebooks
@@ -104,11 +101,8 @@ The course consists of a lecture and an exercise session. Models, their solution
 The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
 
 ** Lecture times: 
-- lecture: Wednesday, 10:00-11:30 in 101/EG/27 HS XXV
-- exercise classes: Monday, 14:00-15:30 (online via zoom)
-# in 100/HSXII
-
-# University policies do not allow on campus teaching for courses with more than 50 students. Lecture and exercise session will therefore be moved online.
+- lecture: Wednesday, 10:00-11:30 in 213/01/1.15 HS 161
+- exercise classes: Monday, 14:00-15:30 100/EG/HSXII
 
 ** Textbooks
 The course is not based on a single textbook. The majority of topics is covered in cite:zweifel2009health (library link to [[https://link.springer.com/book/10.1007%2F978-3-540-68540-1][ebook]]). cite:morrisey2008health (link to [[https://search.ebscohost.com/login.aspx?direct=true&db=nlebk&AN=217420&site=ehost-live][ebook]]) covers also many of the discussed topics but has an (almost entirely) empirical approach. Detailed references are given in the schedule below.
