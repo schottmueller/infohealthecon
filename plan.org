@@ -73,7 +73,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
   - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
      - [[https://github.com/schottmueller/infohealthecon/files/9746463/Session.1.Notes.pdf][Session 1]]
-     - [[https://github.com/schottmueller/infohealthecon/issues/21#issue-1411693379][Session 2]]
+     - [[https://github.com/schottmueller/infohealthecon/files/9801532/Session.2.Notes.pdf][Session 2]]
      - [[https://github.com/schottmueller/infohealthecon/files/9852509/Session.3.Notes.pdf][Session 3]]
  #   - [[https://github.com/schottmueller/infohealthecon/files/7497944/Session.4.Notes.pdf][Session 4]]
  #   - [[https://github.com/schottmueller/infohealthecon/files/7539405/Session.5.Notes.pdf][Session 5]]
