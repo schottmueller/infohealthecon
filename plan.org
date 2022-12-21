@@ -5,7 +5,7 @@
 
 * News
 - The lecture on January 25 is moved from room H161 to room H162.  
-- The lecture on December 21 will be substituted by a screencast due to health reasons.   
+- The lecture on December 21 will be substituted by a screencast due to health reasons. Screencast on [[https://web.tresorit.com/l/uSbeb#Bn1klbA__jMZOu5pS-cZ-g][out of sample predictions]] and on [[https://web.tresorit.com/l/bshVo#abOzSC3SUmHkaJAFw72nlQ][utilization management]] are now available. 
 - The lecture on December 14 is canceled due to an illness.  
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
   - Exam dates are Feb 1st, 10:00 (H161, 213/01/1.15) and March 20 (HS XIII). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
@@ -65,7 +65,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture)
     ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] is some julia code solving the exercises)
   - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]].
-    #    Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
+        Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
   - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand
     # some solution [[./data/hospitals/hospitalHints.org][hint]]
 # pw is "infohealth"
