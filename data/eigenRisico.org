@@ -61,6 +61,8 @@ sum(df11.citizenYears)
 : 16747630
 : 1.646615468e7
 
+The 2011 census came to the result that 16.655.799 people live in the Netherlands (who by law should all have health insurance). We have a few more observations but we get pretty close.  
+
 ** Can you make a plot with age on the x-axis and average costs under the deductible on the y-axis? (If you are not familiar with the software this might be tricky and you might want to proceed without it.)
 
 #+BEGIN_SRC julia :results output :exports code :session
@@ -112,8 +114,10 @@ histogram!(df11[(df11[:,:age].=="19").& isfinite.(df11[:,:logCostsPerHeadUnderDe
 : 
 
 [[./histogram11.png]]
+
+The distribution for 19 year old is a bit less concentrated as well as moved to the left. However, the differences in average costs do not appear to be driven only by one specific quantile of the distribution.
 ** Why compare with 2014?
-The deductible more than doubled between 2011 and 2014. Hence, if the cost difference between 17 and 19 year old is due to moral hazard we would expect the cost difference to increase significantly. In fact that is what the results above already showed: in 2014 the cost difference is relatively larger.
+The deductible more than doubled between 2011 and 2014. Hence, if the cost difference between 17 and 19 year old is due to moral hazard we would expect the cost difference to increase significantly. In fact, that is what the results above already showed: in 2014 the cost difference is relatively larger.
 
 ** Demand elasticity for the deductible 
 We can measure by how much the costs of 19 year olds decreased when their deductible increased from 170€ to 360€, i.e. we compare the average costs of 19 year olds in 2011 and 2014 (in fact we could do this also for all older people). 
@@ -131,25 +135,28 @@ println("(Bad!) estimate for cost reduction if deductible is increased by 100% i
 : 0.012668634698611526
 : (Bad!) estimate for cost reduction if deductible is increased by 100% is -1.13%
 
-Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. The relevant question is here whether consumers value 1€ differently in 2011 and 2014 which has little to do with increasing health care costs but depends on the general inflation rate. The correct deflator for the deductible is therefore usual consumer price index which I took from [[https://www.inflation.eu/inflation-rates/the-netherlands/historic-inflation/cpi-inflation-the-netherlands.aspx][here]].]
+Ok something went wrong: The cost of 19 year olds actually increased from 2011 to 2014! This estimate suggests the opposite of moral hazard: an increasing demand function. But the reason is that we did not take into account that health care costs have risen over time irrespective of the deductible. We need a "deflator" to adjust 2014 costs to 2011 price levels! I will use the cost increase of kids aged between 1 and 17 as deflator as they were not affected by the deductible (their deductible is zero in both years).[fn::There is a subtle question here whether the deductible should be deflated as well when computing the relative increase in the deductible. The relevant question is here whether consumers value 1€ differently in 2011 and 2014 which has little to do with increasing health care costs but depends on the general inflation rate. The correct deflator for the deductible is therefore usual consumer price index which I took from [[https://www.inflation.eu/inflation-rates/the-netherlands/historic-inflation/cpi-inflation-the-netherlands.aspx][here]].]
 
 #+BEGIN_SRC julia :results output :exports both :session
-deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/(mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible])/2+mean(df14[(df14[:,:age].==string(age)),:costsPerHeadUnderDeductible])/2 for age in 1:17]));
-println("deflator = ",deflator)
-CPIDeflator = 1.0246*1.0251*1.0098 #CPI inflation rates 2012,2013 and 2014 in NL following https://www.inflation.eu
-relIncreaseDeductibleDeflated = (360/CPIDeflator-170)/(170/2+360/(2*CPIDeflator)
+  deflator = 1+(-mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17])+mean([mean(df14[(df14[:,:age].==string(age)) ,:costsPerHeadUnderDeductible]) for age in 1:17]))/(mean([mean(df11[(df11[:,:age].==string(age)) ,:costsPerHeadUnderDeductible])/2+mean(df14[(df14[:,:age].==string(age)),:costsPerHeadUnderDeductible])/2 for age in 1:17]));
+  println("deflator = ",deflator)
+  CPIDeflator = 1.0246*1.0251*1.0098; #CPI inflation rates 2012,2013 and 2014 in NL following https://www.inflation.eu
+  println("CPI deflator = ", CPIdeflator)
+  relIncreaseDeductibleDeflated = (360/CPIDeflator-170)/(170/2+360/(2*CPIDeflator);
+  println("relative increase in deductible (deflated) = ", relIncreaseDeductibleDeflated)                                                    
 
-relIncreaseCostsDeflated = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/deflator-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible])/2+mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/(2*deflator))
-println("Rough estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCostsDeflated/relIncreaseDeductibleDeflated,digits=2),"%")
+  relIncreaseCostsDeflated = (mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/deflator-mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible]))/(mean(df11[df11[:,:age].=="19",:costsPerHeadUnderDeductible])/2+mean(df14[df14[:,:age].=="19",:costsPerHeadUnderDeductible])/(2*deflator));
+  println("relative increase in costs (deflated) = ",relIncreaseCostsDeflated)
+  println("Rough estimate for cost reduction if deductible is increased by 100% is ",round(-100*relIncreaseCostsDeflated/relIncreaseDeductibleDeflated,digits=2),"%")
 #+END_SRC
 
 #+RESULTS:
 : 
 : deflator = 1.1141808765729648
-: 1.0606105711079998
-: 0.9966301642753415
+: CPI deflator = 1.0606105711079998
+: relative increase in deductible (deflated) = 0.9966301642753415
 : 
-: -0.09110930191746609
+: relative increase in costs (deflated) = -0.09110930191746609
 : Rough estimate for cost reduction if deductible is increased by 100% is 9.14%
 
 ** Is there a way to compare the estimate of the previous exercise to the famous -0.2 demand elasticity from the RAND health insurance experiment?
