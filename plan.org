@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- Due to heavy traffic, the provider currently disabled the downloads for the screencasts. For now, you can find them [[https://www.dropbox.com/sh/9v52eu64mjhp21x/AAC8sjioaY0mnEnKj1BH0jpaa?dl=0][here]]. Please, download only once and not repeatedly (no new screencasts were added!).   
+- Due to heavy traffic, the provider currently disabled the downloads for the screencasts. For now, you can find them as well as the datasets for the empirical exercises [[https://uni-koeln.sciebo.de/s/yr6TZMJkZc05OeB][here]]. Please, download only once and not repeatedly (no new screencasts were added!).   
 - The lecture on January 25 is moved from room H161 to room H162.  
 - The lecture on December 21 will be substituted by a screencast due to health reasons. Screencast on [[https://web.tresorit.com/l/uSbeb#Bn1klbA__jMZOu5pS-cZ-g][out of sample predictions]] and on [[https://web.tresorit.com/l/bshVo#abOzSC3SUmHkaJAFw72nlQ][utilization management]] are now available. For the case study on the deductible, see  [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
 - The lecture on December 14 is canceled due to an illness.  
