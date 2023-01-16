@@ -88,7 +88,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
      - [[https://github.com/schottmueller/infohealthecon/files/10209397/Session.10.Notes.pdf][Session 10]]
      - [[https://github.com/schottmueller/infohealthecon/files/10260277/Session.11.Notes.pdf][Session 11]]
      - [[https://github.com/schottmueller/infohealthecon/files/10374145/Session.12.pdf][Session 12]]
- #   - [[https://github.com/schottmueller/infohealthecon/files/7926649/Session.13.Notes.pdf][Session 13]]
+     - [[https://github.com/schottmueller/infohealthecon/files/10428804/Session.13.Notes.pdf][Session 13]]
  #   - [[https://github.com/schottmueller/infohealthecon/files/7972045/Session.14.Notes.pdf][Session 14]]
   
 
