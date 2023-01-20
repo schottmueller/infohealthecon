@@ -300,7 +300,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 4. A clinic offer 2 services. Demand for service $i$ is $M_i+s_i$ where $M_i>0$ is the primary demand and $s_i$ is the induced demand for service $i\in\{1,2\}$. The two services are offered in separate units. Each unit has a leader who chooses the inducement level of this unit. The unit leader receives an income bonus that depends positively on the revenues of his own unit an negatively on the revenues of the other unit (e.g. there is some relative performance bonus). The head of unit $i$ maximizes therefore the utility function $2\sqrt{p_i(1+s_i)-\alpha p_j(1+s_j)}-s_i$ where $\alpha\in(0,1)$ is a parameter measuring the magnitude of relative performance pay. 
   1. Assume $p_1=p_2=1$ and derive the optimal inducement levels the unit leaders will choose.
   2. Assume $p_1=1.1$ and $p_2=1$ and let $\alpha=1/2$. Derive the optimal inducement levels the unit leaders will choose.
-  3. Compare your results with the results in exercise 3.
+  3. Compare your results with the results in exercise 34.
 
 
 # E1.1: if M/\delta\geq 1, then s=0; if M/\delta<1: if p-1-gamma<0 again s=0, if p-1-\gamma>0 then s=1-M/\delta
