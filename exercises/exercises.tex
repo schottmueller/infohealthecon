@@ -1,0 +1,283 @@
+% Created 2020-09-09 Wed 12:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{amsmath}\usepackage[margin=2.5cm]{geometry}\usepackage{ae,aecompl}\usepackage{sgame}
+\usepackage{enumitem}
+\author{Christoph Schottmüller}
+\date{}
+\title{Exercises}
+\hypersetup{
+ pdfauthor={Christoph Schottmüller},
+ pdftitle={Exercises},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 27.1 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\label{sec:org214ddde}
+\begin{enumerate}
+\item Assume that the utility function \(u_i\) represents \(i\)'s preferences over a set of alternatives \(X=\{x_1,x_2,\dots,x_n\}\). Show that
+\begin{enumerate}
+\item \(i\)'s preferences are transitive;
+\item the function \(v_i\) defined by \(v_i(x)=f(u_i(x))\) also represents \(i\)'s preferences if \(f\) is a strictly increasing function.
+\item Assume now that there are only 2 alternatives, i.e. \(X=\{x_1,x_2\}\). Assume that there are 2 people in the society and person 1 prefers \(x_1\) over \(x_2\) while person 2 prefers \(x_2\) over \(x_1\). Choose some utility functions \(u_1\) and \(u_2\) to represent their preferences. Assume that society chooses the alternative \(x\) maximizing \(u_1(x)+u_2(x)\). 
+\begin{itemize}
+\item Which alternative does society choose with the utility functions you chose?
+\item Show that a transformation as in the previous subquestion can change society's choice. What is the problem and how does it come about?
+\end{itemize}
+\end{enumerate}
+
+\item Assume that there are \(m\) people in society and society has to choose an option from  \(X=\{x_1,x_2,\dots,x_n\}\). The preferences of each member of society can be represented by a utility function \(u_i\). Society chooses the alternative \(x\in X\) maximizing \(\sum_{i=1}^m u_i(x)\). Show that the chosen alternative is Pareto efficient.
+
+\item Assume \(i\)'s preferences over lotteries on the set of outcomes \(\{healthy,\,ill,\,dead\}\) satisfy the assumptions of the von Neumann-Morgenstern expected utility theorem and can therefore be represented by three numbers \(u^{healthy},\,u^{ill}\) and \(u^{dead}\). Assume that  \(u^{healthy}=1,\,u^{ill}=0.75\) and \(u^{dead}=0\).
+\begin{enumerate}
+\item Treatment 1 leads to the probability distribution over \((0.3,0.5,0.2)\) (over \(\{healthy,\,ill,\,dead\}\)) while treatment 2 leads to the probability distribution \((0.4,0.3,0.3)\). Which treatment does \(i\) prefer?
+\item Show that \(i\)'s preferences over lotteries can also be represented by the three numbers \(v^{healthy}=a*u^{healthy}+b\), \(v^{ill}=a*u^{ill}+b\) and \(v^{dead}=a*u^{dead}+b\) where \(a>0\) and \(b\in\Re\) are some real numbers.
+\item Show by means of an example that \(i\)'s preferences are not necessarily represented by \(v^{healthy}=f(u^{healthy})\), \(v^{ill}=f(u^{ill})\) and \(v^{dead}=f(u^{dead})\) for some strictly increasing function \(f\). Why does this not contradict our result from exercise 1 above?
+\end{enumerate}
+\end{enumerate}
+
+\section{Insurance demand}
+\label{sec:orgfeb2401}
+In all exercises let the person be an expected utility maximizer, i.e. the person's choices satisfy the assumptions of the von Neumann-Morgenstern expected utility theorem.
+
+\begin{enumerate}[resume]
+\item Consider a person with utility of income \(u(x)=\sqrt{x}\). Is this person risk averse? For the following lotteries, compute the expected income, the certainty equivalent and the risk premium.
+\begin{enumerate}
+\item Probability \(1/3\) for each \(1600\), \(2500\), and \(3600\) Euros.
+\item Income is uniformly distributed between 1600 and 2500 Euros.
+\end{enumerate}
+
+\item Consider a person with utility of income \(u(x)=\sqrt{x}\). The person has an income of \(2500\) Euros but loses \(L\) Euros with probability \(\alpha\). Determine the certainty equivalent and the risk premium as a function of \(\alpha\) and \(L\). Is the risk premium increasing or decreasing in \(L\)? Is  the risk premium increasing or decreasing in \(\alpha\)?
+
+\item Consider the utility function \(u(x)=-e^{-\eta x}\). The person has an income of \(1\) and experiences a loss of \(1\) with probability \(\alpha\).  The coefficient of absolute risk aversion is defined as \(-u''(x)/u'(x)\). Compute this coefficient. Let now \(\alpha=0.5\) and check whether the certainty equivalent in- or decreases in \(\eta\).
+
+\item The Wall Street Journal reported in 2006 of "mini-medical insurance plans". These plans cover routine services, but little hospital coverage and usually have a cap on payouts (say of \$ 10.000 ). The premium, however, is only \$ 50 per month. Why might people buy a mini-medical plan? Why are such insurance plans not more popular (in a country where a substantial part of the population did/does not have health insurance)?
+
+\item Consider a person with utility of income \(u(x)=\sqrt{x}\). The person has an income of \(2500\) Euros but loses \(1500\) Euros with probability \(1/4\). Assume there is an insurance company that offers to insure an arbitrary coverage \(C\in[0,1500]\) at premium \(pC\). Determine the amount of coverage \(C(p)\) that the person will buy. (If you find this too hard, let \(p\) be 0.3.)
+
+\item Consider the same person as in the previous exercise. Let \(p=0.3\) and suppose the government guarantees a minimum income of 1500. Will the person still buy insurance? Discuss what features of the health care sector are similar to a minimum income guarantee in the model.
+\end{enumerate}
+
+\section{Selection}
+\label{sec:org8ed30ca}
+\subsection{Selection with fixed coverage}
+\label{sec:orgd914bdf}
+\begin{enumerate}[resume]
+\item We now have a continuum of people of length \(1/2\). More precisely, we have a person \(i\) for each \(i\in[0,1/2]\). All people have the same utility function \(u(x)=\sqrt{x}\) and the same income of 2500. However, they differ in terms of risk: Person \(i\) loses 1600 with probability \(i\). We consider an insurance policy with full coverage, i.e. a policy that pays out 1600 in case of a loss. Every person knows his own risk but insurance companies cannot distinguish people (and will therefore have to offer the same premium to everybody). 
+\begin{enumerate}
+\item Determine the willingness to pay for the insurance of person \(i\).
+\item For every possible insurance premium, how many people will buy insurance? Use your results to draw the demand for insurance.
+\item Determine the marginal cost of person \(i\).
+\item Determine the average cost of insuring all people \(i\geq j\), i.e. everyone in \([j,1/2]\).
+\item If many risk neutral insurance companies with no administrative costs are active on this market, what is the market equilibrium?
+\item Is the market equilibrium efficient? If not, determine the size of the inefficiency. What would be welfare in "first best", i.e. in a situation in which everyone with a willingness to pay above marginal cost gets insurance? Determine the relative inefficiency due to adverse selection.
+\item Consider an insurance subsidy to insurers, i.e. each insurer receives for each sold insurance a subsidy payment \(s\). How high does \(s\) have to be to ensure efficiency?
+\item Consider an insurance mandate (without subsidies), i.e. everyone is forced to buy an insurance contract. What is the equilibrium insurance premium? Who will benefit from the mandate? Who will lose out with the mandate?
+\item Suppose insurers can now distinguish two groups: The people \(i\geq 0.3\) and the people \(i< 0.3\). Assume that insurers are allowed to offer different contracts to these two groups. Consequently, there are now two separate markets. What is the equilibrium on the "high risk market"? What is the equilibrium on the "low risk" market? Is the new situation more or less efficient than the one considered in the previous subquestions? Who benefits from groups discrimination and who does not?
+\item With the previous subquestion in mind, what happens if insurers can identify people better? (For example, distinguish more and more subgroups as in the previous subquestion.) What are the consequences for welfare? Who benefits and who loses?
+\end{enumerate}
+
+\item You work for a profit maximizing health insurer which recently understood the problem of adverse selection. Your boss asks you what to do to increase/maintain profits in light of the adverse selection problem. What do you answer?
+\end{enumerate}
+\subsection{Screening with coverage: Rothschild-Stiglitz}
+\label{sec:org800a0e5}
+\begin{enumerate}[resume]
+\item In this exercise we show that in the Rothschild-Stiglitz model only one contract per type can be sold in equilibrium. We do this by contradiction. Suppose this was not true, i.e. suppose there were two contracts \((p_1,q_1)\) and \((p_2,q_2)\) that are bought by consumers with high risk. 
+\begin{enumerate}
+\item Draw in a coverage, premium diagram such two contracts and the indifference curve of the high risk consumers.
+\item Draw the isoprofit lines of the insurers through these contracts.
+\item Find a deviation contract that yields strictly positive profit (and is bought by some players if offered).
+\item Now suppose there were two contracts \((p_1,q_1)\) and \((p_2,q_2)\) that are bought by consumers with \emph{low} risk. Do the same as above but be careful when arguing that the deviation contract is strictly profitable.
+\end{enumerate}
+
+\item In the Rothschild-Stiglitz model, assume that all consumers have the utility function \(u(x)=-0.5x^2+10x\), that \(W=9\), \(L=5\), \(\alpha_h=1/2\) and \(\alpha_l=1/4\).
+\begin{enumerate}
+\item Derive the isoprofit curve of an insurance company insuring a consumer with risk \(\alpha\), i.e.   if coverage is \(q\) what does the premium have to be to achieve expected profits of \(\bar \pi\)?
+\item Derive the consumer's indifference curve, i.e. if coverage is \(q\) what does the premium have to be to achieve an expected utility of \(\bar U\)?
+\item Verify that the slope of the indifference curve of a consumer with higher risk is higher. Verify that the slope of the indifference curve is higher than the slope of the isoprofit curve for \(q<1\) and equal for \(q=1\).
+\item If risk types were observable what would be the equilibrium contracts for the two risk types?
+\item What is the Rothschild-Stiglitz equilibrium (i.e. the equilibrium when risk types are not observed by the insurance companies)? For which shares of high risk types is there a full coverage pooling contract breaking this equilibrium?
+\end{enumerate}
+
+\item Suppose the government mandates that coverage levels have to be at least \(\bar q\). How does this affect the Rothschild-Stiglitz equilibrium? Who benefits/loses from this intervention?
+
+\item Suppose that a low risk type is indifferent between his contract in the Rothschild-Stiglitz equilibrium candidate and a full coverage contract at premium \((\gamma\alpha_h+(1-\gamma)\alpha_l)*L\). What interpretation does the premium \((\gamma\alpha_h+(1-\gamma)\alpha_l)*L\) have? Demonstrate that in this case the Rothschild-Stiglitz equilibrium does not exist.
+
+\item In the Netherlands, health insurance contracts can only be changed at the end of the calendar year. Discuss why such a regulation may or may not be a good idea. Do you know of other similar provisions or regulations?
+\end{enumerate}
+
+\subsection{Genetic tests}
+\label{sec:org5d61f90}
+\begin{enumerate}[resume]
+\item Assume that all people in our economy are similar and have the same Bernoulli utility function \(u(x)=\sqrt{x}\). A person has wealth \(W=9\) and falls ill with probability 1/2. When falling ill the person needs treatment costing \(L=5\). Assume that many insurance companies without administrative costs compete prefectly in the insurance market.
+\begin{enumerate}
+\item Determine the risk premium of a consumer for a full coverage contract. What contract be offered in equilibrium?
+\item Suppose a genetic test becomes available: The test results can be either "high risk" (h) or "low risk" (l). Those that test have a 50\% chance of getting either result. High risk people have probability 3/4 and low risk people have the probability 1/4 of falling ill. 
+\begin{itemize}
+\item Calculate the risk premium of an \emph{h} type and the risk premium of an \emph{l} type (again using a full coverage contract).
+\item Assume everyone gets tested and the insurance companies can make their contracts dependent of the test result. What contracts will they offer? How do profits and expected utility change compared to (a)?
+\item Assume that insurance companies are prohibited from making their contracts contingent upon the test results. How do expected utility and insurance profits change compared to (a)? (Note: you do not have to calculate theequilibrium contracts to answer this question qualitatively.)
+\end{itemize}
+\item Consider now a profit maximizing insurance monopolist. How does your answer in (a) and (b.1) and (b.2) change?
+\end{enumerate}
+\end{enumerate}
+
+
+
+\subsection{Premium risk and risk adjustment}
+\label{sec:org3d58a67}
+\begin{enumerate}[resume]
+\item In Germany (private) health insurers are required to charge a constant premium over the life cycle. We use the premium risk model from the lecture: 2 periods, income \(W\) in each period, everyone has low risk \(\alpha_l\) of a loss \(L\) in period 1, probability \(1-\lambda\) of an increse of risk to \(\alpha_h\) in period 2, perfect competition.
+\begin{enumerate}
+\item Calculate the constant premium that yields zero expected profits to insurers under the assumption that no one switches insurers in period 2.
+\item Given the premium from the previous subquestion, what would happen if consumers could switch insurers in period 2?
+\item Compare the premium of the first subquestion with the premiums under "guaranteed renewal". What are the implications?
+\item Suppose now that in period 2 everyone's health deteriorates. More precisely, assume that the risk is \(\alpha_m>\alpha_l\) with probability \(\lambda\) and \(\alpha_h>\alpha_m\) with probability \(1-\lambda\). 
+\begin{itemize}
+\item Calculate the constant premium that yields zero profits to insurers (without switching).
+\item Compare it to the premiums with "guaranteed renewal".
+\end{itemize}
+\end{enumerate}
+
+\item Discuss the advantages and disadvantages of using "last year health care expenditures of insured" as an explanatory variable in a risk adjustment scheme.
+
+\item Suppose the population consists of two types \emph{l} and \emph{h} with the expenditure distribution for each type as in the table below. In this exercise we measure the incentive of an insurance to engage in risk selection by the difference in expected expenditures.
+\begin{enumerate}
+\item Calculate the expected expenditures per risk type and the incentives to engage in risk selection.
+\item Consider a risk adjustment scheme that covers all expenditures above 20 (i.e. all expenditures above 20 are covered by some common fund to the extent that they exceed 20). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection. What is the idea behind such a risk adjustment scheme?
+\item Consider a risk adjustment scheme that covers all expenditures up to 8 (i.e. all expenditures up to 8 are covered by some common fund). Calculate the expected expenditures per risk type that an insurer has to cover himself and the incentives to engage in risk selection.
+\item Consider expenditure distributions that satisfy the following conditions: \(p_h^{30}>p_l^{30}\) and \(p_h^{10}+p_h^{30}\geq p_l^{10}+p_l^{30}\) where \(p_h^{30}\) is the probability that a high risk type has expenditures 30 and so on. 
+\begin{itemize}
+\item Show that the  incentive to engage in risk selection are decreased by a risk adjustment scheme as in (b) for all such distributions.
+\item Show that the  incentive to engage in risk selection are decreased by a risk adjustment scheme as in (c) for all such distributions.
+\end{itemize}
+\end{enumerate}
+\end{enumerate}
+
+\begin{center}
+\begin{tabular}{l|lll}
+risk/expenditure & 0 & 10 & 30\\
+\hline
+\emph{l} & 40\% & 10\% & 50\%\\
+\emph{h} & 10\% & 50\% & 40\%\\
+\end{tabular}
+\end{center}
+\subsection{Advantageous selection}
+\label{sec:orgc9842fb}
+
+\begin{enumerate}[resume]
+\item Compare adverse and advantageous selection.
+
+\item Let consumers have the utility function \(u(x)=-e^{-\eta x}\). Each consumer faces a loss \(L\) of his initial wealth \(W\) with probability \(\alpha\). While \(W\) and \(L\) are the same for all consumers, consumers differ in \(\eta\) and \(\alpha\). Let \(W=10\) and \(L=5\).
+\begin{enumerate}
+\item Compare the willingness to pay for a full coverage insurance contract of two consumers: Consumer A has risk \(\alpha_A=0.3\) and risk aversion \(\eta_A=1\). Consumer B has risk \(\alpha_B=0.2\) and risk aversion \(\eta_B=1.5\).
+\item Using otherwise the same parameters as in (a), who would have the higher willingness to pay if \(\eta_B\) was 1 as well?
+\item Using otherwise the same parameters as in (a), who would have the higher willingness to pay if \(\alpha_B\) was 0.3 as well?
+\item (PC exercise in spread sheet application or Julia) Let there be a continuum of consumers whose risk \(\alpha\) is uniformly distributed on \([0.5,0.75]\). Assume that \(\eta(\alpha)=3-\alpha\) and consider a full coverage insurance contract. Is this a case of adverse or advantageous selection? Repeat with \(\eta(\alpha)=3-3.75\alpha\).
+\end{enumerate}
+
+\item Consider the fixed coverage model with perfect competition and no administrative costs for insurance companies. Assume that all consumers are risk averse. 
+\begin{enumerate}
+\item How do the marginal cost, average cost and demand curve look in case of advantageous selection?
+\item Is the market equilibrium efficient?
+\item Consider now insurance companies with contracting and claim handling costs, i.e. each sold contract leads to expected administrative costs \(c>0\). What is the market equilibrium and is it efficient?
+\item For the case with administrative costs, consider a tax on insurance premia (to be paid by consumer). What is the impact of this tax on welfare?
+\end{enumerate}
+\end{enumerate}
+
+\section{Moral Hazard}
+\label{sec:orga02ced4}
+
+\begin{enumerate}[resume]
+\item Ambulatory mental health care was the most price sensitive element of health care in the RAND health insurance experiment. How do you think the market for mental health care has changed since the 1970s? How does this affect the price sensitivity? What evidence would you look for to support your claims?
+
+\item Dental care was quite price sensitive in the RAND health insurance experiment. This effect was particularly large in the first year. What is the explanation for this? What are the implications?
+
+\item Health insurance plans can often be described by a deductible \(D\), a copayment rate \(c\) and a maximal out of pocket amount \(M\): Up to \(D\) all expenditures are paid by the insured, for every \$ spent between \(D\) and \(M\) the insured pays \(c\) and the insurance bears all expenses above \(M\).\footnote{Hence, the total copayment if expenditures are \(x\) is \(x\) if \(x\leq D\); is \(D+c(x-D)\) if \(D<x<M\) and is \(D+c(M-D)\) for \(x\geq M\).} Assume that consumers act as to maximize the utility function \(cons-0.5(2-s-t)^2\) where \(cons\) is consumption, i.e. all money left to the consumer after paying for treatment \(t\in[0,2-s]\), and \(s\leq1\) is a health state. Assume that the consumer has an initial wealth of 4 (net of the insurance premium) and therefore consumption is \(4-t\) if he has no insurance.
+\begin{enumerate}
+\item Suppose the consumer has no insurance (or equivalently \(D>4\)). How much treatment will he buy in health state \(s\in[0,1]\)?
+\item Suppose the consumer has a coinsurance rate of \(c\in[0,1)\) while \(D=0\) and \(M=\infty\). How much treatment will he buy in health state \(s\in[0,1]\)?
+\item Now let \(D=0.5\), \(c=1/2\) and \(M=\infty\). How much treatment will the consumer buy in health state \(s\in[0,1]\)?
+\item Think now about expected expenditure at the time of insurance purchase (i.e. we do not know the health state yet). Under which conditions on the distribution of health states will an increase in the deductible reduce expected expenditures? What does this imply for the effectiveness of small deductibles in reducing expected expenditures?
+\end{enumerate}
+
+\item Suppose a study like the RAND health insurance experiment could be redone for \$ 200 million. On what should the new study focus, i.e. how should it be different from the old one? Do you think it would be worth the money?
+
+\item A consumer has wealth \(W=64\) and face a potential loss of \(L=15\). The consumer has to decide whether to "be careful" or not. If he is careful, the loss realizes with probability \(1/4\). If he is not careful, the loss realizes with probability \(1/2\). Being careful costs (the money equivalent of) 1 unit of income. (The consumer is a risk averse expected utility maximizer and you can assume \(u(x)=\sqrt{x}\).)  
+\begin{enumerate}
+\item Consider the situation where the consumer is not insured. Will he be careful?
+\item Consider the situation where the consumer is fully insured at premium \(p>0\). Will he be careful?
+\end{enumerate}
+
+\item A consumer with Bernoulli utility \(u(x)=-x^2+10x\) has wealth \(W=4\) and faces a potential (money equivalent) loss \(L=2\) which realizes with probability \(\alpha=1/2\). If the loss realizes the consumer can (partially) make up for the loss by treatment \(M\in[0,2]\). The insurance will cover \(qM\) of these treatment expenditures for some coverage rate \(q\in[0,1]\). Treatment \(M\) will mitigate the loss to \(L-2M+M^2/2\).
+\begin{enumerate}
+\item If the consumer is ill, what treatment intensity \(M^*(q)\) will he choose?
+\item (numerical) Assume that the insurance premium is fair, i.e. \(p=\alpha q M^*(q)\). Write down the consumers expected utility. Which \(c\) maximizes expected consumer utility? How and why does this result differ from models without moral hazard?
+\end{enumerate}
+
+\item Consider the following case: "I met Jane at a gas station in the outskirts of Oklahoma City where she was filling up her 8 year old Chevrolet. She was in her fourties and when I asked for the way she was happy to help me out. The moment she talked it became apparent that some of her teeth were missing which impeded her speech slightly (the pronounciation of "s" was a bit off). As a result, I misunderstood her first and had to ask her to repeat. The second time I got it and apologized for my earlier misunderstanding. 'Don't worry, it happens all the time. Ever since I had the tooth thing three years ago. It hurt so bad\ldots{}After two days I begged my brother to pull them out.' she said. 'I see. Did it help?' I asked politely. 'Well first he did not want to do it. But after another day he said yes. It was terrible. He did not get them first time and then it hurt even more and there was lots of blood. But, yeah, it got better when they were out.' It took me a second to follow but then it dawned on me: 'I guess your brother is  not a dentist\ldots{}' 'No, of course not,' Jane laughed, 'he did his best. I called the dentist but they said it was 500\$. I mean, who can pay that if you have no insurance, you know.'"
+\begin{itemize}
+\item Discuss whether Jane should have had a dentist to treat her toothache from a welfare perspective.
+\end{itemize}
+\end{enumerate}
+
+\subsection{Utilization management}
+\label{sec:orge6b3acd}
+\begin{enumerate}[resume]
+\item Assume for simplicity that a consumer needs to go to hospital exactly once per year. When he goes to hospital, a \emph{long stay} is appropriate with probability \(1/2\) and a \emph{short stay} is appropriate with probability \(1/2\). The costs of a long (short) stay are \(c_l\) (\(c_s\)) with \(c_l>c_s\). The hospital has idle capacity and prefers if the consumer stays long. The consumer cannot judge whether a short or a long stay is more appropriate but the hospital knows this perfectly. Assume that there is perfect competition on the insurance market, i.e. insurance premia equal expected cost, that only full coverage contracts are allowed and that insurers have no administrative costs. 
+\begin{enumerate}
+\item Assume that the hospital determines the length of the stay. What is the equilibrium on this market, i.e. how long will the consumer stay and what is the insurance premium?
+\item Now assume that the insurer engages in utilization management, in particular assume that the insurer decides whether the stay is short or long. Assume that the insurer does not know which length of stay is appropriate but he has some information on this: More precisely, assume that the insurer's perception of which lenght of stay is appropriate is correct with probability \(\alpha>1/2\). What is the equilibrium insurance premium if the insurer uses his perception?
+\item Assume that the consumer has utility 1 if the length of his stay is at least as long as appropriate but 0 if he has a short stay and a long one would have been appropriate. The consumer maximizes expected utility from health minus the insurance premium. Is the consumer better off with or without utilization management? Reconsider what the equilibrium is when utilization management is possible.
+\end{enumerate}
+\end{enumerate}
+
+
+\section{Doctor-patient interaction}
+\label{sec:org8b973cb}
+\subsection{Supplier induced demand}
+\label{sec:org8ca64a8}
+\begin{enumerate}[resume]
+\item In the "first wave" model of the lecture, consider the case where marginal utility of income is constant, i.e. \(u(y,t,s)=y-t-\gamma s\).
+\begin{enumerate}
+\item How much demand will the physician induce in this case?
+\item Plot billed services per patient as a function of \(\delta\).
+\item Consider now that inducing an additional unit of demand may be a lot harder if you already induce a lot compared to the situation where you already induce a lot. Use \(u(y,t,s)=y-t-0.5\gamma s^2\) to capture this situation. How does this change your answer to the previous two questions?
+\item How does the shape of billed services per patient as a function of \(\delta\) differ from that in the lecture where we assumed decreasing marginal utility of income?
+\end{enumerate}
+
+\item Upcoding is the practice of fraudently charging for higher paying services than the ones provided. Discuss similarities and differences between upcoding and inducing demand.
+
+\item\label{ex:sid2service} A clinic offers 2 services. Demand for service \(i\) is \(M_i+s_i\) where \(M_i>0\) is the primary demand and \(s_i\) is the induced demand for service \(i\in\{1,2\}\). Let the objective of the clinic be \(u(y,s_1,s_2)=-e^{-\eta y}-0.5 s_1^2-0.5 s_2^2\) where \(y=(M_1+s_1)p_1+(M_2+s_2)p_2\) is revenue of the clinic as \(p_i\) are the profit margins for the two services and \(\eta>0\) is a parameter.
+\begin{enumerate}
+\item What is the optimal proportion of inducement levels, i.e.  \(s_1/s_2\), that the clinic will choose?
+\item Will an increase in \(p_1\) in- or decrease the optimal inducement levels \(s_1\) and \(s_2\)?
+\item In Germany, the physician price for providing a given service to a patient insured in the private arm of the health insurance system is 2.3 times the price of providing the same service to a patient administered in the public arm. What does the model predict in terms of demand inducement?
+\end{enumerate}
+
+\item A clinic offer 2 services. Demand for service \(i\) is \(M_i+s_i\) where \(M_i>0\) is the primary demand and \(s_i\) is the induced demand for service \(i\in\{1,2\}\). The two services are offered in separate units. Each unit has a leader who chooses the inducement level of this unit. The unit leader receives an income bonus that depends positively on the revenues of his own unit an negatively on the revenues of the other unit (e.g. there is some relative performance bonus). The head of unit \(i\) maximizes therefore the utility function \(2\sqrt{p_i(1+s_i)-\alpha p_j(1+s_j)}-s_i\) where \(\alpha\in(0,1)\) is a parameter measuring the magnitude of relative performance pay. 
+\begin{enumerate}
+\item Assume \(p_1=p_2=1\) and derive the optimal inducement levels the unit leaders will choose.
+\item Assume \(p_1=1.1\) and \(p_2=1\) and let \(\alpha=1/2\). Derive the optimal inducement levels the unit leaders will choose.
+\item Compare your results with the results in exercise \ref{ex:sid2service}.
+\end{enumerate}
+\end{enumerate}
+\end{document}
