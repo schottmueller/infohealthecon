@@ -171,14 +171,6 @@ where $F$ is a continuously differentiable function. Then,
 $$p'(q)=-\frac{\partial F/\partial q}{\partial F/\partial p}$$
 at all points where $\partial F/\partial p\neq 0$.
 
-*** IFT :B_example:
-    :PROPERTIES:
-    :BEAMER_env: example
-    :END:
-$3p-4q=0$ implicitly defines the function 
-$$p(q)=$$
-Check $p'(q)$ according to IFT and by directly differentiating $p(q)$.
-
 ** Rothschild-Stiglitz: curves and slopes II
 - /iso-profit curve/ for profit level $\bar\pi$
   - all $(q,p)$ combination leading to profit $\bar\pi$
@@ -430,6 +422,24 @@ Equilibrium:
 
 - problems of  community rating + mandatory insurance + regulated coverage + open enrollment + risk adjustment:
 # how well does risk adjustment work?; no differentiation in package despite differentiated preferences; (what about "additional services", "bonus programs" etc.?)
+
+** Risk adjustment: simple example
+   - only observable characteristic is whether a person is /old/ or /young/
+   - expected costs of an /old/ person are 6
+   - expected costs of a /young/ person are 3
+   - there are 20 /old/ and 10 /young/ people in the economy $\rightarrow$ expected cost of insured is $(20*6+10*3)/(20+10)=5$
+   - risk adjustment payments:
+     - pay $5-3=2$ for every /young/ person insured
+     - pay $5-6=-1$ for every /old/ person insured
+     - net costs for insured of either group: 5
+   - two insurers with following number of insured:
+     | insurer/customers | young | old | payments into RA |
+     |-------------------+-------+-----+------------------|
+     | /                 |     < |     | <                |
+     | A                 |     3 |  12 | $3*2-12*1= -6$   |
+     | B                 |     7 |   8 | $7*2-8*1=6$      |
+     |-------------------+-------+-----+------------------|
+     | total             |    10 |  20 | 0                |
 
 ** Risk adjustment: how good is prediction?
 

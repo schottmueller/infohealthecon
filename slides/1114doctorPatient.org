@@ -28,7 +28,7 @@
 
 ** Supplier induced demand 
 - some observations:
-  - physician density increased in Germany from 16 to 41 from 1970 to 2014 (#physicians/10000 inhabitants)
+  - physician density increased in Germany from 22 to 50 from 1980 to 2021 (#physicians/10000 inhabitants)
   - no under-employment of physicians
   - areas with higher density of surgeons have more surgeries/capita but not lower surgical fees (Fuchs 1978)
 
@@ -161,7 +161,7 @@ $$ p_2x_2'(s_2) = -u_s/u_y$$
 - Reform of physician pay in Copenhagen *city* (Denmark) in October 1987
   - before: capitation
   - after: mixed system of capitation and fee for service
-- control: Copenhagen *county* had new enumeration already
+- control: Copenhagen *county* had new remuneration already
 - physicians were asked to record all activities in a given week at three points in time (February/March 87, February/March 88, November 88)
 - 75 of 265 GPs participated in all three waves
 - Results by cite:krasnik1990changing
@@ -181,7 +181,7 @@ $$ p_2x_2'(s_2) = -u_s/u_y$$
   - overcharging
   - overtreatment
   - undertreatment
-  - excessive search
+  - excessive search (i.e. duplication of diagnosis cost)
 - how should physician remuneration be structured to avoid problems above?
 - how does this depend on environment?
 
@@ -217,7 +217,7 @@ $$ p_2x_2'(s_2) = -u_s/u_y$$
     :PROPERTIES:
     :BEAMER_env: theorem
     :END:
-If commitment but neither liability not verifiability hold, the market outcome is inefficient.
+If commitment but neither liability nor verifiability hold, the market outcome is inefficient.
 
 *** :B_ignoreheading:
     :PROPERTIES:
@@ -295,7 +295,7 @@ At least two experts post prices $\underline{p}=\underline{c}$ and $\bar{p}>\bar
 ** Communication model
 - true health state unknown
 - fully insured patient reports symptoms to physician
-- physician hears report privately observes signal about health state
+- physician hears report and privately observes signal about health state
 - physician prescribes treatment
 #
 - prior information (commonly known): 

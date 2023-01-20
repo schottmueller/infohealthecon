@@ -81,9 +81,9 @@ lm(@formula(shareC~freigemein+privat),dfComplete)
 On the plus side:
 - covering the whole country 
 - hospitals have to provide by law
-- contains several relevant variables that allow to control for some fetures like owner type, size etc.
+- contains several relevant variables that allow to control for some features like owner type, size etc.
 
-On the negative sid:
+On the negative side:
 - no information on prices and costs
 - unclear whether density is really meaningful (rivers, city centers)
 - a lot of factors impact decision that are not in the data and that we can therefore not control for
