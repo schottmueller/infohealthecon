@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 - Due to heavy traffic, the provider currently disabled the downloads for the screencasts. For now, you can find them as well as the datasets for the empirical exercises [[https://uni-koeln.sciebo.de/s/yr6TZMJkZc05OeB][here]]. Please, download only once and not repeatedly (no new screencasts were added!).   
 - The lecture on January 25 is moved from room H161 to room H162.  
 - The lecture on December 21 will be substituted by a screencast due to health reasons. Screencast on [[https://web.tresorit.com/l/uSbeb#Bn1klbA__jMZOu5pS-cZ-g][out of sample predictions]] and on [[https://web.tresorit.com/l/bshVo#abOzSC3SUmHkaJAFw72nlQ][utilization management]] are now available. For the case study on the deductible, see  [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
@@ -22,7 +23,6 @@
 #  - In essay type questions, the default should be to answer in complete sentences (no single word bullet points or similar).
 #  - Explain your answers. In calculation exrcises the explanations can be brief and complete sentences are not required. 
 # - On Jan. 15, we will discuss the empirical case study in the lecture (see the "exercises"). I will use LibreOffice Calc in class and provide a solution in Julia online. Please try to solve it yourself beforehand.
-# - The optional post exam review takes place on April 17 between 10:00 and 11:30. Further information can be found [[https://www.wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/gesundheitsoekonomie/][here]].
 # - The exam results have been forwarded to the examination office. The post-exam review will take place after the term break and a specific date will be announced later. 
 # - Information on the exam: 
 #  - The exam is "/closed book/" but you are allowed to bring a pocket calculator that is (i) not programmable and (ii) not graphical. 
