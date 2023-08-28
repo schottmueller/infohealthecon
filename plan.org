@@ -42,8 +42,8 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - The *course plan* as [[https://github.com/schottmueller/infohealthecon/files/5299046/plan.pdf][pdf]] on which you can also find a list of *references*.
 
-- The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]]. [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][Plots]] shown in the exercise session (use this [[https://nbviewer.jupyter.org/github/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][link]] if github cannot render the file). 
-
+- The *exercises* are available as [[https://github.com/schottmueller/infohealthecon/files/10466268/exercises.pdf][pdf]] and as [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercises.org][org]] file. Exercises for the first week are available [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][here]].
+  
 - *Slides*
   - intro [[https://github.com/schottmueller/infohealthecon/files/5162914/01intro.pdf][slides]]
   - demand for insurance [[https://github.com/schottmueller/infohealthecon/files/7381024/02insuranceDemand.pdf][slides]]
@@ -57,35 +57,28 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] on endogenous treatment choice 
 
 - *Data sets and instructions* for case studies:
-  - [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/empirical.org][instructions]] (here as [[https://github.com/schottmueller/infohealthecon/files/5776630/empirical.pdf][pdf]]) for empirical sessions, please download the data sets below and work on the questions before coming to class 
-  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on selection in long term care insurance (password announced in lecture)
-    ([[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/FMcCalc.org][here]] are some instructions for how to solve the exercises in LibreOffice Calc and [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][here]] is some julia code solving the exercises)
-  - data on deductibles in the Netherlands for [[https://www.dropbox.com/s/05rnlf3rsbggy9r/data2011.csv?dl=0][2011]] and [[https://www.dropbox.com/s/2uupso7j89vllof/data2014.csv?dl=0][2014]].
-        Here are some notes on how to solve the exercises in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisicoInCalc.org][LibreOffice Calc]] and how to do so in [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][julia]].
-  - [[https://web.tresorit.com/l/LgFab#pgfSdjSm0wf4oAtRpkybYQ][data]] on German hospitals and supplier induced demand
-    # some solution [[./data/hospitals/hospitalHints.org][hint]]
-# pw is "infohealth"
+  - exercises (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
 - *Notes*
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
-  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
-     - [[https://github.com/schottmueller/infohealthecon/files/9746463/Session.1.Notes.pdf][Session 1]]
-     - [[https://github.com/schottmueller/infohealthecon/files/9801532/Session.2.Notes.pdf][Session 2]]
-     - [[https://github.com/schottmueller/infohealthecon/files/9852509/Session.3.Notes.pdf][Session 3]]
-     - [[https://github.com/schottmueller/infohealthecon/files/9903041/Session.4.Notes.pdf][Session 4]]
-     - [[https://github.com/schottmueller/infohealthecon/files/9952934/Session.5.Notes.pdf][Session 5]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10004118/Session.6.Notes.pdf][Session 6]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10058122/Session.7.Notes.pdf][Session 7]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10105176/Session.8.Notes.pdf][Session 8]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10155528/Session.9.Notes.pdf][Session 9]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10209397/Session.10.Notes.pdf][Session 10]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10260277/Session.11.Notes.pdf][Session 11]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10374145/Session.12.pdf][Session 12]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10428804/Session.13.Notes.pdf][Session 13]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10481209/Session.14.Notes.pdf][Session 14]]
-     - [[https://github.com/schottmueller/infohealthecon/files/10537695/Session.15.Notes.pdf][Session 15]]
+#  - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
+#     - [[https://github.com/schottmueller/infohealthecon/files/9746463/Session.1.Notes.pdf][Session 1]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/9801532/Session.2.Notes.pdf][Session 2]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/9852509/Session.3.Notes.pdf][Session 3]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/9903041/Session.4.Notes.pdf][Session 4]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/9952934/Session.5.Notes.pdf][Session 5]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10004118/Session.6.Notes.pdf][Session 6]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10058122/Session.7.Notes.pdf][Session 7]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10105176/Session.8.Notes.pdf][Session 8]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10155528/Session.9.Notes.pdf][Session 9]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10209397/Session.10.Notes.pdf][Session 10]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10260277/Session.11.Notes.pdf][Session 11]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10374145/Session.12.pdf][Session 12]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10428804/Session.13.Notes.pdf][Session 13]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10481209/Session.14.Notes.pdf][Session 14]]
+#     - [[https://github.com/schottmueller/infohealthecon/files/10537695/Session.15.Notes.pdf][Session 15]]
   
 
 # ** Julia notebooks
