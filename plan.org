@@ -4,13 +4,9 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
-- Due to heavy traffic, the provider currently disabled the downloads for the screencasts. For now, you can find them as well as the datasets for the empirical exercises [[https://uni-koeln.sciebo.de/s/yr6TZMJkZc05OeB][here]]. Please, download only once and not repeatedly (no new screencasts were added!).   
-- The lecture on January 25 is moved from room H161 to room H162.  
-- The lecture on December 21 will be substituted by a screencast due to health reasons. Screencast on [[https://web.tresorit.com/l/uSbeb#Bn1klbA__jMZOu5pS-cZ-g][out of sample predictions]] and on [[https://web.tresorit.com/l/bshVo#abOzSC3SUmHkaJAFw72nlQ][utilization management]] are now available. For the case study on the deductible, see  [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][here]].
-- The lecture on December 14 is canceled due to an illness.  
+# - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
-  - Exam dates are Feb 1st, 10:15 (H161, 213/01/1.15) and March 20, 12:00 (Aula 1). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+  - Exam dates are Feb 14, 14:00 (100 HS II, 100/U1/HSII) and March 20, 9:00 (HS XXIII, 101/EG/17). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
 #  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
 #  - Some notes on how to solve the case studies are added below.  
 #  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
@@ -32,7 +28,6 @@
  #   - Insurance demand: exercise 5 and 6 (10 points each)
  #   - adverse selection: exercise 1a (5 points), 1d (5 points), 1e+1f (together 10 points), 1h (10 points)
  #   - moral hazard: exercise 4 (10 points) 
-# - Note that there will be an exercise session on October 7 even though this is before the first lecture covering [[https://github.com/schottmueller/infohealthecon/files/3685313/Exercise.Sheet.1.pdf][these]] questions. This exercise session is dedicated to repeating some mathematical concepts used in this course (distributions, expected value etc.). 
 
 * Prerequisites and background
 Several students asked for references for the prerequisites in terms of mathematics, statistics and microeconomics. For all of these areas there are literally hundreds of books titled "(Intermediate/Introductory) Microeconomics" or "Mathematics/Statistics for Business/Economics" and all of them cover more or less the same material. For concreteness, I name "Intermediate Microeconomis" ("Grundzüge der Mikroökonomik") by Hal Varian where chapters 1-6 are assumed to be known and chapter 12 is what we covered in the second lecture. Chapters 14-16 might be interesting background reading as well. For mathematics, "Essential Mathematics for Economic Analysis" by Sysdsæter, Hammond, Strøm and Carvajal may be useful. German speaking students may also be interested in Peter Dörsam's book "Mathematik anschaulich dargestellt für Studierende der Wirtschaftswissenschaften". I am not familiar with statistics books but everything targeted at first semester business/economics students should be fine. Essentially, you have to know what a distribution is, how to compute an expected value and a variance, what a hypothesis test is and how an OLS regression works. While it skips some of the basic statistics the first 2 chapters in "Mastering Metrics: The path from cause to effect" by Angrist and Pischke might be used as an application oriented introduction to empirical work. Throughout the course we assume that your high school math knowledge is working and we have no time to repeat this material, e.g. make sure you can solve linear and quadratic equations, take derivatives and know their interpretation and integrate simple functions before week 1 of the semester.
@@ -41,7 +36,7 @@ If you want to take a less broad approach in catching up, the internet offers a 
 
 * Course materials
 
-Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publically available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
+Please note that I do not use ILIAS because (i) I did not agree with certain usage conditions concerning tracking and data utilization and (ii) I believe that the material I create should be publicly available as it is essentially funded by public money. The material below is likely to get updated over the course of the term.
 
 Lecture slides and exercises are posted/updated here over the course of the term. You can find the source code creating the slides as Emacs org-mode files (".org") [[https://github.com/schottmueller/infohealthecon/tree/master/slides][here]].
 
@@ -107,7 +102,7 @@ The course consists of a lecture and an exercise session. Models, their solution
 The exam will -- in style -- be similar to the questions of the exercise classes. It is, for the time being, planned as a written exam.
 
 ** Lecture times: 
-- lecture: Wednesday, 10:00-11:30 in 213/01/1.15 HS 161
+- lecture: Wednesday, 10:00-11:30 in 100/EG/HSXII
 - exercise classes: Monday, 14:00-15:30 100/EG/HSXII
 
 ** Textbooks
