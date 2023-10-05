@@ -52,9 +52,9 @@ Lecture slides and exercises are posted/updated here over the course of the term
   - physician-patient [[https://github.com/schottmueller/infohealthecon/files/5162918/1114doctorPatient.pdf][slides]]
 
 - *Screencasts*
-  - [[https://web.tresorit.com/l/qCGED#XuoolpfqI1193Egb6Pyjbw][derivation]] Rothschild-Stiglitz equilibrium
-  - how to get [[https://web.tresorit.com/l/9qKwi#bpDTu3fchgFNH5XeXQYjVg][descriptive statistics]] and do [[https://web.tresorit.com/l/g7EUM#9F-c-gvfHZzlCltlFJU2xg][regressions]] in LibreOffice Calc (note that the menu item clicked and unfortunately not visible on the video is "Data")
-  - bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] on endogenous treatment choice 
+  - [[https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF][derivation]] Rothschild-Stiglitz equilibrium
+  - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc (note that the menu item clicked and unfortunately not visible on the video is "Data")
+  - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice 
 
 - *Data sets and instructions* for case studies:
   - exercises (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
