@@ -69,6 +69,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
       - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
       - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
       - [[https://github.com/schottmueller/infohealthecon/files/13071322/Health_Care_Session_3.pdf][Exercise Session 3]]
+      - [[https://github.com/schottmueller/infohealthecon/files/13206543/Health_Care_Session_4.pdf][Exercise Session 4]]
 #     - [[https://github.com/schottmueller/infohealthecon/files/9746463/Session.1.Notes.pdf][Session 1]]
 #     - [[https://github.com/schottmueller/infohealthecon/files/9801532/Session.2.Notes.pdf][Session 2]]
 #     - [[https://github.com/schottmueller/infohealthecon/files/9852509/Session.3.Notes.pdf][Session 3]]
