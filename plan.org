@@ -63,6 +63,9 @@ Lecture slides and exercises are posted/updated here over the course of the term
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
+- material created by other people:
+  - a [[https://youtu.be/pUkRo9COd38?feature=shared][video]] on (adverse) selection  
+
 - *Notes*
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
   - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
