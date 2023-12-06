@@ -70,29 +70,14 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Notes*
   - concerning the [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][lecture]]
   - concerning the exercise sessions (beware that these do not contain verbal explanations given in the session and that they do not constitute model solutions)
-      - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
-      - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
-      - [[https://github.com/schottmueller/infohealthecon/files/13071322/Health_Care_Session_3.pdf][Exercise Session 3]]
-      - [[https://github.com/schottmueller/infohealthecon/files/13206543/Health_Care_Session_4.pdf][Exercise Session 4]]
-      - [[https://github.com/schottmueller/infohealthecon/files/13268522/Health_Care_Session_5.pdf][Exercise Session 5]]
-      - [[https://github.com/schottmueller/infohealthecon/files/13336085/Health_Care_Session_6.pdf][Exercise Session 6]]
-      - [[https://github.com/schottmueller/infohealthecon/files/13416688/Health_Care_Session_7.pdf][Exercise Session 7]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/9746463/Session.1.Notes.pdf][Session 1]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/9801532/Session.2.Notes.pdf][Session 2]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/9852509/Session.3.Notes.pdf][Session 3]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/9903041/Session.4.Notes.pdf][Session 4]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/9952934/Session.5.Notes.pdf][Session 5]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10004118/Session.6.Notes.pdf][Session 6]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10058122/Session.7.Notes.pdf][Session 7]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10105176/Session.8.Notes.pdf][Session 8]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10155528/Session.9.Notes.pdf][Session 9]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10209397/Session.10.Notes.pdf][Session 10]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10260277/Session.11.Notes.pdf][Session 11]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10374145/Session.12.pdf][Session 12]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10428804/Session.13.Notes.pdf][Session 13]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10481209/Session.14.Notes.pdf][Session 14]]
-#     - [[https://github.com/schottmueller/infohealthecon/files/10537695/Session.15.Notes.pdf][Session 15]]
-  
+    - [[https://github.com/schottmueller/infohealthecon/files/12858326/Exercise.Session.1.pdf][Exercise Session 1]]
+    - [[https://github.com/schottmueller/infohealthecon/files/12917906/Exercise.Session.2.pdf][Exercise Session 2]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13071322/Health_Care_Session_3.pdf][Exercise Session 3]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13206543/Health_Care_Session_4.pdf][Exercise Session 4]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13268522/Health_Care_Session_5.pdf][Exercise Session 5]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13336085/Health_Care_Session_6.pdf][Exercise Session 6]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13416688/Health_Care_Session_7.pdf][Exercise Session 7]]
+    - [[https://github.com/schottmueller/infohealthecon/files/13587257/Untitled.Notebook.1.pdf][Exercise Session 8]]
 
 # ** Julia notebooks
 # /This is very optional (!!!) but if you are interested/, there are some julia/jupyter [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][notebooks]] that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].

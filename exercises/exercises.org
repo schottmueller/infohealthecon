@@ -114,7 +114,7 @@ In all exercises let the person be an expected utility maximizer, i.e. the perso
 # E4.2: for alpha = 1/2 only: U =1/2[-1/2 (9-p-(1-q)5)^2+10(9-p-(1-q)5]+1/2[-1/2(9-p)^2+10(9-p)] which yields 4U = 163-2p^2+60q-25q^2-14 p+10pq or p=(5q-7)/2 + \sqrt{375-25q^2+50q-8U}/2; for alpha = 1/4: p(q)=(5q-9)/4+\sqrt{1525-75q^2+150q-32 U}/4
 # E4.3: direct differentiation in 4.2 yields p'(q)=5/2+50(1-q)/[4\sqrt{}] for alpha=1/2 and p'(q)=5/4+150(1-q)/[8\sqrt{}] which gives the result for q close to 1; however not very useful as one does not compare slope at same contract (unless "right" utility levels are chosen); better to use implicit function theorem which as in lecture yields p'(q|\mathbb{E}[u]=\bar u)= L\frac{u'(W-p-(1-q)L)}{u'(W-p-(1-q)L)+\frac{1-\alpha}{\alpha}u'(W-p)} which looks at slope through a given contract and clearly higher alpha leads to higher slope. For isoprofit comparison p'(q)>=alpha L with equality only for q=1
 # E4.4: zero profits and full coverage i.e. q=1 and p=alpha L
-# E4.5: h get full cov at zero profit, i.e. p_h=5/2 and q_h=1, leading to expected utility u(9-5/2)=43.875. zero profits for l imply p_l=q_l*5/4; h is indifferent between bot contracts, hence 43.875 = .5*u(9-p_l-5+5q)+.5 u(9-p_l), or q_l=0.3355.. p_l=0.4193...; this is broken by a full coverage pooling contract if gamma<0.33651...
+# E4.5: h get full cov at zero profit, i.e. p_h=5/2 and q_h=1, leading to expected utility u(9-5/2)=43.875. zero profits for l imply p_l=q_l*5/4; h is indifferent between both contracts, hence 43.875 = .5*u(9-p_l-5+5q)+.5 u(9-p_l), or q_l=0.3355.. p_l=0.4193...; this is broken by a full coverage pooling contract if gamma<0.33651...
 
 # E5: 
 # if \bar q below q_l^*, no effect
