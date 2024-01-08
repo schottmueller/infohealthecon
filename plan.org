@@ -4,7 +4,15 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- Due to accident, the exercises session on Nov. 27 has to be canceled. 
+- Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
+  - exercise session Jan 8: https://uni-koeln.zoom.us/j/97244593786?pwd=ODQ4cTduYUFYWjE2TXlSa2p6blNtQT09
+   Meeting ID: 972 4459 3786
+   Password: 281565
+
+  - lecture Jan 10: https://uni-koeln.zoom.us/j/98887156866?pwd=cUZsUWlCdkhNc0YwVC9MUFMyTVJIQT09
+    Meeting ID: 988 8715 6866
+    Password: 354952
+  
 - The lecture on October 11 was given online. You can download the [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]].
 # - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
