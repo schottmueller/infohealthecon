@@ -85,7 +85,7 @@ Lecture slides and exercises are posted/updated here over the course of the term
     - [[https://github.com/schottmueller/infohealthecon/files/13268522/Health_Care_Session_5.pdf][Exercise Session 5]]
     - [[https://github.com/schottmueller/infohealthecon/files/13336085/Health_Care_Session_6.pdf][Exercise Session 6]]
     - [[https://github.com/schottmueller/infohealthecon/files/13416688/Health_Care_Session_7.pdf][Exercise Session 7]]
-    - [[https://github.com/schottmueller/infohealthecon/files/13714500/Untitled.Notebook.1.pdf][Exercise Session 8-10]]
+    - [[https://uni-koeln.sciebo.de/s/toBOJ1w7vS0IYJE][Exercise Session 8-11]]
 
 # ** Julia notebooks
 # /This is very optional (!!!) but if you are interested/, there are some julia/jupyter [[https://github.com/schottmueller/infohealthecon/blob/master/exercises/exercisePlots.ipynb][notebooks]] that can compute the resuls to some of the exercises or create the plots I use. The idea is the following: If you want to practice more, you can simply change the income or the utility function and redo the exercise with these new primitives. The code allows you to check whether your calculation were correct. On how to set up julia -- which is free and open source software -- see [[https://lectures.quantecon.org/jl/getting_started_julia/index.html][here]]. If you want to learn julia from scratch, you can check the free online book [[https://benlauwens.github.io/ThinkJulia.jl/latest/book.html][ThinkJulia]] or use the online courses on [[https://www.coursera.org/learn/julia-programming][Coursera]] or [[https://juliaacademy.com/][JuliaAcademy]].
