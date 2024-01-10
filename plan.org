@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- Some notes on how to solve the case studies are added below.  
 - Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
   - exercise session Jan 8: https://uni-koeln.zoom.us/j/97244593786?pwd=ODQ4cTduYUFYWjE2TXlSa2p6blNtQT09
    Meeting ID: 972 4459 3786
@@ -16,9 +17,8 @@
 - The lecture on October 11 was given online. You can download the [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]].
 # - The optional post exam review takes place on April 19 between 9:00 and 11:30. Further information can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
 #  - You are allowed to use calculators in the exam if these calculators (i) cannot store text, (ii) are not graphical and (iii) cannot solve equations for unknown variables. Put differently, your calculator should be able to do basic arithmetic of real numbers (addition, multiplication, subtraction, division and possibly also exponentiation, taking roots and logarithms as well as evaluating trigonometric functions) and nothing more.
-  - Exam dates are Feb 14, 14:00 (100 HS II, 100/U1/HSII) and March 20, 9:00 (HS XXIII, 101/EG/17). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
+- Exam dates are Feb 14, 14:00 (100 HS II, 100/U1/HSII) and March 20, 9:00 (HS XXIII, 101/EG/17). Registration is open on KLIPS. We will try to grade the exams of the first date before the registration deadline of the second but we cannot guarantee that we will manage (we managed in previous years).
 #  - Some [[https://web.tresorit.com/l/P5Ouf#adVW5AZ1DowyUFM-QWcPwA][notes]] on the structural models are added.
-#  - Some notes on how to solve the case studies are added below.  
 #  - The post exam review (for both exam dates) is announced. Further information about how to register can be found [[https://wiso.uni-koeln.de/de/studium/studienorganisation/klausureinsichtnahmen/mikrooekonomik][here]].
   - Note that there will be an exercise session on October 9 even though this is before the first lecture. This exercise session is dedicated to repeating some mathematical concepts used in this course.
 # - There is now a bonus [[https://web.tresorit.com/l/fZgvh#BjYObqx5HECW89rpYxEnxg][screencast]] available on endogenous treatment choice. It is a topic that we do not cover this year but which allows to tie the things together that we covered in the last weeks.
@@ -64,11 +64,12 @@ Lecture slides and exercises are posted/updated here over the course of the term
 - *Screencasts*
   - [[https://uni-koeln.sciebo.de/s/QwVA4z8EvvgzQNF][recording]] lecture 1
   - [[https://uni-koeln.sciebo.de/s/I4hWkZNgdtqAPDF][derivation]] Rothschild-Stiglitz equilibrium
-  - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc (note that the menu item clicked and unfortunately not visible on the video is "Data")
+  - how to get [[https://uni-koeln.sciebo.de/s/H9kQZ788OvQZtOH][descriptive statistics]] and do [[https://uni-koeln.sciebo.de/s/p6dpXuIDacggvLA][regressions]] in LibreOffice Calc 
   - bonus [[https://uni-koeln.sciebo.de/s/SkZmNq0N2N9KrfV][screencast]] on endogenous treatment choice 
 
 - *Data sets and instructions* for case studies:
   - exercises (as pdf) and datasets for the empirical lectures are [[https://uni-koeln.sciebo.de/s/BbIdIvP12FE6wLW][here]] available for download
+  - some notes on how to work on the [[https://github.com/schottmueller/infohealthecon/blob/master/data/FinkelsteinMcGarryLongTermCare/analysis.org][longterm care insurance]] case study and the [[https://github.com/schottmueller/infohealthecon/blob/master/data/eigenRisico.org][deductibles]] case study (in Julia)
 
 - An [[https://github.com/schottmueller/infohealthecon/files/3968257/exam2019-2questions.pdf][old exam]] is available.
 
