@@ -4,6 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
+- The optional exam inspection will be organized jointly for the first and second exam date (exact date will be announced later).
 - There will be no exercise session on Jan 22.
 - Some notes on how to solve the case studies are added below.  
 - Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
