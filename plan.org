@@ -4,7 +4,7 @@
 #+Latex_Header: \usepackage{natbib}
 
 * News
-- The optional exam inspection will probably take place on June 5, 10:30-11:30 in SSC 4.210.
+- The optional exam inspection will take place on June 5, 10:30-11:30 in SSC 4.210. Please, register between April 26 and May 10 via email to /oess at wiso.uni-koeln.de/ (including student number, name and date of your exam).
 - There will be no exercise session on Jan 22.
 - Some notes on how to solve the case studies are added below.  
 - Due to likely disruptions of public transport, the sessions in the week Jan 8- will be broadcasted on zoom. Please note that (i) internet is rather unstable and occasionally even defect and (ii) microphone quality is bad in lecture room settings. Therefore, please attend on campus if you can.
